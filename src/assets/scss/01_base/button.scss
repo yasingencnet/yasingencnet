@@ -1,0 +1,62 @@
+.button{
+  display: inline-block;
+  padding: var(--flow-space) calc(var(--flow-space) * 3);
+  cursor: pointer;
+  text-decoration: none;
+  font-family: var(--font-alt);
+  font-size: var(--fs-text-xs);
+  font-weight: var(--bold);
+  border: 0;
+}
+.button-inner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  > * {
+    & + * {margin-left: var(--flow-space);}
+  }
+}
+.button-group{
+  margin-left: calc((var(--flow-space) * 0.75) * -1);
+  margin-right: calc((var(--flow-space) * 0.75) * -1);
+  > * {
+    margin-left: calc(var(--flow-space) * 0.75);
+    margin-right: calc(var(--flow-space) * 0.75);
+  }
+}
+
+.button-1{
+  @extend .button;
+  background-color: rgb(var(--color-paragraph));
+  color: rgb(var(--color-white));
+  box-shadow: inset 0 0 0 2px rgb(var(--color-paragraph));
+  &:hover, &:focus{
+    background-color: rgb(var(--color-white));
+    color: rgb(var(--color-paragraph));
+  }
+}
+.button-2{
+  @extend .button;
+  background-color: rgb(var(--color-white));
+  color: rgb(var(--color-paragraph));
+  box-shadow: inset 0 0 0 2px rgb(var(--color-paragraph));
+  &:hover, &:focus{
+    background-color: rgb(var(--color-paragraph));
+    color: rgb(var(--color-white));
+  }
+}
+
+.button-nav{
+  @extend .button, .button-2;
+  display: none;
+  padding: var(--flow-space);
+  font-weight: var(--regular);
+  @include respond-below(md) {
+    display: inline-block;
+  }
+  svg{
+    path{
+      fill: currentColor;
+    }
+  }
+}

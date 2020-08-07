@@ -1,0 +1,23 @@
+@import "scss/00_config/reset";
+@import "scss/00_config/media-quaries";
+@import "scss/00_config/theme";
+
+@import "scss/01_base/helper";
+@import "scss/01_base/button";
+@import "scss/01_base/layout";
+
+@import "scss/02_component/snippet";
+
+@import "scss/02_component/header";
+@import "scss/02_component/nav";
+@import "scss/02_component/footer";
+
+@import "scss/02_component/hero";
+@import "scss/02_component/post-card";
+@import "scss/02_component/meta-list";
+@import "scss/02_component/clients";
+@import "scss/02_component/skill-card";
+@import "scss/02_component/works";
+@import "scss/02_component/gallery";
+
+

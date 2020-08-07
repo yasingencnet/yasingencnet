@@ -1,0 +1,22 @@
+{
+  "name": "yasingencnet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/assets/core.js",
+  "scripts": {
+    "dev": "parcel src/*.html --open",
+    "build": "parcel build src/*.html --no-source-maps --no-cache --no-content-hash"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4",
+    "postcss-preset-env": "^6.7.0",
+    "sass": "^1.26.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yasingencnet/yasingencnet.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}

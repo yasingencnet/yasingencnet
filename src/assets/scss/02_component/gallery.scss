@@ -1,0 +1,24 @@
+.gallery{
+  display: grid;
+  grid-gap: var(--flow-space);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+.gallery__item{
+  img{width: 100%;}
+}
+.gallery-cta{
+  grid-column-start: 1;
+  grid-column-end: -1;
+  color: rgb(var(--color-paragraph-light));
+  text-align: right;
+  font-size: var(--fs-text-sm);
+  font-family: var(--font-alt);
+  margin-top: calc(var(--flow-space) * 1.5);
+  a{
+    color: rgb(var(--color-paragraph));
+    text-decoration: none;
+    &:hover, &:focus{
+      color: rgb(var(--color-primary));
+    }
+  }
+}

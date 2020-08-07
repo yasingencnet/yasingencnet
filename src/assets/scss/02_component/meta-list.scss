@@ -1,0 +1,20 @@
+.meta-list{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -3rem;
+  margin-right: -3rem;
+}
+.meta-list__item{
+  font-family: var(--font-alt);
+  font-size: var(--fs-text-sm);
+  color: rgb(var(--color-paragraph));
+  margin-left: 3rem;
+  margin-right: 3rem;
+  span{
+    display: block;
+  }
+  a{
+    color: rgb(var(--color-primary));
+    text-decoration: none;
+  }
+}

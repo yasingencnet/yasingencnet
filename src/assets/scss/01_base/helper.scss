@@ -1,0 +1,29 @@
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+
+.bg-alt{
+  background-color: rgb(var(--color-bg-alt));
+}
+.bg-pure{
+  background-color: rgb(var(--color-white));
+}
+
+a[href*="//"]:not([href*="yasingenc.net"]){
+  &:after{
+    content: '';
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background: url("/assets/images/layout/external-url.svg");
+    margin-left: 5px;
+  }
+}

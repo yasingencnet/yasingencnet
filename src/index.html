@@ -64,7 +64,11 @@
                     </p>
                 </div>
                 <figure class="hero__figure">
-                    <img class="hero__pic" src="assets/images/layout/hero.png" alt="A photo of Yasin with suit and downhill helmet">
+                    <picture>
+                        <source srcset="assets/images/layout/hero.webp" type="image/webp">
+                        <source srcset="assets/images/layout/hero.png" type="image/png">
+                        <img class="hero__pic" src="assets/images/layout/hero.png" alt="A photo of Yasin with suit and downhill helmet" loading="lazy">
+                    </picture>
                 </figure>
                 <footer class="hero__footer">♥</footer>
             </div>

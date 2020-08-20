@@ -3,6 +3,9 @@
     grid-template-columns: 1fr 1fr;
     grid-gap: var(--layout-gap);
     @include respond-below(xl) {
+      grid-gap: calc(var(--layout-gap) / 2);
+    }
+    @include respond-below(lg) {
       grid-template-columns: 1fr;
     }
     @include respond-below(md) {
@@ -14,14 +17,14 @@
 .hero-me{
   display: flex;
   flex-direction: column;
-  @include respond-above(lg) {
+  padding-top: var(--layout-gap);
+  @include respond-above(xl) {
     padding-top: calc(var(--layout-gap) * 2);
   }
-  @include respond-below(xl) {
+  @include respond-below(lg) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: calc(var(--layout-gap) / 2);
-    padding-top: var(--layout-gap);
   }
   @include respond-below(md) {
     grid-template-columns: 1fr;
@@ -91,9 +94,11 @@
   grid-template-columns: 1fr 1fr;
   grid-gap: var(--layout-gap);
   padding-top: var(--layout-gap);
+  @include respond-below(xl) {
+    grid-gap: calc(var(--flow-space) * 6);
+  }
   @include respond-below(md) {
     padding-top: 0;
-    grid-gap: calc(var(--flow-space) * 6);
   }
   @include respond-below(sm) {
     grid-template-columns: 1fr;

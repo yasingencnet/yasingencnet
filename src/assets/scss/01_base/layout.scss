@@ -9,9 +9,21 @@ body {
 .container{
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  max-width: 90vw;
+  max-width: calc(100% - 30px);
   margin-left: auto;
   margin-right: auto;
+  @include respond-above(sm) {
+    max-width: 95vw;
+  }
+  @media (min-width: 1920px){
+    max-width: 1720px;
+  }
+}
+.subpage{
+  @extend .bg-pure;
+  padding-top: var(--layout-gap);
+  padding-bottom: var(--layout-gap);
+  margin-top: var(--layout-gap);
 }
 
 .main{
@@ -20,6 +32,22 @@ body {
      margin-top: calc(var(--layout-gap) * 2);
    }
   }
+}
+
+.skip-link{
+  background-color: rgb(var(--color-highlight));
+  font-size: var(--fs-text-md);
+  color: rgb(var(--color-paragraph));
+  &:focus{
+    clip: unset;
+    width: auto;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    z-index: 99;
+  }
+}
+button:focus, a:focus {
+  outline: 2px solid rgb(var(--color-highlight));
 }
 
 .section{}

@@ -38,7 +38,7 @@
             </span>
             </button>
         </div>
-        <nav class="nav" id="js-primary-nav" aria-label="Primary navigation">
+        <nav class="nav" id="js-primary-nav" role="navigation" aria-label="Primary navigation">
             <ul class="nav__list">
                 <li class="nav__item"><a href="javascript:;">Work</a></li>
                 <li class="nav__item"><a href="javascript:;">About</a></li>
@@ -49,7 +49,7 @@
         </nav>
     </div>
 </header>
-<main id="main" class="main">
+<main id="main" role="main" class="main">
     <div class="hero">
         <div class="container">
             <div class="hero-me">
@@ -75,7 +75,7 @@
             <div class="hero-post">
                 <div class="post-card">
                     <time class="post-card__date">June 25, 2020</time>
-                    <h3 class="post-card__title"><a href="javascript:;">Integer sit amet nunc vel libero elementum viverra.</a></h3>
+                    <h2 class="post-card__title"><a href="javascript:;">Integer sit amet nunc vel libero elementum viverra.</a></h2>
                     <p class="post-card__description">Praesent congue faucibus diam, vel tincidunt urna cursus sit amet. Sed eget nisl quam. Fusce cursus fermentum justo.</p>
                     <div class="post-card__meta">
                         Posted in <a href="javascript:;">Eleventy</a>, <a href="javascript:;">Jamstack</a>
@@ -84,7 +84,7 @@
                 </div>
                 <div class="post-card">
                     <time class="post-card__date">June 25, 2020</time>
-                    <h3 class="post-card__title"><a href="javascript:;">Quisque ut neque scelerisque, faucibus ipsum vel, pulvinar urna.</a></h3>
+                    <h2 class="post-card__title"><a href="javascript:;">Quisque ut neque scelerisque, faucibus ipsum vel, pulvinar urna.</a></h2>
                     <p class="post-card__description">Phasellus sit amet ligula sem. Quisque accumsan dictum tincidunt. Nullam porta purus eu tortor finibus</p>
                     <div class="post-card__meta">
                         Posted in <a href="javascript:;">Eleventy</a>, <a href="javascript:;">Jamstack</a>
@@ -93,7 +93,7 @@
                 </div>
                 <div class="post-card">
                     <time class="post-card__date">June 25, 2020</time>
-                    <h3 class="post-card__title"><a href="javascript:;">Sed pretium metus lacinia, tristique purus ut, laoreet nisl.</a></h3>
+                    <h2 class="post-card__title"><a href="javascript:;">Sed pretium metus lacinia, tristique purus ut, laoreet nisl.</a></h2>
                     <p class="post-card__description">Sed luctus placerat nisi, et vestibulum justo fringilla sit amet. Aliquam blandit convallis laoreet. Interdum</p>
                     <div class="post-card__meta">
                         Posted in <a href="javascript:;">Eleventy</a>, <a href="javascript:;">Jamstack</a>
@@ -102,7 +102,7 @@
                 </div>
                 <div class="post-card">
                     <time class="post-card__date">June 25, 2020</time>
-                    <h3 class="post-card__title"><a href="javascript:;">Ut ornare elit at mauris viverra placerat ac at eros.</a></h3>
+                    <h2 class="post-card__title"><a href="javascript:;">Ut ornare elit at mauris viverra placerat ac at eros.</a></h2>
                     <p class="post-card__description">Donec scelerisque ligula ac neque porta consequat. Fusce arcu nisi, condimentum id dolor nec, varius luctus velit.</p>
                     <div class="post-card__meta">
                         Posted in <a href="javascript:;">Eleventy</a>, <a href="javascript:;">Jamstack</a>
@@ -111,7 +111,7 @@
                 </div>
                 <div class="post-card">
                     <time class="post-card__date">June 25, 2020</time>
-                    <h3 class="post-card__title"><a href="javascript:;">Phasellus feugiat urna et orci placerat, imperdiet porta elit aliquam.</a></h3>
+                    <h2 class="post-card__title"><a href="javascript:;">Phasellus feugiat urna et orci placerat, imperdiet porta elit aliquam.</a></h2>
                     <p class="post-card__description">Duis ac leo lorem. Nam tristique, sem quis euismod fermentum, orci metus tempus orci, ac viverra lorem lacus quis sem. Suspendisse quis eros.</p>
                     <div class="post-card__meta">
                         Posted in <a href="javascript:;">Eleventy</a>, <a href="javascript:;">Jamstack</a>
@@ -125,7 +125,7 @@
         <div class="container">
             <div class="section-inner">
                 <header class="section-header">
-                    <h2 class="section-title">My Skillset</h2>
+                    <h3 class="section-title">My Skillset</h3>
                     <p class="section-description">Here is the keywords that represent me. Yeah! I'm web developer but not a spider.</p>
                 </header>
                 <div class="skill">
@@ -231,7 +231,7 @@
         <div class="container">
             <div class="section-inner">
                 <header class="section-header">
-                    <h2 class="section-title">Featured Works</h2>
+                    <h3 class="section-title">Featured Works</h3>
                     <p class="section-description">It’s time to see some work. Here are a few projects I’ve done for clients.</p>
                 </header>
                 <div class="works">
@@ -270,7 +270,7 @@
         <div class="container">
             <div class="section-inner">
                 <header class="section-header">
-                    <h2 class="section-title">Clients</h2>
+                    <h3 class="section-title">Clients</h3>
                     <p class="section-description">I’ve worked with great brands as a freelancer & agency employee.</p>
                 </header>
                 <ul class="clients">
@@ -320,7 +320,7 @@
     <div class="container">
         <div class="inner">
             <h2 class="footer__title">Deep Dive Into Pages</h2>
-            <nav class="nav-footer" aria-label="Secondary navigation">
+            <nav class="nav-footer" role="navigation" aria-label="Secondary navigation">
                 <ul class="nav-footer__list">
                     <li class="nav-footer__item">
                         <a href="javascript:;">About</a>
@@ -362,5 +362,22 @@
 </footer>
 
 <script src="./assets/core.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const greetingText = document.getElementById("greeting-text");
+        let visitorClock = new Date().getHours();
+        let visitorMessage = "";
+
+        if(visitorClock <= 12){
+            visitorMessage = "Good morning";
+        } else if (visitorClock <= 18){
+            visitorMessage = "Good afternoon";
+        } else {
+            visitorMessage = "Good evening";
+        }
+
+        greetingText.innerHTML = visitorMessage;
+    });
+</script>
 </body>
 </html>

@@ -18,8 +18,8 @@ h2,
 h3,
 h4,
 p,
-ul[class],
-ol[class],
+ul,
+ol,
 li,
 figure,
 figcaption,
@@ -85,5 +85,12 @@ select {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
+  }
+}
+
+/* Print href */
+@media print {
+  a[href^="http"]:not([href*="yasingenc.net"])::after {
+    content: " (" attr(href) ")";
   }
 }

@@ -8,13 +8,12 @@
   font-family: var(--font-alt);
   font-size: var(--fs-text-sm);
   color: rgb(var(--color-paragraph));
-  margin-left: 3rem;
-  margin-right: 3rem;
-  span{
-    display: block;
-  }
-  a{
-    color: rgb(var(--color-primary));
-    text-decoration: none;
-  }
+  margin: var(--flow-space) calc(var(--flow-space) * 3);
+}
+.meta-list__title{
+  display: block;
+}
+.meta-list__value{
+  color: rgb(var(--color-primary));
+  text-decoration: none;
 }

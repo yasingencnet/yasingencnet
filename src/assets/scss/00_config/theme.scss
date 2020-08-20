@@ -18,6 +18,7 @@
   // COLORS
   --color-bg:               250, 250, 250;
   --color-bg-alt:           30, 30, 30;
+  --color-bg-pale:          230, 230, 235;
 
   --color-primary:          215, 25, 90;
   --color-secondary:        50, 132, 255;
@@ -33,15 +34,18 @@
   // SIZING
   --flow-space:             1rem;
   --layout-gap:             9rem;
+  --article-size:           760px;
 
 
 
   @include respond-below(sm) {
     // TYPOGRAPHY
-    --fs-title-sm:          24px;
-    --fs-title-md:          28px;
+    --fs-title-sm:          22px;
+    --fs-title-md:          26px;
     --fs-title-lg:          30px;
-    --fs-title-xl:          38px;
+    --fs-title-xl:          34px;
+
+    --fs-text-lg:           16px;
 
     // SIZING
     --layout-gap:           6rem;

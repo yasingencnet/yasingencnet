@@ -17,10 +17,6 @@
 .hero-me{
   display: flex;
   flex-direction: column;
-  padding-top: var(--layout-gap);
-  @include respond-above(xl) {
-    padding-top: calc(var(--layout-gap) * 2);
-  }
   @include respond-below(lg) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -93,12 +89,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: var(--layout-gap);
-  padding-top: var(--layout-gap);
   @include respond-below(xl) {
     grid-gap: calc(var(--flow-space) * 6);
-  }
-  @include respond-below(md) {
-    padding-top: 0;
   }
   @include respond-below(sm) {
     grid-template-columns: 1fr;

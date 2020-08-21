@@ -24,7 +24,6 @@ body {
   grid-template-columns: 1fr;
   padding-top: var(--layout-gap);
   padding-bottom: var(--layout-gap);
-  margin-top: var(--layout-gap);
   @include respond-above(sm) {
     padding-top: calc(var(--layout-gap) * 2);
     padding-bottom: calc(var(--layout-gap) * 2);
@@ -33,7 +32,6 @@ body {
 .container-about{
   @extend .bg-pure;
   grid-template-columns: 1fr;
-  margin-top: var(--layout-gap);
   @include respond-above(lg) {
     grid-template-columns: 1fr 1fr;
   }
@@ -48,6 +46,7 @@ body {
 }
 
 .main{
+  padding-top: var(--layout-gap);
   > * {
    & + * {
      margin-top: calc(var(--layout-gap) * 2);

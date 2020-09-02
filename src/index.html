@@ -26,7 +26,7 @@
             <span class="visually-hidden">Yasin Genc</span>
         </a>
         <div class="button-group">
-            <a href="javascript:;" class="header-cta button-1">Hire Me</a>
+            <a href="mailto:yasin@yasingenc.net" class="header-cta button-1">Hire Me</a>
             <button type="button" class="button-nav" id="js-primary-button">
             <span class="button-inner">
                 <span>MENU</span>
@@ -288,29 +288,7 @@
         </div>
     </div>
     <div class="section">
-        <div class="gallery">
-            <figure class="gallery__item">
-                <picture>
-                    <source srcset="assets/images/upload/gallery-img-1.webp" type="image/webp">
-                    <source srcset="assets/images/upload/gallery-img-1.jpg" type="image/jpeg">
-                    <img src="assets/images/upload/gallery-img-1.jpg" alt="A photo of Yasin at seaside" loading="lazy">
-                </picture>
-            </figure>
-            <figure class="gallery__item">
-                <picture>
-                    <source srcset="assets/images/upload/gallery-img-2.webp" type="image/webp">
-                    <source srcset="assets/images/upload/gallery-img-2.jpg" type="image/jpeg">
-                    <img src="assets/images/upload/gallery-img-2.jpg" alt="A photo of Yasin with kids (monks) at wat pho, thailand" loading="lazy">
-                </picture>
-            </figure>
-            <figure class="gallery__item">
-                <picture>
-                    <source srcset="assets/images/upload/gallery-img-3.webp" type="image/webp">
-                    <source srcset="assets/images/upload/gallery-img-3.jpg" type="image/jpeg">
-                    <img src="assets/images/upload/gallery-img-3.jpg" alt="A photo of Yasin in abondoned building" loading="lazy">
-                </picture>
-            </figure>
-        </div>
+        <div class="gallery" id="gallery"></div>
         <div class="container">
             <div class="gallery-cta">Instagram: <a href="https://www.instagram.com/yasingencnet/" target="_blank" rel="noreferrer">@yasingencnet</a></div>
         </div>
@@ -364,10 +342,10 @@
 <script src="./assets/core.js"></script>
 <script>
     document.addEventListener("DOMContentLoaded", function() {
+        // Greeting Text
         const greetingText = document.getElementById("greeting-text");
         let visitorClock = new Date().getHours();
         let visitorMessage = "";
-
         if(visitorClock <= 12){
             visitorMessage = "Good morning";
         } else if (visitorClock <= 18){
@@ -375,8 +353,37 @@
         } else {
             visitorMessage = "Good evening";
         }
-
         greetingText.innerHTML = visitorMessage;
+
+        // Instagram
+        let request = new XMLHttpRequest();
+        request.open('GET', 'https://www.instagram.com/yasingencnet/?__a=1', true);
+        request.onload = function() {
+            if (this.status >= 200 && this.status < 400) {
+                let dataSource = JSON.parse(this.response);
+                let galleryContainer = document.getElementById("gallery");
+                for(let i = 0; i < 3; i++){
+                    let data = dataSource.graphql.user.edge_owner_to_timeline_media.edges[i].node;
+
+                    let markup = `
+                        <figure class="gallery__item">
+                            <a href="https://www.instagram.com/p/${data.shortcode}/" target="_blank" rel="noreferrer">
+                                <span class="gallery__like">${data.edge_liked_by.count}</span>
+                                <img src="${data.thumbnail_src}" alt="${data.accessibility_caption}" loading="lazy">
+                            </a>
+                        </figure>
+                    `;
+
+                    galleryContainer.insertAdjacentHTML('beforeend', markup);
+                }
+            } else {
+                // We reached our target server, but it returned an error
+            }
+        };
+        request.onerror = function() {
+            // There was a connection error of some sort
+        };
+        request.send();
     });
 </script>
 </body>

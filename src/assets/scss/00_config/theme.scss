@@ -35,19 +35,26 @@
   --flow-space:             1rem;
   --layout-gap:             9rem;
   --article-size:           760px;
+  --container-lg:           95vw;
+  --container-md:           60vw;
 
+  @media (min-width: 1920px){
+    --container-lg:         1720px;
+  }
 
+  @include respond-below(xl) {
+    --layout-gap:           6rem;
+  }
 
   @include respond-below(sm) {
+    --container-lg:         calc(100% - 30px);
+    --container-md:         calc(100% - 30px);
+
     // TYPOGRAPHY
     --fs-title-sm:          22px;
     --fs-title-md:          26px;
     --fs-title-lg:          30px;
     --fs-title-xl:          34px;
-
     --fs-text-lg:           16px;
-
-    // SIZING
-    --layout-gap:           6rem;
   }
 }

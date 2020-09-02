@@ -1,0 +1,36 @@
+.section-travel{
+  .section-header{
+    background: rgb(var(--color-primary)) url("/assets/images/layout/topography.svg");
+    padding: var(--layout-gap) calc(var(--flow-space) * 3) calc(var(--layout-gap) * 2);
+  }
+  .section-title{
+    color: rgb(var(--color-white));
+  }
+  .section-description{
+    color: rgb(var(--color-white));
+  }
+}
+
+.travel-cards{
+  display: grid;
+  grid-gap: calc(var(--layout-gap) / 2 );
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  margin-top: calc((var(--layout-gap) * 2) * -1);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--container-md);
+  @include respond-below(sm) {
+    grid-template-columns: 1fr;
+  }
+  > * {
+    &:first-of-type{
+      grid-column-start: 1;
+      grid-column-end: -1;
+
+      .post-card__title{
+        font-size: var(--fs-title-lg);
+        line-height: 120%;
+      }
+    }
+  }
+}

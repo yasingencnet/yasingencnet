@@ -1,8 +1,8 @@
 .social{
   display: flex;
   flex-wrap: wrap;
-  margin-left: calc((var(--flow-space) * 1.5) * -1);;
-  margin-right: calc((var(--flow-space) * 1.5) * -1);;
+  margin-left: calc((var(--flow-space) * 1.5) * -1);
+  margin-right: calc((var(--flow-space) * 1.5) * -1);
 }
 .social__item{
   margin-left: calc(var(--flow-space) * 1.5);

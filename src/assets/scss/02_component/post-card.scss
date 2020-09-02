@@ -21,7 +21,8 @@
   color: rgb(var(--color-paragraph-light));
 
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
   overflow: hidden;
 }
 .post-card__meta{
@@ -38,4 +39,25 @@
   margin-top: calc(var(--flow-space) * 2);
   font-size: var(--fs-text-sm);
   color: rgb(var(--color-primary));
+}
+.post-card__figure{
+  display: block;
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  padding: 66.666% 0 0 0; /* (w / h) = x; (100 / x) = ratio */
+
+  margin-bottom: calc(var(--flow-space) * 3);
+  img{
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
 }

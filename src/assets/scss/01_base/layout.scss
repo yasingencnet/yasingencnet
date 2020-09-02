@@ -9,15 +9,9 @@ body {
 .container{
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  max-width: calc(100% - 30px);
+  max-width: var(--container-lg);
   margin-left: auto;
   margin-right: auto;
-  @include respond-above(sm) {
-    max-width: 95vw;
-  }
-  @media (min-width: 1920px){
-    max-width: 1720px;
-  }
 }
 .container-subpage{
   @extend .bg-pure;

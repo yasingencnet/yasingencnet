@@ -18,6 +18,9 @@
   padding: calc(var(--flow-space) * 6) calc(var(--flow-space) * 3) 0;
   img{
     width: 100%;
+    max-width: max-content;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 .works__meta{

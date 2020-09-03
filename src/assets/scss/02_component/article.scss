@@ -1,5 +1,5 @@
 .article{
-  max-width: var(--article-size);
+  max-width: var(--container-sm);
   margin-left: auto;
   margin-right: auto;
   padding-left: calc(var(--flow-space) * 1.5);
@@ -44,6 +44,47 @@
     margin-bottom: 0;
     line-height: 120%;
   }
+  figure{
+    position: relative;
+    max-width: var(--container-sm);
+    margin-top:  calc(var(--flow-space) * 6);
+    margin-bottom:  calc(var(--flow-space) * 6);
+    img{
+      position: relative;
+      max-width: var(--container-lg);
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: var(--radius);
+
+      box-shadow:
+              0 6.7px 5.3px rgba(0, 0, 0, 0.02),
+              0 22.3px 17.9px rgba(0, 0, 0, 0.03),
+              0 100px 80px rgba(0, 0, 0, 0.05);
+    }
+  }
+/*  figure{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 66.666% 0 0 0; !* (w / h) = x; (100 / x) = ratio *!
+
+    img{
+      display: block;
+      height: 100%;
+      width: 100%;
+      max-width: 95vw;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+  }*/
+
+
   figcaption{
     text-align: right;
     margin-top: calc(var(--flow-space) / 2);
@@ -77,7 +118,9 @@
     }
   }
   a{
-    color: rgb(var(--color-primary));
+    &:not([class^="button-"]){
+      color: rgb(var(--color-primary));
+    }
   }
 }
 

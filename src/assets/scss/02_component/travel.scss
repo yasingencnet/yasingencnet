@@ -1,6 +1,8 @@
 .section-travel{
+  margin-top: calc(var(--layout-gap) * -1);
   .section-header{
-    background: rgb(var(--color-primary)) url("/assets/images/layout/topography.svg");
+    background: rgb(var(--color-tertiary)) url("/assets/images/layout/travel-bg.jpg");
+    background-size: cover;
     padding: var(--layout-gap) calc(var(--flow-space) * 3) calc(var(--layout-gap) * 2);
   }
   .section-title{

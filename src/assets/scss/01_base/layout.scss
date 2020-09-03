@@ -13,6 +13,20 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+.container-md{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  max-width: var(--container-md);
+  margin-left: auto;
+  margin-right: auto;
+}
+.container-sm{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  max-width: var(--container-sm);
+  margin-left: auto;
+  margin-right: auto;
+}
 .container-subpage{
   @extend .bg-pure;
   grid-template-columns: 1fr;
@@ -65,6 +79,16 @@ button:focus, a:focus {
 }
 
 .section{}
+.section-boxed{
+  .section-inner{
+    @extend .bg-pure;
+    padding: var(--layout-gap) calc(var(--flow-space) * 3);
+    @include respond-below(md) {
+      padding: calc(var(--flow-space) * 6) var(--flow-space);
+    }
+  }
+}
+
 .section-inner{
   grid-column-start: 1;
   grid-column-end: -1;

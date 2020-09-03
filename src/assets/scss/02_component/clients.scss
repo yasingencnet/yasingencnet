@@ -1,13 +1,3 @@
-.section-clients{
-  .section-inner{
-    @extend .bg-pure;
-    padding: var(--layout-gap) calc(var(--flow-space) * 3);
-    @include respond-below(md) {
-      padding: calc(var(--flow-space) * 6) var(--flow-space);
-    }
-  }
-}
-
 .clients{
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(126px, 1fr));

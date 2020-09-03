@@ -17,6 +17,8 @@
   background-color: rgb(var(--color-white));
 }
 
+.text-center{text-align: center;}
+
 a[href*="//"]:not([href*="yasingenc.net"]){
   &:after{
     content: '';

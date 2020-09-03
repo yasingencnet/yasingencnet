@@ -7,6 +7,7 @@
   font-size: var(--fs-text-xs);
   font-weight: var(--bold);
   border: 0;
+  text-align: center;
 }
 .button-inner{
   display: flex;
@@ -23,6 +24,12 @@
     margin-left: calc(var(--flow-space) * 0.75);
     margin-right: calc(var(--flow-space) * 0.75);
   }
+}
+.button-block{
+  width: 100%;
+}
+.button-lg{
+  padding: calc(var(--flow-space) * 2) calc(var(--flow-space) * 3);
 }
 
 .button-1{

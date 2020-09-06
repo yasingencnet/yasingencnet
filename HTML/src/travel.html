@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Yasin Genc - Front-End Developer</title>
+    <meta name="description" content="I design & develop modern, responsive and accessible web interfaces.">
+    <meta name="keywords" content="html, css, js, ui, ux, a11y, front-end web developer, freelancer,"/>
+    <meta name="theme-color" content="#EA3843">
+
+    <link rel="stylesheet" href="assets/core.scss">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link rel="preconnect" href="https://www.instagram.com/">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Source+Serif+Pro:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<a href="#main" class="skip-link visually-hidden">skip to content</a>
+<header class="header">
+    <div class="container">
+        <a href="/" class="logo" title="Yasin Genc Logo - Home">
+            <svg aria-hidden="true" width="82" height="24" viewBox="0 0 82 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="12" fill="#E43F5A"/>
+                <path d="M11.8125 13.8984L7.37109 21H4.85156L9.65625 13.5117C8.44531 13.1211 7.55469 12.5234 6.98438 11.7188C6.41406 10.9141 6.12891 9.89453 6.12891 8.66016C6.12891 7.11328 6.66016 5.92969 7.72266 5.10938C8.79297 4.28125 10.3945 3.86719 12.5273 3.86719H17.332V21H15.1758V13.8984H11.8125ZM15.1758 5.70703H12.5859C11.1562 5.70703 10.0938 5.95703 9.39844 6.45703C8.70312 6.95703 8.35547 7.72656 8.35547 8.76562C8.35547 10.9688 9.79688 12.0703 12.6797 12.0703H15.1758V5.70703Z" fill="white"/>
+                <path d="M34.6914 5.51953C32.8477 5.51953 31.3984 6.13672 30.3438 7.37109C29.2891 8.60547 28.7617 10.293 28.7617 12.4336C28.7617 14.6445 29.2734 16.3516 30.2969 17.5547C31.3203 18.75 32.7773 19.3477 34.668 19.3477C35.8867 19.3477 37.2578 19.1211 38.7812 18.668V20.543C38.0547 20.8086 37.3555 20.9883 36.6836 21.082C36.0117 21.1836 35.2383 21.2344 34.3633 21.2344C31.8398 21.2344 29.8945 20.4688 28.5273 18.9375C27.168 17.3984 26.4883 15.2227 26.4883 12.4102C26.4883 10.6445 26.8125 9.09766 27.4609 7.76953C28.1172 6.44141 29.0664 5.41797 30.3086 4.69922C31.5586 3.98047 33.0273 3.62109 34.7148 3.62109C36.5273 3.62109 38.1055 3.95703 39.4492 4.62891L38.582 6.45703C37.2148 5.83203 35.918 5.51953 34.6914 5.51953ZM42.543 3.86719H44.5586V13.2773C44.5586 13.9414 44.5391 14.8203 44.5 15.9141C44.4609 17.0078 44.4219 17.7188 44.3828 18.0469H44.4883L53.9102 3.86719H56.3125V21H54.2969V11.6836C54.2969 10.8711 54.3242 9.92578 54.3789 8.84766C54.4336 7.76172 54.4727 7.05859 54.4961 6.73828H54.3906L44.9453 21H42.543V3.86719ZM74.0664 21H71.9102V13.0078H63.1211V21H60.9648V3.86719H63.1211V11.1094H71.9102V3.86719H74.0664V21ZM77.9579 18.528H80.4299V21H77.9579V18.528Z" fill="#14171A"/>
+            </svg>
+            <span class="visually-hidden">Yasin Genc</span>
+        </a>
+        <div class="button-group">
+            <a href="mailto:yasin@yasingenc.net" class="header-cta button-1">Hire Me</a>
+            <button type="button" class="button-nav" id="js-primary-button">
+            <span class="button-inner">
+                <span>MENU</span>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15.375 7.375H0.625C0.279813 7.375 0 7.65481 0 8C0 8.34519 0.279813 8.625 0.625 8.625H15.375C15.7202 8.625 16 8.34519 16 8C16 7.65481 15.7202 7.375 15.375 7.375Z" fill="black"/>
+                <path d="M15.375 2.375H0.625C0.279813 2.375 0 2.65481 0 3C0 3.34519 0.279813 3.625 0.625 3.625H15.375C15.7202 3.625 16 3.34519 16 3C16 2.65481 15.7202 2.375 15.375 2.375Z" fill="black"/>
+                <path d="M15.375 12.375H0.625C0.279813 12.375 0 12.6548 0 13C0 13.3452 0.279813 13.625 0.625 13.625H15.375C15.7202 13.625 16 13.3452 16 13C16 12.6548 15.7202 12.375 15.375 12.375Z" fill="black"/>
+                </svg>
+            </span>
+            </button>
+        </div>
+        <nav class="nav" id="js-primary-nav" role="navigation" aria-label="Primary navigation">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="/work.html">Work</a></li>
+                <li class="nav__item"><a href="/about.html">About</a></li>
+                <li class="nav__item"><a href="/contact.html">Contact</a></li>
+                <li class="nav__item"><a href="/blog.html">Blog</a></li>
+                <li class="nav__item"><a href="/travel.html">Travel</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main id="main" role="main" class="main">
+    <div class="section section-travel">
+        <header class="section-header">
+            <h3 class="section-title">Wondrous World</h3>
+            <p class="section-description">My travel notes, inspirational articles, travel videos, stunning photos, resources and so much more.</p>
+        </header>
+        <div class="container">
+            <div class="section-inner">
+                <div class="travel-cards">
+                    <div class="post-card">
+                        <figure class="post-card__figure"><img src="https://assets.atlasobscura.com/media/W1siZiIsInVwbG9hZHMvYXNzZXRzL2U5MTMwYzQ3NzAyMTVkMTJhOV80IFBob3RvIGNyZWRpdCBCZW4gWWV4bGV5LkpQRyJdLFsicCIsImNvbnZlcnQiLCIiXSxbInAiLCJjb252ZXJ0IiwiLXF1YWxpdHkgODEgLWF1dG8tb3JpZW50Il0sWyJwIiwidGh1bWIiLCIxMjgxeDg1NCMiXV0/4%20Photo%20credit%20Ben%20Yexley.JPG" alt="" loading="lazy"></figure>
+                        <h2 class="post-card__title"><a href="javascript:;">When Botswana Farmers Paint Eyes on Their Cattle's Butts, Everyone Wins</a></h2>
+                        <p class="post-card__description">The unlikely method may reshape an unhealthy relationship between farmers and lions.</p>
+                        <a class="post-card__cta" href="javascript:;">Read article</a>
+                    </div>
+                    <div class="post-card">
+                        <figure class="post-card__figure"><img src="https://assets.atlasobscura.com/media/W1siZiIsInVwbG9hZHMvYXNzZXRzLzFlMWU2MzYxLTcwNmMtNDNlNS1iNDkwLTkwOTk0MDU5ZDM5OWU4NDg0NDM0ZTk4NWZhNTVlNl8xMzcgQmx1ZSBEZXZpbC5qcGciXSxbInAiLCJjb252ZXJ0IiwiIl0sWyJwIiwiY29udmVydCIsIi1xdWFsaXR5IDgxIC1hdXRvLW9yaWVudCJdLFsicCIsInRodW1iIiwiNjAweDQwMCMiXV0/137%20Blue%20Devil.jpg" alt="" loading="lazy"></figure>
+                        <h2 class="post-card__title"><a href="javascript:;">5 Classic Cocktails That Changed When They Crossed Borders</a></h2>
+                        <p class="post-card__description">Around the world, via your liquor cabinet.</p>
+                        <a class="post-card__cta" href="javascript:;">Read article</a>
+                    </div>
+                    <div class="post-card">
+                        <figure class="post-card__figure"><img src="https://assets.atlasobscura.com/media/W1siZiIsInVwbG9hZHMvcGxhY2VfaW1hZ2VzLzY2ZGQ5YjIyLTAyMDItNDE3ZS1iZmM5LWRkYjg3YzczYzE0ZWM3NTM2YWI2ODJlMmM0NWY4Zl9JTUdfNzI2MC5qcGVnIl0sWyJwIiwidGh1bWIiLCI1ODB4NTgwIyJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA4MSAtYXV0by1vcmllbnQiXV0/IMG_7260.jpeg" alt="" loading="lazy"></figure>
+                        <h2 class="post-card__title"><a href="javascript:;">The Researchers Bringing 'Uniquely Australian Foods' to Stores Near You</a></h2>
+                        <p class="post-card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dolore eveniet, pariatur quas recusandae rem reprehenderit.</p>
+                        <a class="post-card__cta" href="javascript:;">Read article</a>
+                    </div>
+                    <div class="post-card">
+                        <figure class="post-card__figure"><img src="https://assets.atlasobscura.com/media/W1siZiIsInVwbG9hZHMvYXNzZXRzL2JjNmUwMzExLTE2YjUtNDY2OS1hNWJhLTg4ZTYzZDMzMWJhZDc1NmQyNzdjN2M4NWE1Y2FkZF9fRFNDRjAyOTguanBnIl0sWyJwIiwidGh1bWIiLCIyODgweD4iXSxbInAiLCJjb252ZXJ0IiwiLXF1YWxpdHkgODEgLWF1dG8tb3JpZW50Il1d/_DSCF0298.jpg" alt="" loading="lazy"></figure>
+                        <h2 class="post-card__title"><a href="javascript:;">The Mountains Where Manna Flows From Trees</a></h2>
+                        <p class="post-card__description">Giulio Geraldi brought cultivation of the sweet stuff back from the verge of extinction.</p>
+                        <a class="post-card__cta" href="javascript:;">Read article</a>
+                    </div>
+                    <div class="post-card">
+                        <figure class="post-card__figure"><img src="https://assets.atlasobscura.com/media/W1siZiIsInVwbG9hZHMvYXNzZXRzLzJlNDdmZGZhLTA0OTYtNDU1Ny1hOGFkLTBjNzEyYjgzOTA5YWE2NjJlZjAyODE4YjAzNDI4M190aWdlciBudXRzLmpwZyJdLFsicCIsImNvbnZlcnQiLCIiXSxbInAiLCJjb252ZXJ0IiwiLXF1YWxpdHkgODEgLWF1dG8tb3JpZW50Il0sWyJwIiwidGh1bWIiLCIxMjgweD4iXV0/tiger%20nuts.jpg" alt="" loading="lazy"></figure>
+                        <h2 class="post-card__title"><a href="javascript:;">Recreate the Ancient Egyptian Recipes Painted on Tomb Walls</a></h2>
+                        <p class="post-card__description">Make bread fit for a pharaoh and a sweet treat out of tiger nuts.</p>
+                        <a class="post-card__cta" href="javascript:;">Read article</a>
+                    </div>
+                    <div class="post-card">
+                        <figure class="post-card__figure"><img src="https://assets.atlasobscura.com/media/W1siZiIsInVwbG9hZHMvYXNzZXRzLzE3YjA4MTM3LTNiYTYtNGQzMC1iMzhmLWQwNTRlNjYxOWI5YzIzODZhNDM2YTg0OThiMTU1Y19NQzg2UEouanBnIl0sWyJwIiwiY29udmVydCIsIiJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA4MSAtYXV0by1vcmllbnQiXSxbInAiLCJ0aHVtYiIsIjEyODB4PiJdXQ/MC86PJ.jpg" alt="" loading="lazy"></figure>
+                        <h2 class="post-card__title"><a href="javascript:;">In 14th-Century Florence, Some Residents Socially Distanced While Others Hit the Bars</a></h2>
+                        <p class="post-card__description">A contemporary debate would feel familiar to Europeans alive when the Bubonic plague arrived.</p>
+                        <a class="post-card__cta" href="javascript:;">Read article</a>
+                    </div>
+
+                    <div class="post-card">
+                        <figure class="post-card__figure"><img src="https://assets.atlasobscura.com/media/W1siZiIsInVwbG9hZHMvYXNzZXRzL2U5MTMwYzQ3NzAyMTVkMTJhOV80IFBob3RvIGNyZWRpdCBCZW4gWWV4bGV5LkpQRyJdLFsicCIsImNvbnZlcnQiLCIiXSxbInAiLCJjb252ZXJ0IiwiLXF1YWxpdHkgODEgLWF1dG8tb3JpZW50Il0sWyJwIiwidGh1bWIiLCIxMjgxeDg1NCMiXV0/4%20Photo%20credit%20Ben%20Yexley.JPG" alt="" loading="lazy"></figure>
+                        <h2 class="post-card__title"><a href="javascript:;">When Botswana Farmers Paint Eyes on Their Cattle's Butts, Everyone Wins</a></h2>
+                        <p class="post-card__description">The unlikely method may reshape an unhealthy relationship between farmers and lions.</p>
+                        <a class="post-card__cta" href="javascript:;">Read article</a>
+                    </div>
+                    <div class="post-card">
+                        <figure class="post-card__figure"><img src="https://assets.atlasobscura.com/media/W1siZiIsInVwbG9hZHMvYXNzZXRzLzFlMWU2MzYxLTcwNmMtNDNlNS1iNDkwLTkwOTk0MDU5ZDM5OWU4NDg0NDM0ZTk4NWZhNTVlNl8xMzcgQmx1ZSBEZXZpbC5qcGciXSxbInAiLCJjb252ZXJ0IiwiIl0sWyJwIiwiY29udmVydCIsIi1xdWFsaXR5IDgxIC1hdXRvLW9yaWVudCJdLFsicCIsInRodW1iIiwiNjAweDQwMCMiXV0/137%20Blue%20Devil.jpg" alt="" loading="lazy"></figure>
+                        <h2 class="post-card__title"><a href="javascript:;">5 Classic Cocktails That Changed When They Crossed Borders</a></h2>
+                        <p class="post-card__description">Around the world, via your liquor cabinet.</p>
+                        <a class="post-card__cta" href="javascript:;">Read article</a>
+                    </div>
+                    <div class="post-card">
+                        <figure class="post-card__figure"><img src="https://assets.atlasobscura.com/media/W1siZiIsInVwbG9hZHMvcGxhY2VfaW1hZ2VzLzY2ZGQ5YjIyLTAyMDItNDE3ZS1iZmM5LWRkYjg3YzczYzE0ZWM3NTM2YWI2ODJlMmM0NWY4Zl9JTUdfNzI2MC5qcGVnIl0sWyJwIiwidGh1bWIiLCI1ODB4NTgwIyJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA4MSAtYXV0by1vcmllbnQiXV0/IMG_7260.jpeg" alt="" loading="lazy"></figure>
+                        <h2 class="post-card__title"><a href="javascript:;">The Researchers Bringing 'Uniquely Australian Foods' to Stores Near You</a></h2>
+                        <p class="post-card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dolore eveniet, pariatur quas recusandae rem reprehenderit.</p>
+                        <a class="post-card__cta" href="javascript:;">Read article</a>
+                    </div>
+                    <div class="post-card">
+                        <figure class="post-card__figure"><img src="https://assets.atlasobscura.com/media/W1siZiIsInVwbG9hZHMvYXNzZXRzL2JjNmUwMzExLTE2YjUtNDY2OS1hNWJhLTg4ZTYzZDMzMWJhZDc1NmQyNzdjN2M4NWE1Y2FkZF9fRFNDRjAyOTguanBnIl0sWyJwIiwidGh1bWIiLCIyODgweD4iXSxbInAiLCJjb252ZXJ0IiwiLXF1YWxpdHkgODEgLWF1dG8tb3JpZW50Il1d/_DSCF0298.jpg" alt="" loading="lazy"></figure>
+                        <h2 class="post-card__title"><a href="javascript:;">The Mountains Where Manna Flows From Trees</a></h2>
+                        <p class="post-card__description">Giulio Geraldi brought cultivation of the sweet stuff back from the verge of extinction.</p>
+                        <a class="post-card__cta" href="javascript:;">Read article</a>
+                    </div>
+                    <div class="post-card">
+                        <figure class="post-card__figure"><img src="https://assets.atlasobscura.com/media/W1siZiIsInVwbG9hZHMvYXNzZXRzLzJlNDdmZGZhLTA0OTYtNDU1Ny1hOGFkLTBjNzEyYjgzOTA5YWE2NjJlZjAyODE4YjAzNDI4M190aWdlciBudXRzLmpwZyJdLFsicCIsImNvbnZlcnQiLCIiXSxbInAiLCJjb252ZXJ0IiwiLXF1YWxpdHkgODEgLWF1dG8tb3JpZW50Il0sWyJwIiwidGh1bWIiLCIxMjgweD4iXV0/tiger%20nuts.jpg" alt="" loading="lazy"></figure>
+                        <h2 class="post-card__title"><a href="javascript:;">Recreate the Ancient Egyptian Recipes Painted on Tomb Walls</a></h2>
+                        <p class="post-card__description">Make bread fit for a pharaoh and a sweet treat out of tiger nuts.</p>
+                        <a class="post-card__cta" href="javascript:;">Read article</a>
+                    </div>
+                    <div class="post-card">
+                        <figure class="post-card__figure"><img src="https://assets.atlasobscura.com/media/W1siZiIsInVwbG9hZHMvYXNzZXRzLzE3YjA4MTM3LTNiYTYtNGQzMC1iMzhmLWQwNTRlNjYxOWI5YzIzODZhNDM2YTg0OThiMTU1Y19NQzg2UEouanBnIl0sWyJwIiwiY29udmVydCIsIiJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA4MSAtYXV0by1vcmllbnQiXSxbInAiLCJ0aHVtYiIsIjEyODB4PiJdXQ/MC86PJ.jpg" alt="" loading="lazy"></figure>
+                        <h2 class="post-card__title"><a href="javascript:;">In 14th-Century Florence, Some Residents Socially Distanced While Others Hit the Bars</a></h2>
+                        <p class="post-card__description">A contemporary debate would feel familiar to Europeans alive when the Bubonic plague arrived.</p>
+                        <a class="post-card__cta" href="javascript:;">Read article</a>
+                    </div>
+                    <div class="post-card">
+                        <figure class="post-card__figure"><img src="https://assets.atlasobscura.com/media/W1siZiIsInVwbG9hZHMvYXNzZXRzL2U5MTMwYzQ3NzAyMTVkMTJhOV80IFBob3RvIGNyZWRpdCBCZW4gWWV4bGV5LkpQRyJdLFsicCIsImNvbnZlcnQiLCIiXSxbInAiLCJjb252ZXJ0IiwiLXF1YWxpdHkgODEgLWF1dG8tb3JpZW50Il0sWyJwIiwidGh1bWIiLCIxMjgxeDg1NCMiXV0/4%20Photo%20credit%20Ben%20Yexley.JPG" alt="" loading="lazy"></figure>
+                        <h2 class="post-card__title"><a href="javascript:;">When Botswana Farmers Paint Eyes on Their Cattle's Butts, Everyone Wins</a></h2>
+                        <p class="post-card__description">The unlikely method may reshape an unhealthy relationship between farmers and lions.</p>
+                        <a class="post-card__cta" href="javascript:;">Read article</a>
+                    </div>
+                    <div class="post-card">
+                        <figure class="post-card__figure"><img src="https://assets.atlasobscura.com/media/W1siZiIsInVwbG9hZHMvYXNzZXRzLzFlMWU2MzYxLTcwNmMtNDNlNS1iNDkwLTkwOTk0MDU5ZDM5OWU4NDg0NDM0ZTk4NWZhNTVlNl8xMzcgQmx1ZSBEZXZpbC5qcGciXSxbInAiLCJjb252ZXJ0IiwiIl0sWyJwIiwiY29udmVydCIsIi1xdWFsaXR5IDgxIC1hdXRvLW9yaWVudCJdLFsicCIsInRodW1iIiwiNjAweDQwMCMiXV0/137%20Blue%20Devil.jpg" alt="" loading="lazy"></figure>
+                        <h2 class="post-card__title"><a href="javascript:;">5 Classic Cocktails That Changed When They Crossed Borders</a></h2>
+                        <p class="post-card__description">Around the world, via your liquor cabinet.</p>
+                        <a class="post-card__cta" href="javascript:;">Read article</a>
+                    </div>
+                    <div class="post-card">
+                        <figure class="post-card__figure"><img src="https://assets.atlasobscura.com/media/W1siZiIsInVwbG9hZHMvcGxhY2VfaW1hZ2VzLzY2ZGQ5YjIyLTAyMDItNDE3ZS1iZmM5LWRkYjg3YzczYzE0ZWM3NTM2YWI2ODJlMmM0NWY4Zl9JTUdfNzI2MC5qcGVnIl0sWyJwIiwidGh1bWIiLCI1ODB4NTgwIyJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA4MSAtYXV0by1vcmllbnQiXV0/IMG_7260.jpeg" alt="" loading="lazy"></figure>
+                        <h2 class="post-card__title"><a href="javascript:;">The Researchers Bringing 'Uniquely Australian Foods' to Stores Near You</a></h2>
+                        <p class="post-card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dolore eveniet, pariatur quas recusandae rem reprehenderit.</p>
+                        <a class="post-card__cta" href="javascript:;">Read article</a>
+                    </div>
+                    <div class="post-card">
+                        <figure class="post-card__figure"><img src="https://assets.atlasobscura.com/media/W1siZiIsInVwbG9hZHMvYXNzZXRzL2JjNmUwMzExLTE2YjUtNDY2OS1hNWJhLTg4ZTYzZDMzMWJhZDc1NmQyNzdjN2M4NWE1Y2FkZF9fRFNDRjAyOTguanBnIl0sWyJwIiwidGh1bWIiLCIyODgweD4iXSxbInAiLCJjb252ZXJ0IiwiLXF1YWxpdHkgODEgLWF1dG8tb3JpZW50Il1d/_DSCF0298.jpg" alt="" loading="lazy"></figure>
+                        <h2 class="post-card__title"><a href="javascript:;">The Mountains Where Manna Flows From Trees</a></h2>
+                        <p class="post-card__description">Giulio Geraldi brought cultivation of the sweet stuff back from the verge of extinction.</p>
+                        <a class="post-card__cta" href="javascript:;">Read article</a>
+                    </div>
+                    <div class="post-card">
+                        <figure class="post-card__figure"><img src="https://assets.atlasobscura.com/media/W1siZiIsInVwbG9hZHMvYXNzZXRzLzJlNDdmZGZhLTA0OTYtNDU1Ny1hOGFkLTBjNzEyYjgzOTA5YWE2NjJlZjAyODE4YjAzNDI4M190aWdlciBudXRzLmpwZyJdLFsicCIsImNvbnZlcnQiLCIiXSxbInAiLCJjb252ZXJ0IiwiLXF1YWxpdHkgODEgLWF1dG8tb3JpZW50Il0sWyJwIiwidGh1bWIiLCIxMjgweD4iXV0/tiger%20nuts.jpg" alt="" loading="lazy"></figure>
+                        <h2 class="post-card__title"><a href="javascript:;">Recreate the Ancient Egyptian Recipes Painted on Tomb Walls</a></h2>
+                        <p class="post-card__description">Make bread fit for a pharaoh and a sweet treat out of tiger nuts.</p>
+                        <a class="post-card__cta" href="javascript:;">Read article</a>
+                    </div>
+                    <div class="post-card">
+                        <figure class="post-card__figure"><img src="https://assets.atlasobscura.com/media/W1siZiIsInVwbG9hZHMvYXNzZXRzLzE3YjA4MTM3LTNiYTYtNGQzMC1iMzhmLWQwNTRlNjYxOWI5YzIzODZhNDM2YTg0OThiMTU1Y19NQzg2UEouanBnIl0sWyJwIiwiY29udmVydCIsIiJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA4MSAtYXV0by1vcmllbnQiXSxbInAiLCJ0aHVtYiIsIjEyODB4PiJdXQ/MC86PJ.jpg" alt="" loading="lazy"></figure>
+                        <h2 class="post-card__title"><a href="javascript:;">In 14th-Century Florence, Some Residents Socially Distanced While Others Hit the Bars</a></h2>
+                        <p class="post-card__description">A contemporary debate would feel familiar to Europeans alive when the Bubonic plague arrived.</p>
+                        <a class="post-card__cta" href="javascript:;">Read article</a>
+                    </div>
+                    <div class="post-card">
+                        <figure class="post-card__figure"><img src="https://assets.atlasobscura.com/media/W1siZiIsInVwbG9hZHMvYXNzZXRzL2U5MTMwYzQ3NzAyMTVkMTJhOV80IFBob3RvIGNyZWRpdCBCZW4gWWV4bGV5LkpQRyJdLFsicCIsImNvbnZlcnQiLCIiXSxbInAiLCJjb252ZXJ0IiwiLXF1YWxpdHkgODEgLWF1dG8tb3JpZW50Il0sWyJwIiwidGh1bWIiLCIxMjgxeDg1NCMiXV0/4%20Photo%20credit%20Ben%20Yexley.JPG" alt="" loading="lazy"></figure>
+                        <h2 class="post-card__title"><a href="javascript:;">When Botswana Farmers Paint Eyes on Their Cattle's Butts, Everyone Wins</a></h2>
+                        <p class="post-card__description">The unlikely method may reshape an unhealthy relationship between farmers and lions.</p>
+                        <a class="post-card__cta" href="javascript:;">Read article</a>
+                    </div>
+                    <div class="post-card">
+                        <figure class="post-card__figure"><img src="https://assets.atlasobscura.com/media/W1siZiIsInVwbG9hZHMvYXNzZXRzLzFlMWU2MzYxLTcwNmMtNDNlNS1iNDkwLTkwOTk0MDU5ZDM5OWU4NDg0NDM0ZTk4NWZhNTVlNl8xMzcgQmx1ZSBEZXZpbC5qcGciXSxbInAiLCJjb252ZXJ0IiwiIl0sWyJwIiwiY29udmVydCIsIi1xdWFsaXR5IDgxIC1hdXRvLW9yaWVudCJdLFsicCIsInRodW1iIiwiNjAweDQwMCMiXV0/137%20Blue%20Devil.jpg" alt="" loading="lazy"></figure>
+                        <h2 class="post-card__title"><a href="javascript:;">5 Classic Cocktails That Changed When They Crossed Borders</a></h2>
+                        <p class="post-card__description">Around the world, via your liquor cabinet.</p>
+                        <a class="post-card__cta" href="javascript:;">Read article</a>
+                    </div>
+                    <div class="post-card">
+                        <figure class="post-card__figure"><img src="https://assets.atlasobscura.com/media/W1siZiIsInVwbG9hZHMvcGxhY2VfaW1hZ2VzLzY2ZGQ5YjIyLTAyMDItNDE3ZS1iZmM5LWRkYjg3YzczYzE0ZWM3NTM2YWI2ODJlMmM0NWY4Zl9JTUdfNzI2MC5qcGVnIl0sWyJwIiwidGh1bWIiLCI1ODB4NTgwIyJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA4MSAtYXV0by1vcmllbnQiXV0/IMG_7260.jpeg" alt="" loading="lazy"></figure>
+                        <h2 class="post-card__title"><a href="javascript:;">The Researchers Bringing 'Uniquely Australian Foods' to Stores Near You</a></h2>
+                        <p class="post-card__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dolore eveniet, pariatur quas recusandae rem reprehenderit.</p>
+                        <a class="post-card__cta" href="javascript:;">Read article</a>
+                    </div>
+                    <div class="post-card">
+                        <figure class="post-card__figure"><img src="https://assets.atlasobscura.com/media/W1siZiIsInVwbG9hZHMvYXNzZXRzL2JjNmUwMzExLTE2YjUtNDY2OS1hNWJhLTg4ZTYzZDMzMWJhZDc1NmQyNzdjN2M4NWE1Y2FkZF9fRFNDRjAyOTguanBnIl0sWyJwIiwidGh1bWIiLCIyODgweD4iXSxbInAiLCJjb252ZXJ0IiwiLXF1YWxpdHkgODEgLWF1dG8tb3JpZW50Il1d/_DSCF0298.jpg" alt="" loading="lazy"></figure>
+                        <h2 class="post-card__title"><a href="javascript:;">The Mountains Where Manna Flows From Trees</a></h2>
+                        <p class="post-card__description">Giulio Geraldi brought cultivation of the sweet stuff back from the verge of extinction.</p>
+                        <a class="post-card__cta" href="javascript:;">Read article</a>
+                    </div>
+                    <div class="post-card">
+                        <figure class="post-card__figure"><img src="https://assets.atlasobscura.com/media/W1siZiIsInVwbG9hZHMvYXNzZXRzLzJlNDdmZGZhLTA0OTYtNDU1Ny1hOGFkLTBjNzEyYjgzOTA5YWE2NjJlZjAyODE4YjAzNDI4M190aWdlciBudXRzLmpwZyJdLFsicCIsImNvbnZlcnQiLCIiXSxbInAiLCJjb252ZXJ0IiwiLXF1YWxpdHkgODEgLWF1dG8tb3JpZW50Il0sWyJwIiwidGh1bWIiLCIxMjgweD4iXV0/tiger%20nuts.jpg" alt="" loading="lazy"></figure>
+                        <h2 class="post-card__title"><a href="javascript:;">Recreate the Ancient Egyptian Recipes Painted on Tomb Walls</a></h2>
+                        <p class="post-card__description">Make bread fit for a pharaoh and a sweet treat out of tiger nuts.</p>
+                        <a class="post-card__cta" href="javascript:;">Read article</a>
+                    </div>
+                    <div class="post-card">
+                        <figure class="post-card__figure"><img src="https://assets.atlasobscura.com/media/W1siZiIsInVwbG9hZHMvYXNzZXRzLzE3YjA4MTM3LTNiYTYtNGQzMC1iMzhmLWQwNTRlNjYxOWI5YzIzODZhNDM2YTg0OThiMTU1Y19NQzg2UEouanBnIl0sWyJwIiwiY29udmVydCIsIiJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA4MSAtYXV0by1vcmllbnQiXSxbInAiLCJ0aHVtYiIsIjEyODB4PiJdXQ/MC86PJ.jpg" alt="" loading="lazy"></figure>
+                        <h2 class="post-card__title"><a href="javascript:;">In 14th-Century Florence, Some Residents Socially Distanced While Others Hit the Bars</a></h2>
+                        <p class="post-card__description">A contemporary debate would feel familiar to Europeans alive when the Bubonic plague arrived.</p>
+                        <a class="post-card__cta" href="javascript:;">Read article</a>
+                    </div>
+                    <div class="post-card">
+                        <figure class="post-card__figure"><img src="https://assets.atlasobscura.com/media/W1siZiIsInVwbG9hZHMvYXNzZXRzLzE3YjA4MTM3LTNiYTYtNGQzMC1iMzhmLWQwNTRlNjYxOWI5YzIzODZhNDM2YTg0OThiMTU1Y19NQzg2UEouanBnIl0sWyJwIiwiY29udmVydCIsIiJdLFsicCIsImNvbnZlcnQiLCItcXVhbGl0eSA4MSAtYXV0by1vcmllbnQiXSxbInAiLCJ0aHVtYiIsIjEyODB4PiJdXQ/MC86PJ.jpg" alt="" loading="lazy"></figure>
+                        <h2 class="post-card__title"><a href="javascript:;">In 14th-Century Florence, Some Residents Socially Distanced While Others Hit the Bars</a></h2>
+                        <p class="post-card__description">A contemporary debate would feel familiar to Europeans alive when the Bubonic plague arrived.</p>
+                        <a class="post-card__cta" href="javascript:;">Read article</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <div class="container">
+        <div class="inner">
+            <h2 class="footer__title">Deep Dive Into Pages</h2>
+            <nav class="nav-footer" role="navigation" aria-label="Secondary navigation">
+                <ul class="nav-footer__list">
+                    <li class="nav-footer__item">
+                        <a href="/work.html">Work</a>
+                        <span>It’s time to see some work. Here are a few projects I’ve done for clients.</span>
+                    </li>
+                    <li class="nav-footer__item">
+                        <a href="/about.html">About</a>
+                        <span>You can read a little bit more about me.</span>
+                    </li>
+                    <li class="nav-footer__item">
+                        <a href="/contact.html">Contact</a>
+                        <span>Now it’s your turn to say hi. I hope to hear from you! </span>
+                    </li>
+                    <li class="nav-footer__item">
+                        <a href="/blog.html">Blog</a>
+                        <span>Articles focused on CSS, HTML, JavaScript and other frontend stuff.</span>
+                    </li>
+                    <li class="nav-footer__item">
+                        <a href="/travel.html">Travel</a>
+                        <span>Travel notes, guides, resources, photos and so much more from my perspective.</span>
+                    </li>
+                    <li class="nav-footer__item">
+                        <a href="/walk-of-fame.html">Walk of Fame</a>
+                        <span>I learned a lot of from these inspiring people.</span>
+                    </li>
+                    <li class="nav-footer__item">
+                        <a href="https://www.instagram.com/yasingencnet/" target="_blank" rel="noreferrer">Instagram</a>
+                        <span>Good memories, best times. My photo journal.</span>
+                    </li>
+                    <li class="nav-footer__item">
+                        <a href="/uses.html">My Desk</a>
+                        <span>Uses page for curious developers / humans.</span>
+                    </li>
+                </ul>
+            </nav>
+            <div class="copyright">&copy; 2020 Yasin Genc</div>
+        </div>
+    </div>
+</footer>
+
+<script src="assets/core.js"></script>
+</body>
+</html>

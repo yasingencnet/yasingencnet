@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b9590ad8-dd5a-411f-9731-1b09ac5fe20e" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="PostCSS File" />
+        <option value="SCSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1fdn2PuEX14UoXPaTdNbge6dMuF" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../yasingenc-11ty" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\yasingencnet\_includes\layout" />
+      <recent name="D:\yasingencnet\_include" />
+      <recent name="D:\yasingencnet\src\assets\scss\01_base" />
+      <recent name="D:\yasingencnet\src\assets" />
+      <recent name="D:\yasingencnet\src\assets\js" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\yasingencnet" />
+      <recent name="D:\yasingencnet\assets" />
+      <recent name="D:\yasingencnet\_data" />
+      <recent name="D:\yasingencnet\src" />
+      <recent name="D:\yasingencnet\src\assets\scss\02_component" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b9590ad8-dd5a-411f-9731-1b09ac5fe20e" name="Default Changelist" comment="" />
+      <created>1596556630023</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1596556630023</updated>
+      <workItem from="1596556631098" duration="60219000" />
+      <workItem from="1596823943437" duration="24636000" />
+      <workItem from="1597048517145" duration="12000" />
+      <workItem from="1597323300041" duration="6199000" />
+      <workItem from="1597651429583" duration="15000" />
+      <workItem from="1597745033881" duration="8252000" />
+      <workItem from="1597820873041" duration="646000" />
+      <workItem from="1597932632181" duration="22972000" />
+      <workItem from="1598036572796" duration="8500000" />
+      <workItem from="1598856334847" duration="18000" />
+      <workItem from="1598870991632" duration="24643000" />
+      <workItem from="1599135108483" duration="11714000" />
+      <workItem from="1599306796860" duration="8352000" />
+      <workItem from="1599407742857" duration="5244000" />
+      <workItem from="1599424548481" duration="293000" />
+      <workItem from="1599425006311" duration="638000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="704" y="314" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599420956106">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="704" y="314" key="#com.intellij.fileTypes.FileTypeChooser/-1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1599420956106" />
+    <state x="690" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1596569995744">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="690" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1596569995744" />
+    <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1599425022346">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="-1180" y="279" key="FileChooserDialogImpl/-1920.0.1920.1050/0.0.1920.1050@-1920.0.1920.1050" timestamp="1598981157254" />
+    <state x="740" y="279" key="FileChooserDialogImpl/-1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1599425022345" />
+    <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1597048527681" />
+    <state x="461" y="169" key="SettingsEditor" timestamp="1599398953711">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="461" y="169" key="SettingsEditor/-1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1599398953711" />
+    <state x="777" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1598040401466">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="777" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1598040401466" />
+    <state x="570" y="51" width="881" height="837" key="find.popup" timestamp="1599401097587">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="570" y="51" width="881" height="837" key="find.popup/-1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1599401097587" />
+    <state x="570" y="51" width="881" height="837" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1597327187322" />
+    <state x="616" y="243" key="run.anything.popup" timestamp="1597958402332">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="616" y="243" key="run.anything.popup/-1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1597958402332" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1599407555175">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/-1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1599407555175" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1596805209909" />
+  </component>
+</project>

@@ -5,6 +5,7 @@
 # Development #
 node_modules
 *.css.map
+package-lock.json
 
 # OS Generated Files #
 Thumbs.db

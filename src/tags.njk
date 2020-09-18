@@ -1,0 +1,30 @@
+---
+pagination:
+  data: collections
+  size: 1
+  alias: tag
+  filter:
+    - all
+    - nav
+    - post
+    - posts
+  addAllPagesToCollections: true
+layout: layouts/base.njk
+eleventyComputed:
+  title: Tagged “{{ tag }}”
+permalink: /tags/{{ tag }}/
+---
+
+<div class="section section-post">
+  <div class="container">
+    <div class="section-inner">
+      <header class="section-header">
+        <h3 class="section-title">{{ tag }}</h3>
+      </header>
+      <div class="similar-post">
+        {% set postslist = collections[ tag ] %}
+        {% include "postcard.njk" %}
+      </div>
+    </div>
+  </div>
+</div>

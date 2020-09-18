@@ -1,0 +1,45 @@
+<div class="hero">
+  <div class="container">
+    <div class="hero-me">
+      <div class="hero-text">
+        <h1 class="hero__title">
+          <span id="greeting-text">Hello</span>,<br>
+          I’m a <mark>front-end developer</mark> based<br>
+          in Istanbul.
+        </h1>
+        <p class="hero__description">
+          I design & develop modern and accessible web interfaces. You can <a href="/about">read more about me</a> here, but stick around if you like JavaScript, CSS, learning new things or cycling.
+        </p>
+      </div>
+      <figure class="hero__figure">
+        <picture>
+          <source srcset="{{metadata.assets.img}}layout/hero.webp" type="image/webp">
+          <source srcset="{{metadata.assets.img}}layout/hero.png" type="image/png">
+          <img class="hero__pic" src="{{metadata.assets.img}}layout/hero.png" alt="A photo of Yasin with suit and downhill helmet" loading="auto">
+        </picture>
+      </figure>
+      <footer class="hero__footer">♥</footer>
+    </div>
+    <div class="hero-post">
+      {% set postslist = collections.posts | head(-5) %}
+      {% set postslistCounter = collections.posts | length %}
+      {% include "postcard.njk" %}
+    </div>
+  </div>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Greeting Text
+    const greetingText = document.getElementById("greeting-text");
+    let visitorClock = new Date().getHours();
+    let visitorMessage = "";
+    if(visitorClock <= 12){
+      visitorMessage = "Good morning";
+    } else if (visitorClock <= 18){
+      visitorMessage = "Good afternoon";
+    } else {
+      visitorMessage = "Good evening";
+    }
+    greetingText.innerHTML = visitorMessage;
+  });
+</script>

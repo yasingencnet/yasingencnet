@@ -1,0 +1,68 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-post
+---
+<div class="container container-subpage">
+  <article class="article">
+    <header class="article-header">
+      <h1 class="article-title">{{ title }}</h1>
+      <ul class="article-meta meta-list">
+        <li class="meta-list__item">
+          <span class="meta-list__title">Written by</span>
+          <a class="meta-list__value" href="javascript:;">{{ metadata.author.name }}</a>
+        </li>
+        <li class="meta-list__item">
+          <span class="meta-list__title">Reading time</span>
+          <span class="meta-list__value">{{ content | readingTime }}</span>
+        </li>
+        <li class="meta-list__item">
+          <span class="meta-list__title">Published on</span>
+          <span class="meta-list__value">July 6, 2020</span>
+        </li>
+        <li class="meta-list__item">
+          <span class="meta-list__title">Posted in</span>
+          {% for tag in tags %}
+            {%- if collections.tagList.indexOf(tag) != -1 -%}
+              {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+              <a class="meta-list__value" href="{{ tagUrl | url }}">{{ tag }}</a>
+            {%- endif -%}
+          {% endfor %}
+        </li>
+      </ul>
+    </header>
+    <section class="article__content">
+      {{ content | safe }}
+    </section>
+  </article>
+</div>
+
+
+{%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
+{%- set nextPost = collections.posts | getNextCollectionItem(page) %}
+{%- if previousPost or  nextPost %}
+  <div class="section section-post">
+    <div class="container">
+      <div class="section-inner">
+        <div class="similar-post">
+          {%- if previousPost %}
+            <div class="post-card">
+              <div class="post-card__meta">Previous Post</div>
+              <h2 class="post-card__title"><a href="{{ previousPost.url | url }}">{{ previousPost.data.title }}</a></h2>
+              <p class="post-card__description">{{ previousPost.data.description }}</p>
+              <a class="post-card__cta" href="{{ previousPost.url | url }}">Read article</a>
+            </div>
+          {% endif %}
+
+          {%- if nextPost %}
+            <div class="post-card">
+              <div class="post-card__meta">Next Post</div>
+              <h2 class="post-card__title"><a href="{{ nextPost.url | url }}">{{ nextPost.data.title }}</a></h2>
+              <p class="post-card__description">{{ nextPost.data.description }}</p>
+              <a class="post-card__cta" href="{{ nextPost.url | url }}">Read article</a>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}

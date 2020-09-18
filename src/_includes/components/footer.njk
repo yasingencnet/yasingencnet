@@ -1,0 +1,22 @@
+<footer class="footer">
+  <div class="container">
+    <div class="inner">
+      <h2 class="footer__title">Deep Dive Into Pages</h2>
+      <nav class="nav-footer" role="navigation" aria-label="Secondary navigation">
+        <ul class="nav-footer__list">
+          {%- for entry in collections.all | eleventyNavigation %}
+            <li class="nav-footer__item{% if entry.url == page.url %} nav-footer__item--active{% endif %}">
+              <a href="{{ entry.url | url }}">{{ entry.title }}</a>
+              <span>{{ entry.excerpt }}</span>
+            </li>
+          {%- endfor %}
+          <li class="nav-footer__item">
+            <a href="{{ metadata.social.instagram }}" target="_blank" rel="noreferrer">Instagram</a>
+            <span>Good memories, best times. My photo journal.</span>
+          </li>
+        </ul>
+      </nav>
+      <div class="copyright">&copy; 2020 {{ author.name or metadata.author.name }}</div>
+    </div>
+  </div>
+</footer>

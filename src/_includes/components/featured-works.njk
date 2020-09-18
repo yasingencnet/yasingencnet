@@ -1,0 +1,18 @@
+<div class="section section-works">
+  <div class="container">
+    <div class="section-inner">
+      <header class="section-header">
+        <h3 class="section-title">Featured Works</h3>
+        <p class="section-description">It’s time to see some work. Here are a few projects I’ve done for clients.</p>
+      </header>
+      <div class="works">
+        {% set workslist = collections.works | head(-2) %}
+        {% set workslistCounter = collections.works | length %}
+        {% include "workcard.njk" %}
+      </div>
+      <div class="section-footer">
+        <a href="{{ '/works/' | url }}" class="button-1">Show All Works</a>
+      </div>
+    </div>
+  </div>
+</div>

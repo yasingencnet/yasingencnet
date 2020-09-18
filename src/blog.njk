@@ -1,0 +1,22 @@
+---
+title: Blog
+layout: layouts/base.njk
+permalink: /blog/
+eleventyNavigation:
+  key: Blog
+  order: 4
+  excerpt: Articles focused on CSS, HTML, JavaScript and other frontend stuff.
+---
+<div class="section section-post">
+  <div class="container">
+    <div class="section-inner">
+      <header class="section-header">
+        <h3 class="section-title">{{ title }}</h3>
+      </header>
+      <div class="similar-post">
+        {% set postslist = collections.posts %}
+        {% include "postcard.njk" %}
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,6 @@
+{
+  "tags": [
+    "travel"
+  ],
+  "permalink": "/{{ title | slug }}/"
+}

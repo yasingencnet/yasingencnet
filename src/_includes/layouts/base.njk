@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="{{ metadata.lang }}">
+<!--
+Are you inspecting my website?
+View the source here: {{ metadata.repo }}
+-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{%- if title -%}{{ title }} | {{ metadata.title }}{%- else -%}{{ metadata.title }}{%- endif -%}</title>
+  <meta name="description" content="{{ description or metadata.description }}">
+  <meta name="keywords" content="{{  keywords or metadata.keywords }}">
+  <meta name="theme-color" content="{{ themeColor or metadata.themeColor }}">
+
+  <link rel="stylesheet" href="{% if cssFile %} {{metadata.assets.css}}{{ cssFile }} {% else %} {{metadata.assets.css}}core.002a5604.css {% endif %}">
+
+
+  <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
+  <link rel="alternate" href="{{ metadata.jsonfeed.path | url }}" type="application/json" title="{{ metadata.title }}">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link rel="preconnect" href="https://www.instagram.com/">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Source+Serif+Pro:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<a href="#main" class="skip-link visually-hidden">skip to content</a>
+{% include "components/header.njk" %}
+
+<main id="main" role="main" class="main {% if templateClass %} {{ templateClass }} {% endif %}">
+  {{ content | safe }}
+</main>
+
+{% include "components/footer.njk" %}
+
+{# Main JS Bundle #}
+<script src="{{metadata.assets.js}}core.1f56c55c.js"></script>
+</body>
+</html>

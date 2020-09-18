@@ -1,0 +1,27 @@
+---
+layout: layouts/base.njk
+permalink: /works/
+title: Featured Works
+eleventyNavigation:
+  key: Works
+  order: 1
+  excerpt: It’s time to see some work. Here are a few projects I’ve done for clients.
+---
+<div class="section section-works">
+  <div class="container">
+    <div class="section-inner">
+      <header class="section-header">
+        <h3 class="section-title">{{ title }}</h3>
+        <p class="section-description">{{ eleventyNavigation.excerpt }}</p>
+      </header>
+      <div class="works">
+        {% set workslist = collections.works %}
+        {% include "workcard.njk" %}
+      </div>
+    </div>
+  </div>
+</div>
+
+{% include 'components/clients.njk' %}
+
+

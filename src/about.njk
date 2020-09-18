@@ -1,0 +1,71 @@
+---
+layout: layouts/base.njk
+permalink: /about/
+title: About Me
+eleventyNavigation:
+  key: About
+  order: 2
+  excerpt: You can read a little bit more about me.
+---
+
+<div class="container container-about">
+  <article class="article">
+    <header class="article-header">
+      <h1 class="article-title">{{ title }}</h1>
+    </header>
+    <section class="article__content">
+      <p>Hi, I'm Yasin. I was born in Bartın, Turkey. I spent most of my life in Yalova, then moved to Istanbul. Currently I live in İstanbul.</p>
+      <p>I have a Associate Degree in Computer Programming; but almost everything I know about web development is self-taught. I design & develop modern and accessible web interfaces. Currently I'm working at
+        <a href="https://www.denge.com.tr/" target="_blank" rel="noreferrer">Denge Bilgisayar</a> as a front-end developer.</p>
+      <p>I’m available for freelance front-end development projects.</p>
+      <h2>Work Experience</h2>
+      <ul>
+        <li>
+          <a href="https://www.denge.com.tr/" target="_blank" rel="noreferrer"><strong>Denge</strong></a> -
+          <small>05.2018 - Today</small><br>
+          <span>Front-End Developer</span>
+        </li>
+        <li>
+          <a href="https://look.agency/" target="_blank" rel="noreferrer"><strong>Agency Look</strong></a> -
+          <small>04.2017 - 05.2018</small><br>
+          <span>Front-End Developer</span>
+        </li>
+        <li>
+          <a href="https://www.playanka.com/" target="_blank" rel="noreferrer"><strong>Playanka</strong></a> -
+          <small>05.2018 - Today</small><br>
+          <span>01.2016 - 03.2017</span>
+        </li>
+        <li>
+          <strong>Turkiyemix</strong> -
+          <small>06.2014 - 01.2016</small><br>
+          <span>Intern & Webmaster</span>
+        </li>
+      </ul>
+      <h2>Interests</h2>
+      <p>I enjoy cycling, traveling and reading articles about countries.</p>
+    </section>
+    <footer class="article__footer">
+      {% include 'components/social-meta.njk' %}
+    </footer>
+  </article>
+  <div class="photo-grid">
+    <figure class="span-2">
+      <img src="{{metadata.assets.img}}layout/4.jpg" alt="A photo of Yasin" loading="lazy">
+    </figure>
+    <figure >
+      <img src="{{metadata.assets.img}}layout/1.jpg" alt="A photo of Yasin" loading="lazy">
+    </figure>
+    <figure>
+      <img src="{{metadata.assets.img}}layout/3.jpg" alt="A photo of Yasin" loading="lazy">
+    </figure>
+    <figure>
+      <img src="{{metadata.assets.img}}layout/7.jpg" alt="A photo of Yasin" loading="lazy">
+    </figure>
+    <figure class="span-2">
+      <img src="{{metadata.assets.img}}layout/5.jpg" alt="A photo of Yasin" loading="lazy">
+    </figure>
+    <figure>
+      <img src="{{metadata.assets.img}}layout/6.jpg" alt="A photo of Yasin" loading="lazy">
+    </figure>
+  </div>
+</div>

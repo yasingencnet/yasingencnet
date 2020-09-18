@@ -1,0 +1,17 @@
+---
+title: Archive
+layout: layouts/base.njk
+---
+<div class="section section-post">
+  <div class="container">
+    <div class="section-inner">
+      <header class="section-header">
+        <h3 class="section-title">{{ title }}</h3>
+      </header>
+      <div class="similar-post">
+        {% set postslist = collections.posts %}
+        {% include "postcard.njk" %}
+      </div>
+    </div>
+  </div>
+</div>

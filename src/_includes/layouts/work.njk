@@ -1,0 +1,95 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-work
+---
+<section class="section section-project">
+  <div class="project-hero" style="background-color: {{ color }};">
+    <div class="container">
+      <div class="section-inner">
+        <div>
+          <h1 class="project-title">{{ title }}</h1>
+          <p class="project-description">{{ description }}</p>
+        </div>
+        <figure class="project-figure">
+          <img src="/../../assets/img/works/{{ picture }}" alt="{{ title }}" loading="eager">
+        </figure>
+      </div>
+    </div>
+  </div>
+  <div class="project-meta">
+    <div class="container">
+      <div class="section-inner">
+        <ul class="meta-list">
+          <li class="meta-list__item">
+            <span class="meta-list__title">Client</span>
+            <span class="meta-list__value">{{ title }}</span>
+          </li>
+          <li class="meta-list__item">
+            <span class="meta-list__title">My Role</span>
+            <span class="meta-list__value">{{ myRole }}</span>
+          </li>
+          <li class="meta-list__item">
+            <span class="meta-list__title">Sector</span>
+            <span class="meta-list__value">{{ sector }}</span>
+          </li>
+          <li class="meta-list__item">
+            <span class="meta-list__title">Project Date</span>
+            <span class="meta-list__value">{{ projectDate }}</span>
+          </li>
+          <li class="meta-list__item">
+            <span class="meta-list__title">&nbsp;</span>
+            <a href="{{ url }}" target="_blank" rel="noreferrer" class="meta-list__value">Visit</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="project-detail">
+    <div class="container-sm">
+      <div class="section-inner">
+        <section class="article__content">
+          {{ content | safe }}
+        </section>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="section section-works">
+  <div class="container">
+    <div class="section-inner">
+      <header class="section-header">
+        <h3 class="section-title">Other Works</h3>
+        <p class="section-description">Want to check other works? Here it is!</p>
+      </header> {%- if nextPost %} {%  else %} {% endif %}
+      <div class="works">
+        {%- set nextPost = collections.works | getNextCollectionItem(page) %}
+        <div class="works__item">
+          <figure class="works__figure" {%- if nextPost %}style="background-color:{{ nextPost.data.color }};"{%  else %} {% endif %}>{%- if nextPost %}<a href="{{ nextPost.url | url }}"><img src="/../../assets/img/works/{{ nextPost.data.picture }}" alt="{{ nextPost.data.title }}"></a>{%  else %}{% endif %}</figure>
+          <div class="works__meta">
+            <header class="works__header">
+              <h4 class="works__title">{%- if nextPost %}{{ nextPost.data.title }}{%  else %}{% endif %}</h4>
+              <a class="works__link" href="{%- if nextPost %}{{ nextPost.data.url }}/{%  else %}javascript:{% endif %}" target="_blank" rel="noreferrer">{%- if nextPost %}Visit{%  else %}{% endif %}</a>
+            </header>
+            <p class="works__description">{%- if nextPost %}{{ nextPost.data.description }}{%  else %}{% endif %}</p>
+          </div>
+        </div>
+        {%- set previousPost = collections.works | getPreviousCollectionItem(page) %}
+        <div class="works__item">
+          <figure class="works__figure" {%- if previousPost %}style="background-color:{{ previousPost.data.color }};"{%  else %} {% endif %}>{%- if previousPost %}<a href="{{ previousPost.url | url }}"><img src="/../../assets/img/works/{{ previousPost.data.picture }}" alt="{{ previousPost.data.title }}"></a>{%  else %}{% endif %}</figure>
+          <div class="works__meta">
+            <header class="works__header">
+              <h4 class="works__title">{%- if previousPost %}{{ previousPost.data.title }}{%  else %}{% endif %}</h4>
+              <a class="works__link" href="{%- if previousPost %}{{ previousPost.data.url }}/{%  else %}javascript:{% endif %}" target="_blank" rel="noreferrer">{%- if previousPost %}Visit{%  else %}{% endif %}</a>
+            </header>
+            <p class="works__description">{%- if previousPost %}{{ previousPost.data.description }}{%  else %}{% endif %}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% include "components/clients.njk" %}
+
+{% include "components/contact-banner.njk" %}

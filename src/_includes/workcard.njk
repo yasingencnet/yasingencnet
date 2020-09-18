@@ -1,0 +1,16 @@
+{% for work in workslist | reverse %}
+  <div class="works__item">
+    <figure class="works__figure" style="background-color:{{ work.data.color }};">
+      <a href="{{ work.url | url }}">
+        <img src="{{metadata.assets.img}}works/{{ work.data.picture }}" alt="{{ work.data.title }}" loading="lazy">
+      </a>
+    </figure>
+    <div class="works__meta">
+      <header class="works__header">
+        <h4 class="works__title">{{ work.data.title }}</h4>
+        <a class="works__link" href="{{ work.data.url }}/" target="_blank" rel="noreferrer">Visit</a>
+      </header>
+      <p class="works__description">{{ work.data.description }}</p>
+    </div>
+  </div>
+{% endfor %}

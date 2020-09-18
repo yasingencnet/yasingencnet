@@ -1,0 +1,25 @@
+---
+layout: layouts/base.njk
+permalink: /travel/
+title: Wondrous World
+description: My travel notes, inspirational articles, travel videos, stunning photos, resources and so much more.
+eleventyNavigation:
+  key: Travel
+  order: 5
+  excerpt: Travel notes, guides, resources, photos and so much more from my perspective.
+---
+
+<div class="section section-travel">
+  <header class="section-header">
+    <h3 class="section-title">{{ title }}</h3>
+    <p class="section-description">{{ description }}</p>
+  </header>
+  <div class="container">
+    <div class="section-inner">
+      <div class="travel-cards">
+        {% set travelslist = collections.travel %}
+        {% include "travelcard.njk" %}
+      </div>
+    </div>
+  </div>
+</div>

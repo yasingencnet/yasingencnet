@@ -1,0 +1,22 @@
+---
+layout: layouts/base.njk
+permalink: /walk-of-fame/
+title: Walk of Fame
+description: These people taught me so much! I want to say thank you each of them and share their Twitter profiles.
+eleventyNavigation:
+  key: Walk of Fame
+  order: 6
+  excerpt: I learned a lot of from these inspiring people.
+---
+
+<div class="section">
+  <div class="container">
+    <div class="section-inner">
+      <header class="section-header">
+        <h3 class="section-title">{{ title }}</h3>
+        <p class="section-description">{{ description }}</p>
+      </header>
+      {% include 'components/walk-of-fame.njk' %}
+    </div>
+  </div>
+</div>

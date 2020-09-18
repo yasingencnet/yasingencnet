@@ -1,0 +1,34 @@
+---
+title: Page List
+pagination:
+  data: collections.all
+  size: 20
+  alias: entries
+layout: layouts/base.njk
+permalink: /page-list/{% if pagination.pageNumber > 0 %}{{ pagination.pageNumber }}/{% endif %}
+---
+<div class="container container-subpage">
+  <article class="article" style="max-width: var(--container-md);">
+    <header class="article-header">
+      <h1 class="article-title">{{ title }}</h1>
+    </header>
+    <section class="article__content">
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+            <th>URL</th>
+            <th>Page Title</th>
+          </thead>
+          <tbody>
+          {%- for entry in entries %}
+            <tr>
+              <td><a href="{{ entry.url }}"><code>{{ entry.url }}</code></a></td>
+              <td>{{ entry.data.title }}</td>
+            </tr>
+          {%- endfor %}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </article>
+</div>

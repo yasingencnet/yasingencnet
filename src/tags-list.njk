@@ -1,0 +1,25 @@
+---
+title: Tags
+permalink: /tags/
+layout: layouts/base.njk
+---
+
+<div class="section section-post">
+  <div class="container">
+    <div class="section-inner">
+      <header class="section-header">
+        <h3 class="section-title">{{ title }}</h3>
+      </header>
+      <ul class="card-list">
+        {% for tag in collections.tagList %}
+        <li class="card-list__item">
+          {% set tagUrl %}/tags/{{ tag }}/{% endset %}
+          <a href="{{ tagUrl | url }}">
+            <span class="card-list__title">{{ tag }}</span>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>

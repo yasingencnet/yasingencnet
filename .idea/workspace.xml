@@ -22,8 +22,7 @@
     <list default="true" id="b9590ad8-dd5a-411f-9731-1b09ac5fe20e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netlify.toml" beforeDir="false" afterPath="$PROJECT_DIR$/netlify.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +53,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets/css" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Denge/edenge" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
@@ -106,7 +105,7 @@
       <workItem from="1600368807156" duration="616000" />
       <workItem from="1600369439666" duration="5655000" />
       <workItem from="1600415901666" duration="19299000" />
-      <workItem from="1600467119889" duration="967000" />
+      <workItem from="1600467119889" duration="2014000" />
     </task>
     <servers />
   </component>
@@ -135,12 +134,12 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="690" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1600370545711" />
-    <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1600411377201">
+    <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1600469068004">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="-1180" y="279" key="FileChooserDialogImpl/-1920.0.1920.1050/0.0.1920.1050@-1920.0.1920.1050" timestamp="1598981157254" />
     <state x="740" y="279" key="FileChooserDialogImpl/-1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1599425022345" />
-    <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1600411377201" />
+    <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1600469068004" />
     <state x="461" y="169" key="SettingsEditor" timestamp="1599398953711">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

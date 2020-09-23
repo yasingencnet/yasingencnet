@@ -20,7 +20,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9590ad8-dd5a-411f-9731-1b09ac5fe20e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/HTML/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML/src/assets/print.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML/src/assets/scss/02_component/form.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML/src/form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML/src/travel-checklist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/postcss.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/postcss.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/src/assets/core.scss" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/src/assets/core.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/src/assets/scss/00_config/reset.scss" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/src/assets/scss/00_config/reset.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/src/assets/scss/00_config/theme.scss" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/src/assets/scss/00_config/theme.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/src/assets/scss/01_base/button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/src/assets/scss/01_base/button.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/src/assets/scss/01_base/helper.scss" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/src/assets/scss/01_base/helper.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/src/assets/scss/02_component/article.scss" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/src/assets/scss/02_component/article.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/src/assets/scss/02_component/card-list.scss" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/src/assets/scss/02_component/card-list.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/src/assets/scss/02_component/table.scss" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/src/assets/scss/02_component/table.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/src/assets/scss/02_component/travel.scss" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/src/assets/scss/02_component/travel.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/src/travel.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/src/travel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_includes/components/footer.njk" beforeDir="false" afterPath="$PROJECT_DIR$/src/_includes/components/footer.njk" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,25 +67,25 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Denge/edenge" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/HTML/src/assets" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\yasingencnet\HTML\src\assets" />
+      <recent name="D:\yasingencnet\HTML\src\assets\scss\02_component" />
+      <recent name="D:\yasingencnet\HTML\src" />
+      <recent name="D:\yasingencnet\src\assets\css" />
+      <recent name="D:\yasingencnet\src\_includes\components" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\yasingencnet\src\assets\js" />
       <recent name="D:\yasingencnet\src\assets" />
       <recent name="D:\yasingencnet\HTML" />
       <recent name="D:\yasingencnet\_includes\layout" />
       <recent name="D:\yasingencnet\_include" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\yasingencnet\src\assets\css" />
-      <recent name="D:\yasingencnet\src\_includes\components" />
-      <recent name="D:\yasingencnet\src\assets\js" />
-      <recent name="D:\yasingencnet\HTML\src\assets" />
-      <recent name="D:\yasingencnet\src\_includes" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -103,7 +119,12 @@
       <workItem from="1600368807156" duration="616000" />
       <workItem from="1600369439666" duration="5655000" />
       <workItem from="1600415901666" duration="19299000" />
-      <workItem from="1600467119889" duration="2179000" />
+      <workItem from="1600467119889" duration="2590000" />
+      <workItem from="1600508402361" duration="15178000" />
+      <workItem from="1600600271718" duration="5560000" />
+      <workItem from="1600671602877" duration="9000" />
+      <workItem from="1600685771963" duration="1157000" />
+      <workItem from="1600857687590" duration="7988000" />
     </task>
     <servers />
   </component>
@@ -128,16 +149,16 @@
     </state>
     <state x="704" y="314" key="#com.intellij.fileTypes.FileTypeChooser/-1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1599420956106" />
     <state x="704" y="314" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1600001379735" />
-    <state x="690" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600370545711">
+    <state x="690" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600860204060">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="690" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1600370545711" />
-    <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1600469068004">
+    <state x="690" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1600860204060" />
+    <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1600671609664">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="-1180" y="279" key="FileChooserDialogImpl/-1920.0.1920.1050/0.0.1920.1050@-1920.0.1920.1050" timestamp="1598981157254" />
     <state x="740" y="279" key="FileChooserDialogImpl/-1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1599425022345" />
-    <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1600469068004" />
+    <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050@0.0.1920.1050" timestamp="1600671609664" />
     <state x="461" y="169" key="SettingsEditor" timestamp="1599398953711">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -146,11 +167,11 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="777" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1598040401466" />
-    <state x="570" y="51" width="1057" height="837" key="find.popup" timestamp="1600468086767">
+    <state x="570" y="51" width="1057" height="837" key="find.popup" timestamp="1600870135568">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="570" y="51" width="881" height="837" key="find.popup/-1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1599401097587" />
-    <state x="570" y="51" width="1057" height="837" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1600468086767" />
+    <state x="570" y="51" width="1057" height="837" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1600870135568" />
     <state x="616" y="243" key="run.anything.popup" timestamp="1597958402332">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

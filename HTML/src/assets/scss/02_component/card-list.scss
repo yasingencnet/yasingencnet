@@ -4,6 +4,9 @@
   grid-gap: var(--layout-gap);
   margin-left: auto;
   margin-right: auto;
+  &.card-list--v2{
+    grid-gap: calc(var(--layout-gap) / 2);
+  }
   a{
     display: inline-block;
     color: inherit;
@@ -13,6 +16,16 @@
   }
 }
 .card-list__item{
+  .card-list--v2 & {
+    @extend .bg-pure;
+    padding: calc(var(--flow-space) * 1.5);
+    box-shadow: var(--box-shadow-1);
+  }
+}
+
+.card-list__figure{
+  margin-bottom: calc(var(--flow-space) * 1.5);
+  svg, img{max-width: 100%;}
 }
 .card-list__title{
   display: block;

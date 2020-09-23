@@ -18,10 +18,8 @@
   display: grid;
   grid-gap: calc(var(--layout-gap) / 2 );
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  margin-top: calc((var(--layout-gap) * 2) * -1);
   margin-left: auto;
   margin-right: auto;
-  max-width: var(--container-md);
   @include respond-below(sm) {
     grid-template-columns: 1fr;
   }
@@ -36,4 +34,8 @@
       }
     }
   }
+}
+
+.travel-mini-cards{
+  margin-bottom: calc(var(--layout-gap) / 2);
 }

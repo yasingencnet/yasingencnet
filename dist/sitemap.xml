@@ -97,26 +97,6 @@
     </url>
     
     <url>
-      <loc>https://yasingenc.net/tags/works/</loc>
-      <lastmod>2020-09-13</lastmod>
-    </url>
-    
-    <url>
-      <loc>https://yasingenc.net/tags/work/</loc>
-      <lastmod>2020-09-13</lastmod>
-    </url>
-    
-    <url>
-      <loc>https://yasingenc.net/tags/industry/</loc>
-      <lastmod>2020-09-13</lastmod>
-    </url>
-    
-    <url>
-      <loc>https://yasingenc.net/tags/second-tag/</loc>
-      <lastmod>2020-09-13</lastmod>
-    </url>
-    
-    <url>
       <loc>https://yasingenc.net/tags/another-tag/</loc>
       <lastmod>2020-09-13</lastmod>
     </url>
@@ -132,7 +112,17 @@
     </url>
     
     <url>
-      <loc>https://yasingenc.net/tags/number-2/</loc>
+      <loc>https://yasingenc.net/tags/works/</loc>
+      <lastmod>2020-09-13</lastmod>
+    </url>
+    
+    <url>
+      <loc>https://yasingenc.net/tags/work/</loc>
+      <lastmod>2020-09-13</lastmod>
+    </url>
+    
+    <url>
+      <loc>https://yasingenc.net/tags/denge%20bilgisayar/</loc>
       <lastmod>2020-09-13</lastmod>
     </url>
     
@@ -142,7 +132,12 @@
     </url>
     
     <url>
-      <loc>https://yasingenc.net/tags/denge%20bilgisayar/</loc>
+      <loc>https://yasingenc.net/tags/industry/</loc>
+      <lastmod>2020-09-13</lastmod>
+    </url>
+    
+    <url>
+      <loc>https://yasingenc.net/tags/second-tag/</loc>
       <lastmod>2020-09-13</lastmod>
     </url>
     
@@ -153,6 +148,16 @@
     
     <url>
       <loc>https://yasingenc.net/tags/fashion/</loc>
+      <lastmod>2020-09-13</lastmod>
+    </url>
+    
+    <url>
+      <loc>https://yasingenc.net/tags/number-2/</loc>
+      <lastmod>2020-09-13</lastmod>
+    </url>
+    
+    <url>
+      <loc>https://yasingenc.net/tags/community/</loc>
       <lastmod>2020-09-13</lastmod>
     </url>
     
@@ -168,11 +173,6 @@
     
     <url>
       <loc>https://yasingenc.net/tags/Template/</loc>
-      <lastmod>2020-09-13</lastmod>
-    </url>
-    
-    <url>
-      <loc>https://yasingenc.net/tags/community/</loc>
       <lastmod>2020-09-13</lastmod>
     </url>
     

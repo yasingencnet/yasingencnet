@@ -14,6 +14,7 @@ View the source here: https://github.com/yasingencnet/yasingencnet
   <meta name="theme-color" content="#EA3843">
 
   <link rel="stylesheet" href=" ../../assets/css/core.002a5604.css ">
+  <link rel="stylesheet" href="../../assets/css/print.07f96019.css" media="print">
 
 
   <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Yasin Genc - Front-End Developer">
@@ -23,6 +24,44 @@ View the source here: https://github.com/yasingencnet/yasingencnet
   <link rel="preconnect" href="https://www.instagram.com/">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Source+Serif+Pro:wght@400;700&display=swap" rel="stylesheet">
 
+  <style>
+    :root {
+      --checka11y-error-color: #f00;
+      --checka11y-error-border-width: 5px;
+      --checka11y-font: 'Comic Sans MS', cursive !important;
+    }
+
+    /**
+     * Images
+     */
+
+    img:not([alt]) /* All images require an alt attribute, whether it has a value or is null */ {
+      border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+    }
+
+    /**
+     * iframe
+     */
+
+    iframe:not([title]) /* All iframe must have title attribute */ {
+      border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
+    }
+
+    iframe:not([title])::after /* All iframe must have title attribute */ {
+      content: 'ERROR: iframe has no title attribute. ' !important;
+      font-family: var(--checka11y-font, cursive);
+    }
+
+    /**
+     * Lists
+     */
+
+    ol > *:not(li):after, /* All children of <ol> must only be <li> */
+    ul > *:not(li):after /* All children of <ul> must only be <li> */ {
+      content: 'ERROR: List markup invalid. Ensure <li> are the only direct children of your <ul> or <ol>.' !important;
+      font-family: var(--checka11y-font, cursive);
+    }
+  </style>
 </head>
 <body>
 
@@ -50,7 +89,7 @@ View the source here: https://github.com/yasingencnet/yasingencnet
             </span>
       </button>
     </div>
-    <nav class="nav" id="js-primary-nav" role="navigation" aria-label="Primary navigation">
+    <nav class="nav" id="js-primary-nav" aria-label="Primary navigation">
       <ul class="nav__list">
           <li class="nav__item"><a href="/works/">Works</a></li>
           <li class="nav__item"><a href="/about/">About</a></li>
@@ -118,7 +157,7 @@ View the source here: https://github.com/yasingencnet/yasingencnet
   <div class="container">
     <div class="inner">
       <h2 class="footer__title">Deep Dive Into Pages</h2>
-      <nav class="nav-footer" role="navigation" aria-label="Secondary navigation">
+      <nav class="nav-footer" aria-label="Secondary navigation">
         <ul class="nav-footer__list">
             <li class="nav-footer__item">
               <a href="/works/">Works</a>
@@ -154,7 +193,10 @@ View the source here: https://github.com/yasingencnet/yasingencnet
           </li>
         </ul>
       </nav>
-      <div class="copyright">&copy; 2020 Yasin Genc</div>
+      <div class="copyright">
+        &copy; 2020 Yasin Genc <a href="/sitemap.xml">Sitemap</a>.<br>
+        Powered by <a href="https://www.11ty.dev/" target="_blank" rel="noreferrer">Eleventy</a>, <a href="https://www.netlify.com/" target="_blank" rel="noreferrer">Netlify</a>, and <a href="https://github.com/yasingencnet/yasingencnet" target="_blank" rel="noreferrer">GitHub</a>.
+      </div>
     </div>
   </div>
 </footer>

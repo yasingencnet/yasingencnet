@@ -29,6 +29,7 @@
   font-family: var(--font-alt);
   margin-top: calc(var(--flow-space) * 1.5);
   a{
+    display: inline-block;
     color: rgb(var(--color-paragraph));
     text-decoration: none;
     &:hover, &:focus{

@@ -20,23 +20,74 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b9590ad8-dd5a-411f-9731-1b09ac5fe20e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/HTML/src/assets/print.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML/src/assets/scss/02_component/form.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML/src/form.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/HTML/src/travel-checklist.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML/src/assets/scss/00_config/language.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/HTML/src/flight-database.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/css/print.07f96019.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/flight-database.njk" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/travel-checklist.njk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/postcss.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/postcss.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/src/assets/core.scss" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/src/assets/core.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/src/assets/scss/00_config/reset.scss" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/src/assets/scss/00_config/reset.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/src/assets/scss/00_config/theme.scss" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/src/assets/scss/00_config/theme.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/src/assets/scss/01_base/button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/src/assets/scss/01_base/button.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/src/assets/scss/01_base/helper.scss" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/src/assets/scss/01_base/helper.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/src/assets/scss/02_component/article.scss" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/src/assets/scss/02_component/article.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HTML/src/assets/scss/02_component/card-list.scss" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/src/assets/scss/02_component/card-list.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/src/assets/scss/02_component/table.scss" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/src/assets/scss/02_component/table.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTML/src/assets/scss/02_component/travel.scss" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/src/assets/scss/02_component/travel.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/src/assets/scss/02_component/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/src/assets/scss/02_component/footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HTML/src/assets/scss/02_component/gallery.scss" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/src/assets/scss/02_component/gallery.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HTML/src/travel.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/src/travel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/about/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/about/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/archive/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/archive/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/css/core.002a5604.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/assets/css/core.002a5604.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/css/homepage.deb72ca0.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/assets/css/homepage.deb72ca0.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/blog/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/blog/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/contact/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/contact/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/integer-sit-amet-nunc-vel-libero-elementum-viverra/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/integer-sit-amet-nunc-vel-libero-elementum-viverra/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/page-list/1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/page-list/1/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/page-list/2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/page-list/2/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/page-list/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/page-list/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/dist/sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/tags/Eleventy/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/tags/Eleventy/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/tags/Jamstack/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/tags/Jamstack/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/tags/Template/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/tags/Template/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/tags/advertisement/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/tags/advertisement/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/tags/another-tag/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/tags/another-tag/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/tags/blog/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/tags/blog/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/tags/community/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/tags/community/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/tags/denge bilgisayar/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/tags/denge bilgisayar/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/tags/fashion/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/tags/fashion/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/tags/first-tag/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/tags/first-tag/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/tags/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/tags/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/tags/industry/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/tags/industry/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/tags/number-2/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/tags/number-2/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/tags/second-tag/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/tags/second-tag/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/tags/sport/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/tags/sport/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/tags/tagList/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/tags/tagList/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/tags/travel/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/tags/travel/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/tags/work/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/tags/work/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/tags/works/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/tags/works/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/this-is-my-first-post/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/this-is-my-first-post/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/travel-post-deneme/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/travel-post-deneme/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/travel/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/travel/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/uses/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/uses/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/walk-of-fame/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/walk-of-fame/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/works/akcelik/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/works/akcelik/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/works/creadive-minds/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/works/creadive-minds/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/works/denge-bilgisayar/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/works/denge-bilgisayar/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/works/gedik-yatirim/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/works/gedik-yatirim/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/works/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/works/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/works/lanistis/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/works/lanistis/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/works/lc-waikiki/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/works/lc-waikiki/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/works/mostlist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/works/mostlist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/works/msa-young-chefs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/works/msa-young-chefs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/works/msanin-restorani/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/works/msanin-restorani/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/works/nkolay-bono/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/works/nkolay-bono/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/works/sen-de-gel/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/works/sen-de-gel/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/works/sodexo/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/works/sodexo/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/_includes/components/footer.njk" beforeDir="false" afterPath="$PROJECT_DIR$/src/_includes/components/footer.njk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_includes/components/header.njk" beforeDir="false" afterPath="$PROJECT_DIR$/src/_includes/components/header.njk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_includes/components/hero.njk" beforeDir="false" afterPath="$PROJECT_DIR$/src/_includes/components/hero.njk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/_includes/layouts/base.njk" beforeDir="false" afterPath="$PROJECT_DIR$/src/_includes/layouts/base.njk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/core.002a5604.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/core.002a5604.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/homepage.deb72ca0.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/css/homepage.deb72ca0.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page-list.njk" beforeDir="false" afterPath="$PROJECT_DIR$/src/page-list.njk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/travel.njk" beforeDir="false" afterPath="$PROJECT_DIR$/src/travel.njk" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,25 +118,25 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/HTML/src/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets/css" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\yasingencnet\HTML\src\assets" />
-      <recent name="D:\yasingencnet\HTML\src\assets\scss\02_component" />
-      <recent name="D:\yasingencnet\HTML\src" />
-      <recent name="D:\yasingencnet\src\assets\css" />
-      <recent name="D:\yasingencnet\src\_includes\components" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\yasingencnet\src\assets\js" />
       <recent name="D:\yasingencnet\src\assets" />
       <recent name="D:\yasingencnet\HTML" />
       <recent name="D:\yasingencnet\_includes\layout" />
       <recent name="D:\yasingencnet\_include" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\yasingencnet\src\assets\css" />
+      <recent name="D:\yasingencnet\HTML\src\assets\scss\00_config" />
+      <recent name="D:\yasingencnet\HTML\src" />
+      <recent name="D:\yasingencnet\src" />
+      <recent name="D:\yasingencnet\HTML\src\assets" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -124,7 +175,8 @@
       <workItem from="1600600271718" duration="5560000" />
       <workItem from="1600671602877" duration="9000" />
       <workItem from="1600685771963" duration="1157000" />
-      <workItem from="1600857687590" duration="7988000" />
+      <workItem from="1600857687590" duration="12098000" />
+      <workItem from="1600945850985" duration="4680000" />
     </task>
     <servers />
   </component>
@@ -167,11 +219,11 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="777" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/-1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1598040401466" />
-    <state x="570" y="51" width="1057" height="837" key="find.popup" timestamp="1600870135568">
+    <state x="570" y="51" width="1057" height="837" key="find.popup" timestamp="1600954794771">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="570" y="51" width="881" height="837" key="find.popup/-1920.0.1920.1050/0.0.1920.1050@0.0.1920.1050" timestamp="1599401097587" />
-    <state x="570" y="51" width="1057" height="837" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1600870135568" />
+    <state x="570" y="51" width="1057" height="837" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1600954794771" />
     <state x="616" y="243" key="run.anything.popup" timestamp="1597958402332">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

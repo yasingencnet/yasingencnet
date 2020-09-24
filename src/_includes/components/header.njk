@@ -21,7 +21,7 @@
             </span>
       </button>
     </div>
-    <nav class="nav" id="js-primary-nav" role="navigation" aria-label="Primary navigation">
+    <nav class="nav" id="js-primary-nav" aria-label="Primary navigation">
       <ul class="nav__list">
         {%- for entry in collections.all | eleventyNavigation | head(5) %}
           <li class="nav__item{% if entry.url == page.url %} nav__item--active{% endif %}"><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>

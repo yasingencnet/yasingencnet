@@ -2,7 +2,7 @@
   <div class="container">
     <div class="inner">
       <h2 class="footer__title">Deep Dive Into Pages</h2>
-      <nav class="nav-footer" role="navigation" aria-label="Secondary navigation">
+      <nav class="nav-footer" aria-label="Secondary navigation">
         <ul class="nav-footer__list">
           {%- for entry in collections.all | eleventyNavigation %}
             <li class="nav-footer__item{% if entry.url == page.url %} nav-footer__item--active{% endif %}">
@@ -17,8 +17,8 @@
         </ul>
       </nav>
       <div class="copyright">
-        &copy; 2020 {{ author.name or metadata.author.name }} MIT License. <a href="/sitemap.xml">Sitemap</a>.<br>
-        Powered by <a href="https://www.11ty.dev/" target="_blank" rel="noreferrer">Eleventy</a>, <a href="https://www.netlify.com/" target="_blank" rel="noreferrer">Netlify</a>, and <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>.
+        &copy; 2020 {{ author.name or metadata.author.name }} <a href="/sitemap.xml">Sitemap</a>.<br>
+        Powered by <a href="https://www.11ty.dev/" target="_blank" rel="noreferrer">Eleventy</a>, <a href="https://www.netlify.com/" target="_blank" rel="noreferrer">Netlify</a>, and <a href="{{ metadata.repo }}" target="_blank" rel="noreferrer">GitHub</a>.
       </div>
     </div>
   </div>

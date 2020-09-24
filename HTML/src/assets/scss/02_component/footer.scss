@@ -23,6 +23,10 @@
   font-size: var(--fs-text-xs);
   color: rgba(var(--color-white), .5);
   font-family: var(--font-alt);
+  a{
+    color: inherit;
+    &:after{display: none !important;}
+  }
 }
 
 .nav-footer{}

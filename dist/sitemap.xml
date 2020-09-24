@@ -97,6 +97,16 @@
     </url>
     
     <url>
+      <loc>https://yasingenc.net/tags/second-tag/</loc>
+      <lastmod>2020-09-13</lastmod>
+    </url>
+    
+    <url>
+      <loc>https://yasingenc.net/tags/number-2/</loc>
+      <lastmod>2020-09-13</lastmod>
+    </url>
+    
+    <url>
       <loc>https://yasingenc.net/tags/another-tag/</loc>
       <lastmod>2020-09-13</lastmod>
     </url>
@@ -108,16 +118,6 @@
     
     <url>
       <loc>https://yasingenc.net/tags/blog/</loc>
-      <lastmod>2020-09-13</lastmod>
-    </url>
-    
-    <url>
-      <loc>https://yasingenc.net/tags/second-tag/</loc>
-      <lastmod>2020-09-13</lastmod>
-    </url>
-    
-    <url>
-      <loc>https://yasingenc.net/tags/number-2/</loc>
       <lastmod>2020-09-13</lastmod>
     </url>
     
@@ -157,16 +157,6 @@
     </url>
     
     <url>
-      <loc>https://yasingenc.net/tags/community/</loc>
-      <lastmod>2020-09-13</lastmod>
-    </url>
-    
-    <url>
-      <loc>https://yasingenc.net/tags/travel/</loc>
-      <lastmod>2020-09-13</lastmod>
-    </url>
-    
-    <url>
       <loc>https://yasingenc.net/tags/Jamstack/</loc>
       <lastmod>2020-09-13</lastmod>
     </url>
@@ -178,6 +168,16 @@
     
     <url>
       <loc>https://yasingenc.net/tags/Template/</loc>
+      <lastmod>2020-09-13</lastmod>
+    </url>
+    
+    <url>
+      <loc>https://yasingenc.net/tags/community/</loc>
+      <lastmod>2020-09-13</lastmod>
+    </url>
+    
+    <url>
+      <loc>https://yasingenc.net/tags/travel/</loc>
       <lastmod>2020-09-13</lastmod>
     </url>
     
@@ -224,6 +224,16 @@
     <url>
       <loc>https://yasingenc.net/walk-of-fame/</loc>
       <lastmod>2020-09-15</lastmod>
+    </url>
+    
+    <url>
+      <loc>https://yasingenc.net/travel-checklist/</loc>
+      <lastmod>2020-09-23</lastmod>
+    </url>
+    
+    <url>
+      <loc>https://yasingenc.net/cheap-flight-database/</loc>
+      <lastmod>2020-09-23</lastmod>
     </url>
     
     <url>

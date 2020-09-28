@@ -82,10 +82,3 @@ select {
     scroll-behavior: auto !important;
   }
 }
-
-/* Print href */
-@media print {
-  a[href^="http"]:not([href*="yasingenc.net"])::after {
-    content: " (" attr(href) ")";
-  }
-}

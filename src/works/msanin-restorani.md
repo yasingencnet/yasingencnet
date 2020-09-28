@@ -1,18 +1,14 @@
 ---
 title: MSA'nin Restorani
 url: https://www.msaninrestorani.com/
-description: Türkiye’nin lider mutfak okulu MSA’nın eğitim restoranı
+description: Since 2004, MSA, The Culinary Arts Academy of Istanbul has been delivering professional education programs.
 picture: msanin-restorani.jpg
 color: '#d9bfb0'
-projectDate: 2018
-date: 2000-01-01
-sector: Advertisement
+projectDate: 2017
+date: 2017-08-01
+sector: Culinary Arts
+myRole: Front-End
 tags:
   - work
-  - advertisement
 layout: layouts/work.njk
 ---
-
-{{ title }}
-{{ url }}
-{{ description }}

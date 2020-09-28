@@ -1,16 +1,14 @@
 ---
 title: Mostlist
-url: https://www.mostlist.net/
-description: Explore 'most things' around the world!
+url: 'javascript:'
+description: Explore 'most things' in your neighborhood and around the world with this definitive guide!
 picture: mostlist.jpg
 color: '#E9002D'
-projectDate: 2018
-date: 2020-01-01
+projectDate: 2019
+date: 2019-02-01
 sector: Travel
-myRole: Developing front-end
+myRole: Front-End & UX/UI
 tags:
   - work
 layout: layouts/work.njk
 ---
-
-hello burasi content safe.

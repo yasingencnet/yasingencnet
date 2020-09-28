@@ -1,18 +1,14 @@
 ---
 title: 'LC Waikiki: Moda Senin Seçimin'
-url: ''
-description: Moda Senin Seçimin
+url: 'javascript:'
+description: Taha Group, founded in 1988, bought LC Waikiki, which was born in Paris but grew in Istanbul, and brought it to its current level.
 picture: lcwaikiki.jpg
 color: '#1F3B9E'
 projectDate: 2018
-date: 2000-01-01
+date: 2018-05-01
 sector: Fashion
+myRole: Front-End
 tags:
   - work
-  - fashion
 layout: layouts/work.njk
 ---
-
-{{ title }}
-{{ url }}
-{{ description }}

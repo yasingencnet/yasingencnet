@@ -48,24 +48,5 @@ eleventyNavigation:
       {% include 'components/social-meta.njk' %}
     </footer>
   </article>
-  <div class="photo-grid">
-    <figure class="span-2">
-      <img src="{{metadata.assets.img}}layout/4.jpg" alt="A photo of Yasin" loading="lazy">
-    </figure>
-    <figure >
-      <img src="{{metadata.assets.img}}layout/1.jpg" alt="A photo of Yasin" loading="lazy">
-    </figure>
-    <figure>
-      <img src="{{metadata.assets.img}}layout/3.jpg" alt="A photo of Yasin" loading="lazy">
-    </figure>
-    <figure>
-      <img src="{{metadata.assets.img}}layout/7.jpg" alt="A photo of Yasin" loading="lazy">
-    </figure>
-    <figure class="span-2">
-      <img src="{{metadata.assets.img}}layout/5.jpg" alt="A photo of Yasin" loading="lazy">
-    </figure>
-    <figure>
-      <img src="{{metadata.assets.img}}layout/6.jpg" alt="A photo of Yasin" loading="lazy">
-    </figure>
-  </div>
+  {% include "components/photo-grid.njk" %}
 </div>

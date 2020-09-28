@@ -9,7 +9,7 @@ templateClass: tmpl-post
       <ul class="article-meta meta-list">
         <li class="meta-list__item">
           <span class="meta-list__title">Written by</span>
-          <a class="meta-list__value" href="javascript:;">{{ metadata.author.name }}</a>
+          <span class="meta-list__value">{{ metadata.author.name }}</span>
         </li>
         <li class="meta-list__item">
           <span class="meta-list__title">Reading time</span>
@@ -17,7 +17,7 @@ templateClass: tmpl-post
         </li>
         <li class="meta-list__item">
           <span class="meta-list__title">Published on</span>
-          <span class="meta-list__value">July 6, 2020</span>
+          <span class="meta-list__value">{{ page.date | readableDate('dd LLL yyyy') }}</span>
         </li>
         <li class="meta-list__item">
           <span class="meta-list__title">Posted in</span>

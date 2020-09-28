@@ -30,6 +30,9 @@ a[href*="//"]:not([href*="yasingenc.net"]){
     margin-right: 5px;
   }
 }
+a[href*="javascript:"]{
+  pointer-events: none;
+}
 
 .flex-group {
   display: inline-flex;

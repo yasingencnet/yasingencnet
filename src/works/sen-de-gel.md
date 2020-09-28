@@ -1,18 +1,14 @@
 ---
 title: Sen de Gel
 url: http://www.sendegel.org.tr/
-description: Worldwide non-profit community
+description: Support for Improvement in Social and Economic Living Association is a non-profit community that works to produce projects to ensure sustainable improvement of quality in social and economic areas nationally and internationally.
 picture: sendegel.jpg
 color: '#DDC6A4'
-projectDate: 2018
-date: 2000-01-01
-sector: Community
+projectDate: 2017
+date: 2017-04-28
+sector: Non-Profit Community
+myRole: Front-End
 tags:
   - work
-  - community
 layout: layouts/work.njk
 ---
-
-{{ title }}
-{{ url }}
-{{ description }}

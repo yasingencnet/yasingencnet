@@ -1,18 +1,14 @@
 ---
 title: Gedik Yatirim
-url: ''
-description: All over the country with widespread distribution network and world brands
+url: 'javascript:'
+description: Gedik Investment is one of the leading investment banking advisory and brokerage firms in Turkey, providing research and brokerage services to domestic and foreign clients.
 picture: gedik-yatirim.jpg
 color: '#048998'
-projectDate: 2018
-date: 2000-01-01
-sector: Insurance
+projectDate: 2017
+date: 2017-08-01
+sector: Brokerage House
+myRole: Front-End
 tags:
   - work
-  - denge bilgisayar
 layout: layouts/work.njk
 ---
-
-{{ title }}
-{{ url }}
-{{ description }}

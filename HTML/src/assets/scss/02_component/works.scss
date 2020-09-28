@@ -19,6 +19,7 @@
 }
 .works__figure{
   display: flex;
+  justify-content: center;
   flex-grow: 1;
   padding: calc(var(--flow-space) * 6) calc(var(--flow-space) * 3) 0;
   &:empty{

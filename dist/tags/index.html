@@ -23,45 +23,6 @@ View the source here: https://github.com/yasingencnet/yasingencnet
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
   <link rel="preconnect" href="https://www.instagram.com/">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Source+Serif+Pro:wght@400;700&display=swap" rel="stylesheet">
-
-  <style>
-    :root {
-      --checka11y-error-color: #f00;
-      --checka11y-error-border-width: 5px;
-      --checka11y-font: 'Comic Sans MS', cursive !important;
-    }
-
-    /**
-     * Images
-     */
-
-    img:not([alt]) /* All images require an alt attribute, whether it has a value or is null */ {
-      border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
-    }
-
-    /**
-     * iframe
-     */
-
-    iframe:not([title]) /* All iframe must have title attribute */ {
-      border: var(--checka11y-error-border-width, 5px) solid var(--checka11y-error-color, red) !important;
-    }
-
-    iframe:not([title])::after /* All iframe must have title attribute */ {
-      content: 'ERROR: iframe has no title attribute. ' !important;
-      font-family: var(--checka11y-font, cursive);
-    }
-
-    /**
-     * Lists
-     */
-
-    ol > *:not(li):after, /* All children of <ol> must only be <li> */
-    ul > *:not(li):after /* All children of <ul> must only be <li> */ {
-      content: 'ERROR: List markup invalid. Ensure <li> are the only direct children of your <ul> or <ol>.' !important;
-      font-family: var(--checka11y-font, cursive);
-    }
-  </style>
 </head>
 <body>
 
@@ -128,6 +89,13 @@ View the source here: https://github.com/yasingencnet/yasingencnet
         
         <li class="card-list__item">
           
+          <a href="/tags/CSS/">
+            <span class="card-list__title">CSS</span>
+          </a>
+        </li>
+        
+        <li class="card-list__item">
+          
           <a href="/tags/General/">
             <span class="card-list__title">General</span>
           </a>
@@ -137,13 +105,6 @@ View the source here: https://github.com/yasingencnet/yasingencnet
           
           <a href="/tags/JavaScript/">
             <span class="card-list__title">JavaScript</span>
-          </a>
-        </li>
-        
-        <li class="card-list__item">
-          
-          <a href="/tags/CSS/">
-            <span class="card-list__title">CSS</span>
           </a>
         </li>
         

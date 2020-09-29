@@ -11,11 +11,17 @@ View the source here: {{ metadata.repo }}
   <title>{%- if title -%}{{ title }} | {{ metadata.title }}{%- else -%}{{ metadata.title }}{%- endif -%}</title>
   <meta name="description" content="{{ description or metadata.description }}">
   <meta name="keywords" content="{{  keywords or metadata.keywords }}">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="{{metadata.assets.img}}head/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{metadata.assets.img}}head/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{metadata.assets.img}}head/favicon-16x16.png">
+  <link rel="manifest" href="{{metadata.assets.img}}head/site.webmanifest">
+  <link rel="mask-icon" href="{{metadata.assets.img}}head/safari-pinned-tab.svg" color="#e43f5a">
+  <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="{{ themeColor or metadata.themeColor }}">
 
   <link rel="stylesheet" href="{% if cssFile %} {{metadata.assets.css}}{{ cssFile }} {% else %} {{metadata.assets.css}}core.002a5604.css {% endif %}">
   <link rel="stylesheet" href="{{ metadata.assets.css }}print.07f96019.css" media="print">
-
 
   <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
   <link rel="alternate" href="{{ metadata.jsonfeed.path | url }}" type="application/json" title="{{ metadata.title }}">

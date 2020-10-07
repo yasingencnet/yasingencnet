@@ -1,6 +1,6 @@
 {
   "tags": [
-    "travel"
+    "Travel"
   ],
   "permalink": "/{{ title | slug }}/"
 }

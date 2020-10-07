@@ -20,6 +20,7 @@ pre[class*="language-"] {
   padding: 1.5em 0;
   margin: .5em 0;
   overflow: auto;
+  max-width: calc(100vw - 30px);
 }
 :not(pre) > code[class*="language-"] {
   padding: .1em;

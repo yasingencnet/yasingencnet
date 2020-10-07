@@ -76,72 +76,14 @@
                 </ul>
             </header>
             <section class="article__content">
-                <p>The current situation is unacceptable. We all have a responsibility to drive change and ensure that our workplace and country is one where every individual feels a sense of belonging and inclusion. We must stand up and speak out against racial inequality and injustice.</p>
-                <p>We want to thank our Black colleagues who we have met with over the past weeks for their vulnerability, bravery and grace in sharing their stories with us. We learned about the persistent fear and anxiety they carry because of the color of their skin. We saw exhaustion from feeling that education about racism is solely the Black community’s responsibility. We heard loneliness and isolation from being the only Black person on a team or in a meeting. We heard loud and clear the need for greater representation and understood the work all of us must do to educate ourselves and support our Black colleagues. And we witnessed immense pride for Black culture, illuminating the opportunity we have to celebrate it as part of our shared Adobe culture.</p>
-                <h2>We believe that the best way to drive change is to start with change at Adobe. </h2>
-                <p>In <a href="javascript;">collaboration with leaders</a> of the Black Employee Network (BEN) and a team of our Black colleagues, we have identified five key levers for long-term impact:</p>
-                <ul>
-                    <li><strong>Building Community at Adobe:</strong> Bolstering education for all employees to raise awareness of issues on race, inclusion and belonging and creating a platform for the Black experience to be heard.</li>
-                    <li><strong>Growth and Advancement:</strong> Fostering greater opportunity, sponsorship, development and advancement.</li>
-                    <li><strong>Hiring and Recruiting:</strong> Increasing investment in developing a robust talent pipeline.</li>
-                    <li><strong>Social Responsibility and Advocacy:</strong> Identifying key issues where we will direct Adobe’s resources and energy toward advancing equality through our ecosystem.</li>
-                </ul>
-                <h3> Equal Justice Initiative (EJI)</h3>
-                <p>After spending the better part of the last decade shifting rendering logic to the client, it looks like the pendulum is about to swing into the other direction again.</p>
+            <p>We're basically fetching (scraping) data from Instagram (<a href="https://www.instagram.com/username/?__a=1">https://www.instagram.com/username/?__a=1</a>) and insert it into HTML. Dirty but simple solution to show your Instagram posts on your website.</p>
+            <h2 id="html">HTML <a class="direct-link" href="#html">#</a></h2>
+            <pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>gallery<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>gallery<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+            <h2 id="javascript">JavaScript <a class="direct-link" href="#javascript">#</a></h2>
+            <pre class="language-js"><code class="language-js"><span class="token keyword">let</span> request <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">XMLHttpRequest</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>request<span class="token punctuation">.</span><span class="token function">open</span><span class="token punctuation">(</span><span class="token string">'GET'</span><span class="token punctuation">,</span> <span class="token string">'https://www.instagram.com/username/?__a=1'</span><span class="token punctuation">,</span> <span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>request<span class="token punctuation">.</span><span class="token function-variable function">onload</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>status <span class="token operator">&gt;=</span> <span class="token number">200</span> <span class="token operator">&amp;&amp;</span> <span class="token keyword">this</span><span class="token punctuation">.</span>status <span class="token operator">&lt;</span> <span class="token number">400</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>        <span class="token keyword">let</span> dataSource <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>response<span class="token punctuation">)</span><span class="token punctuation">;</span><br>        <span class="token keyword">let</span> galleryContainer <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">"gallery"</span><span class="token punctuation">)</span><span class="token punctuation">;</span><br>        <span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> <span class="token number">3</span><span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span><span class="token punctuation">{</span><br>            <span class="token keyword">let</span> data <span class="token operator">=</span> dataSource<span class="token punctuation">.</span>graphql<span class="token punctuation">.</span>user<span class="token punctuation">.</span>edge_owner_to_timeline_media<span class="token punctuation">.</span>edges<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span>node<span class="token punctuation">;</span><br><br>            <span class="token keyword">let</span> markup <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string"><br>                &lt;figure class="gallery__item"&gt;<br>                    &lt;a href="https://www.instagram.com/p/</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>data<span class="token punctuation">.</span>shortcode<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">/" target="_blank" rel="noreferrer"&gt;<br>                        &lt;span class="gallery__like"&gt;</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>data<span class="token punctuation">.</span>edge_liked_by<span class="token punctuation">.</span>count<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">&lt;/span&gt;<br>                        &lt;img src="</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>data<span class="token punctuation">.</span>thumbnail_src<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">" alt="</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>data<span class="token punctuation">.</span>accessibility_caption<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">" loading="lazy"&gt;<br>                    &lt;/a&gt;<br>                &lt;/figure&gt;<br>            </span><span class="token template-punctuation string">`</span></span><span class="token punctuation">;</span><br><br>            galleryContainer<span class="token punctuation">.</span><span class="token function">insertAdjacentHTML</span><span class="token punctuation">(</span><span class="token string">'beforeend'</span><span class="token punctuation">,</span> markup<span class="token punctuation">)</span><span class="token punctuation">;</span><br>        <span class="token punctuation">}</span><br>    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span><br>        <span class="token comment">// We reached our target server, but it returned an error</span><br>    <span class="token punctuation">}</span><br><span class="token punctuation">}</span><span class="token punctuation">;</span><br>request<span class="token punctuation">.</span><span class="token function-variable function">onerror</span> <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><br>    <span class="token comment">// There was a connection error of some sort</span><br><span class="token punctuation">}</span><span class="token punctuation">;</span><br>request<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span></code></pre>
+            <p>This method might not work in the future. Take a look at the Instagram API page for best solution.</p>
 
-              <figure class="photo-grid">
-                <img src="assets/images/odessa-1.jpg" alt="Odessa Prymorskyi Boulevard" loading="lazy">
-                <img src="assets/images/odessa-2.jpg" alt="Odessa Prymorskyi Boulevard" loading="lazy">
-                <img src="assets/images/odessa-3.jpg" alt="Odessa Prymorskyi Boulevard" loading="lazy">
-                <img src="assets/images/odessa-4.jpg" alt="Odessa Prymorskyi Boulevard" loading="lazy">
-                <img src="assets/images/odessa-5.jpg" alt="Odessa Prymorskyi Boulevard" loading="lazy">
-                <img src="assets/images/odessa-6.jpg" alt="Odessa Prymorskyi Boulevard" loading="lazy">
-                <img src="assets/images/odessa-7.jpg" alt="Odessa Prymorskyi Boulevard" loading="lazy">
-              </figure>
-
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores dolorum et hic illum laboriosam natus officiis quibusdam? Deserunt error, voluptates!</p>
-                <blockquote cite="https://www.wikiwand.com/en/Great_Pyramid_of_Giza">
-                    <p>I have gazed on the walls of impregnable Babylon along which chariots may race, and on the Zeus by the banks of the Alpheus, I have seen the hanging gardens, and the Colossus of the Helios, the great man-made mountains of the lofty pyramids, and the gigantic tomb of Mausolus; but when I saw the sacred house of Artemis that towers to the clouds, the others were placed in the shade, for the sun himself has never looked upon its equal outside Olympus.</p>
-                    <p><strong>– Greek Anthology IX.58 </strong></p>
-                </blockquote>
-
-              <hr>
-
-                <figure>
-                    <img src="https://images.unsplash.com/photo-1523478482487-1eed2b3d9939?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="Khufu" loading="lazy">
-                    <figcaption>Credit: Fynn schmidt</figcaption>
-                </figure>
-                <ol>
-                    <li>Great Pyramid of Giza</li>
-                    <li>Hanging Gardens of Babylon</li>
-                    <li>Temple of Artemis at Ephesus</li>
-                    <li>Statue of Zeus at Olympia</li>
-                    <li>Mausoleum at Halicarnassus</li>
-                    <li>Colossus of Rhodes</li>
-                    <li>Lighthouse of Alexandria</li>
-                </ol>
-                <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit?</h4>
-                <p>Many alternative, often contradictory, theories have been proposed regarding the pyramid's construction techniques.[22] Many disagree on whether the blocks were dragged, lifted, or even rolled into place. The Greeks believed that slave labour was used, but modern discoveries made at nearby workers' camps associated with construction at Giza suggest that it was built instead by tens of thousands of skilled workers.</p>
-                <h6>Lorem ipsum dolor.</h6>
-                <dl>
-                    <dt>How to create a thread on Twitter?</dt>
-                    <dd>Sometimes we need more than one Tweet to express ourselves.  A thread on Twitter is a series of connected Tweets from one person. With a thread you can provide additional context, an update, or an extended point by connecting multiple Tweets together.</dd>
-                    <dt>How to use advanced search?</dt>
-                    <dd>Advanced search is available when you’re logged in to twitter.com. It allows you to tailor search results to specific date ranges, people and more. This makes it easier to find specific Tweets.</dd>
-                    <dt>How to create a Moment?</dt>
-                    <dd>Twitter Moments are curated stories about what’s happening around the world—powered by Tweets. It’s easy to create your own story with Twitter Moments.</dd>
-                    <dt>How to unfollow people on Twitter?</dt>
-                    <dd>
-                        <ul>
-                            <li>Click on Following on your homepage or profile page.</li>
-                            <li>Hover over the <strong>Following</strong> button next to any account name on your following list, it will change to <strong>Unfollow</strong>.</li>
-                            <li>Click the button to unfollow the account.</li>
-                        </ul>
-                    </dd>
-                    <dt>What happened to the Vine website?</dt>
-                    <dd>The vine.co website became the Vine Archive in January 2017 – a time capsule of Vines that were created through the Vine app so you can continue to browse them and share them on other websites. In April of 2018, we moved the Vine Archive into a more static archived state to allow us to better preserve the public, creative expression of the Vine community. This new version of the Vine Archive  allows you to watch Vines on vine.co (or anywhere that URL might be embedded) and share Vines via their unique URLs.</dd>
-                </dl>
-            </section>
+          </section>
             <footer class="article__footer">
 
             </footer>

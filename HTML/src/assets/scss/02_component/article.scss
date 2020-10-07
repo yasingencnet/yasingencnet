@@ -2,8 +2,10 @@
   max-width: var(--container-sm);
   margin-left: auto;
   margin-right: auto;
-  padding-left: calc(var(--flow-space) * 1.5);
-  padding-right: calc(var(--flow-space) * 1.5);
+  @include respond-above(xs) {
+    padding-left: calc(var(--flow-space) * 1.5);
+    padding-right: calc(var(--flow-space) * 1.5);
+  }
 }
 
 .article-header{

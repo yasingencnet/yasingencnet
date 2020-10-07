@@ -7,7 +7,6 @@ categories:
   - Travel
 tags:
   - Ukraine
-  - Travel
 layout: layouts/post.njk
 ---
 

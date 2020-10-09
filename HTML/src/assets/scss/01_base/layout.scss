@@ -125,3 +125,29 @@ button:focus, a:focus {
     transform: translateY(0);
   }
 }
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  body{overflow: hidden;}
+  header::before{
+    content: 'Unsupported Browser!' '\A' '\A' 'I only support the recent versions of major browsers like Chrome, Firefox, Opera, Brave, Safari, and Edge.';
+    position: fixed;
+    z-index: 100000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+    top: 0;
+    left: 0;
+    padding: 15px;
+    width: 100%;
+    height: 100%;
+
+    white-space: pre-wrap;
+    font-size: 2rem;
+    font-family: 'Inter', sans-serif;
+    background: rgb(255, 190, 10);
+    color: rgb(20, 25, 25);
+    text-align: center;;
+  }
+}

@@ -109,14 +109,4 @@
       }
     }
   }
-  .post-card{
-    opacity: 0;
-    transform: translateY(30px);
-    animation: fadeIn var(--fadeInAnimDuration) ease-in forwards;
-  }
-  @for $i from 1 through 5 {
-    .post-card:nth-child(#{$i}) {
-      animation-delay:  0.10s * $i;
-    }
-  }
 }

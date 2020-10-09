@@ -7,10 +7,6 @@
   background-color: rgb(var(--color-white));
   padding: var(--layout-gap) calc(var(--flow-space) * 3);
 
-  opacity: 0;
-  transform: translateY(30px);
-  animation: fadeIn var(--fadeInAnimDuration) ease-in forwards;
-
   @include respond-below(md) {
     padding: calc(var(--flow-space) * 3);
   }

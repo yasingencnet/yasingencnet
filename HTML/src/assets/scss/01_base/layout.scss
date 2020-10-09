@@ -110,21 +110,7 @@ button:focus, a:focus {
   font-size: var(--fs-text-md);
   color: rgb(var(--color-paragraph-light));
 }
-.section-footer{
-
-}
-
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+.section-footer{}
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
   body{overflow: hidden;}

@@ -12,19 +12,20 @@ View the source here: https://github.com/yasingencnet/yasingencnet
   <meta name="description" content="Support for Improvement in Social and Economic Living Association is a non-profit community that works to produce projects to ensure sustainable improvement of quality in social and economic areas nationally and internationally.">
   <meta name="keywords" content="html, css, js, ui, ux, a11y, front-end web developer, freelancer">
 
-  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/img/head/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/img/head/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/img/head/favicon-16x16.png">
-  <link rel="manifest" href="../../assets/img/head/site.webmanifest">
-  <link rel="mask-icon" href="../../assets/img/head/safari-pinned-tab.svg" color="#e43f5a">
-  <meta name="msapplication-TileColor" content="#da532c">
+  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/img/head/icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/img/head/icon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/img/head/icon-16x16.png">
+  <link rel="manifest" href="../../assets/img/head/manifest.json">
+  <link rel="mask-icon" href="../../assets/img/head/safari-pinned-tab.svg" color="#EA3843">
+  <meta name="msapplication-TileColor" content="#EA3843">
   <meta name="theme-color" content="#EA3843">
-
-  <link rel="stylesheet" href=" ../../assets/css/core.002a5604.css ">
-  <link rel="stylesheet" href="../../assets/css/print.07f96019.css" media="print">
 
   <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Yasin Genc - Front-End Developer">
   <link rel="alternate" href="/feed/feed.json" type="application/json" title="Yasin Genc - Front-End Developer">
+
+  <link rel="preload" href=" ../../assets/css/core.002a5604.css " as="style">
+  <link rel="stylesheet" href=" ../../assets/css/core.002a5604.css " media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="../../assets/css/print.07f96019.css" media="print">
 
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
   <link rel="preconnect" href="https://www.instagram.com/">
@@ -246,6 +247,36 @@ View the source here: https://github.com/yasingencnet/yasingencnet
 
 
 
-<script src="../../assets/js/core.1f56c55c.js"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const primaryNavButton = document.getElementById("js-primary-button"),
+      primaryNav = document.getElementById("js-primary-nav");
+
+    primaryNavButton.onclick = function(){
+      togglePrimaryNav();
+    }
+    function togglePrimaryNav(){
+      if(primaryNav.classList.contains("is-active")){
+        primaryNav.classList.remove("is-active")
+      } else{
+        primaryNav.classList.add("is-active")
+      }
+    }
+  });
+
+  // Service Workers
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker
+      .register("serviceworker.js", {
+        scope: "./"
+      })
+      .then(function(reg) {
+        console.log(
+          "Service worker has been registered for scope:" + reg.scope
+        );
+      });
+  }
+</script>
 </body>
 </html>

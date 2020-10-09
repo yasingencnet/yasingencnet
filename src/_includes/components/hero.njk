@@ -3,7 +3,7 @@
     <div class="hero-me">
       <div class="hero-text">
         <h1 class="hero__title">
-          <span id="greeting-text">Hello</span>,<br>
+          <span id="greeting-text">Hello</span>
           I’m a <mark>front-end developer</mark> based<br>
           in Istanbul.
         </h1>
@@ -34,11 +34,11 @@
     let visitorClock = new Date().getHours();
     let visitorMessage = "";
     if(visitorClock <= 12){
-      visitorMessage = "Good morning";
+      visitorMessage = "Good morning,";
     } else if (visitorClock <= 18){
-      visitorMessage = "Good afternoon";
+      visitorMessage = "Good afternoon,";
     } else {
-      visitorMessage = "Good evening";
+      visitorMessage = "Good evening,";
     }
     greetingText.innerHTML = visitorMessage;
   });

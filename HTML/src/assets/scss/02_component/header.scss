@@ -8,16 +8,15 @@
     align-items: center;
     flex-wrap: wrap;
   }
-  .button-group{
-    order: 1;
-  }
 }
 
 .logo{
   display: block;
   line-height: 1;
+  margin-right: auto;
 }
 .header-cta{
+  margin-left: calc(var(--flow-space) * 1.5);
   @include respond-below(md) {
     padding: var(--flow-space) calc(var(--flow-space) * 1.5);
   }

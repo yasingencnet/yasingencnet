@@ -1,8 +1,4 @@
 .nav{
-  @include respond-above(md){
-    margin-left: auto;
-    margin-right: calc(var(--flow-space) * 1.5);
-  }
   @include respond-below(md) {
     order: 1;
     position: absolute;

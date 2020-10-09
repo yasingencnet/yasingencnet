@@ -41,6 +41,10 @@
   margin-bottom: calc(var(--flow-space) * 1.5);
   font-size: var(--fs-title-lg);
   line-height: 120%;
+  span{
+    display: block;
+    width: 100%;
+  }
   mark{
     background: none;
     color: rgb(var(--color-primary));

@@ -8,6 +8,13 @@
       </svg>
       <span class="visually-hidden">{{ author.name or metadata.author.name }}</span>
     </a>
+    <nav class="nav" id="js-primary-nav" aria-label="Primary navigation">
+      <ul class="nav__list">
+        {%- for entry in collections.all | eleventyNavigation | head(5) %}
+          <li class="nav__item{% if entry.url == page.url %} nav__item--active{% endif %}"><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>
+        {%- endfor %}
+      </ul>
+    </nav>
     <div class="button-group">
       <a href="mailto:{{ author.email or metadata.author.email }}" class="header-cta button-1">Hire Me</a>
       <button type="button" class="button-nav" id="js-primary-button">
@@ -21,12 +28,5 @@
             </span>
       </button>
     </div>
-    <nav class="nav" id="js-primary-nav" aria-label="Primary navigation">
-      <ul class="nav__list">
-        {%- for entry in collections.all | eleventyNavigation | head(5) %}
-          <li class="nav__item{% if entry.url == page.url %} nav__item--active{% endif %}"><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>
-        {%- endfor %}
-      </ul>
-    </nav>
   </div>
 </header>

@@ -22,6 +22,9 @@
   justify-content: center;
   flex-grow: 1;
   padding: calc(var(--flow-space) * 6) calc(var(--flow-space) * 3) 0;
+  @include respond-below(sm) {
+    padding: calc(var(--flow-space) * 3) calc(var(--flow-space) * 1.5) 0;
+  }
   &:empty{
     min-height: 342px;
     background-color:rgba(var(--color-border), .3);

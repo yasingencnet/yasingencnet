@@ -42,9 +42,3 @@
     }
   }
 }
-
-@for $i from 1 through 10 {
-  .skill-card:nth-child(#{$i}) {
-    animation-delay:  0.10s * $i;
-  }
-}

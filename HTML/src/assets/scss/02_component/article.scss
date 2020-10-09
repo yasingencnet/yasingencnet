@@ -48,17 +48,20 @@
   }
   figure{
     position: relative;
-    max-width: var(--container-sm);
     margin-top:  calc(var(--flow-space) * 6);
     margin-bottom:  calc(var(--flow-space) * 6);
+    @include respond-above(xs) {
+      max-width: var(--container-sm);
+    }
     img{
       position: relative;
-      max-width: var(--container-lg);
       left: 50%;
       transform: translateX(-50%);
       border-radius: var(--radius);
-
       box-shadow: var(--box-shadow-1);
+      @include respond-above(xs) {
+        max-width: var(--container-lg);
+      }
     }
   }
 

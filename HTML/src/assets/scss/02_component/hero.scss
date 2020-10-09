@@ -68,6 +68,7 @@
   transform: translateY(-120px);
   pointer-events: none;
   margin-left: auto;
+  height: auto;
   @include respond-below(xl) {
     transform: none;
   }

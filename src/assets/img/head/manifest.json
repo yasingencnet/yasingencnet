@@ -1,9 +1,12 @@
 {
+  "lang": "en",
+  "dir": "ltr",
   "name": "Yasin Genc - Front-End Developer",
   "short_name": "Yasin Genc",
+  "description": "I design & develop modern, responsive and accessible web interfaces.",
   "theme_color": "#EA3843",
   "background_color": "#fafafa",
-  "display": "minimal-ui",
+  "display": "fullscreen",
   "orientation": "portrait",
   "scope": "/",
   "start_url": "/",

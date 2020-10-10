@@ -23,8 +23,7 @@ View the source here: https://github.com/yasingencnet/yasingencnet
   <link rel="alternate" href="/feed/feed.xml" type="application/atom+xml" title="Yasin Genc - Front-End Developer">
   <link rel="alternate" href="/feed/feed.json" type="application/json" title="Yasin Genc - Front-End Developer">
 
-  <link rel="preload" href=" ../../assets/css/core.002a5604.css " as="style">
-  <link rel="stylesheet" href=" ../../assets/css/core.002a5604.css " media="print" onload="this.media='all'">
+  <link rel="stylesheet" href=" ../../assets/css/core.002a5604.css ">
   <link rel="stylesheet" href="../../assets/css/print.07f96019.css" media="print">
 
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -208,7 +207,7 @@ View the source here: https://github.com/yasingencnet/yasingencnet
   // Service Workers
   if ("serviceWorker" in navigator) {
     navigator.serviceWorker
-      .register("serviceworker.js", {
+      .register("/serviceworker.js", {
         scope: "./"
       })
       .then(function(reg) {

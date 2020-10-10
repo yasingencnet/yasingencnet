@@ -32,6 +32,9 @@ body {
   grid-template-columns: 1fr;
   padding-top: var(--layout-gap);
   padding-bottom: var(--layout-gap);
+  @include respond-below(xs) {
+    --layout-gap:  3rem;
+  }
   @include respond-above(sm) {
     padding-top: calc(var(--layout-gap) * 2);
     padding-bottom: calc(var(--layout-gap) * 2);
@@ -55,6 +58,9 @@ body {
 
 .main{
   padding-top: var(--layout-gap);
+  @include respond-below(xs) {
+    --layout-gap:  3rem;
+  }
   > * {
    & + * {
      margin-top: calc(var(--layout-gap) * 2);

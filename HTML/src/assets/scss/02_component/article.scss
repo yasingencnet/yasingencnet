@@ -98,6 +98,7 @@
     }
   }
   a{
+    word-break: break-all;
     &:not([class^="button-"]){
       color: rgb(var(--color-primary));
     }

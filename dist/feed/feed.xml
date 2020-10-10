@@ -5,12 +5,58 @@
 	
 	<link href="https://yasingenc.net/feed/feed.xml" rel="self"/>
 	<link href="https://yasingenc.net/"/>
-	<updated>2020-09-26T21:00:00+03:00</updated>
+	<updated>2020-10-10T21:00:00+03:00</updated>
 	<id>https://yasingenc.net/</id>
 	<author>
 		<name>Yasin Genc</name>
 		<email>yasin@yasingenc.net</email>
 	</author>
+	
+	<entry>
+		<title>Eleventy Powered Free Blog &amp; Portfolio Template</title>
+		<link href="https://yasingenc.net/eleventy-powered-free-blog-and-portfolio-template/"/>
+		<updated>2020-10-10T21:00:00+03:00</updated>
+		<id>https://yasingenc.net/eleventy-powered-free-blog-and-portfolio-template/</id>
+		<content type="html">&lt;figure&gt;
+&lt;img src=&quot;https://yasingenc.net/assets/img/yasingencnet-web-ss.jpg&quot; alt=&quot;Eleventy Powered Free Blog Template&quot; loading=&quot;lazy&quot;&gt;
+&lt;/figure&gt;
+&lt;p&gt;Hey I&#39;m Yasin. I created this awesome blog template with Eleventy. Feel free to use it. No rights reserved.&lt;/p&gt;
+&lt;p&gt;It is written in JavaScript, HTML, CSS, Nunjucks and Markdown. I created a custom layout with CSS Grid and Flex. Not containing any framework. Storing source code in public GitHub repository.&lt;/p&gt;
+&lt;p&gt;Source Serif Pro (main) and Inter fonts used.&lt;/p&gt;
+&lt;h2 id=&quot;features&quot;&gt;Features &lt;a class=&quot;direct-link&quot; href=&quot;#features&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Eleventy ♥&lt;/li&gt;
+&lt;li&gt;SASS powered css system. Each component have its own SCSS file.&lt;/li&gt;
+&lt;li&gt;No CSS/JS libraries. Completely vanilla grid.&lt;/li&gt;
+&lt;li&gt;Almost zero JavaScript.&lt;/li&gt;
+&lt;li&gt;SEO friendly. Actually user-friendly. Built for humans. Not for Google crawlers.&lt;/li&gt;
+&lt;li&gt;Blazing fast page loading.&lt;/li&gt;
+&lt;li&gt;Tiny CSS files. Homepage ~15Kb. Subpages ~26Kb.&lt;/li&gt;
+&lt;li&gt;JSON &amp;amp; XML Feed for blog posts.&lt;/li&gt;
+&lt;li&gt;Sitemap&lt;/li&gt;
+&lt;li&gt;PWA ready.&lt;/li&gt;
+&lt;li&gt;Following WCAG 2.0. standards.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://yasingenc.net/assets/img/yasingencnet-lighthouse-score.jpg&quot; alt=&quot;yasingenc.net lighthouse score&quot; loading=&quot;lazy&quot;&gt;
+&lt;/figure&gt;
+&lt;h2 id=&quot;roadmap&quot;&gt;Roadmap &lt;a class=&quot;direct-link&quot; href=&quot;#roadmap&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;100/100/100/100 Lighthouse score. (Current score is 99/100/100/100).&lt;/li&gt;
+&lt;li&gt;Dark mode support.&lt;/li&gt;
+&lt;li&gt;Pagination.&lt;/li&gt;
+&lt;li&gt;Cached pages for an offline mode. (Supporting PWA but not yet offline mode).&lt;/li&gt;
+&lt;li&gt;A static CMS&lt;/li&gt;
+&lt;li&gt;An experimental box for fun.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;how-to-use-it%3F&quot;&gt;How to use it? &lt;a class=&quot;direct-link&quot; href=&quot;#how-to-use-it%3F&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Clone or Download the repository and start to use it.&lt;/p&gt;
+&lt;p&gt;Download Link: &lt;a href=&quot;https://github.com/yasingencnet/yasingencnet&quot;&gt;https://github.com/yasingencnet/yasingencnet&lt;/a&gt;&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://yasingenc.net/assets/img/yasingencnet-mobile-ss.png&quot; alt=&quot;yasingenc.net lighthouse score&quot; loading=&quot;lazy&quot;&gt;
+&lt;/figure&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>How to Display Instagram Posts on Your Website?</title>

@@ -2,7 +2,10 @@
   <div class="works__item">
     <figure class="works__figure" style="background-color:{{ work.data.color }};">
       <a href="{{ work.url | url }}">
-        <img src="{{metadata.assets.img}}works/{{ work.data.picture }}" alt="{{ work.data.title }}" width="795" height="566" loading="lazy">
+        <picture>
+          <source srcset="{{metadata.assets.img}}works/{{ work.data.picture }}.webp" type="image/webp">
+          <img src="{{metadata.assets.img}}works/{{ work.data.picture }}.jpg" width="795" height="566" alt="{{ work.data.title }}" loading="lazy">
+        </picture>
       </a>
     </figure>
     <div class="works__meta">

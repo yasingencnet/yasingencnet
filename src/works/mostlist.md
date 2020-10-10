@@ -2,7 +2,7 @@
 title: Mostlist
 url: 'javascript:'
 description: Explore 'most things' in your neighborhood and around the world with this definitive guide!
-picture: mostlist.jpg
+picture: mostlist
 color: '#E9002D'
 projectDate: 2019
 date: 2019-02-01

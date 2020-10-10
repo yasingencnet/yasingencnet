@@ -2,7 +2,7 @@
 title: Lanistis
 url: https://www.lanistis.com/
 description: Online Gym
-picture: lanistis.jpg
+picture: lanistis
 color: '#161220'
 projectDate: 2018
 date: 2018-06-01

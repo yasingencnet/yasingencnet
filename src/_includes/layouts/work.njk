@@ -11,7 +11,10 @@ templateClass: tmpl-work
           <p class="project-description">{{ description }}</p>
         </div>
         <figure class="project-figure">
-          <img src="{{ metadata.assets.img }}works/{{ picture }}" alt="{{ title }}" loading="eager">
+          <picture>
+            <source srcset="{{ metadata.assets.img }}works/{{ picture }}.webp" type="image/webp">
+            <img src="{{ metadata.assets.img }}works/{{ picture }}.jpg" width="795" height="566" alt="{{ title }}" loading="eager">
+          </picture>
         </figure>
       </div>
     </div>
@@ -65,7 +68,12 @@ templateClass: tmpl-work
       <div class="works">
         {%- set nextPost = collections.works | getNextCollectionItem(page) %}
         <div class="works__item">
-          <figure class="works__figure" {%- if nextPost %}style="background-color:{{ nextPost.data.color }};"{%  else %} {% endif %}>{%- if nextPost %}<a href="{{ nextPost.url | url }}"><img src="{{ metadata.assets.img }}works/{{ nextPost.data.picture }}" alt="{{ nextPost.data.title }}"></a>{%  else %}{% endif %}</figure>
+          <figure class="works__figure" {%- if nextPost %}style="background-color:{{ nextPost.data.color }};"{%  else %} {% endif %}>{%- if nextPost %}<a href="{{ nextPost.url | url }}">
+              <picture>
+                <source srcset="{{ metadata.assets.img }}works/{{ nextPost.data.picture }}.webp" type="image/webp">
+                <img src="{{ metadata.assets.img }}works/{{ nextPost.data.picture }}.jpg" width="795" height="566" alt="{{ nextPost.data.title }}" loading="lazy">
+              </picture>
+            </a>{%  else %}{% endif %}</figure>
           <div class="works__meta">
             <header class="works__header">
               <h4 class="works__title">{%- if nextPost %}{{ nextPost.data.title }}{%  else %}{% endif %}</h4>
@@ -76,7 +84,12 @@ templateClass: tmpl-work
         </div>
         {%- set previousPost = collections.works | getPreviousCollectionItem(page) %}
         <div class="works__item">
-          <figure class="works__figure" {%- if previousPost %}style="background-color:{{ previousPost.data.color }};"{%  else %} {% endif %}>{%- if previousPost %}<a href="{{ previousPost.url | url }}"><img src="{{ metadata.assets.img }}works/{{ previousPost.data.picture }}" alt="{{ previousPost.data.title }}"></a>{%  else %}{% endif %}</figure>
+          <figure class="works__figure" {%- if previousPost %}style="background-color:{{ previousPost.data.color }};"{%  else %} {% endif %}>{%- if previousPost %}<a href="{{ previousPost.url | url }}">
+              <picture>
+                <source srcset="{{ metadata.assets.img }}works/{{ previousPost.data.picture }}.webp" type="image/webp">
+                <img src="{{ metadata.assets.img }}works/{{ previousPost.data.picture }}.jpg" width="795" height="566" alt="{{ previousPost.data.title }}" loading="lazy">
+              </picture>
+            </a>{%  else %}{% endif %}</figure>
           <div class="works__meta">
             <header class="works__header">
               <h4 class="works__title">{%- if previousPost %}{{ previousPost.data.title }}{%  else %}{% endif %}</h4>

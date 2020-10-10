@@ -2,7 +2,7 @@
 title: Akçelik
 url: http://www.akcelik.com.tr/
 description: Turkey's Largest Special Steel Supply Network
-picture: akcelik.jpg
+picture: akcelik
 color: '#050606'
 projectDate: 2018
 date: 2018-12-25

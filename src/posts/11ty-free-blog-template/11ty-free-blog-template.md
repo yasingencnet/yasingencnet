@@ -41,10 +41,9 @@ Source Serif Pro (main) and Inter fonts used.
 
 ## Roadmap
 
-* 100/100/100/100 Lighthouse score. (Current score is 99/100/100/100).
 * Dark mode support.
 * Pagination.
-* Cached pages for an offline mode. (Supporting PWA but not yet offline mode).
+* Cached css for an offline mode. (Supporting PWA but not yet fully).
 * A static CMS
 * An experimental box for fun.
 

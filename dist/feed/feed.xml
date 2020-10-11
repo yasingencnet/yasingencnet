@@ -42,10 +42,9 @@
 &lt;/figure&gt;
 &lt;h2 id=&quot;roadmap&quot;&gt;Roadmap &lt;a class=&quot;direct-link&quot; href=&quot;#roadmap&quot;&gt;#&lt;/a&gt;&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;100/100/100/100 Lighthouse score. (Current score is 99/100/100/100).&lt;/li&gt;
 &lt;li&gt;Dark mode support.&lt;/li&gt;
 &lt;li&gt;Pagination.&lt;/li&gt;
-&lt;li&gt;Cached pages for an offline mode. (Supporting PWA but not yet offline mode).&lt;/li&gt;
+&lt;li&gt;Cached css for an offline mode. (Supporting PWA but not yet fully).&lt;/li&gt;
 &lt;li&gt;A static CMS&lt;/li&gt;
 &lt;li&gt;An experimental box for fun.&lt;/li&gt;
 &lt;/ul&gt;

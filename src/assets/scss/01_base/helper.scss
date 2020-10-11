@@ -45,3 +45,16 @@ a[href*="javascript:"]{
     margin-left: 7.5px;
   }
 }
+
+.skip-link{
+  background-color: RGB(var(--color-highlight));
+  font-size: var(--fs-text-md);
+  color: RGB(var(--color-paragraph));
+  &:focus{
+    clip: unset;
+    width: auto;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    z-index: 99;
+  }
+}

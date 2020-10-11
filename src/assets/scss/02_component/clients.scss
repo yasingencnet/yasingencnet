@@ -1,0 +1,15 @@
+.clients{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(126px, 1fr));
+  grid-gap: calc(var(--flow-space) * 6);
+  @include respond-below(md) {
+    grid-gap: calc(var(--flow-space) * 1.5);
+  }
+}
+.clients__item{
+  img, svg{
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+  }
+}

@@ -23,9 +23,8 @@ View the source here: {{ metadata.repo }}
   <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
   <link rel="alternate" href="{{ metadata.jsonfeed.path | url }}" type="application/json" title="{{ metadata.title }}">
 
-  <link rel="stylesheet" href="{{metadata.assets.css}}font.css">
-  <link rel="stylesheet" href="{% if cssFile %} {{metadata.assets.css}}{{ cssFile }} {% else %} {{metadata.assets.css}}core.002a5604.css {% endif %}">
-  <link rel="stylesheet" href="{{ metadata.assets.css }}print.07f96019.css" media="print">
+  <link rel="stylesheet" href="{% if cssFile %} {{metadata.assets.css}}{{ cssFile }} {% else %} {{metadata.assets.css}}subpage.css {% endif %}">
+  <link rel="stylesheet" href="{{ metadata.assets.css }}print.css" media="print">
 
 {#  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>#}
   <link rel="preconnect" href="https://www.instagram.com/">

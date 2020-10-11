@@ -1,0 +1,63 @@
+.post-card{
+  > * + * {
+    margin-top: var(--flow-space);
+  }
+}
+.post-card__date{
+  font-family: var(--font-alt);
+  font-size: var(--fs-text-sm);
+}
+.post-card__title{
+  font-size: var(--fs-title-xs);
+  font-weight: var(--bold);
+  color: RGB(var(--color-primary));
+  a{
+    color: inherit;
+    text-decoration: none;
+  }
+}
+.post-card__description{
+  font-size: var(--fs-text-md);
+  color: RGB(var(--color-paragraph-light));
+
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.post-card__meta{
+  font-family: var(--font-alt);
+  color: RGB(var(--color-paragraph));
+  font-size: var(--fs-text-sm);
+  a{
+    color: inherit;
+  }
+}
+.post-card__cta{
+  display: inline-block;
+  font-family: var(--font-alt);
+  margin-top: calc(var(--flow-space) * 2);
+  font-size: var(--fs-text-sm);
+  color: RGB(var(--color-primary));
+}
+.post-card__figure{
+  display: block;
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  padding: 66.666% 0 0 0; /* (w / h) = x; (100 / x) = ratio */
+
+  margin-bottom: calc(var(--flow-space) * 3);
+  img{
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}

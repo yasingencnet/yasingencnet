@@ -130,7 +130,7 @@ View the source here: https://github.com/yasingencnet/yasingencnet
   <div class="container">
     <div class="section-inner">
       <header class="section-header">
-        <h3 class="section-title">Other Works</h3>
+        <h2 class="section-title">Other Works</h2>
         <p class="section-description">Want to check other works? Here it is!</p>
       </header> 
       <div class="works">
@@ -143,8 +143,8 @@ View the source here: https://github.com/yasingencnet/yasingencnet
             </a></figure>
           <div class="works__meta">
             <header class="works__header">
-              <h4 class="works__title">MSA&#39;nin Restorani</h4>
-              <a class="works__link" href="https://www.msaninrestorani.com//" target="_blank" rel="noreferrer">Visit</a>
+              <div class="works__title">MSA&#39;nin Restorani</div>
+              <a class="works__link" href="https://www.msaninrestorani.com//" title="MSA&#39;nin Restorani" target="_blank" rel="noreferrer">Visit</a>
             </header>
             <p class="works__description">Since 2004, MSA, The Culinary Arts Academy of Istanbul has been delivering professional education programs.</p>
           </div>
@@ -158,8 +158,8 @@ View the source here: https://github.com/yasingencnet/yasingencnet
             </a></figure>
           <div class="works__meta">
             <header class="works__header">
-              <h4 class="works__title">N Kolay Bono</h4>
-              <a class="works__link" href="https://www.nkolay.com/bono/" target="_blank" rel="noreferrer">Visit</a>
+              <div class="works__title">N Kolay Bono</div>
+              <a class="works__link" href="https://www.nkolay.com/bono/" title="N Kolay Bono" target="_blank" rel="noreferrer">Visit</a>
             </header>
             <p class="works__description">N Kolay Bono is an investment product where you can invest your money at high interest rates throughout the maturity of the bond.</p>
           </div>
@@ -258,24 +258,8 @@ View the source here: https://github.com/yasingencnet/yasingencnet
 
 
 
-
+<script src="/assets/js/core.min.js" defer></script>
 <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const primaryNavButton = document.getElementById("js-primary-button"),
-      primaryNav = document.getElementById("js-primary-nav");
-
-    primaryNavButton.onclick = function(){
-      togglePrimaryNav();
-    }
-    function togglePrimaryNav(){
-      if(primaryNav.classList.contains("is-active")){
-        primaryNav.classList.remove("is-active")
-      } else{
-        primaryNav.classList.add("is-active")
-      }
-    }
-  });
-
   // Service Workers
   if ("serviceWorker" in navigator) {
     navigator.serviceWorker
@@ -283,9 +267,7 @@ View the source here: https://github.com/yasingencnet/yasingencnet
         scope: "./"
       })
       .then(function(reg) {
-        console.log(
-          "Service worker has been registered for scope:" + reg.scope
-        );
+
       });
   }
 </script>

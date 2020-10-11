@@ -109,15 +109,15 @@ View the source here: https://github.com/yasingencnet/yasingencnet
         
         <li class="card-list__item">
           
-          <a href="/tags/General/">
-            <span class="card-list__title">General</span>
+          <a href="/tags/JavaScript/">
+            <span class="card-list__title">JavaScript</span>
           </a>
         </li>
         
         <li class="card-list__item">
           
-          <a href="/tags/JavaScript/">
-            <span class="card-list__title">JavaScript</span>
+          <a href="/tags/General/">
+            <span class="card-list__title">General</span>
           </a>
         </li>
         
@@ -192,24 +192,8 @@ View the source here: https://github.com/yasingencnet/yasingencnet
 
 
 
-
+<script src="/assets/js/core.min.js" defer></script>
 <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const primaryNavButton = document.getElementById("js-primary-button"),
-      primaryNav = document.getElementById("js-primary-nav");
-
-    primaryNavButton.onclick = function(){
-      togglePrimaryNav();
-    }
-    function togglePrimaryNav(){
-      if(primaryNav.classList.contains("is-active")){
-        primaryNav.classList.remove("is-active")
-      } else{
-        primaryNav.classList.add("is-active")
-      }
-    }
-  });
-
   // Service Workers
   if ("serviceWorker" in navigator) {
     navigator.serviceWorker
@@ -217,9 +201,7 @@ View the source here: https://github.com/yasingencnet/yasingencnet
         scope: "./"
       })
       .then(function(reg) {
-        console.log(
-          "Service worker has been registered for scope:" + reg.scope
-        );
+
       });
   }
 </script>

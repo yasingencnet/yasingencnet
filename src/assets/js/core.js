@@ -1,13 +1,25 @@
 "use strict";
 
-var main = {
-    init: function(){
-        console.log("initialized");
+let main = {
+  primaryNav: function(){
+    const primaryNavButton = document.getElementById("js-primary-button"),
+      primaryNav = document.getElementById("js-primary-nav");
+
+    primaryNavButton.onclick = function(){
+      togglePrimaryNav();
     }
+    function togglePrimaryNav(){
+      if(primaryNav.classList.contains("is-active")){
+        primaryNav.classList.remove("is-active")
+      } else{
+        primaryNav.classList.add("is-active")
+      }
+    }
+  }
 };
 
 
 // Document.Ready
 document.addEventListener("DOMContentLoaded", function() {
-    main.init();
+  main.primaryNav();
 });

@@ -34,6 +34,7 @@ body {
   padding-bottom: var(--layout-gap);
   @include respond-below(xs) {
     --layout-gap:  3rem;
+    max-width: 100%;
   }
   @include respond-above(sm) {
     padding-top: calc(var(--layout-gap) * 2);

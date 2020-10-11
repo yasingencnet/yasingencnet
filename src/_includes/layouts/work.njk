@@ -62,7 +62,7 @@ templateClass: tmpl-work
   <div class="container">
     <div class="section-inner">
       <header class="section-header">
-        <h3 class="section-title">Other Works</h3>
+        <h2 class="section-title">Other Works</h2>
         <p class="section-description">Want to check other works? Here it is!</p>
       </header> {%- if nextPost %} {%  else %} {% endif %}
       <div class="works">
@@ -76,8 +76,8 @@ templateClass: tmpl-work
             </a>{%  else %}{% endif %}</figure>
           <div class="works__meta">
             <header class="works__header">
-              <h4 class="works__title">{%- if nextPost %}{{ nextPost.data.title }}{%  else %}{% endif %}</h4>
-              <a class="works__link" href="{%- if nextPost %}{{ nextPost.data.url }}/{%  else %}javascript:{% endif %}" target="_blank" rel="noreferrer">{%- if nextPost %}Visit{%  else %}{% endif %}</a>
+              <div class="works__title">{%- if nextPost %}{{ nextPost.data.title }}{%  else %}{% endif %}</div>
+              <a class="works__link" href="{%- if nextPost %}{{ nextPost.data.url }}/{%  else %}javascript:{% endif %}" title="{%- if nextPost %}{{ nextPost.data.title }}{%  else %}No Next Post{% endif %}" target="_blank" rel="noreferrer">{%- if nextPost %}Visit{%  else %}{% endif %}</a>
             </header>
             <p class="works__description">{%- if nextPost %}{{ nextPost.data.description }}{%  else %}{% endif %}</p>
           </div>
@@ -92,8 +92,8 @@ templateClass: tmpl-work
             </a>{%  else %}{% endif %}</figure>
           <div class="works__meta">
             <header class="works__header">
-              <h4 class="works__title">{%- if previousPost %}{{ previousPost.data.title }}{%  else %}{% endif %}</h4>
-              <a class="works__link" href="{%- if previousPost %}{{ previousPost.data.url }}/{%  else %}javascript:{% endif %}" target="_blank" rel="noreferrer">{%- if previousPost %}Visit{%  else %}{% endif %}</a>
+              <div class="works__title">{%- if previousPost %}{{ previousPost.data.title }}{%  else %}{% endif %}</div>
+              <a class="works__link" href="{%- if previousPost %}{{ previousPost.data.url }}/{%  else %}javascript:{% endif %}" title="{%- if previousPost %}{{ previousPost.data.title }}{%  else %}No Previous Post{% endif %}" target="_blank" rel="noreferrer">{%- if previousPost %}Visit{%  else %}{% endif %}</a>
             </header>
             <p class="works__description">{%- if previousPost %}{{ previousPost.data.description }}{%  else %}{% endif %}</p>
           </div>

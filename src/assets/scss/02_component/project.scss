@@ -10,9 +10,13 @@
   }
 }
 .project-figure{
-  padding: calc(var(--flow-space) * 6) calc(var(--flow-space) * 3) 0;
+  padding-top: calc(var(--flow-space) * 3);
+  @include respond-above(sm) {
+    padding: calc(var(--flow-space) * 6) calc(var(--flow-space) * 3) 0;
+  }
   img{
     width: 100%;
+    height: auto;
     max-width: max-content;
     margin-left: auto;
     margin-right: auto;

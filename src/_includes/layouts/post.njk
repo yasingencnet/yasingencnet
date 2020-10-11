@@ -9,7 +9,7 @@ templateClass: tmpl-post
       <ul class="article-meta meta-list">
         <li class="meta-list__item">
           <span class="meta-list__title">Written by</span>
-          <span class="meta-list__value">{{ metadata.author.name }}</span>
+          <a class="meta-list__value" href="{{ metadata.author.url }}">{{ metadata.author.name }}</a>
         </li>
         <li class="meta-list__item">
           <span class="meta-list__title">Reading time</span>

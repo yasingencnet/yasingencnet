@@ -1,15 +1,10 @@
 .hero{
   .container{
-    grid-template-columns: 1fr 1fr;
-    grid-gap: var(--layout-gap);
-    @include respond-below(xl) {
-      grid-gap: calc(var(--layout-gap) / 2);
-    }
-    @include respond-below(lg) {
-      grid-template-columns: 1fr;
-    }
-    @include respond-below(md) {
-      grid-gap: calc(var(--flow-space) * 3);
+    grid-template-columns: 1fr;
+    grid-gap: calc(var(--flow-space) * 3);
+    @include respond-above(lg) {
+      grid-template-columns: 1fr 1fr;
+      grid-gap: var(--layout-gap);
     }
   }
 }
@@ -28,12 +23,12 @@
   }
 }
 .hero-text{
+  display: flex;
+  flex-direction: column;
   position: relative;
   z-index: 1;
   max-width: 630px;
   @include respond-below(xl) {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
   }
 }

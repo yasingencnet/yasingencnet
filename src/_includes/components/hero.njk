@@ -13,9 +13,11 @@
       </div>
       <figure class="hero__figure">
         <picture>
-          <source srcset="{{metadata.assets.img}}layout/hero.webp" type="image/webp">
-          <source srcset="{{metadata.assets.img}}layout/hero.avif" type="image/avif">
-          <img class="hero__pic" src="{{metadata.assets.img}}layout/hero.png" width="740" height="655" alt="A photo of Yasin with suit and downhill helmet" loading="eager">
+          <source media="(max-width: 767px)" srcset="{{metadata.assets.img}}layout/hero-sm.webp" type="image/webp">
+          <source media="(max-width: 767px)" srcset="{{metadata.assets.img}}layout/hero-sm.png" type="image/png">
+          <source media="(min-width: 768px)" srcset="{{metadata.assets.img}}layout/hero-xl.webp" type="image/webp">
+          <source media="(min-width: 768px)" srcset="{{metadata.assets.img}}layout/hero-xl.png" type="image/png">
+          <img class="hero__pic" src="{{metadata.assets.img}}layout/hero-xl.png" width="740" height="655" alt="A photo of Yasin with suit and downhill helmet" loading="eager">
         </picture>
       </figure>
       <footer class="hero__footer">♥</footer>

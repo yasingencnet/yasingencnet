@@ -29,7 +29,7 @@ Source Serif Pro (main) and Inter fonts used.
 * Almost zero JavaScript.
 * SEO friendly. Actually user-friendly. Built for humans. Not for Google crawlers.
 * Blazing fast page loading.
-* Tiny CSS files. Homepage ~15Kb. Subpages ~26Kb.
+* Tiny CSS files. Homepage ~18Kb. Subpages ~29Kb.
 * JSON & XML Feed for blog posts.
 * Sitemap
 * PWA ready.
@@ -49,7 +49,7 @@ Source Serif Pro (main) and Inter fonts used.
 
 ### How to use it?
 
-Clone or Download the repository and start to use it.
+Clone or Download the repository and start to use it. If you need a help or have some questions don't hesitate to [contact me](/contact "Contact Me!")!
 
 Download Link: https://github.com/yasingencnet/yasingencnet
 

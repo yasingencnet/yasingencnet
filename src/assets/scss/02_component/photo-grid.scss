@@ -25,6 +25,7 @@
     min-height: 100%;
     width: 100%;
     object-fit: cover;
+    height: auto;
   }
 
   .article__content & {
@@ -32,5 +33,9 @@
     max-width: initial;
     left: 50%;
     transform: translateX(-50%);
+    @include respond-below(sm) {
+      width: 100%;
+      padding: 0;
+    }
   }
 }

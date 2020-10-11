@@ -130,7 +130,7 @@ View the source here: https://github.com/yasingencnet/yasingencnet
   <div class="container">
     <div class="section-inner">
       <header class="section-header">
-        <h3 class="section-title">Other Works</h3>
+        <h2 class="section-title">Other Works</h2>
         <p class="section-description">Want to check other works? Here it is!</p>
       </header> 
       <div class="works">
@@ -143,8 +143,8 @@ View the source here: https://github.com/yasingencnet/yasingencnet
             </a></figure>
           <div class="works__meta">
             <header class="works__header">
-              <h4 class="works__title">Lanistis</h4>
-              <a class="works__link" href="https://www.lanistis.com//" target="_blank" rel="noreferrer">Visit</a>
+              <div class="works__title">Lanistis</div>
+              <a class="works__link" href="https://www.lanistis.com//" title="Lanistis" target="_blank" rel="noreferrer">Visit</a>
             </header>
             <p class="works__description">Online Gym</p>
           </div>
@@ -158,8 +158,8 @@ View the source here: https://github.com/yasingencnet/yasingencnet
             </a></figure>
           <div class="works__meta">
             <header class="works__header">
-              <h4 class="works__title">Sodexo</h4>
-              <a class="works__link" href="https://www.sodexoavantaj.com//" target="_blank" rel="noreferrer">Visit</a>
+              <div class="works__title">Sodexo</div>
+              <a class="works__link" href="https://www.sodexoavantaj.com//" title="Sodexo" target="_blank" rel="noreferrer">Visit</a>
             </header>
             <p class="works__description">Sodexo is a French food services and facilities management company.</p>
           </div>
@@ -258,24 +258,8 @@ View the source here: https://github.com/yasingencnet/yasingencnet
 
 
 
-
+<script src="/assets/js/core.min.js" defer></script>
 <script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const primaryNavButton = document.getElementById("js-primary-button"),
-      primaryNav = document.getElementById("js-primary-nav");
-
-    primaryNavButton.onclick = function(){
-      togglePrimaryNav();
-    }
-    function togglePrimaryNav(){
-      if(primaryNav.classList.contains("is-active")){
-        primaryNav.classList.remove("is-active")
-      } else{
-        primaryNav.classList.add("is-active")
-      }
-    }
-  });
-
   // Service Workers
   if ("serviceWorker" in navigator) {
     navigator.serviceWorker
@@ -283,9 +267,7 @@ View the source here: https://github.com/yasingencnet/yasingencnet
         scope: "./"
       })
       .then(function(reg) {
-        console.log(
-          "Service worker has been registered for scope:" + reg.scope
-        );
+
       });
   }
 </script>

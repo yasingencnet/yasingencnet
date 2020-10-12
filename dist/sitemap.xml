@@ -92,11 +92,6 @@
     </url>
     
     <url>
-      <loc>https://yasingenc.net/tags/JavaScript/</loc>
-      <lastmod>2020-09-13</lastmod>
-    </url>
-    
-    <url>
       <loc>https://yasingenc.net/tags/CSS/</loc>
       <lastmod>2020-09-13</lastmod>
     </url>
@@ -108,6 +103,11 @@
     
     <url>
       <loc>https://yasingenc.net/tags/General/</loc>
+      <lastmod>2020-09-13</lastmod>
+    </url>
+    
+    <url>
+      <loc>https://yasingenc.net/tags/JavaScript/</loc>
       <lastmod>2020-09-13</lastmod>
     </url>
     

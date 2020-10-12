@@ -15,7 +15,7 @@ View the source here: https://github.com/yasingencnet/yasingencnet
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/head/icon-180x180.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/head/icon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/head/icon-16x16.png">
-  <link rel="manifest" href="/assets/img/head/site.webmanifest">
+  <link rel="manifest" href="/site.webmanifest">
   <link rel="mask-icon" href="/assets/img/head/safari-pinned-tab.svg" color="#EA3843">
   <meta name="msapplication-TileColor" content="#EA3843">
   <meta name="theme-color" content="#EA3843">
@@ -98,13 +98,6 @@ View the source here: https://github.com/yasingencnet/yasingencnet
         
         <li class="card-list__item">
           
-          <a href="/tags/JavaScript/">
-            <span class="card-list__title">JavaScript</span>
-          </a>
-        </li>
-        
-        <li class="card-list__item">
-          
           <a href="/tags/CSS/">
             <span class="card-list__title">CSS</span>
           </a>
@@ -121,6 +114,13 @@ View the source here: https://github.com/yasingencnet/yasingencnet
           
           <a href="/tags/General/">
             <span class="card-list__title">General</span>
+          </a>
+        </li>
+        
+        <li class="card-list__item">
+          
+          <a href="/tags/JavaScript/">
+            <span class="card-list__title">JavaScript</span>
           </a>
         </li>
         
@@ -197,15 +197,10 @@ View the source here: https://github.com/yasingencnet/yasingencnet
 
 <script src="/assets/js/core.min.js" defer></script>
 <script>
-  // Service Workers
   if ("serviceWorker" in navigator) {
-    navigator.serviceWorker
-      .register("/serviceworker.js", {
-        scope: "./"
-      })
-      .then(function(reg) {
-
-      });
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('/serviceworker.js');
+    });
   }
 </script>
 </body>

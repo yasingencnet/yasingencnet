@@ -52,7 +52,6 @@ I realized that I remember all places, all activities but when It's come to writ
 <img src="{{ metadata.assets.img }}odessa-1.jpg" alt="Odessa Prymorskyi Boulevard" loading="lazy">
 <img src="{{ metadata.assets.img }}odessa-2.jpg" alt="Odessa Prymorskyi Boulevard" loading="lazy">
 <img src="{{ metadata.assets.img }}odessa-3.jpg" alt="Odessa Prymorskyi Boulevard" loading="lazy">
-<img src="{{ metadata.assets.img }}odessa-4.jpg" alt="Odessa Prymorskyi Boulevard" loading="lazy">
 <img src="{{ metadata.assets.img }}odessa-5.jpg" alt="Odessa Prymorskyi Boulevard" loading="lazy">
 <img src="{{ metadata.assets.img }}odessa-6.jpg" alt="Odessa Prymorskyi Boulevard" loading="lazy">
 <img src="{{ metadata.assets.img }}odessa-7.jpg" alt="Odessa Prymorskyi Boulevard" loading="lazy">

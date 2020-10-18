@@ -112,6 +112,11 @@
     </url>
     
     <url>
+      <loc>https://yasingenc.net/tags/Design/</loc>
+      <lastmod>2020-09-13</lastmod>
+    </url>
+    
+    <url>
       <loc>https://yasingenc.net/tags/Travel/</loc>
       <lastmod>2020-09-13</lastmod>
     </url>
@@ -194,5 +199,10 @@
     <url>
       <loc>https://yasingenc.net/eleventy-powered-free-blog-and-portfolio-template/</loc>
       <lastmod>2020-10-11</lastmod>
+    </url>
+    
+    <url>
+      <loc>https://yasingenc.net/resize-all-images-with-photoshop-actions/</loc>
+      <lastmod>2020-10-18</lastmod>
     </url>
 </urlset>

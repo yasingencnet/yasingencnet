@@ -5,12 +5,45 @@
 	
 	<link href="https://yasingenc.net/feed/feed.xml" rel="self"/>
 	<link href="https://yasingenc.net/"/>
-	<updated>2020-10-10T21:00:00+03:00</updated>
+	<updated>2020-10-17T21:00:00+03:00</updated>
 	<id>https://yasingenc.net/</id>
 	<author>
 		<name>Yasin Genc</name>
 		<email>yasin@yasingenc.net</email>
 	</author>
+	
+	<entry>
+		<title>Resize All Images With Photoshop Actions</title>
+		<link href="https://yasingenc.net/resize-all-images-with-photoshop-actions/"/>
+		<updated>2020-10-17T21:00:00+03:00</updated>
+		<id>https://yasingenc.net/resize-all-images-with-photoshop-actions/</id>
+		<content type="html">&lt;p&gt;Resizing multiple images at once can be boring work. Adobe Photoshop helps us batch resize images.&lt;/p&gt;
+&lt;p&gt;Firstly, you have to make sure all the images you need to resize are in same folder.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://yasingenc.net/assets/img/image-folder.jpg&quot; alt=&quot;Example image folder&quot; loading=&quot;lazy&quot;&gt;
+&lt;/figure&gt;
+&lt;h5 id=&quot;step-1&quot;&gt;Step 1 &lt;a class=&quot;direct-link&quot; href=&quot;#step-1&quot;&gt;#&lt;/a&gt;&lt;/h5&gt;
+&lt;p&gt;Open up one of the images in your resize folder.&lt;/p&gt;
+&lt;h5 id=&quot;step-2&quot;&gt;Step 2 &lt;a class=&quot;direct-link&quot; href=&quot;#step-2&quot;&gt;#&lt;/a&gt;&lt;/h5&gt;
+&lt;p&gt;Go to &lt;code&gt;Window &amp;gt; Action&lt;/code&gt; panel. You&#39;ll see folder icon named &lt;code&gt;Create new set&lt;/code&gt; at the bottom of the actions panel. Click it and choose a name for your new action. You can then choose whether you want. I named it &amp;quot;Resize It!&amp;quot;.&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://yasingenc.net/assets/img/action-panel.jpg&quot; alt=&quot;Photoshop actions panel&quot; loading=&quot;lazy&quot;&gt;
+&lt;/figure&gt;
+&lt;h5 id=&quot;step-3&quot;&gt;Step 3 &lt;a class=&quot;direct-link&quot; href=&quot;#step-3&quot;&gt;#&lt;/a&gt;&lt;/h5&gt;
+&lt;p&gt;After creating folder, you have to create a new action by clicking on the folded paper icon next to folder. Now your new action recording.&lt;/p&gt;
+&lt;h5 id=&quot;step-4&quot;&gt;Step 4 &lt;a class=&quot;direct-link&quot; href=&quot;#step-4&quot;&gt;#&lt;/a&gt;&lt;/h5&gt;
+&lt;p&gt;Go to &lt;code&gt;Image &amp;gt; Resize&lt;/code&gt; panel. Resize your image.&lt;/p&gt;
+&lt;h5 id=&quot;step-5&quot;&gt;Step 5 &lt;a class=&quot;direct-link&quot; href=&quot;#step-5&quot;&gt;#&lt;/a&gt;&lt;/h5&gt;
+&lt;p&gt;Save your image over it. &lt;code&gt;File &amp;gt; Save As&lt;/code&gt;.&lt;/p&gt;
+&lt;h5 id=&quot;step-6&quot;&gt;Step 6 &lt;a class=&quot;direct-link&quot; href=&quot;#step-6&quot;&gt;#&lt;/a&gt;&lt;/h5&gt;
+&lt;p&gt;Stop recording. You&#39;re done!&lt;/p&gt;
+&lt;figure&gt;
+&lt;img src=&quot;https://yasingenc.net/assets/img/action-panel-stop-recording.jpg&quot; alt=&quot;Stop action recording&quot; loading=&quot;lazy&quot;&gt;
+&lt;/figure&gt;
+&lt;h5 id=&quot;final-step&quot;&gt;Final Step &lt;a class=&quot;direct-link&quot; href=&quot;#final-step&quot;&gt;#&lt;/a&gt;&lt;/h5&gt;
+&lt;p&gt;Now It&#39;s time to use your action. Go to &lt;code&gt;File &amp;gt; Automate &amp;gt; Batch&lt;/code&gt;. Under the Batch settings select the set and action that you created. Then, choose the folder that you want to resize.&lt;/p&gt;
+</content>
+	</entry>
 	
 	<entry>
 		<title>Eleventy Powered Free Blog &amp; Portfolio Template</title>

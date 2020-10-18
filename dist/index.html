@@ -93,7 +93,7 @@ View the source here: https://github.com/yasingencnet/yasingencnet
           <source media="(max-width: 767px)" srcset="/assets/img/layout/hero-sm.png" type="image/png">
           <source media="(max-width: 1919px)" srcset="/assets/img/layout/hero-md.png" type="image/png">
           <source media="(min-width: 1920px)" srcset="/assets/img/layout/hero-lg.webp" type="image/webp">
-          <img class="hero__pic" src="/assets/img/layout/hero-lg.png" alt="A photo of Yasin with suit and downhill helmet" loading="eager">
+          <img class="hero__pic" src="/assets/img/layout/hero-lg.png" width="740" height="655" alt="A photo of Yasin with suit and downhill helmet" loading="eager">
         </picture>
       </figure>
       <footer class="hero__footer">♥</footer>
@@ -479,6 +479,15 @@ View the source here: https://github.com/yasingencnet/yasingencnet
       navigator.serviceWorker.register('/serviceworker.js');
     });
   }
+</script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-51546014-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-51546014-3');
 </script>
 </body>
 </html>

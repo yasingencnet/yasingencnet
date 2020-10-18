@@ -68,6 +68,8 @@
   pointer-events: none;
   margin-left: auto;
   max-width: 100%;
+  height: auto;
+  width: auto;
   @include respond-below(xxl) {
     transform: none;
   }

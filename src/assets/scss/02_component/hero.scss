@@ -67,12 +67,9 @@
   transform: translateY(-120px);
   pointer-events: none;
   margin-left: auto;
-  height: auto;
-  @include respond-below(xl) {
+  max-width: 100%;
+  @include respond-below(xxl) {
     transform: none;
-  }
-  @include respond-between(xs, md) {
-    max-width: 420px;
   }
 }
 .hero__footer{

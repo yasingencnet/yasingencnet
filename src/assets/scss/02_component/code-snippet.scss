@@ -15,9 +15,17 @@ code[class*="language-"], pre[class*="language-"] {
   hyphens: none;
   background: #272822;
   color: #f8f8f2;
+  br{
+    content: '';
+    display: block;
+    height: 5px;
+    & + br{
+      height: 15px;
+    }
+  }
 }
 pre[class*="language-"] {
-  padding: 1.5em 0;
+  padding: 1.5em;
   margin: .5em 0;
   overflow: auto;
   max-width: calc(100vw - 30px);
@@ -84,6 +92,7 @@ pre[class*="language-"] {
 .token.entity {
   cursor: help;
 }
+
 pre > code.highlight {
   outline: 0.4em solid #f92672;
   outline-offset: .4em;

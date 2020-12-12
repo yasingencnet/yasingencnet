@@ -121,9 +121,11 @@
     }
   }
   code{
-    background-color: RGB(var(--color-highlight), 0.2);
-    padding: 2px 8px;
-    border-radius: var(--radius);
+    &:not([class]){
+      background-color: RGB(var(--color-highlight), 0.2);
+      padding: 2px 8px;
+      border-radius: var(--radius);
+    }
   }
 }
 

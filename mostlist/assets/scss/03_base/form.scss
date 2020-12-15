@@ -1,0 +1,192 @@
+//------------------------------------------------------------
+// = LAYOUT
+//------------------------------------------------------------
+fieldset{}
+legend{}
+label{
+  display: inline;
+}
+.form-row{
+  margin-bottom: 30px;
+  label{
+    position: relative;
+    display: block;
+  }
+  .input-group{
+    position: relative;
+    .select-arrow{
+      position: absolute;
+      top: 50%;
+      right: 15px;
+      width: 10px;
+      height: 6px;
+      color: var(--color-base);
+      background: url(#{$layout}chevron.svg) no-repeat;
+      background-size: contain;
+      transform: translateY(-50%);
+      pointer-events: none;
+    }
+  }
+  &.row{
+    [class*="col-"]{
+      &+[class*="col-"]{
+        @include media-breakpoint-down(sm){
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+}
+%form-label{
+  @extend %fs16;
+  display: block;
+  margin-bottom: 5px;
+  color: var(--color-paragraph);
+}
+%input-element{
+  @extend %fs16;
+  border: 1px solid var(--color-border);
+
+  width: 100%;
+  padding: 0 15px;
+  color: var(--color-base);
+  transition: var(--transition);
+  background: var(--color-bg-pale);
+  &::placeholder{color: var(--color-paragraph-light);}
+  &:hover{border-color: var(--color-primary);}
+  &:focus{
+    border-color: var(--color-primary);
+    @include media-breakpoint-up(md) {
+      outline: 2px solid var(--color-highlight);
+    }
+  }
+}
+
+
+
+//------------------------------------------------------------
+// = ELEMENT
+//------------------------------------------------------------
+.input-1{
+  .label{@extend %form-label;}
+  input{
+    @extend %input-element;
+    height: var(--input-height);
+  }
+  textarea{
+    @extend %input-element;
+    height: var(--textarea-height);
+    padding: 15px;
+  }
+}
+.select-1{
+  .label{@extend %form-label;}
+  select{
+    @extend %input-element;
+    height: var(--input-height);
+  }
+}
+.check-1{
+  label{
+    input{
+      @extend .visually-hidden;
+      & ~ .label{
+        @extend %fs18;
+        position: relative;
+        display: block;
+        padding-left: 41px;
+        color: var(--color-paragraph);
+        small{
+          @extend %fs14;
+          display: block;
+          color: var(--color-paragraph-light);
+        }
+        &:before{
+          content: "✔";
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 26px;
+          height: 26px;
+          z-index: 1;
+          text-align: center;
+          font-weight: var(--black);
+          color: var(--color-success);
+          transform: scale(0);
+          transition: var(--transition);
+        }
+        &:after{
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          display: inline-block;
+          width: 26px;
+          height: 26px;
+          border: 1px solid var(--color-border);
+          background-color: var(--color-bg-pale);
+        }
+      }
+      &:checked ~ .label{
+        &:after{border-color: var(--color-success);}
+        &:before{transform: scale(1);}
+      }
+      &:disabled ~ .label{}
+      &:checked:disabled ~ .label{}
+
+      &[type="radio"] ~ .label{}
+      &[type="checkbox"] ~ .label{}
+
+      &:focus{
+        & ~ .label{
+          &:after{
+            @include media-breakpoint-up(md) {
+              outline: 2px solid var(--color-highlight);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.toggle-1{
+  font-size: 0;
+  label{
+    position: relative;
+    input{
+      @extend .visually-hidden;
+      & ~ .toggle-label{
+        @extend %fs14;
+        display: inline-block;
+        padding: 10px 30px;
+
+        color: var(--color-paragraph);
+        font-weight: var(--semi-bold);
+        text-align: center;
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius);
+        &:hover{cursor: pointer;}
+      }
+      &:checked ~ .toggle-label{
+        background-color: var(--color-primary);
+        border-color: var(--color-primary);
+        color: var(--color-white);
+      }
+      &:disabled ~ .toggle-label{}
+      &:checked:disabled ~ .toggle-label{}
+
+      &:focus{
+        & ~ .toggle-label{
+          @include media-breakpoint-up(md) {
+            outline: 2px solid var(--color-highlight);
+          }
+        }
+      }
+    }
+  }
+}
+
+
+//------------------------------------------------------------
+// = PLUGIN OVERRIDE STYLES
+//------------------------------------------------------------

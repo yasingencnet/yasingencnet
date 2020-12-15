@@ -1,0 +1,96 @@
+html{
+  //------------------------------------------------------------
+  // = GENERAL
+  //------------------------------------------------------------
+  --font: 						'Montserrat', sans-serif;
+  --font-alternate:             'Merriweather', serif;
+  --black:                      900;
+  --bold:                       700;
+  --semi-bold:                  600;
+  --medium:                     500;
+  --regular:                    400;
+
+  --transition:                 all .15s ease;
+  --transition-2:               all 1s cubic-bezier(0.23, 1, 0.32, 1);
+  --radius:                     50px;
+  --radius-alt:                 4px;
+  --shadow-1:                   0 5px 15px rgba(0, 0, 0, 0.05);
+  --shadow-2:                   0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08);
+  --shadow-2-hover:             0 7px 14px rgba(50,50,93,.1),0 3px 6px rgba(0,0,0,.08);
+  --caption-gradient:           linear-gradient(to bottom, transparent 25%, var(--color-black) 80%);
+  --card-shadow:                0 0 30px rgba(0, 0, 0, .05);
+
+  //------------------------------------------------------------
+  // = SIZE
+  //------------------------------------------------------------
+  --header-height:              100px;
+  --header-buffer:              60px;
+  --section-buffer:             90px;
+  --section-buffer-md:          60px;
+  --row-buffer:                 30px;
+  --wysiwyg-buffer:             45px;
+
+  --input-height:               50px;
+  --textarea-height:            200px;
+
+  @include media-breakpoint-down(md){
+    --header-height:            80px;
+    --section-buffer:           60px;
+    --section-buffer-md:        30px;
+  }
+  @include media-breakpoint-down(sm){
+    --header-height:            60px;
+    --section-buffer:           30px;
+    --row-buffer:               15px;
+  }
+
+  //------------------------------------------------------------
+  // = COLOR
+  //------------------------------------------------------------
+  --color-bg:                   #FBFBFB;
+  --color-bg-pale:              #FFFFFF;
+  --color-bg-alternate:         #F8F6EF;
+  --color-bg-darken:            #F8F6EF;
+
+  --color-primary:              #E9002D;
+
+  --color-paragraph:            #090b10;
+  --color-paragraph-light:      #707070;
+  --color-paragraph-alternate:  #DCB395;
+  --color-paragraph-alternate2: #fff1d5;
+  --color-paragraph-pale:       #ffffff;
+
+  --color-border:               #E5E5E5;
+
+  --color-highlight:            #FFE500;
+  --color-success:              #36B37E;
+  --color-alert:                #FF5630;
+
+  --color-white:                #FFFFFF;
+  --color-black:                #090b10;
+
+  //------------------------------------------------------------
+  // = DARK MODE
+  //------------------------------------------------------------
+  &[data-theme="dark"]{
+    --color-bg:                   #191923;
+    --color-bg-alternate:         #0c0c15;
+    --color-bg-pale:              #13131c;
+    --color-bg-darken:            #000000;
+
+    --color-paragraph:            #C4C4C4;
+    --color-paragraph-light:      #7a7a80;
+    --color-paragraph-alternate:  #F9D8AE;
+    --color-paragraph-alternate2: #13131c;
+    --color-paragraph-pale:       #DCB395;
+
+    --color-border:               #38444d;
+
+    --card-shadow:                0 0 30px rgba(0, 0, 0, .2);
+  }
+}
+
+//------------------------------------------------------------
+// = SCSS
+//------------------------------------------------------------
+$layout:                         "../images/layout/";

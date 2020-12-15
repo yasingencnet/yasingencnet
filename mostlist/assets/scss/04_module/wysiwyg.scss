@@ -1,0 +1,190 @@
+//------------------------------------------------------------
+// = WYSIWYG
+//------------------------------------------------------------
+.wysiwyg {
+  > * {
+    margin-bottom: var(--wysiwyg-buffer);
+  }
+
+  > h1, > h2, > h3, > h4, > h5, > h6 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-weight: var(--black);
+    font-family: var(--font-alternate);
+    color: var(--color-paragraph);
+  }
+
+  > h1 {
+    @extend %fs40;
+  }
+
+  > h2, h3 {
+    @extend %fs26;
+  }
+
+  > h4, h5 {
+    @extend %fs20;
+  }
+
+  > h6 {
+    @extend %fs16;
+  }
+
+  > p {
+    @extend %fs20;
+    color: var(--color-paragraph);
+
+    &:empty {
+      display: none;
+    }
+
+    span {
+    }
+
+    em {
+    }
+
+    small {
+    }
+
+    a {
+      color: var(--color-primary);
+    }
+
+    strong {
+    }
+
+    mark {
+    }
+  }
+
+  > blockquote {
+    @extend %fs20;
+    position: relative;
+    padding: 5px 0 5px 36px;
+
+    font-family: var(--font-alternate);
+    color: var(--color-paragraph);
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      width: 6px;
+      height: 100%;
+      margin-right: 30px;
+      background-color: var(--color-border);
+    }
+  }
+
+  > figure:not(.aspect-ratio) {
+    img {
+      max-width: 885px;
+      @include media-breakpoint-down(lg) {
+        max-width: 100%;
+      }
+    }
+
+    figcaption {
+      @extend %fs13;
+      margin-top: 5px;
+      text-align: right;
+      font-weight: var(--regular);
+      color: var(--color-paragraph-light);
+    }
+  }
+
+  > ol, > ul {
+    @extend .default-listing;
+  }
+
+  > ol {
+    @extend .ordered-list;
+  }
+
+  > ul {
+    @extend .unordered-list;
+  }
+
+  > dl {
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+    grid-row-gap: 30px;
+    grid-column-gap: 15px;
+
+    dt {
+      @extend %fs16;
+      border-right: 1px solid var(--color-border);
+      padding-right: 15px;
+      text-align: right;
+    }
+
+    dd {
+      @extend %fs16;
+      font-family: var(--font-alternate);
+
+      ul, ol {
+        li {
+          & + li {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  > hr {
+    position: relative;
+    padding: 1px;
+    margin: 90px auto;
+    font-size: 3rem;
+    border: 0;
+    text-align: center;
+    letter-spacing: 20px;
+    color: var(--color-paragraph-light);
+    @include media-breakpoint-down(md) {
+      margin: 60px auto;
+    }
+
+    &:before {
+      @include centerer();
+      content: '\2022 \2022 \2022';
+      text-align: center;
+      line-height: 0;
+    }
+  }
+
+  > br {
+    & + br {
+      display: none;
+    }
+  }
+
+  > pre {
+    @extend %fs14;
+
+    a {
+      color: var(--color-primary);
+    }
+  }
+
+  .inline-figure {
+    float: left;
+    margin-right: var(--wysiwyg-buffer);
+    max-width: 300px;
+    @include media-breakpoint-up(xl) {
+      margin-left: -60px;
+    }
+    @include media-breakpoint-down(md) {
+      float: none;
+      margin-right: 0;
+      max-width: 100%;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,102 @@
+//------------------------------------------------------------
+// = RESET
+//------------------------------------------------------------
+html {
+  font-size: 10px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+
+  background: var(--color-bg);
+  color: var(--color-paragraph);
+  font-family: var(--font);
+
+  @include media-breakpoint-down(sm) {
+    padding-top: 30px;
+    padding-bottom: var(--header-height);
+  }
+}
+
+h1, h2, h3, h4, h5, h6, ul, ol, dl, label, figure {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  white-space: normal;
+}
+
+a, button {
+  transition: var(--transition);
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:focus {
+    outline: none;
+    @include media-breakpoint-up(md) {
+      outline: 2px solid var(--color-highlight);
+    }
+  }
+}
+
+strong {
+  font-weight: var(--bold);
+}
+
+input {
+  &::-webkit-calendar-picker-indicator, &::-webkit-inner-spin-button {
+    display: none;
+  }
+}
+
+mark {
+  background-color: var(--color-highlight);
+}
+
+::selection {
+  background: var(--color-highlight);
+  color: var(--color-black);
+}
+
+.browser-ie {
+  overflow: hidden;
+
+  .main-header {
+    &:before {
+      content: 'Unsupported Browser!' '\A' '\A' 'We only support the recent versions of major browsers like Chrome, Firefox, Opera, Brave, Safari, and Edge.';
+      position: fixed;
+      z-index: 100000;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      vertical-align: middle;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      white-space: pre-wrap;
+      font-size: 2rem;
+      font-family: "Montserrat", sans-serif;
+      background: #FFE500;
+      color: black;
+      text-align: center;
+    }
+  ;
+  }
+}
+
+.is-locked {
+  overflow: hidden;
+}

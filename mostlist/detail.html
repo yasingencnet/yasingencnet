@@ -1,0 +1,628 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>MostList - Explore the World!</title>
+    <meta name="description"
+          content="Explore 'most things' in your neighborhood and around the world with this definitive guide!">
+    <meta name="theme-color" content="#e9002d">
+
+    <meta property="og:title" content="MostList">
+    <meta property="og:description" content="MostList">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="assets/images/head/og-image.jpg">
+
+    <link rel="stylesheet" href="assets/css/core.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700,900|Montserrat:400,500,600&display=swap&subset=latin-ext"
+          rel="stylesheet">
+
+    <link rel="shortcut icon" href="assets/images/head/favicon.png">
+    <link rel="apple-touch-icon" href="assets/images/head/60x60.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/head/76x76.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/head/120x120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/head/152x152.png">
+</head>
+<body>
+<a class="skip-to-content" href="#content"><span class="skip-text">skip to main content</span></a>
+
+<header class="main-header">
+    <div class="container">
+        <div class="inner">
+            <button class="button-nav" type="button" aria-label="Toggle Navigation">
+                <svg width="26" height="17" viewBox="0 0 26 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="26" height="2.68421" fill="#0A0D13"/>
+                    <rect y="7.15787" width="14.8571" height="2.68421" fill="#0A0D13"/>
+                    <rect y="14.3158" width="21.3571" height="2.68421" fill="#0A0D13"/>
+                </svg>
+            </button>
+            <aside class="sidebar d-none">
+                <header class="sidebar__header">
+                    <button class="button-nav" type="button" aria-label="Toggle Navigation">
+                        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 1.9L17.1 0L9.5 7.6L1.9 0L0 1.9L7.6 9.5L0 17.1L1.9 19L9.5 11.4L17.1 19L19 17.1L11.4 9.5L19 1.9Z"
+                                  fill="#0A0D13"/>
+                        </svg>
+                    </button>
+                </header>
+                <div class="sidebar_content">
+                    <div class="sidebar_content-inner">
+                        <section class="sidebar-section">
+                            <h3 class="sidebar-section__title">CATEGORIES</h3>
+                            <nav class="main-nav" aria-label="Category Navigation">
+                                <ul class="main-nav__list">
+                                    <li class="main-nav__item"><a href="javascript:;" title="World"><span
+                                            class="main-nav__item-icon">🌍</span> World</a></li>
+                                    <li class="main-nav__item"><a href="javascript:;" title="Countries"><span
+                                            class="main-nav__item-icon">‍🌈</span> Countries</a></li>
+                                    <li class="main-nav__item"><a href="javascript:;" title="Travel"><span
+                                            class="main-nav__item-icon">🌴</span> Travel</a></li>
+                                    <li class="main-nav__item"><a href="javascript:;" title="Animals"><span
+                                            class="main-nav__item-icon">🐻</span> Animals</a></li>
+                                    <li class="main-nav__item"><a href="javascript:;" title="Food"><span
+                                            class="main-nav__item-icon">🥝</span> Food</a></li>
+                                    <li class="main-nav__item"><a href="javascript:;" title="Art"><span class="main-nav__item-icon">🎨</span>
+                                        Art</a></li>
+                                    <li class="main-nav__item"><a href="javascript:;" title="Music"><span
+                                            class="main-nav__item-icon">🎵</span> Music</a></li>
+                                    <li class="main-nav__item"><a href="javascript:;" title="Architecture"><span
+                                            class="main-nav__item-icon">🏛</span> Architecture</a></li>
+                                    <li class="main-nav__item"><a href="javascript:;" title="Economy"><span
+                                            class="main-nav__item-icon">🤑</span> Economy</a></li>
+                                    <li class="main-nav__item"><a href="javascript:;" title="Technology"><span
+                                            class="main-nav__item-icon">⚛</span> Technology</a></li>
+                                </ul>
+                            </nav>
+                        </section>
+                        <section class="sidebar-section">
+                            <h3 class="sidebar-section__title">DISCOVER</h3>
+                            <ul class="tags tags-v2">
+                                <li class="tags__item"><a href="javascript:;" title="#spiritual">#spiritual</a></li>
+                                <li class="tags__item"><a href="javascript:;" title="#wtf">#wtf</a></li>
+                                <li class="tags__item"><a href="javascript:;" title="#sun">#sun</a></li>
+                                <li class="tags__item"><a href="javascript:;" title="#hot">#hot</a></li>
+                                <li class="tags__item"><a href="javascript:;" title="#vikings">#vikings</a></li>
+                                <li class="tags__item"><a href="javascript:;" title="#istanbul">#istanbul</a></li>
+                                <li class="tags__item"><a href="javascript:;" title="#mountain">#mountain</a></li>
+                                <li class="tags__item"><a href="javascript:;" title="#temple">#temple</a></li>
+                                <li class="tags__item"><a href="javascript:;" title="#city">#city</a></li>
+                                <li class="tags__item"><a href="javascript:;" title="#cambodia">#cambodia</a></li>
+                            </ul>
+                        </section>
+                        <section class="sidebar-section">
+                            <h3 class="sidebar-section__title">PAGES</h3>
+                            <nav class="main-nav" aria-label="Page Navigation">
+                                <ul class="main-nav__list">
+                                    <li class="main-nav__item"><a href="javascript:;" title="About">About</a></li>
+                                    <li class="main-nav__item"><a href="javascript:;" title="Contact">Contact</a></li>
+                                    <li class="main-nav__item"><a href="javascript:;" title="Release Notes">Release Notes</a></li>
+                                    <li class="main-nav__item"><a href="javascript:;" title="Advertisement">Advertisement</a></li>
+                                    <li class="main-nav__item"><a href="javascript:;" title="Terms of Use">Terms of Use</a></li>
+                                    <li class="main-nav__item"><a href="javascript:;" title="Support Us">Support Us</a></li>
+                                </ul>
+                            </nav>
+                        </section>
+                        <section class="sidebar-section">
+                            <h3 class="sidebar-section__title">PREFERENCES</h3>
+                            <nav class="main-nav" aria-label="Preference Navigation">
+                                <ul class="main-nav__list">
+                                    <li class="main-nav__item">
+                                        <button class="js-theme-switch button-theme" type="button" aria-label="Theme Switch Button">
+                                            <span class="main-nav__item-icon">🌓</span><span class="text">Dark Mode</span></button>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </section>
+                    </div>
+                </div>
+            </aside>
+            <button class="button-search" type="button" data-fancybox data-type="ajax" data-modal="true"
+                    data-src="../assets/ajax/search.html" aria-label="Toggle Search">
+                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M18.535 16.2896L14.4074 12.162C14.3854 12.1401 14.3597 12.1247 14.3368 12.1043C15.1489 10.8723 15.623 9.39753 15.623 7.81156C15.623 3.49733 12.1256 0 7.81149 0C3.49734 0 0 3.49734 0 7.81149C0 12.1256 3.49726 15.623 7.81141 15.623C9.39745 15.623 10.8721 15.1489 12.1042 14.3368C12.1246 14.3596 12.1398 14.3853 12.1618 14.4073L16.2895 18.535C16.9096 19.155 17.9149 19.155 18.535 18.535C19.155 17.9149 19.155 16.9096 18.535 16.2896ZM7.81149 12.915C4.99282 12.915 2.70792 10.6301 2.70792 7.81149C2.70792 4.99282 4.9929 2.70792 7.81149 2.70792C10.63 2.70792 12.915 4.9929 12.915 7.81149C12.915 10.6301 10.63 12.915 7.81149 12.915Z"
+                          fill="#0A0D13"/>
+                </svg>
+            </button>
+            <a class="logo" href="/" title="MostList - Explore the World!" aria-label="MostList Logo">
+                <svg class="logo-default" width="130" height="18" viewBox="0 0 130 18" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <g id="logotype">
+                        <path d="M19.9786 16.707H16.123L14.5653 10.0849L9.98927 17.3L5.43276 10.0849L3.85551 16.707H0L3.87498 0.299988L9.98927 10.1244L16.162 0.299988L19.9786 16.707Z"
+                              fill="#E9002D"/>
+                        <path d="M22.671 2.79068C24.3067 1.13022 26.2799 0.299988 28.5906 0.299988C30.9013 0.299988 32.8745 1.13022 34.5102 2.79068C36.1459 4.45115 36.9637 6.45425 36.9637 8.79999C36.9637 11.1457 36.1459 13.1488 34.5102 14.8093C32.8745 16.4698 30.9013 17.3 28.5906 17.3C26.2799 17.3 24.3067 16.4698 22.671 14.8093C21.0354 13.1488 20.2175 11.1457 20.2175 8.79999C20.2175 6.45425 21.0354 4.45115 22.671 2.79068ZM31.8425 5.49883C30.9468 4.57634 29.8628 4.1151 28.5906 4.1151C27.3184 4.1151 26.228 4.57634 25.3193 5.49883C24.4235 6.40813 23.9757 7.50851 23.9757 8.79999C23.9757 10.0915 24.4235 11.1984 25.3193 12.1209C26.228 13.0302 27.3184 13.4849 28.5906 13.4849C29.8628 13.4849 30.9468 13.0302 31.8425 12.1209C32.7512 11.1984 33.2055 10.0915 33.2055 8.79999C33.2055 7.50851 32.7512 6.40813 31.8425 5.49883Z"
+                              fill="#E9002D"/>
+                        <path d="M42.9986 10.2232C42.5832 10.1178 42.2392 10.019 41.9665 9.92673C41.7069 9.83448 41.3954 9.70929 41.0319 9.55115C40.6814 9.37983 40.3633 9.16898 40.0777 8.91859C39.8051 8.66821 39.565 8.37169 39.3573 8.02906C38.7861 7.15929 38.5005 6.28952 38.5005 5.41975C38.5005 4.00968 38.9873 2.80386 39.9609 1.80231C40.9475 0.800763 42.1418 0.299988 43.5438 0.299988C44.777 0.299988 45.848 0.688748 46.7567 1.46627C47.6784 2.24379 48.2496 3.23216 48.4703 4.43138L44.829 5.20231C44.777 4.87286 44.6278 4.60929 44.3811 4.41162C44.1474 4.21394 43.8683 4.1151 43.5438 4.1151C43.2063 4.1151 42.9077 4.2403 42.6481 4.49069C42.3884 4.74107 42.2586 5.05076 42.2586 5.41975C42.2586 5.63061 42.33 5.8151 42.4728 5.97324C42.5767 6.09185 42.7195 6.19069 42.9012 6.26976C43.083 6.33565 43.4724 6.45425 44.0695 6.62557C44.1215 6.63875 44.3032 6.69146 44.6148 6.78371C44.9393 6.87596 45.1405 6.93526 45.2184 6.96162C45.2963 6.98797 45.4715 7.04727 45.7442 7.13952C46.0168 7.23177 46.205 7.31084 46.3089 7.37673C46.4257 7.44262 46.5945 7.53487 46.8151 7.65348C47.0358 7.77208 47.2046 7.89727 47.3214 8.02906C47.4512 8.14766 47.594 8.29262 47.7498 8.46394C47.9056 8.63526 48.0419 8.81976 48.1587 9.01743C48.7299 9.86084 49.0155 10.8426 49.0155 11.9628C49.0155 13.4256 48.4703 14.6841 47.3798 15.7384C46.2894 16.7794 45.0107 17.3 43.5438 17.3C42.2067 17.3 41.0189 16.8453 39.9804 15.936C38.9419 15.0267 38.3382 13.9198 38.1695 12.6151L41.9276 11.9628C41.9276 12.4108 42.0639 12.7798 42.3365 13.0698C42.6221 13.3465 43.0245 13.4849 43.5438 13.4849C44.0241 13.4849 44.4265 13.3399 44.7511 13.05C45.0886 12.7601 45.2574 12.3977 45.2574 11.9628C45.2574 11.607 45.147 11.317 44.9263 11.093C44.5758 10.7372 43.9332 10.4473 42.9986 10.2232Z"
+                              fill="#E9002D"/>
+                        <path d="M59.5912 4.72789H56.7872V16.707H52.9901V4.72789H50.1861V0.893012H59.5912V4.72789Z"
+                              fill="#E9002D"/>
+                        <path d="M65.1416 12.8721H71.0222V16.707H61.3445V0.893012H65.1416V12.8721Z" fill="#E9002D"/>
+                        <path d="M76.7417 16.707H72.9446V0.893012H76.7417V16.707Z" fill="#E9002D"/>
+                        <path d="M83.4073 10.2232C82.9919 10.1178 82.6479 10.019 82.3753 9.92673C82.1157 9.83448 81.8041 9.70929 81.4406 9.55115C81.0901 9.37983 80.7721 9.16898 80.4865 8.91859C80.2139 8.66821 79.9737 8.37169 79.766 8.02906C79.1948 7.15929 78.9092 6.28952 78.9092 5.41975C78.9092 4.00968 79.3961 2.80386 80.3697 1.80231C81.3563 0.800763 82.5506 0.299988 83.9526 0.299988C85.1858 0.299988 86.2568 0.688748 87.1655 1.46627C88.0872 2.24379 88.6584 3.23216 88.879 4.43138L85.2377 5.20231C85.1858 4.87286 85.0365 4.60929 84.7899 4.41162C84.5562 4.21394 84.2771 4.1151 83.9526 4.1151C83.615 4.1151 83.3165 4.2403 83.0568 4.49069C82.7972 4.74107 82.6674 5.05076 82.6674 5.41975C82.6674 5.63061 82.7388 5.8151 82.8816 5.97324C82.9854 6.09185 83.1282 6.19069 83.31 6.26976C83.4917 6.33565 83.8812 6.45425 84.4783 6.62557C84.5302 6.63875 84.712 6.69146 85.0235 6.78371C85.3481 6.87596 85.5493 6.93526 85.6272 6.96162C85.7051 6.98797 85.8803 7.04727 86.1529 7.13952C86.4255 7.23177 86.6138 7.31084 86.7176 7.37673C86.8345 7.44262 87.0032 7.53487 87.2239 7.65348C87.4446 7.77208 87.6133 7.89727 87.7302 8.02906C87.86 8.14766 88.0028 8.29262 88.1586 8.46394C88.3144 8.63526 88.4507 8.81976 88.5675 9.01743C89.1387 9.86084 89.4243 10.8426 89.4243 11.9628C89.4243 13.4256 88.8791 14.6841 87.7886 15.7384C86.6982 16.7794 85.4195 17.3 83.9526 17.3C82.6155 17.3 81.4277 16.8453 80.3891 15.936C79.3506 15.0267 78.747 13.9198 78.5782 12.6151L82.3364 11.9628C82.3364 12.4108 82.4727 12.7798 82.7453 13.0698C83.0309 13.3465 83.4333 13.4849 83.9526 13.4849C84.4329 13.4849 84.8353 13.3399 85.1598 13.05C85.4974 12.7601 85.6661 12.3977 85.6661 11.9628C85.6661 11.607 85.5558 11.317 85.3351 11.093C84.9846 10.7372 84.342 10.4473 83.4073 10.2232Z"
+                              fill="#E9002D"/>
+                        <path d="M100 4.72789H97.196V16.707H93.3989V4.72789H90.5949V0.893012H100V4.72789Z"
+                              fill="#E9002D"/>
+                    </g>
+                    <g id="version">
+                        <path d="M104.6 0.3H107.21C107.917 0.3 108.51 0.51 108.99 0.93C109.47 1.34333 109.71 1.88667 109.71 2.56C109.71 2.83333 109.65 3.10667 109.53 3.38C109.41 3.64667 109.24 3.86 109.02 4.02C109.287 4.2 109.497 4.47 109.65 4.83C109.803 5.18333 109.88 5.50333 109.88 5.79C109.88 6.48333 109.633 7.07667 109.14 7.57C108.653 8.05667 108.063 8.3 107.37 8.3H104.6V0.3ZM106.54 2.22V3.3H107.23C107.37 3.28667 107.493 3.22667 107.6 3.12C107.707 3.01333 107.76 2.89333 107.76 2.76C107.76 2.60667 107.707 2.48 107.6 2.38C107.493 2.28 107.36 2.22667 107.2 2.22H106.54ZM106.54 6.36H107.37C107.53 6.36 107.663 6.31 107.77 6.21C107.877 6.11 107.93 5.98333 107.93 5.83C107.93 5.67667 107.883 5.54667 107.79 5.44C107.697 5.33333 107.567 5.28 107.4 5.28H106.54V6.36Z"
+                              fill="#0A0D13"/>
+                        <path d="M115.621 2.24H112.741V3.33H115.081V5.27H112.741V6.36H115.621V8.3H110.791V0.3H115.621V2.24Z"
+                              fill="#0A0D13"/>
+                        <path d="M121.317 2.24H119.877V8.3H117.927V2.24H116.487V0.3H121.317V2.24Z" fill="#0A0D13"/>
+                        <path d="M129.007 8.3H126.877L126.467 7.5H123.427L123.037 8.3H120.887L124.967 0L129.007 8.3ZM124.407 5.55H125.517L124.947 4.43L124.407 5.55Z"
+                              fill="#0A0D13"/>
+                    </g>
+                </svg>
+                <svg class="logo-mobile" width="64" height="64" viewBox="0 0 64 64" fill="none"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <rect y="32" width="45.2548" height="45.2548" transform="rotate(-45 0 32)" fill="#E9002D"/>
+                    <path d="M49 42.5935H42.4386L39.7875 31.4564L32 43.5909L24.2456 31.4564L21.5614 42.5935H15L21.5945 15L32 31.5229L42.5049 15L49 42.5935Z"
+                          fill="white"/>
+                </svg>
+            </a>
+            <a class="header-nav-link ml-md-auto" href="javascript:;" title="Explore" aria-label="Explore Categories">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.61527 0H0.692365C0.309937 0 0 0.309937 0 0.692365V7.61527C0 7.9977 0.309937 8.30764 0.692365 8.30764H7.61527C7.9977 8.30764 8.30764 7.9977 8.30764 7.61527V0.692365C8.30764 0.309937 7.9977 0 7.61527 0Z"
+                          fill="#030104"/>
+                    <path d="M17.3077 0H10.3847C10.0023 0 9.69238 0.309937 9.69238 0.692365V7.61527C9.69238 7.9977 10.0023 8.30764 10.3847 8.30764H17.3077C17.6901 8.30764 18 7.9977 18 7.61527V0.692365C18 0.309937 17.6901 0 17.3077 0ZM16.6153 6.92291H11.0771V1.38473H16.6153V6.92291Z"
+                          fill="#030104"/>
+                    <path d="M7.61527 9.69238H0.692365C0.309937 9.69238 0 10.0023 0 10.3847V17.3077C0 17.6901 0.309937 18 0.692365 18H7.61527C7.9977 18 8.30764 17.6901 8.30764 17.3077V10.3847C8.30764 10.0016 7.9977 9.69238 7.61527 9.69238ZM3.2695 16.6153C3.38859 16.4111 3.46182 16.1766 3.46182 15.9229C3.46182 15.1581 2.84195 14.5382 2.07709 14.5382C1.82337 14.5382 1.58889 14.6114 1.38473 14.7305V12.9619C1.58889 13.081 1.82337 13.1542 2.07709 13.1542C2.84195 13.1542 3.46182 12.5343 3.46182 11.7695C3.46182 11.5158 3.38859 11.2813 3.2695 11.0771H5.03814C4.91904 11.2813 4.84581 11.5158 4.84581 11.7695C4.84581 12.5343 5.46569 13.1542 6.23054 13.1542C6.48426 13.1542 6.71875 13.081 6.92291 12.9619V14.7305C6.71875 14.6114 6.48426 14.5382 6.23054 14.5382C5.46569 14.5382 4.84581 15.1581 4.84581 15.9229C4.84581 16.1766 4.91904 16.4111 5.03814 16.6153H3.2695Z"
+                          fill="#030104"/>
+                    <path d="M17.3077 9.69238H10.3847C10.0023 9.69238 9.69238 10.0023 9.69238 10.3847V13.8458V17.3069C9.69238 17.6893 10.0023 17.9993 10.3847 17.9993H13.8458H17.3069C17.6893 17.9993 17.9993 17.6893 17.9993 17.3069V10.384C18 10.0016 17.6901 9.69238 17.3077 9.69238ZM11.0771 14.1328L14.1328 11.0771H15.6367L11.0771 15.6367C11.0771 15.6367 11.0771 14.1328 11.0771 14.1328ZM11.0771 11.0771H12.1748L11.0771 12.1748V11.0771ZM16.6153 12.0557V13.5588L13.5596 16.6153H12.0557L16.6153 12.0557ZM16.6153 16.6153H15.5168L16.6153 15.5168V16.6153Z"
+                          fill="#030104"/>
+                    <path d="M4.1542 15.2305C4.91896 15.2305 5.53893 14.6106 5.53893 13.8458C5.53893 13.081 4.91896 12.4611 4.1542 12.4611C3.38943 12.4611 2.76947 13.081 2.76947 13.8458C2.76947 14.6106 3.38943 15.2305 4.1542 15.2305Z"
+                          fill="#030104"/>
+                </svg>
+                <span>EXPLORE</span>
+            </a>
+            <a class="header-nav-link" href="javascript:;" title="Sign In" aria-label="Sign In">
+                <svg width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 13.3177V13.1048C1.03406 10.5224 3.43523 9.72312 4.50655 9.64626H4.87336C6.15895 10.6111 7.49345 10.7696 8 10.7282V18C7.80204 18 7.31878 17.9894 6.96943 17.9468C2.95895 17.4644 0.652111 14.6597 0 13.3177Z"
+                          fill="#0A0D13"/>
+                    <path d="M16 13.3177V13.1048C14.9659 10.5224 12.5648 9.72312 11.4935 9.64626H11.1266C9.84105 10.6111 8.50655 10.7696 8 10.7282V18C8.19796 18 8.68122 17.9894 9.03057 17.9468C13.041 17.4644 15.3479 14.6597 16 13.3177Z"
+                          fill="#0A0D13"/>
+                    <path d="M12.6812 4.7533C12.6812 7.37847 10.5854 9.50659 8.00001 9.50659C5.41464 9.50659 3.31879 7.37847 3.31879 4.7533C3.31879 2.12812 5.41464 0 8.00001 0C10.5854 0 12.6812 2.12812 12.6812 4.7533Z"
+                          fill="#0A0D13"/>
+                </svg>
+                <span>SIGN IN</span>
+            </a>
+        </div>
+    </div>
+</header>
+<main id="content" class="main" role="main">
+    <section class="post-header">
+        <div class="container">
+            <div class="inner">
+                <div class="row">
+                    <div class="col-lg-6 order-1 order-lg-0">
+                        <div class="post-header__content">
+                            <a class="post-header__category" href="javascript:;" title="Travel">Travel</a>
+                            <h1 class="post-header__title">Great Pyramid of Giza</h1>
+                            <p class="post-header__description">The Great Pyramid of Giza (aka <strong>Pyramid of
+                                Khufu</strong> or the <strong>Pyramid of Cheops</strong>) is the oldest and largest of
+                                the three pyramids in the Giza pyramid complex bordering present-day El Giza, Egypt.</p>
+                            <ul class="most-www">
+                                <li class="most-www__item">
+                                    <span class="most-www__title">What</span>
+                                    <span class="most-www__colon">:</span>
+                                    <span class="most-www__value">The oldest of the Seven Wonders of the Ancient World. <a
+                                            href="https://www.wikiwand.com/en/Great_Pyramid_of_Giza" target="_blank"
+                                            title="Verified">(Verified)</a></span>
+                                </li>
+                                <li class="most-www__item">
+                                    <span class="most-www__title">Where</span>
+                                    <span class="most-www__colon">:</span>
+                                    <span class="most-www__value">Giza, Egypt</span>
+                                </li>
+                                <li class="most-www__item">
+                                    <span class="most-www__title">When</span>
+                                    <span class="most-www__colon">:</span>
+                                    <span class="most-www__value">29 August 1991</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-0 order-lg-1">
+                        <figure class="post-header__figure">
+                            <div class="badge">
+                                <img class="badge__item" src="assets/images/layout/badge-unesco-world-heritage.png" alt="Unesco World Heritage" loading="lazy">
+                            </div>
+                            <img class="post-header__figure-image" src="https://images.unsplash.com/photo-1480138406278-ebd2de34b57f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1357&q=80" alt="Great Pyramid of Giza" loading="lazy">
+                            <figcaption>Credit: Les Anderson</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="post-content">
+        <div class="container">
+            <div class="inner">
+                <article class="post-article">
+                    <p>The Great Pyramid of Giza (also known as the Pyramid of Khufu or the <strong>Pyramid of Cheops</strong>) is the oldest and largest of the three pyramids in the Giza pyramid complex bordering present-day El Giza, Egypt. It is the oldest of the Seven Wonders of the Ancient World, and the only one to remain largely intact.</p>
+                    <p>Based on a mark in an interior chamber naming the work gang and a reference to the Fourth Dynasty Egyptian pharaoh Khufu, some Egyptologists believe that the pyramid was thus built as a tomb over a 10- to 20-year period concluding around 2560 BC.</p>
+
+                    <div class="fact-file">
+                        <div class="fact-file__content">
+                            <div class="fact-file__title">Great Pyramid of Giza Fact File</div>
+                            <dl class="fact-file__list">
+                                <dt class="fact-file__name">Ancient name</dt>
+                                <dd class="fact-file__value">Khufu's Horizon</dd>
+
+                                <dt class="fact-file__name">Coordinates</dt>
+                                <dd class="fact-file__value">29°58′45″N 31°08′03″E (<a href="javascript:;" target="_blank">Open in Google Earth</a>)</dd>
+
+                                <dt class="fact-file__name">Constructed</dt>
+                                <dd class="fact-file__value">2580–2560 BC</dd>
+
+                                <dt class="fact-file__name">Height</dt>
+                                <dd class="fact-file__value">146.7 metres (481 ft) or 280 Egyptian Royal cubits 138.8 metres (455 ft)</dd>
+
+                                <dt class="fact-file__name">Record height</dt>
+                                <dd class="fact-file__value">Tallest in the world from 2560 BC to 1311 AD</dd>
+                            </dl>
+                        </div>
+                        <figure class="fact-file__figure">
+                            <img src="https://images.unsplash.com/photo-1559738933-d69ac3ff674b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="Pyramid" loading="lazy">
+                            <figcaption>Credit: Rosario Janza</figcaption>
+                            <svg class="fact-file-carpet" width="114" height="330" viewBox="0 0 114 330" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3 324C4.65685 324 6 325.343 6 327C6 328.657 4.65685 330 3 330C1.34315 330 0 328.657 0 327C0 325.343 1.34315 324 3 324Z" fill="#E5E5E5"/>
+                                <path d="M3 306C4.65685 306 6 307.343 6 309C6 310.657 4.65685 312 3 312C1.34315 312 0 310.657 0 309C0 307.343 1.34315 306 3 306Z" fill="#E5E5E5"/>
+                                <path d="M3 288C4.65685 288 6 289.343 6 291C6 292.657 4.65685 294 3 294C1.34315 294 0 292.657 0 291C0 289.343 1.34315 288 3 288Z" fill="#E5E5E5"/>
+                                <path d="M3 270C4.65685 270 6 271.343 6 273C6 274.657 4.65685 276 3 276C1.34315 276 0 274.657 0 273C0 271.343 1.34315 270 3 270Z" fill="#E5E5E5"/>
+                                <path d="M3 252C4.65685 252 6 253.343 6 255C6 256.657 4.65685 258 3 258C1.34315 258 0 256.657 0 255C0 253.343 1.34315 252 3 252Z" fill="#E5E5E5"/>
+                                <path d="M3 234C4.65685 234 6 235.343 6 237C6 238.657 4.65685 240 3 240C1.34315 240 0 238.657 0 237C0 235.343 1.34315 234 3 234Z" fill="#E5E5E5"/>
+                                <path d="M3 216C4.65685 216 6 217.343 6 219C6 220.657 4.65685 222 3 222C1.34315 222 0 220.657 0 219C0 217.343 1.34315 216 3 216Z" fill="#E5E5E5"/>
+                                <path d="M3 198C4.65685 198 6 199.343 6 201C6 202.657 4.65685 204 3 204C1.34315 204 0 202.657 0 201C0 199.343 1.34315 198 3 198Z" fill="#E5E5E5"/>
+                                <path d="M21 324C22.6569 324 24 325.343 24 327C24 328.657 22.6569 330 21 330C19.3431 330 18 328.657 18 327C18 325.343 19.3431 324 21 324Z" fill="#E5E5E5"/>
+                                <path d="M21 306C22.6569 306 24 307.343 24 309C24 310.657 22.6569 312 21 312C19.3431 312 18 310.657 18 309C18 307.343 19.3431 306 21 306Z" fill="#E5E5E5"/>
+                                <path d="M21 288C22.6569 288 24 289.343 24 291C24 292.657 22.6569 294 21 294C19.3431 294 18 292.657 18 291C18 289.343 19.3431 288 21 288Z" fill="#E5E5E5"/>
+                                <path d="M21 270C22.6569 270 24 271.343 24 273C24 274.657 22.6569 276 21 276C19.3431 276 18 274.657 18 273C18 271.343 19.3431 270 21 270Z" fill="#E5E5E5"/>
+                                <path d="M21 252C22.6569 252 24 253.343 24 255C24 256.657 22.6569 258 21 258C19.3431 258 18 256.657 18 255C18 253.343 19.3431 252 21 252Z" fill="#E5E5E5"/>
+                                <path d="M21 234C22.6569 234 24 235.343 24 237C24 238.657 22.6569 240 21 240C19.3431 240 18 238.657 18 237C18 235.343 19.3431 234 21 234Z" fill="#E5E5E5"/>
+                                <path d="M21 216C22.6569 216 24 217.343 24 219C24 220.657 22.6569 222 21 222C19.3431 222 18 220.657 18 219C18 217.343 19.3431 216 21 216Z" fill="#E5E5E5"/>
+                                <path d="M21 198C22.6569 198 24 199.343 24 201C24 202.657 22.6569 204 21 204C19.3431 204 18 202.657 18 201C18 199.343 19.3431 198 21 198Z" fill="#E5E5E5"/>
+                                <path d="M39 324C40.6569 324 42 325.343 42 327C42 328.657 40.6569 330 39 330C37.3431 330 36 328.657 36 327C36 325.343 37.3431 324 39 324Z" fill="#E5E5E5"/>
+                                <path d="M39 306C40.6569 306 42 307.343 42 309C42 310.657 40.6569 312 39 312C37.3431 312 36 310.657 36 309C36 307.343 37.3431 306 39 306Z" fill="#E5E5E5"/>
+                                <path d="M39 288C40.6569 288 42 289.343 42 291C42 292.657 40.6569 294 39 294C37.3431 294 36 292.657 36 291C36 289.343 37.3431 288 39 288Z" fill="#E5E5E5"/>
+                                <path d="M39 270C40.6569 270 42 271.343 42 273C42 274.657 40.6569 276 39 276C37.3431 276 36 274.657 36 273C36 271.343 37.3431 270 39 270Z" fill="#E5E5E5"/>
+                                <path d="M39 252C40.6569 252 42 253.343 42 255C42 256.657 40.6569 258 39 258C37.3431 258 36 256.657 36 255C36 253.343 37.3431 252 39 252Z" fill="#E5E5E5"/>
+                                <path d="M39 234C40.6569 234 42 235.343 42 237C42 238.657 40.6569 240 39 240C37.3431 240 36 238.657 36 237C36 235.343 37.3431 234 39 234Z" fill="#E5E5E5"/>
+                                <path d="M39 216C40.6569 216 42 217.343 42 219C42 220.657 40.6569 222 39 222C37.3431 222 36 220.657 36 219C36 217.343 37.3431 216 39 216Z" fill="#E5E5E5"/>
+                                <path d="M39 198C40.6569 198 42 199.343 42 201C42 202.657 40.6569 204 39 204C37.3431 204 36 202.657 36 201C36 199.343 37.3431 198 39 198Z" fill="#E5E5E5"/>
+                                <path d="M57 324C58.6569 324 60 325.343 60 327C60 328.657 58.6569 330 57 330C55.3431 330 54 328.657 54 327C54 325.343 55.3431 324 57 324Z" fill="#E5E5E5"/>
+                                <path d="M57 306C58.6569 306 60 307.343 60 309C60 310.657 58.6569 312 57 312C55.3431 312 54 310.657 54 309C54 307.343 55.3431 306 57 306Z" fill="#E5E5E5"/>
+                                <path d="M57 288C58.6569 288 60 289.343 60 291C60 292.657 58.6569 294 57 294C55.3431 294 54 292.657 54 291C54 289.343 55.3431 288 57 288Z" fill="#E5E5E5"/>
+                                <path d="M57 270C58.6569 270 60 271.343 60 273C60 274.657 58.6569 276 57 276C55.3431 276 54 274.657 54 273C54 271.343 55.3431 270 57 270Z" fill="#E5E5E5"/>
+                                <path d="M57 252C58.6569 252 60 253.343 60 255C60 256.657 58.6569 258 57 258C55.3431 258 54 256.657 54 255C54 253.343 55.3431 252 57 252Z" fill="#E5E5E5"/>
+                                <path d="M57 234C58.6569 234 60 235.343 60 237C60 238.657 58.6569 240 57 240C55.3431 240 54 238.657 54 237C54 235.343 55.3431 234 57 234Z" fill="#E5E5E5"/>
+                                <path d="M57 216C58.6569 216 60 217.343 60 219C60 220.657 58.6569 222 57 222C55.3431 222 54 220.657 54 219C54 217.343 55.3431 216 57 216Z" fill="#E5E5E5"/>
+                                <path d="M57 198C58.6569 198 60 199.343 60 201C60 202.657 58.6569 204 57 204C55.3431 204 54 202.657 54 201C54 199.343 55.3431 198 57 198Z" fill="#E5E5E5"/>
+                                <path d="M75 324C76.6569 324 78 325.343 78 327C78 328.657 76.6569 330 75 330C73.3431 330 72 328.657 72 327C72 325.343 73.3431 324 75 324Z" fill="#E5E5E5"/>
+                                <path d="M75 306C76.6569 306 78 307.343 78 309C78 310.657 76.6569 312 75 312C73.3431 312 72 310.657 72 309C72 307.343 73.3431 306 75 306Z" fill="#E5E5E5"/>
+                                <path d="M75 288C76.6569 288 78 289.343 78 291C78 292.657 76.6569 294 75 294C73.3431 294 72 292.657 72 291C72 289.343 73.3431 288 75 288Z" fill="#E5E5E5"/>
+                                <path d="M75 270C76.6569 270 78 271.343 78 273C78 274.657 76.6569 276 75 276C73.3431 276 72 274.657 72 273C72 271.343 73.3431 270 75 270Z" fill="#E5E5E5"/>
+                                <path d="M75 252C76.6569 252 78 253.343 78 255C78 256.657 76.6569 258 75 258C73.3431 258 72 256.657 72 255C72 253.343 73.3431 252 75 252Z" fill="#E5E5E5"/>
+                                <path d="M75 234C76.6569 234 78 235.343 78 237C78 238.657 76.6569 240 75 240C73.3431 240 72 238.657 72 237C72 235.343 73.3431 234 75 234Z" fill="#E5E5E5"/>
+                                <path d="M75 216C76.6569 216 78 217.343 78 219C78 220.657 76.6569 222 75 222C73.3431 222 72 220.657 72 219C72 217.343 73.3431 216 75 216Z" fill="#E5E5E5"/>
+                                <path d="M75 198C76.6569 198 78 199.343 78 201C78 202.657 76.6569 204 75 204C73.3431 204 72 202.657 72 201C72 199.343 73.3431 198 75 198Z" fill="#E5E5E5"/>
+                                <path d="M93 324C94.6569 324 96 325.343 96 327C96 328.657 94.6569 330 93 330C91.3431 330 90 328.657 90 327C90 325.343 91.3431 324 93 324Z" fill="#E5E5E5"/>
+                                <path d="M93 306C94.6569 306 96 307.343 96 309C96 310.657 94.6569 312 93 312C91.3431 312 90 310.657 90 309C90 307.343 91.3431 306 93 306Z" fill="#E5E5E5"/>
+                                <path d="M93 288C94.6569 288 96 289.343 96 291C96 292.657 94.6569 294 93 294C91.3431 294 90 292.657 90 291C90 289.343 91.3431 288 93 288Z" fill="#E5E5E5"/>
+                                <path d="M93 270C94.6569 270 96 271.343 96 273C96 274.657 94.6569 276 93 276C91.3431 276 90 274.657 90 273C90 271.343 91.3431 270 93 270Z" fill="#E5E5E5"/>
+                                <path d="M93 252C94.6569 252 96 253.343 96 255C96 256.657 94.6569 258 93 258C91.3431 258 90 256.657 90 255C90 253.343 91.3431 252 93 252Z" fill="#E5E5E5"/>
+                                <path d="M93 234C94.6569 234 96 235.343 96 237C96 238.657 94.6569 240 93 240C91.3431 240 90 238.657 90 237C90 235.343 91.3431 234 93 234Z" fill="#E5E5E5"/>
+                                <path d="M93 216C94.6569 216 96 217.343 96 219C96 220.657 94.6569 222 93 222C91.3431 222 90 220.657 90 219C90 217.343 91.3431 216 93 216Z" fill="#E5E5E5"/>
+                                <path d="M93 198C94.6569 198 96 199.343 96 201C96 202.657 94.6569 204 93 204C91.3431 204 90 202.657 90 201C90 199.343 91.3431 198 93 198Z" fill="#E5E5E5"/>
+                                <path d="M3 180C4.65685 180 6 181.343 6 183C6 184.657 4.65685 186 3 186C1.34315 186 0 184.657 0 183C0 181.343 1.34315 180 3 180Z" fill="#E5E5E5"/>
+                                <path d="M3 162C4.65685 162 6 163.343 6 165C6 166.657 4.65685 168 3 168C1.34315 168 0 166.657 0 165C0 163.343 1.34315 162 3 162Z" fill="#E5E5E5"/>
+                                <path d="M3 144C4.65685 144 6 145.343 6 147C6 148.657 4.65685 150 3 150C1.34315 150 0 148.657 0 147C0 145.343 1.34315 144 3 144Z" fill="#E5E5E5"/>
+                                <path d="M21 180C22.6569 180 24 181.343 24 183C24 184.657 22.6569 186 21 186C19.3431 186 18 184.657 18 183C18 181.343 19.3431 180 21 180Z" fill="#E5E5E5"/>
+                                <path d="M21 162C22.6569 162 24 163.343 24 165C24 166.657 22.6569 168 21 168C19.3431 168 18 166.657 18 165C18 163.343 19.3431 162 21 162Z" fill="#E5E5E5"/>
+                                <path d="M21 144C22.6569 144 24 145.343 24 147C24 148.657 22.6569 150 21 150C19.3431 150 18 148.657 18 147C18 145.343 19.3431 144 21 144Z" fill="#E5E5E5"/>
+                                <path d="M39 180C40.6569 180 42 181.343 42 183C42 184.657 40.6569 186 39 186C37.3431 186 36 184.657 36 183C36 181.343 37.3431 180 39 180Z" fill="#E5E5E5"/>
+                                <path d="M39 162C40.6569 162 42 163.343 42 165C42 166.657 40.6569 168 39 168C37.3431 168 36 166.657 36 165C36 163.343 37.3431 162 39 162Z" fill="#E5E5E5"/>
+                                <path d="M39 144C40.6569 144 42 145.343 42 147C42 148.657 40.6569 150 39 150C37.3431 150 36 148.657 36 147C36 145.343 37.3431 144 39 144Z" fill="#E5E5E5"/>
+                                <path d="M57 180C58.6569 180 60 181.343 60 183C60 184.657 58.6569 186 57 186C55.3431 186 54 184.657 54 183C54 181.343 55.3431 180 57 180Z" fill="#E5E5E5"/>
+                                <path d="M57 162C58.6569 162 60 163.343 60 165C60 166.657 58.6569 168 57 168C55.3431 168 54 166.657 54 165C54 163.343 55.3431 162 57 162Z" fill="#E5E5E5"/>
+                                <path d="M57 144C58.6569 144 60 145.343 60 147C60 148.657 58.6569 150 57 150C55.3431 150 54 148.657 54 147C54 145.343 55.3431 144 57 144Z" fill="#E5E5E5"/>
+                                <path d="M75 180C76.6569 180 78 181.343 78 183C78 184.657 76.6569 186 75 186C73.3431 186 72 184.657 72 183C72 181.343 73.3431 180 75 180Z" fill="#E5E5E5"/>
+                                <path d="M75 162C76.6569 162 78 163.343 78 165C78 166.657 76.6569 168 75 168C73.3431 168 72 166.657 72 165C72 163.343 73.3431 162 75 162Z" fill="#E5E5E5"/>
+                                <path d="M75 144C76.6569 144 78 145.343 78 147C78 148.657 76.6569 150 75 150C73.3431 150 72 148.657 72 147C72 145.343 73.3431 144 75 144Z" fill="#E5E5E5"/>
+                                <path d="M93 180C94.6569 180 96 181.343 96 183C96 184.657 94.6569 186 93 186C91.3431 186 90 184.657 90 183C90 181.343 91.3431 180 93 180Z" fill="#E5E5E5"/>
+                                <path d="M93 162C94.6569 162 96 163.343 96 165C96 166.657 94.6569 168 93 168C91.3431 168 90 166.657 90 165C90 163.343 91.3431 162 93 162Z" fill="#E5E5E5"/>
+                                <path d="M93 144C94.6569 144 96 145.343 96 147C96 148.657 94.6569 150 93 150C91.3431 150 90 148.657 90 147C90 145.343 91.3431 144 93 144Z" fill="#E5E5E5"/>
+                                <path d="M3 126C4.65685 126 6 127.343 6 129C6 130.657 4.65685 132 3 132C1.34315 132 0 130.657 0 129C0 127.343 1.34315 126 3 126Z" fill="#E5E5E5"/>
+                                <path d="M3 108C4.65685 108 6 109.343 6 111C6 112.657 4.65685 114 3 114C1.34315 114 0 112.657 0 111C0 109.343 1.34315 108 3 108Z" fill="#E5E5E5"/>
+                                <path d="M3 90C4.65685 90 6 91.3431 6 93C6 94.6569 4.65685 96 3 96C1.34315 96 0 94.6569 0 93C0 91.3431 1.34315 90 3 90Z" fill="#E5E5E5"/>
+                                <path d="M21 126C22.6569 126 24 127.343 24 129C24 130.657 22.6569 132 21 132C19.3431 132 18 130.657 18 129C18 127.343 19.3431 126 21 126Z" fill="#E5E5E5"/>
+                                <path d="M21 108C22.6569 108 24 109.343 24 111C24 112.657 22.6569 114 21 114C19.3431 114 18 112.657 18 111C18 109.343 19.3431 108 21 108Z" fill="#E5E5E5"/>
+                                <path d="M21 90C22.6569 90 24 91.3431 24 93C24 94.6569 22.6569 96 21 96C19.3431 96 18 94.6569 18 93C18 91.3431 19.3431 90 21 90Z" fill="#E5E5E5"/>
+                                <path d="M39 126C40.6569 126 42 127.343 42 129C42 130.657 40.6569 132 39 132C37.3431 132 36 130.657 36 129C36 127.343 37.3431 126 39 126Z" fill="#E5E5E5"/>
+                                <path d="M39 108C40.6569 108 42 109.343 42 111C42 112.657 40.6569 114 39 114C37.3431 114 36 112.657 36 111C36 109.343 37.3431 108 39 108Z" fill="#E5E5E5"/>
+                                <path d="M39 90C40.6569 90 42 91.3431 42 93C42 94.6569 40.6569 96 39 96C37.3431 96 36 94.6569 36 93C36 91.3431 37.3431 90 39 90Z" fill="#E5E5E5"/>
+                                <path d="M57 126C58.6569 126 60 127.343 60 129C60 130.657 58.6569 132 57 132C55.3431 132 54 130.657 54 129C54 127.343 55.3431 126 57 126Z" fill="#E5E5E5"/>
+                                <path d="M57 108C58.6569 108 60 109.343 60 111C60 112.657 58.6569 114 57 114C55.3431 114 54 112.657 54 111C54 109.343 55.3431 108 57 108Z" fill="#E5E5E5"/>
+                                <path d="M57 90C58.6569 90 60 91.3431 60 93C60 94.6569 58.6569 96 57 96C55.3431 96 54 94.6569 54 93C54 91.3431 55.3431 90 57 90Z" fill="#E5E5E5"/>
+                                <path d="M75 126C76.6569 126 78 127.343 78 129C78 130.657 76.6569 132 75 132C73.3431 132 72 130.657 72 129C72 127.343 73.3431 126 75 126Z" fill="#E5E5E5"/>
+                                <path d="M75 108C76.6569 108 78 109.343 78 111C78 112.657 76.6569 114 75 114C73.3431 114 72 112.657 72 111C72 109.343 73.3431 108 75 108Z" fill="#E5E5E5"/>
+                                <path d="M75 90C76.6569 90 78 91.3431 78 93C78 94.6569 76.6569 96 75 96C73.3431 96 72 94.6569 72 93C72 91.3431 73.3431 90 75 90Z" fill="#E5E5E5"/>
+                                <path d="M93 126C94.6569 126 96 127.343 96 129C96 130.657 94.6569 132 93 132C91.3431 132 90 130.657 90 129C90 127.343 91.3431 126 93 126Z" fill="#E5E5E5"/>
+                                <path d="M93 108C94.6569 108 96 109.343 96 111C96 112.657 94.6569 114 93 114C91.3431 114 90 112.657 90 111C90 109.343 91.3431 108 93 108Z" fill="#E5E5E5"/>
+                                <path d="M93 90C94.6569 90 96 91.3431 96 93C96 94.6569 94.6569 96 93 96C91.3431 96 90 94.6569 90 93C90 91.3431 91.3431 90 93 90Z" fill="#E5E5E5"/>
+                                <path d="M3 72C4.65685 72 6 73.3431 6 75C6 76.6569 4.65685 78 3 78C1.34315 78 0 76.6569 0 75C0 73.3431 1.34315 72 3 72Z" fill="#E5E5E5"/>
+                                <path d="M3 54C4.65685 54 6 55.3431 6 57C6 58.6569 4.65685 60 3 60C1.34315 60 0 58.6569 0 57C0 55.3431 1.34315 54 3 54Z" fill="#E5E5E5"/>
+                                <path d="M3 36C4.65685 36 6 37.3431 6 39C6 40.6569 4.65685 42 3 42C1.34315 42 0 40.6569 0 39C0 37.3431 1.34315 36 3 36Z" fill="#E5E5E5"/>
+                                <path d="M21 72C22.6569 72 24 73.3431 24 75C24 76.6569 22.6569 78 21 78C19.3431 78 18 76.6569 18 75C18 73.3431 19.3431 72 21 72Z" fill="#E5E5E5"/>
+                                <path d="M21 54C22.6569 54 24 55.3431 24 57C24 58.6569 22.6569 60 21 60C19.3431 60 18 58.6569 18 57C18 55.3431 19.3431 54 21 54Z" fill="#E5E5E5"/>
+                                <path d="M21 36C22.6569 36 24 37.3431 24 39C24 40.6569 22.6569 42 21 42C19.3431 42 18 40.6569 18 39C18 37.3431 19.3431 36 21 36Z" fill="#E5E5E5"/>
+                                <path d="M39 72C40.6569 72 42 73.3431 42 75C42 76.6569 40.6569 78 39 78C37.3431 78 36 76.6569 36 75C36 73.3431 37.3431 72 39 72Z" fill="#E5E5E5"/>
+                                <path d="M39 54C40.6569 54 42 55.3431 42 57C42 58.6569 40.6569 60 39 60C37.3431 60 36 58.6569 36 57C36 55.3431 37.3431 54 39 54Z" fill="#E5E5E5"/>
+                                <path d="M39 36C40.6569 36 42 37.3431 42 39C42 40.6569 40.6569 42 39 42C37.3431 42 36 40.6569 36 39C36 37.3431 37.3431 36 39 36Z" fill="#E5E5E5"/>
+                                <path d="M57 72C58.6569 72 60 73.3431 60 75C60 76.6569 58.6569 78 57 78C55.3431 78 54 76.6569 54 75C54 73.3431 55.3431 72 57 72Z" fill="#E5E5E5"/>
+                                <path d="M57 54C58.6569 54 60 55.3431 60 57C60 58.6569 58.6569 60 57 60C55.3431 60 54 58.6569 54 57C54 55.3431 55.3431 54 57 54Z" fill="#E5E5E5"/>
+                                <path d="M57 36C58.6569 36 60 37.3431 60 39C60 40.6569 58.6569 42 57 42C55.3431 42 54 40.6569 54 39C54 37.3431 55.3431 36 57 36Z" fill="#E5E5E5"/>
+                                <path d="M75 72C76.6569 72 78 73.3431 78 75C78 76.6569 76.6569 78 75 78C73.3431 78 72 76.6569 72 75C72 73.3431 73.3431 72 75 72Z" fill="#E5E5E5"/>
+                                <path d="M75 54C76.6569 54 78 55.3431 78 57C78 58.6569 76.6569 60 75 60C73.3431 60 72 58.6569 72 57C72 55.3431 73.3431 54 75 54Z" fill="#E5E5E5"/>
+                                <path d="M75 36C76.6569 36 78 37.3431 78 39C78 40.6569 76.6569 42 75 42C73.3431 42 72 40.6569 72 39C72 37.3431 73.3431 36 75 36Z" fill="#E5E5E5"/>
+                                <path d="M93 72C94.6569 72 96 73.3431 96 75C96 76.6569 94.6569 78 93 78C91.3431 78 90 76.6569 90 75C90 73.3431 91.3431 72 93 72Z" fill="#E5E5E5"/>
+                                <path d="M93 54C94.6569 54 96 55.3431 96 57C96 58.6569 94.6569 60 93 60C91.3431 60 90 58.6569 90 57C90 55.3431 91.3431 54 93 54Z" fill="#E5E5E5"/>
+                                <path d="M93 36C94.6569 36 96 37.3431 96 39C96 40.6569 94.6569 42 93 42C91.3431 42 90 40.6569 90 39C90 37.3431 91.3431 36 93 36Z" fill="#E5E5E5"/>
+                                <path d="M111 324C112.657 324 114 325.343 114 327C114 328.657 112.657 330 111 330C109.343 330 108 328.657 108 327C108 325.343 109.343 324 111 324Z" fill="#E5E5E5"/>
+                                <path d="M111 306C112.657 306 114 307.343 114 309C114 310.657 112.657 312 111 312C109.343 312 108 310.657 108 309C108 307.343 109.343 306 111 306Z" fill="#E5E5E5"/>
+                                <path d="M111 288C112.657 288 114 289.343 114 291C114 292.657 112.657 294 111 294C109.343 294 108 292.657 108 291C108 289.343 109.343 288 111 288Z" fill="#E5E5E5"/>
+                                <path d="M111 270C112.657 270 114 271.343 114 273C114 274.657 112.657 276 111 276C109.343 276 108 274.657 108 273C108 271.343 109.343 270 111 270Z" fill="#E5E5E5"/>
+                                <path d="M111 252C112.657 252 114 253.343 114 255C114 256.657 112.657 258 111 258C109.343 258 108 256.657 108 255C108 253.343 109.343 252 111 252Z" fill="#E5E5E5"/>
+                                <path d="M111 234C112.657 234 114 235.343 114 237C114 238.657 112.657 240 111 240C109.343 240 108 238.657 108 237C108 235.343 109.343 234 111 234Z" fill="#E5E5E5"/>
+                                <path d="M111 216C112.657 216 114 217.343 114 219C114 220.657 112.657 222 111 222C109.343 222 108 220.657 108 219C108 217.343 109.343 216 111 216Z" fill="#E5E5E5"/>
+                                <path d="M111 198C112.657 198 114 199.343 114 201C114 202.657 112.657 204 111 204C109.343 204 108 202.657 108 201C108 199.343 109.343 198 111 198Z" fill="#E5E5E5"/>
+                                <path d="M111 180C112.657 180 114 181.343 114 183C114 184.657 112.657 186 111 186C109.343 186 108 184.657 108 183C108 181.343 109.343 180 111 180Z" fill="#E5E5E5"/>
+                                <path d="M111 162C112.657 162 114 163.343 114 165C114 166.657 112.657 168 111 168C109.343 168 108 166.657 108 165C108 163.343 109.343 162 111 162Z" fill="#E5E5E5"/>
+                                <path d="M111 144C112.657 144 114 145.343 114 147C114 148.657 112.657 150 111 150C109.343 150 108 148.657 108 147C108 145.343 109.343 144 111 144Z" fill="#E5E5E5"/>
+                                <path d="M111 126C112.657 126 114 127.343 114 129C114 130.657 112.657 132 111 132C109.343 132 108 130.657 108 129C108 127.343 109.343 126 111 126Z" fill="#E5E5E5"/>
+                                <path d="M111 108C112.657 108 114 109.343 114 111C114 112.657 112.657 114 111 114C109.343 114 108 112.657 108 111C108 109.343 109.343 108 111 108Z" fill="#E5E5E5"/>
+                                <path d="M111 90C112.657 90 114 91.3431 114 93C114 94.6569 112.657 96 111 96C109.343 96 108 94.6569 108 93C108 91.3431 109.343 90 111 90Z" fill="#E5E5E5"/>
+                                <path d="M111 72C112.657 72 114 73.3431 114 75C114 76.6569 112.657 78 111 78C109.343 78 108 76.6569 108 75C108 73.3431 109.343 72 111 72Z" fill="#E5E5E5"/>
+                                <path d="M111 54C112.657 54 114 55.3431 114 57C114 58.6569 112.657 60 111 60C109.343 60 108 58.6569 108 57C108 55.3431 109.343 54 111 54Z" fill="#E5E5E5"/>
+                                <path d="M111 36C112.657 36 114 37.3431 114 39C114 40.6569 112.657 42 111 42C109.343 42 108 40.6569 108 39C108 37.3431 109.343 36 111 36Z" fill="#E5E5E5"/>
+                                <path d="M3 18C4.65685 18 6 19.3431 6 21C6 22.6569 4.65685 24 3 24C1.34315 24 0 22.6569 0 21C0 19.3431 1.34315 18 3 18Z" fill="#E5E5E5"/>
+                                <path d="M3 0C4.65685 0 6 1.34315 6 3C6 4.65685 4.65685 6 3 6C1.34315 6 0 4.65685 0 3C0 1.34315 1.34315 0 3 0Z" fill="#E5E5E5"/>
+                                <path d="M21 18C22.6569 18 24 19.3431 24 21C24 22.6569 22.6569 24 21 24C19.3431 24 18 22.6569 18 21C18 19.3431 19.3431 18 21 18Z" fill="#E5E5E5"/>
+                                <path d="M21 0C22.6569 0 24 1.34315 24 3C24 4.65685 22.6569 6 21 6C19.3431 6 18 4.65685 18 3C18 1.34315 19.3431 0 21 0Z" fill="#E5E5E5"/>
+                                <path d="M39 18C40.6569 18 42 19.3431 42 21C42 22.6569 40.6569 24 39 24C37.3431 24 36 22.6569 36 21C36 19.3431 37.3431 18 39 18Z" fill="#E5E5E5"/>
+                                <path d="M39 0C40.6569 0 42 1.34315 42 3C42 4.65685 40.6569 6 39 6C37.3431 6 36 4.65685 36 3C36 1.34315 37.3431 0 39 0Z" fill="#E5E5E5"/>
+                                <path d="M57 18C58.6569 18 60 19.3431 60 21C60 22.6569 58.6569 24 57 24C55.3431 24 54 22.6569 54 21C54 19.3431 55.3431 18 57 18Z" fill="#E5E5E5"/>
+                                <path d="M57 0C58.6569 0 60 1.34315 60 3C60 4.65685 58.6569 6 57 6C55.3431 6 54 4.65685 54 3C54 1.34315 55.3431 0 57 0Z" fill="#E5E5E5"/>
+                                <path d="M75 18C76.6569 18 78 19.3431 78 21C78 22.6569 76.6569 24 75 24C73.3431 24 72 22.6569 72 21C72 19.3431 73.3431 18 75 18Z" fill="#E5E5E5"/>
+                                <path d="M75 0C76.6569 0 78 1.34315 78 3C78 4.65685 76.6569 6 75 6C73.3431 6 72 4.65685 72 3C72 1.34315 73.3431 0 75 0Z" fill="#E5E5E5"/>
+                                <path d="M93 18C94.6569 18 96 19.3431 96 21C96 22.6569 94.6569 24 93 24C91.3431 24 90 22.6569 90 21C90 19.3431 91.3431 18 93 18Z" fill="#E5E5E5"/>
+                                <path d="M93 0C94.6569 0 96 1.34315 96 3C96 4.65685 94.6569 6 93 6C91.3431 6 90 4.65685 90 3C90 1.34315 91.3431 0 93 0Z" fill="#E5E5E5"/>
+                                <path d="M111 18C112.657 18 114 19.3431 114 21C114 22.6569 112.657 24 111 24C109.343 24 108 22.6569 108 21C108 19.3431 109.343 18 111 18Z" fill="#E5E5E5"/>
+                                <path d="M111 0C112.657 0 114 1.34315 114 3C114 4.65685 112.657 6 111 6C109.343 6 108 4.65685 108 3C108 1.34315 109.343 0 111 0Z" fill="#E5E5E5"/>
+                            </svg>
+                        </figure>
+                    </div>
+
+                    <p>Initially standing at 146.5 metres (481 feet), the Great Pyramid was the tallest man-made structure in the world for more than 3,800 years until Lincoln Cathedral was finished in 1311 AD.</p>
+
+                    <hr>
+
+                    <h2>History and description</h2>
+                    <p>Egyptologists believe the pyramid was built as a tomb for the Fourth Dynasty Egyptian pharaoh Khufu (often Hellenized as "Cheops") and was constructed over a 20-year period.</p>
+                    <blockquote cite="https://www.wikiwand.com/en/Great_Pyramid_of_Giza">
+                        <p>I have gazed on the walls of impregnable Babylon along which chariots may race, and on the Zeus by the banks of the Alpheus, I have seen the hanging gardens, and the Colossus of the Helios, the great man-made mountains of the lofty pyramids, and the gigantic tomb of Mausolus; but when I saw the sacred house of Artemis that towers to the clouds, the others were placed in the shade, for the sun himself has never looked upon its equal outside Olympus.</p>
+                        <p><strong>– Greek Anthology IX.58 </strong></p>
+                    </blockquote>
+                    <p>Khufu's vizier, Hemiunu (also called Hemon), is believed by some to be the architect of the Great Pyramid.</p>
+
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1523478482487-1eed2b3d9939?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80" alt="Khufu" loading="lazy">
+                        <figcaption>Credit: Fynn schmidt</figcaption>
+                    </figure>
+
+                    <h2>Materials</h2>
+                    <p>The Great Pyramid consists of an estimated 2.3 million blocks which most believe to have been transported from nearby quarries. The Tura limestone used for the casing was quarried across the river. The largest granite stones in the pyramid, found in the "King's" chamber, weigh 25 to 80 tonnes and were transported from Aswan, more than 800 km (500 mi) away.</p>
+
+                    <h3>Casing stones</h3>
+                    <figure class="inline-figure">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/KhufuPyramidCasingStone-BritishMuseum-August19-08.jpg/440px-KhufuPyramidCasingStone-BritishMuseum-August19-08.jpg" alt="Khufu" loading="lazy">
+                        <figcaption>Casing stone in the British Museum</figcaption>
+                    </figure>
+                    <p>At completion, the Great Pyramid was surfaced with white "casing stones"—slant-faced, but flat-topped, blocks of highly polished white limestone.</p>
+                    <p>Nevertheless, a few of the casing stones from the lowest course can be seen to this day in situ around the base of the Great Pyramid, and display the same workmanship and precision that has been reported for centuries.</p>
+
+                    <h2>Interior</h2>
+                    <p>The original entrance to the Great Pyramid is on the north, 17 metres (56 ft) vertically above ground level and 7.29 metres (23.9 ft) east of the centre line of the pyramid.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+
+                    <hr>
+
+                    <h2>Seven Wonders of the Ancient World</h2>
+                    <p>The Seven Wonders of the World or the Seven Wonders of the Ancient World is a list of remarkable constructions of classical antiquity given by various authors in guidebooks or poems popular among ancient Hellenic tourists.</p>
+                    <ol>
+                        <li>Great Pyramid of Giza</li>
+                        <li>Hanging Gardens of Babylon</li>
+                        <li>Temple of Artemis at Ephesus</li>
+                        <li>Statue of Zeus at Olympia</li>
+                        <li>Mausoleum at Halicarnassus</li>
+                        <li>Colossus of Rhodes</li>
+                        <li>Lighthouse of Alexandria</li>
+                    </ol>
+
+                    <h3>Construction theories</h3>
+                    <figure class="inline-figure">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Khufu_seal.jpg/440px-Khufu_seal.jpg" alt="Khufu" loading="lazy">
+                        <figcaption>Clay seal bearing the name of Khufu from the Great Pyramid on display at the Musée du Louvre</figcaption>
+                    </figure>
+                    <p>Many alternative, often contradictory, theories have been proposed regarding the pyramid's construction techniques.[22] Many disagree on whether the blocks were dragged, lifted, or even rolled into place. The Greeks believed that slave labour was used, but modern discoveries made at nearby workers' camps associated with construction at Giza suggest that it was built instead by tens of thousands of skilled workers.</p>
+                    <p>One mystery of the pyramid's construction is its planning. John Romer suggests that they used the same method that had been used for earlier and later constructions, laying out parts of the plan on the ground at a 1-to-1 scale.</p>
+
+                    <p>Another 2nd century BC observer, who claimed to be the mathematician Philo of Byzantium,[10] wrote a short account entitled The Seven Sights of the World.</p>
+
+                    <figure class="aspect-ratio">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Do3oFnaoYCM"
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                    </figure>
+
+                    <p>However, the incomplete surviving manuscript only covered six of the supposedly seven places, which agreed with Antipater's list.</p>
+
+                    <ol>
+                        <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+                        <li>Aliquam tincidunt mauris eu risus.</li>
+                        <li>Vestibulum auctor dapibus neque.</li>
+                    </ol>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci alias consequuntur culpa cupiditate dignissimos dolor doloremque.</p>
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1553913861-c0fddf2619ee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"  alt="Khufu" loading="lazy">
+                        <figcaption>Credit: Spencer Davis</figcaption>
+                    </figure>
+                    <p>Et excepturi explicabo ipsam labore minima nisi nobis, non nostrum odio officiis omnis possimus quas rerum totam ut voluptatum? Accusamus ad aperiam commodi cupiditate excepturi iste iure necessitatibus obcaecati quidem, quisquam vel, veniam voluptate? Accusantium aperiam eos quod repellendus ullam. Ad alias consequatur corporis doloremque eum fuga incidunt ipsam libero quia voluptatibus! Beatae est fuga illo iure magni nihil nostrum quia ullam vero.</p>
+
+                    <ul>
+                        <li>Hey in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra
+                            a, ultricies in, diam. Sed arcu. Cras consequat.
+                        </li>
+                        <li>Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate
+                            magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan
+                            porttitor, facilisis luctus, metus.
+                        </li>
+                        <li>Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula
+                            vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit
+                            amet, nisi.
+                        </li>
+                        <li>Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut,
+                            elementum vulputate, nunc.
+                        </li>
+                    </ul>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus eius eligendi esse exercitationem ipsa nesciunt quaerat repudiandae vel! Ad aliquid debitis delectus eius fuga possimus, quam sapiente sequi.</p>
+
+                    <div class="table-responsive">
+                        <table class="table table-striped table-hover">
+                            <caption>Table Description</caption>
+                            <tr>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Twitter ID</th>
+                                <th class="text-right">Actions</th>
+                            </tr>
+                            <tr>
+                                <td>Jane</td>
+                                <td>Doe</td>
+                                <td>@janedoe</td>
+                                <td class="text-right"><a href="javascript:;">Edit</a></td>
+                            </tr>
+                            <tr>
+                                <td>Yasin</td>
+                                <td>Genç</td>
+                                <td>@yasingencnet</td>
+                                <td class="text-right"><a href="javascript:;">Edit</a></td>
+                            </tr>
+                            <tr>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td class="text-right"><a href="javascript:;">Edit</a></td>
+                            </tr>
+                            <tr>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                                <td class="text-right"><a href="javascript:;">Edit</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                    <dl>
+                        <dt>How to create a thread on Twitter?</dt>
+                        <dd>Sometimes we need more than one Tweet to express ourselves.  A thread on Twitter is a series of connected Tweets from one person. With a thread you can provide additional context, an update, or an extended point by connecting multiple Tweets together.</dd>
+                        <dt>How to use advanced search?</dt>
+                        <dd>Advanced search is available when you’re logged in to twitter.com. It allows you to tailor search results to specific date ranges, people and more. This makes it easier to find specific Tweets.</dd>
+                        <dt>How to create a Moment?</dt>
+                        <dd>Twitter Moments are curated stories about what’s happening around the world—powered by Tweets. It’s easy to create your own story with Twitter Moments.</dd>
+                        <dt>How to unfollow people on Twitter?</dt>
+                        <dd>
+                            <ul>
+                                <li>Click on Following on your homepage or profile page.</li>
+                                <li>Hover over the <strong>Following</strong> button next to any account name on your following list, it will change to <strong>Unfollow</strong>.</li>
+                                <li>Click the button to unfollow the account.</li>
+                            </ul>
+                        </dd>
+                        <dt>What happened to the Vine website?</dt>
+                        <dd>The vine.co website became the Vine Archive in January 2017 – a time capsule of Vines that were created through the Vine app so you can continue to browse them and share them on other websites. In April of 2018, we moved the Vine Archive into a more static archived state to allow us to better preserve the public, creative expression of the Vine community. This new version of the Vine Archive  allows you to watch Vines on vine.co (or anywhere that URL might be embedded) and share Vines via their unique URLs.</dd>
+                    </dl>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus atque ex illo iusto laborum nesciunt quis quisquam, voluptatibus. Impedit, similique.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+                </article>
+                <div class="post-meta">
+                    <div class="author v2">
+                        <div class="author__user">
+                            <figure class="author__figure">
+                                <img src="assets/images/layout/team-member-yasin.jpg" alt="Yasin Genç" loading="lazy">
+                            </figure>
+                            <span class="author__name">Yasin Genç</span>
+                            <time class="author__publish" datetime="2019-09-11">Wed 11 Sept 2018</time>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-submeta">
+                    <div class="tags-wrapper">
+                        <div class="tags-wrapper__title">TAGS</div>
+                        <ul class="tags tags-v1">
+                            <li class="tags__item"><a href="javascript:;" title="#travel">#travel</a></li>
+                            <li class="tags__item"><a href="javascript:;" title="#siamreap">#siamreap</a></li>
+                            <li class="tags__item"><a href="javascript:;" title="#angkorwat">#angkorwat</a></li>
+                            <li class="tags__item"><a href="javascript:;" title="#cambodia">#cambodia</a></li>
+                            <li class="tags__item"><a href="javascript:;" title="#hinduism">#hinduism</a></li>
+                        </ul>
+                    </div>
+                    <div class="correction">
+                        <span class="correction__title">Is this content right? If it isn’t please correct us.</span>
+                        <a class="correction__cta" href="javascript:;" title="Submit Your Correction">Submit Your Correction</a>
+                    </div>
+                </div>
+                <aside class="post-aside">
+                    <div class="support-us">
+                        <p class="support-us__text">You can post an article which one is not added to our list yet to support us!</p>
+                        <a href="javascript:;" class="button-1 button-xs d-block" title="Post Article">Post Article</a>
+                    </div>
+                </aside>
+                <section class="post-promo">
+                    <a href="javascript:;">
+                        <figure><img src="assets/images/upload/post-promo.png" alt="" loading="lazy"></figure>
+                    </a>
+                </section>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="main-footer">
+    <a class="favicon" href="/" title="MostList - Explore the World!" aria-label="MostList Logo">
+        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect y="32" width="45.2548" height="45.2548" transform="rotate(-45 0 32)" fill="#E9002D"/>
+            <path d="M49 42.5935H42.4386L39.7875 31.4564L32 43.5909L24.2456 31.4564L21.5614 42.5935H15L21.5945 15L32 31.5229L42.5049 15L49 42.5935Z"
+                  fill="white"/>
+        </svg>
+    </a>
+    <nav class="footer-nav" aria-label="Footer Navigation">
+        <ul class="footer-nav__list">
+            <li class="footer-nav__item"><a href="javascript:;" title="About">About</a></li>
+            <li class="footer-nav__item"><a href="javascript:;" title="Contact">Contact</a></li>
+            <li class="footer-nav__item"><a href="javascript:;" title="Release Notes">Release Notes</a></li>
+            <li class="footer-nav__item"><a href="javascript:;" title="Advertisement">Advertisement</a></li>
+            <li class="footer-nav__item"><a href="javascript:;" title="Terms of Use">Terms of Use</a></li>
+            <li class="footer-nav__item"><a href="javascript:;" title="Support Us">Support Us</a></li>
+        </ul>
+    </nav>
+    <div class="copyright">© 2019 MostList. All rights reserved.</div>
+</footer>
+
+<script src="assets/js/lib.min.js"></script>
+<script src="assets/js/core.min.js"></script>
+</body>
+</html>

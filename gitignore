@@ -1,0 +1,21 @@
+# Editor & IDE #
+.idea
+.vs
+
+# Development #
+node_modules/
+dist/
+package-lock.json
+*.css.map
+*.js.map
+
+# OS Generated Files #
+Thumbs.db
+.DS_Store
+.cache
+Desktop.ini
+
+# Packages #
+*.7z
+*.zip
+*.rar

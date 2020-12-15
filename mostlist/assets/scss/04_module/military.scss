@@ -1,0 +1,132 @@
+.military {
+  counter-reset: military-counter;
+}
+
+.military__item {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 42px 54px 3fr 1fr 18px;
+  grid-template-areas: "rank flag country power rate";
+  grid-gap: 30px;
+  counter-increment: military-counter;
+  @include media-breakpoint-down(sm){
+    grid-template-areas: "rank flag country" "power rate";
+    grid-gap: 15px;
+  }
+
+  & + .military__item {
+    margin-top: 30px;
+    @include media-breakpoint-down(sm){
+      margin-top: 15px;
+    }
+  }
+
+  &:before {
+    content: counter(military-counter);
+    grid-area: rank;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    height: 42px;
+    width: 42px;
+
+    text-align: center;
+    font-family: var(--font-alternate);
+    font-size: 2.2rem;
+    line-height: 1;
+    font-weight: var(--black);
+    color: var(--color-paragraph);
+
+    background-color: var(--color-bg-pale);
+    border: 1px solid var(--color-border);
+  }
+
+  &:nth-of-type(1) {
+    &:before {
+      background-color: var(--color-highlight);
+      border-color: var(--color-highlight);
+    }
+  }
+
+  &:nth-of-type(2) {
+    &:before {
+      background-color: var(--color-border);
+    }
+  }
+
+  &:nth-of-type(3) {
+    &:before {
+      background-color: var(--color-paragraph-alternate);
+      border-color: var(--color-paragraph-alternate);
+    }
+  }
+}
+
+.military__flag {
+  grid-area: flag;
+  flex-shrink: 0;
+  width: 54px;
+  height: 42px;
+  border: 1px solid var(--color-border);
+  background-size: cover;
+  transition: var(--transition-2);
+}
+
+.military__country {
+  @extend %fs20;
+  grid-area: country;
+  font-family: var(--font-alternate);
+  font-weight: var(--bold);
+  color: var(--color-paragraph);
+}
+
+.military__power {
+  @extend %fs16;
+  grid-area: power;
+  text-align: right;
+  color: var(--color-paragraph-light);
+}
+
+.military__rate {
+  grid-area: rate;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  text-align: center;
+  width: 18px;
+  height: 18px;
+  position: relative;
+
+  &.is-neutral {
+    &:before {
+      content: '';
+      width: 20px;
+      height: 4px;
+      background-color: var(--color-border);
+    }
+  }
+
+  &.is-increased {
+    &:before {
+      content: '';
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-bottom: 10px solid var(--color-success);
+    }
+  }
+
+  &.is-decreased {
+    &:before {
+      content: '';
+      width: 0;
+      height: 0;
+      border-left: 10px solid transparent;
+      border-right: 10px solid transparent;
+      border-top: 10px solid var(--color-alert);
+    }
+  }
+}

@@ -1,0 +1,208 @@
+//------------------------------------------------------------
+// = HERO
+//------------------------------------------------------------
+.hero {
+  margin-bottom: var(--section-buffer);
+  @include media-breakpoint-down(sm) {
+    margin-top: -30px;
+  }
+  .container, .container-fluid{
+    @include media-breakpoint-down(sm) {
+      padding-left: 0;
+      padding-right: 0;
+      max-width: 100%;
+    }
+  }
+
+  .inner {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    align-items: center;
+    @include media-breakpoint-down(md) {
+      grid-template-columns: 1fr;
+      text-align: center;
+      grid-gap: 0;
+    }
+  }
+
+  .tags {
+    @include media-breakpoint-down(md){
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 15px;
+      @include media-breakpoint-down(sm){
+        display: none;
+      }
+    }
+
+    .tags__item {
+      @include media-breakpoint-down(md) {
+        margin: 0 10px;
+      }
+
+      a {
+        @include media-breakpoint-down(sm) {
+          color: var(--color-paragraph-alternate);
+        }
+      }
+    }
+  }
+}
+
+.hero__content{
+  @include media-breakpoint-down(sm) {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    padding: var(--section-buffer);
+    background: var(--caption-gradient);
+  }
+}
+.hero__figure {
+  position: relative;
+  text-align: right;
+  @include media-breakpoint-up(lg) {
+    margin-left: 80px;
+  }
+}
+
+.hero__title {
+  margin-bottom: 25px;
+  color: var(--color-paragraph);
+  font-family: var(--font-alternate);
+  font-weight: var(--black);
+  font-size: 6rem;
+  line-height: .88;
+  @include media-breakpoint-down(md) {
+    margin-bottom: 15px;
+    font-size: 4rem;
+  }
+
+  span {
+    @include media-breakpoint-up(md) {
+      display: block;
+    }
+
+    &:nth-of-type(1) {
+      @include media-breakpoint-down(md) {
+        display: block;
+        color: var(--color-paragraph-alternate);
+      }
+    }
+
+    &:nth-of-type(2) {
+      @include media-breakpoint-down(md) {
+        color: var(--color-paragraph-alternate);
+      }
+      @include media-breakpoint-up(lg) {
+        padding-left: 36px;
+      }
+    }
+
+    &:nth-of-type(3) {
+      color: var(--color-primary);
+      @include media-breakpoint-up(lg) {
+        padding-left: 54px;
+      }
+    }
+  }
+}
+
+.hero__description {
+  @extend %fs20;
+  margin-bottom: 30px;
+  color: var(--color-paragraph);
+  @include media-breakpoint-down(md) {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: var(--color-white);
+    @include media-breakpoint-down(sm){
+      margin-bottom: 0;
+    }
+  }
+
+  a {
+    color: var(--color-primary);
+
+    html[data-theme="dark"] & {
+      color: var(--color-paragraph-alternate);
+    }
+  }
+}
+
+.hero__figure-wave {
+  position: absolute;
+  top: 30px;
+  left: 225px;
+  z-index: 2;
+  @include media-breakpoint-down(md) {
+    top: 15px;
+    right: 15px;
+    left: auto;
+  }
+}
+
+.hero__figure-triangle {
+  position: absolute;
+  bottom: 20px;
+  left: -35px;
+  z-index: 2;
+  animation: windmill 18s linear infinite;
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+}
+
+.hero__figure-carpet {
+  position: absolute;
+  top: -36px;
+  right: -36px;
+  z-index: 0;
+  @include media-breakpoint-down(lg) {
+    top: -18px;
+    right: -18px;
+  }
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+
+  path {
+    fill: var(--color-border);
+  }
+}
+
+.hero__image-front {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  max-width: 240px;
+  object-fit: cover;
+  object-position: top;
+  @include media-breakpoint-down(md) {
+    display: none;
+  }
+}
+
+.hero__image-back {
+  position: relative;
+  width: 100%;
+  object-fit: cover;
+  object-position: top;
+  @include media-breakpoint-down(md) {
+    height: 380px;
+    @include media-breakpoint-down(sm) {
+      height: calc(100vh - var(--header-height));
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    max-width: 340px;
+  }
+}

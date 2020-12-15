@@ -1,0 +1,82 @@
+//------------------------------------------------------------
+// = TABLE
+//------------------------------------------------------------
+.table-responsive {
+  margin-bottom: var(--wysiwyg-buffer);
+  overflow-x: auto;
+  width: 100%;
+  max-width: calc(100vw - 30px);
+}
+
+.table {
+  max-width: 100%;
+  box-shadow: var(--shadow-1);
+}
+
+.table-striped {
+  tr {
+    &:nth-of-type(odd) {
+      background-color: var(--color-bg-pale);
+    }
+  }
+
+}
+
+.table-bordered {
+  border: 1px solid var(--color-border);
+  td {
+    border-top: 1px solid var(--color-border);
+  }
+}
+
+.table-hover {
+  tr {
+    &:hover {
+      background-color: var(--color-bg-alternate);
+    }
+  }
+}
+
+table {
+  width: 100%;
+
+  caption {
+    @extend %fs14;
+    color: var(--color-paragraph-light);
+    text-align: center;
+    margin-top: 5px;
+  }
+
+  thead {
+  }
+
+  tbody {
+  }
+
+  tfoot {
+  }
+
+  tr {
+  }
+
+  th, td {
+    @extend %fs14;
+    padding: 15px;
+  }
+
+  th {
+    background: var(--color-bg-darken);
+    color: var(--color-paragraph)
+  }
+
+  td {
+  }
+
+  a {
+    color: var(--color-primary);
+
+    &:hover {
+      color: var(--color-primary);
+    }
+  }
+}

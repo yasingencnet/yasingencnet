@@ -1,0 +1,30 @@
+//------------------------------------------------------------
+// = LAYOUTS
+//------------------------------------------------------------
+
+// Main
+.main {
+  flex-grow: 1;
+}
+
+// Default Section
+.default {
+  margin-bottom: var(--section-buffer);
+
+  .inner {
+  }
+}
+
+// Packing List
+.packinglist{
+  background: url(#{$layout}bg-travel.png) repeat-x center bottom;
+  margin-bottom: -30px;
+  padding-bottom: var(--section-buffer);
+  .inner{
+    padding-bottom: var(--row-buffer);
+  }
+
+  html[data-theme="dark"] & {
+    background: url(#{$layout}bg-travel-dark.png) repeat-x center bottom;
+  }
+}

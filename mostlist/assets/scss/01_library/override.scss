@@ -1,0 +1,30 @@
+//------------------------------------------------------------
+// = LIBRARY OVERRIDE
+//------------------------------------------------------------
+
+// Fancybox
+.fancybox-bg {
+  background: var(--color-bg);
+}
+
+.fancybox-is-open .fancybox-bg {
+  opacity: .95;
+}
+
+.fancybox-slide--html {
+  padding: 0;
+}
+
+.fancybox-slide--html .fancybox-content {
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.fancybox-content {
+  width: 100%;
+  background: none;
+
+  > * {
+    display: block !important;
+  }
+}

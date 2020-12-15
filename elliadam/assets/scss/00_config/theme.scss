@@ -1,0 +1,101 @@
+:root {
+  //------------------------------------------------------------
+  // = GENERAL
+  //------------------------------------------------------------
+  --font-base:    'Inter', sans-serif;
+  --font-alt:     'Source Serif Pro', serif;
+
+  --bold:         700;
+  --semi-bold:    600;
+  --regular:      400;
+  --light:        300;
+
+  --transition:   all .15s ease;
+  --radius:       4px;
+
+  --fs-text-xxs:  12px;
+  --fs-text-xs:   14px;
+  --fs-text-sm:   16px;
+  --fs-text-md:   18px;
+  --fs-text-lg:   20px;
+  --fs-title-xs:  22px;
+  --fs-title-sm:  28px;
+  --fs-title-md:  32px;
+  --fs-title-lg:  38px;
+  --fs-title-xl:  48px;
+
+  --shadow-1:     0px 4px 40px -20px HSLA(223, 28%, 5%, 0.3);
+  --shadow-2:     0px 4px 40px -20px HSLA(223, 28%, 5%, 0.5);
+
+
+  //------------------------------------------------------------
+  // = SIZE
+  //------------------------------------------------------------
+  --flow-space:   1rem;
+  --container:    1260px;
+  --container-padding: 3rem;
+  --section-padding: 9rem;
+
+  --header:       12rem;
+  --specs-table-aside: 200px;
+  --trial-form: 360px;
+  --article: 760px;
+
+
+  //------------------------------------------------------------
+  // = COLOR
+  //------------------------------------------------------------
+  --color-bg:         0, 0%, 99%;
+
+  --color-primary:    282, 55%, 42%;
+  --color-secondary:  53, 100%, 50%;
+
+  --color-base:       220, 81%, 17%;
+  --color-paragraph:  210, 21%, 33%;
+  --color-paragraph-light:  210, 6%, 60%;
+
+  --color-border:     0, 0%, 95%;
+  --color-border-dark:  0, 0%, 90%;
+
+  --color-highlight:  54, 84%, 54%;
+  --color-success:    140, 61%, 61%;
+  --color-success-dark:    140, 85%, 20%;
+  --color-alert:      346, 72%, 52%;
+
+  --color-white:      0, 0%, 100%;
+  --color-black:      223, 28%, 5%;
+
+  @include respond-below(md) {
+    //------------------------------------------------------------
+    // = GENERAL
+    //------------------------------------------------------------
+    --fs-text-md:   16px;
+    --fs-text-lg:   18px;
+    --fs-title-xs:  20px;
+    --fs-title-sm:  24px;
+    --fs-title-md:  28px;
+    --fs-title-lg:  30px;
+    --fs-title-xl:  34px;
+
+    //------------------------------------------------------------
+    // = SIZE
+    //------------------------------------------------------------
+    --section-padding: 6rem;
+
+    --container-padding: 2rem;
+    --header: 70px;
+  }
+
+  @include respond-below(sm) {
+    //------------------------------------------------------------
+    // = GENERAL
+    //------------------------------------------------------------
+    --fs-text-md:   14px;
+    --fs-text-lg:   16px;
+    --fs-title-xs:  18px;
+    --fs-title-sm:  20px;
+    --fs-title-md:  24px;
+    --fs-title-lg:  26px;
+    --fs-title-xl:  30px;
+  }
+}

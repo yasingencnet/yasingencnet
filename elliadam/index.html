@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>ElliAdam</title>
+    <meta name="description" content="Hello World!">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Source+Serif+Pro:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/core.css">
+
+    <link rel="shortcut icon" href="assets/images/head/favicon.png">
+    <link rel="apple-touch-icon" href="assets/images/head/60x60.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/head/76x76.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/head/120x120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/head/152x152.png">
+
+    <meta name="theme-color" content="#8331A7">
+</head>
+<body>
+
+<div class="index-loading-bar"></div>
+<div class="index-layout is-loading">
+    <div class="index-header">
+        <a class="index-logo" href="/" title="ElliAdam" aria-label="ElliAdam">
+            <img src="assets/images/layout/logo.svg" alt="ElliAdam">
+        </a>
+        <div class="index-info">
+            <small>Created at Monday, October 14, 2019</small>
+        </div>
+    </div>
+    <div class="index-content">
+        <div class="index-item">
+            <h3 class="index-item-title">DEVELOPMENT</h3>
+            <ul class="index-list">
+                <li><a target="_blank" href="styleguide.html">Styleguide</a></li>
+            </ul>
+        </div>
+        <div class="index-item">
+            <h3 class="index-item-title">PAGES</h3>
+            <ul class="index-list">
+                <li><a target="_blank" href="maintenance.html">Maintenance</a></li>
+                <li><a target="_blank" href="homepage.html">Homepage</a></li>
+                <li><a target="_blank" href="about-us.html">About Us</a></li>
+                <li><a target="_blank" href="contact.html">Contact</a></li>
+                <li><a target="_blank" href="404.html">404</a></li>
+                <li><a target="_blank" href="user-agreement.html">User Agreement</a></li>
+                <li><a target="_blank" href="kvkk.html">K.V.K.K.</a></li>
+                <li><a target="_blank" href="login-register.html">Login / Register</a></li>
+                <li><a target="_blank" href="login-register-result.html">Login / Register - Result</a></li>
+                <li><a target="_blank" href="faq.html">FAQ</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<style>
+    .index-loading-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 4px;
+        background: linear-gradient(#2B2B2B, #000);
+        animation: loading-animation .8s linear;
+    }
+
+    .index-layout {
+        transition: .5s opacity;
+        opacity: 1;
+        background: #fff;
+        min-height: 100vh;
+    }
+
+    .index-layout.is-loading {
+        opacity: 0;
+    }
+
+    .index-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 96px;
+        background: #fff;
+        border-bottom: 1px solid #dfdfdf;
+    }
+
+    .index-logo {
+    }
+
+    .index-info {
+        font-size: 1.6rem;
+        color: #c3c3c3;
+    }
+
+    .index-content .index-item {
+        margin: 45px 0;
+    }
+
+    .index-content .index-item:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .index-item-title {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        padding: 0 30px;
+        margin: 15px 0;
+        color: #000;
+    }
+
+    .index-list{ }
+
+    .index-list li {
+        border-bottom: 1px solid #dfdfdf;
+    }
+
+    .index-list li:first-child {
+        border-top: 1px solid #ebebec;
+    }
+
+    .index-list li a {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        display: block;
+        padding: 15px 30px;
+        color: #000;
+        transition: 0.3s ease;
+    }
+
+    .index-list li a:hover {
+        background: rgba(0, 0, 0, 0.03);
+    }
+
+    .index-list li a[href="javascript:;"] {
+        opacity: 0.1;
+        user-select: none;
+        pointer-events: none;
+    }
+
+    .index-list li a[href="javascript:;"]:before {
+        display: none;
+    }
+
+    @keyframes loading-animation {
+        0% {
+            width: 0;
+        }
+        50% {
+            width: 100%;
+        }
+        100% {
+            width: 100%;
+        }
+    }
+</style>
+
+<script src="assets/js/lib.min.js"></script>
+<script src="assets/js/core.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        setTimeout(function () {
+            $(".index-layout").removeClass("is-loading");
+            $(".index-loading-bar").remove();
+        }, 800);
+    }, false);
+</script>
+</body>
+</html>

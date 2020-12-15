@@ -1,0 +1,79 @@
+//------------------------------------------------------------
+// = LOGIN
+//------------------------------------------------------------
+.login-register{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+  @include respond-below(sm) {
+    grid-template-columns: 1fr;
+    grid-gap:  calc(var(--flow-space) * 3);
+  }
+}
+.login-register-figure{
+  @include respond-below(sm) {
+    display: none;
+  }
+  background-color: HSL(var(--color-primary));
+  img{
+    height: 100%;
+    width: 100%;
+    max-height: 100vh;
+    object-fit: cover;
+  }
+}
+.login-register-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: HSL(var(--color-bg));
+  padding: calc(var(--flow-space) * 1.5);
+  > * {
+    & + * {
+      margin-top: calc(var(--flow-space) * 3);
+    }
+  }
+}
+
+.login-register-form{
+  max-width: 420px;
+  width: 100%;
+  background: HSL(var(--color-white));
+  box-shadow: var(--shadow-1);
+  border-radius: var(--radius);
+}
+.login-register-form__tab{
+  display: flex;
+}
+.login-register-form__tab-item{
+  flex: 50%;
+  a{
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: calc(var(--flow-space) * 2) var(--flow-space);
+    background-color: HSL(var(--color-border));
+    font-size: var(--fs-text-xs);
+    font-weight: var(--bold);
+    color: HSL(var(--color-base));
+    &:hover, &:focus{
+      z-index: 1;
+    }
+    &:hover{
+      cursor: pointer;
+      border-bottom-color: HSL(var(--color-border-dark));
+    }
+    &[aria-selected="true"]{
+      background-color: HSL(var(--color-white));
+      box-shadow: none;
+    }
+  }
+}
+.login-register-form__tab-content{
+  padding: calc(var(--flow-space) * 3);
+  @include respond-below(sm) {
+    padding: calc(var(--flow-space) * 1.5);
+  }
+}

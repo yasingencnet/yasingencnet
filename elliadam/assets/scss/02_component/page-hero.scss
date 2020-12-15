@@ -1,0 +1,58 @@
+//------------------------------------------------------------
+// = PAGE HERO
+//------------------------------------------------------------
+.page-hero{
+  background: HSL(var(--color-white));
+  padding-top: var(--header);
+  padding-bottom: var(--section-padding);
+  @include respond-below(md){
+    padding-top: calc(var(--header) * 1.5);
+  }
+  .container{
+    background: HSL(var(--color-bg));
+  }
+  .grid{
+    grid-gap: calc(var(--flow-space) * 6);
+    align-items: center;
+    @include respond-below(md) {
+      grid-template-columns: 1fr;
+      grid-gap: calc(var(--flow-space) * 3);
+    }
+  }
+}
+.page-hero-copy{
+  text-align: center;
+  padding: var(--section-padding) calc(var(--flow-space) * 1.5);
+  > * {
+    & + * {
+      margin-top: calc(var(--flow-space) * 3);
+    }
+  }
+}
+
+.page-hero__figure{
+  max-width: 100%;
+  height: auto;
+}
+.page-hero__subtitle{
+  font-size: var(--fs-text-xs);
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: HSL(var(--color-base));
+}
+.page-hero__title{
+  font-size: var(--fs-title-xl);
+  color: HSL(var(--color-base));
+  line-height: 1.2;
+  font-family: var(--font-alt);
+}
+.page-hero__description{
+  font-size: var(--fs-text-md);
+  font-weight: var(--light);
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.page-hero__cta{
+  @extend .link-1;
+}

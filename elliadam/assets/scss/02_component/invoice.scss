@@ -1,0 +1,41 @@
+//------------------------------------------------------------
+// = INVOICE
+//------------------------------------------------------------
+.invoice{
+  position: relative;
+  .container{
+    position: relative;
+    z-index: 1;
+  }
+  .grid{
+    grid-gap: calc(var(--flow-space) * 6);
+    align-items: center;
+    @include respond-below(md) {
+      grid-template-columns: 1fr;
+      grid-gap: calc(var(--flow-space) * 3);
+    }
+  }
+}
+.invoice-blob{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.invoice-copy{
+  > * {
+    & + * {
+      margin-top: calc(var(--flow-space) * 3);
+    }
+  }
+}
+.invoice-figure{
+  margin-left: auto;
+  margin-right: auto;
+  @include respond-above(md) {
+    margin-right: 0;
+  }
+  @include respond-below(md) {
+    order: -1;
+  }
+}

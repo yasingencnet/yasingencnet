@@ -1,0 +1,58 @@
+//------------------------------------------------------------
+// = WYSIWYG
+//------------------------------------------------------------
+.wysiwyg{
+  font-size: var(--fs-text-sm);
+  > * {
+    & + * {
+      margin-top:  calc(var(--flow-space) * 3);
+    }
+  }
+  p{
+    line-height: 1.8;
+  }
+  ul, ol{
+    li{
+      & + li{
+        margin-top:  calc(var(--flow-space) * 1.5);
+      }
+    }
+  }
+  h1, h2, h3, h4{font-size: var(--fs-title-sm);}
+  h5, h6{font-size: var(--fs-title-xs);}
+  h1, h2, h3, h4, h5, h6{
+    margin-top:  calc(var(--flow-space) * 6);
+    margin-bottom: 0;
+    line-height: 1.2;
+  }
+  figure{
+    position: relative;
+    margin-top:  calc(var(--flow-space) * 6);
+    margin-bottom:  calc(var(--flow-space) * 6);
+    img{
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: var(--radius);
+      box-shadow: var(--box-shadow-1);
+    }
+  }
+
+  figcaption{
+    text-align: right;
+    margin-top: calc(var(--flow-space) / 2);
+    font-family: var(--font-alt);
+    color: RGB(var(--color-paragraph-light));
+    font-size: var(--fs-text-sm);
+  }
+  blockquote{
+    &:before{
+      color: RGB(var(--color-border));
+      content: open-quote;
+      font-size: 4em;
+      line-height: 0.1em;
+      margin-right: 0.25em;
+      vertical-align: -0.6em;
+    }
+  }
+}

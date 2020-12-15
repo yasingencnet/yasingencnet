@@ -1,0 +1,25 @@
+//------------------------------------------------------------
+// = INTEGRATED
+//------------------------------------------------------------
+.integrated{
+  .grid{
+    grid-gap: calc(var(--flow-space) * 6);
+    @include respond-below(md) {
+      grid-template-columns: 1fr;
+      grid-gap: calc(var(--flow-space) * 3);
+    }
+  }
+  > * {
+    & + * {
+      margin-top: var(--container-padding);
+    }
+  }
+}
+.integrated-figure{
+  @include respond-below(md) {
+    margin: auto;
+  }
+}
+.integrated-copy{
+
+}

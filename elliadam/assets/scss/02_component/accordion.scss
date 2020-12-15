@@ -1,0 +1,23 @@
+//------------------------------------------------------------
+// = ACCORDION
+//------------------------------------------------------------
+.accordion-faq{}
+.accordion-faq-item{
+  & + .accordion-faq-item{
+    margin-top: calc(var(--flow-space) * 3);
+  }
+  summary{
+    font-size: var(--fs-title-xs);
+    font-family: var(--font-alt);
+    color: HSL(var(--color-base));
+    &:hover{
+      cursor: pointer;
+    }
+    &:hover, &:focus{
+      color: HSL(var(--color-primary));
+    }
+  }
+  article{
+    font-size: var(--fs-text-sm);
+  }
+}

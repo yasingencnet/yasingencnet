@@ -1,0 +1,48 @@
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+.skip-link{
+  background-color: HSL(var(--color-highlight));
+  font-size: var(--fs-text-md);
+  color: HSL(var(--color-base));
+  &:focus{
+    clip: unset;
+    width: auto;
+    padding: .5rem 1rem;
+    text-decoration: none;
+    z-index: 99;
+  }
+}
+button:focus, a:focus {
+  outline: 2px solid HSL(var(--color-primary));
+}
+
+.img-fluid{
+  max-width: 100%;
+}
+
+.flex-group{
+  display: flex;
+  flex-wrap: wrap;
+  margin: -5px;
+  > * {
+    margin: 5px;
+  }
+}
+
+a{
+  &:not([class]){
+    color: HSL(var(--color-primary));
+  }
+}
+
+.bg-1{background-color: HSL(var(--color-bg));}
+.bg-2{background-color: HSL(var(--color-white));}

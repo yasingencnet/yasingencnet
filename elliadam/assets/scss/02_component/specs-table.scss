@@ -1,0 +1,60 @@
+//------------------------------------------------------------
+// = SPECS TABLE
+//------------------------------------------------------------
+.specs-table{
+  display: grid;
+  background-color: HSL(var(--color-white));
+  border: 1px solid HSL(var(--color-border));
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.specs-table__row{
+  position: relative;
+  display: grid;
+  grid-template-columns: var(--specs-table-aside) repeat(10, minmax(80px, 1fr));
+  &:hover{
+    background-color: HSLA(var(--color-secondary), 0.02);
+  }
+  & + .specs-table__row{
+    border-top: 1px solid HSL(var(--color-border));
+  }
+}
+.specs-table__column{
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: var(--flow-space);
+  height: 80px;
+  font-size: var(--fs-text-sm);
+  color: HSL(var(--color-base));
+  > * {
+    position: relative;
+    z-index: 1;
+  }
+  &:hover{
+    box-shadow: var(--shadow-1);
+    &:after{
+      content: "";
+      position: absolute;
+      background-color: HSLA(var(--color-secondary), 0.02);
+      left: 0;
+      top: -5000px;
+      height: 10000px;
+      width: 100%;
+      z-index: 0;
+      pointer-events: none;
+    }
+  }
+  & + .specs-table__column{
+    border-left: 1px solid HSL(var(--color-border));
+  }
+  &:not(.specs-table__column--aside){
+    text-align: center;
+    justify-content: center;
+  }
+  &.specs-table__column--aside{
+    padding-left: calc(var(--flow-space) * 3);
+  }
+  &.specs-table__column--head{
+  }
+}

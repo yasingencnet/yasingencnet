@@ -1,0 +1,62 @@
+//------------------------------------------------------------
+// = PROMO
+//------------------------------------------------------------
+.promo{
+  display: flex;
+  flex-direction: column;
+  background-color: HSL(var(--color-primary));
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-blend-mode: soft-light;
+  .grid{
+    grid-template-columns: 1fr;
+  }
+  .card-highlight{
+    background-color: HSL(var(--color-primary));
+    border: none;
+    @include respond-below(md) {
+      padding: calc(var(--flow-space) * 1);
+    }
+  }
+  .card-highlight__title{
+    color: HSL(var(--color-white));
+  }
+}
+.promo-copy{
+  max-width: 420px;
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  @include respond-below(md) {
+    padding-bottom: calc(var(--flow-space) * 3);;
+  }
+}
+.promo-title-sup{
+  display: block;
+  margin-bottom: calc(var(--flow-space) * 1.5);
+  font-size: var(--fs-text-xs);
+  text-transform: uppercase;
+  color: HSL(var(--color-white));
+  font-weight: var(--bold);
+}
+.promo-title{
+  display: block;
+  margin-bottom: calc(var(--flow-space) * 1.5);
+  font-family: var(--font-alt);
+  font-size: var(--fs-title-sm);
+  color: HSL(var(--color-white));
+  line-height: 1.2;
+  font-weight: var(--bold);
+}
+.promo-description{
+  display: block;
+  margin-bottom: calc(var(--flow-space) * 6);
+  font-size: var(--fs-text-sm);
+  color: HSLA(var(--color-white), .8);
+}
+
+.promo-cards{
+  margin-top: auto;
+  display: grid;
+  grid-gap: var(--flow-space);
+  grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
+}

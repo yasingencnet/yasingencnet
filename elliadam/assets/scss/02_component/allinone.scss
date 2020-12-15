@@ -1,0 +1,30 @@
+//------------------------------------------------------------
+// = ALL IN ONE
+//------------------------------------------------------------
+.allinone{
+  .grid{
+    grid-gap: calc(var(--flow-space) * 6);
+    align-items: center;
+    @include respond-below(md) {
+      grid-template-columns: 1fr;
+      grid-gap: calc(var(--flow-space) * 3);
+    }
+  }
+}
+.allinone-copy{
+  > * {
+    & + * {
+      margin-top: calc(var(--flow-space) * 3);
+    }
+  }
+}
+.allinone-figure{
+  width: calc(50vw - var(--container-padding));
+  @include respond-below(md) {
+    order: -1;
+    width: 100%;
+  }
+  img{
+    width: 100%;
+  }
+}

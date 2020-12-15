@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>ElliAdam</title>
+    <meta name="description" content="Hello World!">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Source+Serif+Pro:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/core.css">
+
+    <link rel="shortcut icon" href="assets/images/head/favicon.png">
+    <link rel="apple-touch-icon" href="assets/images/head/60x60.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/images/head/76x76.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/images/head/120x120.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/images/head/152x152.png">
+
+    <meta name="theme-color" content="#8331A7">
+</head>
+<body>
+<main class="main" id="main">
+    <div class="login-register">
+        <div class="login-register-figure">
+            <img src="assets/images/layout/login-bg.jpg" alt="">
+        </div>
+        <div class="login-register-content">
+            <a href="javascript:" class="logo">
+                <img src="assets/images/layout/logo.svg" alt="ElliAdam">
+            </a>
+            <div class="js-tabs login-register-form">
+                <ul class="js-tablist login-register-form__tab">
+                    <li class="js-tablist__item login-register-form__tab-item">
+                        <a href="#tab-login" class="js-tablist__link">GİRİŞ YAP</a>
+                    </li>
+                    <li class="js-tablist__item login-register-form__tab-item">
+                        <a href="#tab-register" class="js-tablist__link">KAYIT OL</a>
+                    </li>
+                </ul>
+                <div id="tab-login" class="js-tabcontent login-register-form__tab-content">
+                    <form action="">
+                        <div class="form-row row-full">
+                            <div class="input-1">
+                                <label>
+                                    <span class="label">E-Posta</span>
+                                    <input type="email" name="eposta" required>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-row row-full">
+                            <div class="input-1">
+                                <label>
+                                    <span class="label">Şifre</span>
+                                    <input type="password" name="sifre" required>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-row row-full">
+                            <button class="button-2 button-block" type="submit">GİRİŞ YAP</button>
+                        </div>
+                    </form>
+                </div>
+                <div id="tab-register" class="js-tabcontent login-register-form__tab-content" aria-hidden="true">
+                    <form action="/login-register-result.html">
+                        <div class="form-row row-full">
+                            <div class="input-1">
+                                <label>
+                                    <span class="label">E-Posta</span>
+                                    <input type="email" name="eposta" required>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-row row-full">
+                            <div class="input-1">
+                                <label>
+                                    <span class="label">Şifre</span>
+                                    <input type="password" name="sifre" required>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-row row-full">
+                            <div class="input-1">
+                                <label>
+                                    <span class="label">Şifre (Tekrar)</span>
+                                    <input type="password" name="sifreTekrar" required>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-row row-full">
+                            <div class="check-1">
+                                <label>
+                                    <input type="checkbox" required>
+                                    <span class="label"><span><a href="javascript:">Kullanıcı sözleşmesini</a> okudum, kabul ediyorum.</span></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-row row-full">
+                            <button class="button-2 button-block" type="submit">KAYIT OL</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<script src="assets/js/lib.min.js"></script>
+<script src="assets/js/core.min.js"></script>
+</body>
+</html>

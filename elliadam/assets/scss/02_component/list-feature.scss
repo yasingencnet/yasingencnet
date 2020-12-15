@@ -1,0 +1,30 @@
+//------------------------------------------------------------
+// = LIST FEATURE
+//------------------------------------------------------------
+.feature-lists{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.item-feature{
+  background-color: HSLA(var(--color-success), 0.2);
+  padding: calc(var(--flow-space) / 2) var(--flow-space);
+  > * {
+    vertical-align: middle;
+    & + * {
+      margin-left: var(--flow-space);
+    }
+  }
+  & + .item-feature{
+    margin-top: var(--flow-space);
+  }
+}
+.item-feature__icon{
+  path{
+    stroke: HSL(var(--color-success-dark));
+  }
+}
+.item-feature__title{
+  color: HSL(var(--color-success-dark));
+  font-size: var(--fs-text-sm);
+}

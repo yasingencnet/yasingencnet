@@ -1,0 +1,22 @@
+//------------------------------------------------------------
+// = TRIAL FORM
+//------------------------------------------------------------
+.trial-form{
+  margin: auto;
+  box-shadow: var(--shadow-1);
+  border: 1px solid HSL(var(--color-border));
+  padding: calc(var(--flow-space) * 3);
+  background-color: HSL(var(--color-white));
+  max-width: var(--trial-form);
+  @include respond-below(md){
+    padding: calc(var(--flow-space) * 2);
+  }
+}
+.trial-form__title{
+  margin-bottom: calc(var(--flow-space) * 3);
+  text-align: center;
+  font-weight: var(--semi-bold);
+  font-size: var(--fs-text-xs);
+  color: HSL(var(--color-base));
+}
+.trial-form__body{}

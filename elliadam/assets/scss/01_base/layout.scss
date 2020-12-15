@@ -1,0 +1,38 @@
+//------------------------------------------------------------
+// = LAYOUT
+//------------------------------------------------------------
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: HSL(var(--color-bg));
+  color: HSL(var(--color-paragraph));
+  font-family: var(--font-base);
+}
+
+.container{
+  max-width: var(--container);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+}
+.grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  grid-gap: 20px;
+  &.grid-centered{
+    justify-content: center;
+    align-items: center;
+  }
+}
+.row-full{
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+.article{
+  max-width: var(--article);
+  margin: 0 auto;
+}

@@ -1,0 +1,215 @@
+//------------------------------------------------------------
+// = FORM
+//------------------------------------------------------------
+form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: calc(var(--flow-space) * 3);
+  @include respond-below(md) {
+    grid-template-columns: 1fr;
+  }
+}
+label{
+  > * {
+    & + * {
+      margin-top: var(--flow-space);
+    }
+  }
+}
+
+fieldset{
+  margin: 0 0 calc(var(--flow-space) * 6);
+  padding: 0;
+  border: 0;
+}
+legend{
+  font-size: var(--fs-text-xs);
+  margin-bottom: calc(var(--flow-space) * 1.5);
+  padding-left: 0;
+  color: HSL(var(--color-primary));
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-family: var(--font-alt);
+}
+label{
+  > * {
+    & + * {
+      margin-top: var(--flow-space);
+    }
+  }
+}
+
+// Placeholders
+%input-base{
+  width: 100%;
+  padding: calc(var(--flow-space) * 1.5) var(--flow-space);
+  font-size: var(--fs-text-sm);
+  border: 1px solid HSL(var(--color-border-dark));
+  border-radius: var(--radius);
+}
+%input-focus{
+  outline: 0;
+  border-color: HSL(var(--color-primary));
+}
+%input-placeholder{
+  color: HSL(var(--color-paragraph-light));
+}
+%label{
+  display: block;
+  font-size: var(--fs-text-xs);
+  color: HSL(var(--color-base));
+}
+
+// Inputs
+.input-1{
+  input{
+    @extend %input-base;
+    &::placeholder{
+      @extend %input-placeholder;
+    }
+    &:focus{
+      @extend %input-focus;
+    }
+  }
+  textarea{
+    @extend %input-base;
+    height: 200px;
+    &::placeholder{
+      @extend %input-placeholder;
+    }
+    &:focus{
+      @extend %input-focus;
+    }
+  }
+  .label{
+    @extend %label;
+  }
+}
+.select-1{
+  select{
+    @extend %input-base;
+    &:focus{
+      @extend %input-focus;
+    }
+  }
+  .label{
+    @extend %label;
+  }
+}
+.check-1{
+  padding: 2px 0;
+  label{
+    input{
+      @extend .visually-hidden;
+      & ~ .label{
+        @extend %label;
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding-top: 1px;
+        margin-top: 0;
+        small{
+          display: block;
+          font-size: var(--fs-text-xs);
+          color: HSL(var(--color-paragraph-light));
+        }
+        &:before{
+          content: "✔";
+          position: absolute;
+          left: 12px;
+          top: 8px;
+          z-index: 1;
+          text-align: center;
+          color: HSL(var(--color-primary));
+          transform: scale(0);
+          transition: all 200ms linear;
+          font-size: 2rem;
+        }
+        &:after{
+          content: '';
+          display: inline-block;
+          width: 38px;
+          height: 38px;
+          margin-right: 12px;
+          flex-shrink: 0;
+          border: 1px solid HSL(var(--color-border-dark));
+          background-color: HSL(var(--color-white));
+          border-radius: var(--radius);
+          order: -1;
+        }
+      }
+      &:checked ~ .label{
+        &:after{
+          border-color: HSL(var(--color-primary));
+
+          background-color: HSLA(var(--color-primary), .2);
+        }
+        &:before{transform: scale(1);}
+      }
+      &:disabled ~ .label{}
+      &:checked:disabled ~ .label{}
+
+      &[type="radio"] ~ .label{
+        &:after{
+          border-radius: 50%;
+        }
+      }
+      &[type="checkbox"] ~ .label{
+
+      }
+
+      &:focus{
+        & ~ .label{
+          &:after{
+            outline: 0;
+            border-color: HSL(var(--color-primary));
+            box-shadow: 0 0 0 3px HSL(var(--color-primary), .2);
+          }
+        }
+      }
+    }
+  }
+}
+.toggle-1{
+  label{
+    position: relative;
+    input{
+      @extend .visually-hidden;
+      & ~ .label{
+        font-size: var(--fs-text-sm);
+        display: inline-block;
+        padding: var(--flow-space) calc(var(--flow-space) * 3);
+        margin-top: 0;
+
+        font-family: var(--font-alt);
+        color: HSL(var(--color-paragraph));
+        text-align: center;
+        border: 1px solid HSL(var(--color-border-dark));
+        border-radius: calc(var(--radius) * 12);
+        background-color: HSL(var(--color-white));
+        &:hover{cursor: pointer;}
+      }
+      &:checked ~ .label{
+        background-color: HSL(var(--color-primary));
+        border-color: HSL(var(--color-primary));
+        color: HSL(var(--color-white));
+      }
+      &:disabled ~ .label{}
+      &:checked:disabled ~ .label{}
+
+      &:focus{
+        & ~ .label{
+          outline: 0;
+          border-color: HSL(var(--color-primary));
+          box-shadow: 0 0 0 3px HSL(var(--color-primary), .2);
+        }
+      }
+    }
+  }
+}
+
+// Others
+.note{
+  @extend %label;
+  color: HSL(var(--color-paragraph-light));
+}

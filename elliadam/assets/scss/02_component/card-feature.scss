@@ -1,0 +1,32 @@
+//------------------------------------------------------------
+// = CARD FEATURE
+//------------------------------------------------------------
+.feature-cards{
+  display: flex;
+  flex-wrap: wrap;
+  margin: calc(-1 * (var(--flow-space) / 2));
+}
+.card-feature{
+  display: inline-block;
+  margin: calc(var(--flow-space) / 2);
+  padding: calc(var(--flow-space) * 3);
+  text-align: center;
+  background-color: HSL(var(--color-secondary), 0.05);
+  @include respond-below(md) {
+    padding: calc(var(--flow-space) * 1);
+  }
+  > * {
+    & + * {
+      margin-top: 5px;
+    }
+  }
+}
+.card-feature__icon{
+  path{
+    stroke: HSL(var(--color-secondary));
+  }
+}
+.card-feature__title{
+  font-size: var(--fs-text-sm);
+  color: HSL(var(--color-base));
+}

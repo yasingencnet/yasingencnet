@@ -1,0 +1,27 @@
+//------------------------------------------------------------
+// = RESULT
+//------------------------------------------------------------
+.result {
+  text-align: center;
+  > * {
+    & + * {
+      margin-top: calc(var(--flow-space) * 3);
+    }
+  }
+}
+.result__figure{
+  svg, img{}
+}
+.result__title{
+  font-family: var(--font-alt);
+  font-weight: var(--bold);
+  font-size: var(--fs-title-md);
+  color: HSL(var(--color-base));
+}
+.result__description{
+  font-size: var(--fs-text-sm);
+  color: HSL(var(--color-paragraph));
+}
+.result__cta{
+  @extend .link-1;
+}

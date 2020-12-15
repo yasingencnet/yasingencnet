@@ -1,0 +1,52 @@
+//------------------------------------------------------------
+// = CONTACT
+//------------------------------------------------------------
+.contact-cards{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card-contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: calc(var(--flow-space) * 1.5);
+  padding: 5px;
+  text-decoration: none;
+  color: var(--color-base);
+  > * {
+    & + * {
+      margin-top: var(--flow-space);
+    }
+  }
+}
+.card-contact__figure{
+  svg{
+    @include respond-below(md) {
+      width: 64px;
+      height: 64px;
+    }
+    rect{
+      .card-contact:hover & {
+        fill: HSL(var(--color-primary));
+      }
+    }
+    path{
+      .card-contact:hover & {
+        stroke: HSL(var(--color-white));
+      }
+    }
+  }
+}
+.card-contact__text{
+  font-size: var(--fs-text-sm);
+}
+
+.form-contact{
+  max-width: 600px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}

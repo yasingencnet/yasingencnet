@@ -1,0 +1,92 @@
+//------------------------------------------------------------
+// = NAV
+//------------------------------------------------------------
+.nav{
+  @include respond-below(md) {
+    position: absolute;
+    top: 100%;
+    left: var(--container-padding);
+    background: HSL(var(--color-white));
+    width: calc(100% - (var(--container-padding) * 2) );
+    padding: calc(var(--flow-space) * 1.5) var(--container-padding);
+    transition: var(--transition);
+    transform: scale(.95);
+    transform-origin: center;
+    box-shadow: var(--shadow-1), inset 0 0 0 2px HSL(var(--color-primary));
+    border-radius: var(--radius);
+  }
+  &:not(.is-active){
+    @include respond-below(md){
+      pointer-events: none;
+      opacity: 0;
+    }
+  }
+  &.is-active{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.nav__list{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  .nav.is-active & {
+    @include respond-below(md){
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+}
+.nav__item{
+  @include respond-above(md) {
+    margin-left: var(--flow-space);
+    margin-right: var(--flow-space);
+  }
+  a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: .5rem;
+    height: 100%;
+    font-size: var(--fs-text-xs);
+    font-weight: var(--bold);
+    color: HSL(var(--color-base));
+    text-decoration: none;
+    &:hover{
+      color: HSL(var(--color-primary));
+    }
+  }
+}
+
+.category-nav{
+  background: HSL(var(--color-white));
+  box-shadow: var(--shadow-1);
+  padding: 15px;
+}
+.category-nav__title{
+  padding: 5px;
+  font-weight: var(--bold);
+  color: HSL(var(--color-base));
+  font-size: var(--fs-text-xs);
+  text-transform: uppercase;
+  margin-bottom: var(--flow-space);
+}
+.category-nav__list{}
+.category-nav__item{
+  & + .category-nav__item{
+    margin-top: 5px;
+  }
+  a{
+    display: block;
+    padding: 5px;
+    color: HSL(var(--color-base));
+    font-size: var(--fs-text-xs);
+    border-radius: var(--radius);
+    text-decoration: none;
+    &:hover, &:focus{
+      color: HSL(var(--color-primary));
+      background: HSLA(var(--color-primary), .2);
+    }
+  }
+}

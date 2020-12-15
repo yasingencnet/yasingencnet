@@ -1,0 +1,25 @@
+//------------------------------------------------------------
+// = HEADER
+//------------------------------------------------------------
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: var(--header);
+  padding: calc(var(--flow-space) * 1.5) var(--container-padding);
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+.logo{
+  @include respond-below(md) {
+    max-width: 120px;
+  }
+  img, svg{
+    max-width: 100%;
+    height: auto;
+  }
+}

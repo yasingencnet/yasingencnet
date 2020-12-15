@@ -1,0 +1,79 @@
+//------------------------------------------------------------
+// = MAINTENANCE
+//------------------------------------------------------------
+.maintenance{
+  @include respond-below(md) {
+    --header:       8rem;
+    --fs-title-lg:  24px;
+    --fs-text-sm:   13px;
+    --fs-text-lg:   16px;
+    --container-padding: 1.5rem;
+  }
+  .header{
+    position: relative;
+    @include respond-below(sm) {
+      flex-direction: column;
+      margin-bottom: 15px;
+      height: auto;
+    }
+    > * {
+      & + * {
+        @include respond-below(sm) {
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+  .main{
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - var(--header));
+  }
+  .hero{
+    padding-top: var(--container-padding);
+    padding-bottom: var(--container-padding);
+    flex-grow: 1;
+    .grid{
+      @include respond-below(md) {
+        grid-template-columns: 1fr;
+      }
+    }
+    .hero-trial-form{
+      &:before{
+        @include respond-below(md) {
+          display: none;
+        }
+      }
+    }
+    .trial-form{
+      @include respond-below(md) {
+        padding: var(--flow-space);
+      }
+    }
+    .hero-copy{
+      @include respond-below(md) {
+        --flow-space:   .5rem;
+        text-align: center;
+      }
+    }
+  }
+  .section-highlight{
+    margin-top: auto;
+    padding-bottom: var(--container-padding);
+    .grid{
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    }
+  }
+  .card-highlight{
+    &:hover{
+      cursor: pointer;
+      .card-highlight__title{
+        color: HSL(var(--color-primary));
+      }
+      box-shadow: var(--shadow-2);
+    }
+    @include respond-below(md) {
+      padding: var(--flow-space);
+    }
+  }
+}

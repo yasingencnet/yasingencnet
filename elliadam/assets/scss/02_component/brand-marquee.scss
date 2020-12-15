@@ -1,0 +1,31 @@
+//------------------------------------------------------------
+// = BRAND MARQUEE
+//------------------------------------------------------------
+.brand-marquee{
+  display: flex;
+  white-space: nowrap;
+  /*animation: marquee 30s linear infinite;*/
+  overflow: auto;
+}
+.brand-marquee__item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  img, svg{}
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0%, 0);
+  }
+  50% {
+    transform: translate(-100%, 0);
+  }
+  50.001% {
+    transform: translate(100%, 0);
+  }
+  100% {
+    transform: translate(0%, 0);
+  }
+}

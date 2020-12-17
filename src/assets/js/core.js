@@ -7,6 +7,7 @@ let main = {
 
     primaryNavButton.onclick = function(){
       togglePrimaryNav();
+      window.navigator.vibrate([200, 100, 200]);
     }
     function togglePrimaryNav(){
       if(primaryNav.classList.contains("is-active")){

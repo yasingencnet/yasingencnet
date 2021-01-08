@@ -17,7 +17,7 @@
         </ul>
       </nav>
       <div class="copyright">
-        &copy; {{ metadata.year }} {{ author.name or metadata.author.name }} <a href="/sitemap.xml">Sitemap</a>.<br>
+        &copy; {% year %} {{ author.name or metadata.author.name }} <a href="/sitemap.xml">Sitemap</a>.<br>
         Powered by <a href="https://www.11ty.dev/" target="_blank" rel="noreferrer">Eleventy</a>, <a href="https://www.netlify.com/" target="_blank" rel="noreferrer">Netlify</a>, and <a href="{{ metadata.repo }}" target="_blank" rel="noreferrer">GitHub</a>.
       </div>
     </div>

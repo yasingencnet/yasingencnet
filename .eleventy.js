@@ -19,6 +19,8 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addLayoutAlias("work", "layouts/works.njk");
   eleventyConfig.addLayoutAlias("travel", "layouts/travel.njk");
 
+  eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
+
   eleventyConfig.addFilter("readableDate", dateObj => {
     return DateTime.fromJSDate(dateObj, {zone: 'utc'}).toFormat("dd LLL yyyy");
   });

@@ -7,7 +7,7 @@
 
 .works{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(588px, 1fr));
   grid-gap: calc(var(--flow-space) * 3);
   @include respond-below(md) {
     grid-template-columns: 1fr;
@@ -22,12 +22,17 @@
   justify-content: center;
   flex-grow: 1;
   padding: calc(var(--flow-space) * 6) calc(var(--flow-space) * 3) 0;
+  background: linear-gradient(45deg, rgb(var(--figure-color-r), var(--figure-color-g), var(--figure-color-b)), rgb(calc(var(--figure-color-r) + 30), calc(var(--figure-color-g) + 30), calc(var(--figure-color-b) + 30)));
+
   @include respond-below(sm) {
-    padding: calc(var(--flow-space) * 3) calc(var(--flow-space) * 1.5) 0;
+    padding: calc(var(--flow-space) * 4.5) calc(var(--flow-space) * 1.5) 0;
   }
   &:empty{
     min-height: 342px;
     background-color:RGBA(var(--color-border), .3);
+  }
+  a{
+    margin-top: auto;
   }
   img{
     width: 100%;
@@ -41,6 +46,9 @@
 .works__meta{
   flex-shrink: 0;
   padding: calc(var(--flow-space) * 3);
+  @include respond-below(sm) {
+    padding: calc(var(--flow-space) * 3) calc(var(--flow-space) * 1.5);
+  }
 }
 .works__header{
   display: flex;
@@ -85,7 +93,7 @@
   text-decoration: none;
   color: var(--color-paragraph);
   font-family: var(--font-alt);
-  &:empty{
+  &.disabled{
     min-width: 76px;
     text-align: center;
     height: 34px;

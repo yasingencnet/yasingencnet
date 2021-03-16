@@ -1,6 +1,6 @@
 {% for work in workslist | reverse %}
   <div class="works__item">
-    <figure class="works__figure" style="background-color:{{ work.data.color }};">
+    <figure class="works__figure" style="--figure-color-r:{{ work.data.color[0] }}; --figure-color-g:{{ work.data.color[1] }}; --figure-color-b:{{ work.data.color[2] }};">
       <a href="{{ work.url | url }}">
         <picture>
           <source srcset="{{metadata.assets.img}}works/{{ work.data.picture }}.webp" type="image/webp">
@@ -11,9 +11,17 @@
     <div class="works__meta">
       <header class="works__header">
         <h4 class="works__title">{{ work.data.title }}</h4>
-        <a class="works__link" href="{{ work.data.url }}/">Visit</a>
+        {%- if work.data.url %}
+        <a class="works__link" href="{{ work.data.url }}">Visit</a>
+        {%  else %}
+        <span class="works__link disabled">No Demo</span>
+        {% endif %}
       </header>
       <p class="works__description">{{ work.data.description }}</p>
     </div>
   </div>
 {% endfor %}
+
+
+
+

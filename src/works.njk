@@ -14,6 +14,40 @@ eleventyNavigation:
         <h1 class="section-title">{{ title }}</h1>
         <p class="section-description">{{ eleventyNavigation.excerpt }}</p>
       </header>
+      <!--
+      <div class="subnav">
+        <ul class="subnav__list">
+          <li class="subnav__item active">
+            <a href="/">All<span class="count">45</span></a>
+          </li>
+          <li class="subnav__item">
+            <a href="/">Landing Page<span class="count">8</span></a>
+          </li>
+          <li class="subnav__item">
+            <a href="/">Website<span class="count">8</span></a>
+          </li>
+          <li class="subnav__item">
+            <a href="/">Mobile App<span class="count">8</span></a>
+          </li>
+          <li class="subnav__item">
+            <a href="/">HTML Mail<span class="count">12</span></a>
+          </li>
+        </ul>
+        <div class="subnav__actions">
+          <div class="select-1">
+            <label>
+              <select name="filterSelect">
+                <option value="1">Featured Works</option>
+                <option value="2">Recent Works</option>
+                <option value="3">Popular Works</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+
+      </div>
+      -->
       <div class="works">
         {% set workslist = collections.works %}
         {% include "workcard.njk" %}

@@ -3,7 +3,7 @@ layout: layouts/base.njk
 templateClass: tmpl-work
 ---
 <section class="section section-project">
-  <div class="project-hero" style="background-color: {{ color }};">
+  <div class="project-hero" style="--figure-color-r:{{ color[0] }}; --figure-color-g:{{ color[1] }}; --figure-color-b:{{ color[2] }};">
     <div class="container">
       <div class="section-inner">
         <div>
@@ -41,7 +41,11 @@ templateClass: tmpl-work
           </li>
           <li class="meta-list__item">
             <span class="meta-list__title">&nbsp;</span>
+            {%- if url %}
             <a href="{{ url }}" class="meta-list__value">Visit</a>
+            {%  else %}
+            <span class="meta-list__value disabled">No Demo</span>
+            {% endif %}
           </li>
         </ul>
       </div>
@@ -68,7 +72,7 @@ templateClass: tmpl-work
       <div class="works">
         {%- set nextPost = collections.works | getNextCollectionItem(page) %}
         <div class="works__item">
-          <figure class="works__figure" {%- if nextPost %}style="background-color:{{ nextPost.data.color }};"{%  else %} {% endif %}>{%- if nextPost %}<a href="{{ nextPost.url | url }}">
+          <figure class="works__figure test" {%- if nextPost %}style="--figure-color-r:{{ nextPost.data.color[0] }}; --figure-color-g:{{ nextPost.data.color[1] }}; --figure-color-b:{{ nextPost.data.color[2] }};"{%  else %} {% endif %}>{%- if nextPost %}<a href="{{ nextPost.url | url }}">
               <picture>
                 <source srcset="{{ metadata.assets.img }}works/{{ nextPost.data.picture }}.webp" type="image/webp">
                 <img src="{{ metadata.assets.img }}works/{{ nextPost.data.picture }}.jpg" width="795" height="566" alt="{{ nextPost.data.title }}" loading="lazy">
@@ -84,7 +88,7 @@ templateClass: tmpl-work
         </div>
         {%- set previousPost = collections.works | getPreviousCollectionItem(page) %}
         <div class="works__item">
-          <figure class="works__figure" {%- if previousPost %}style="background-color:{{ previousPost.data.color }};"{%  else %} {% endif %}>{%- if previousPost %}<a href="{{ previousPost.url | url }}">
+          <figure class="works__figure" {%- if previousPost %}style="--figure-color-r:{{ previousPost.data.color[0] }}; --figure-color-g:{{ previousPost.data.color[1] }}; --figure-color-b:{{ previousPost.data.color[2] }};"{%  else %} {% endif %}>{%- if previousPost %}<a href="{{ previousPost.url | url }}">
               <picture>
                 <source srcset="{{ metadata.assets.img }}works/{{ previousPost.data.picture }}.webp" type="image/webp">
                 <img src="{{ metadata.assets.img }}works/{{ previousPost.data.picture }}.jpg" width="795" height="566" alt="{{ previousPost.data.title }}" loading="lazy">

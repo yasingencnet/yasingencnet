@@ -18,4 +18,8 @@
   color: RGB(var(--color-primary));
   text-decoration: none;
   max-width: 480px;
+  &.disabled{
+    color: RGBA(var(--color-border), .5);
+    pointer-events: none;
+  }
 }

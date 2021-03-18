@@ -65,6 +65,11 @@
   @include respond-below(sm) {
     display: none;
   }
+  .awesome-css{
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+  }
 }
 .hero__pic{
   transform: translateY(-120px);
@@ -105,5 +110,35 @@
         padding-right: calc(50% + (var(--layout-gap)/2));
       }
     }
+  }
+}
+
+
+.awesome-css{
+  width: 122px;
+  height: 122px;
+  padding: .8rem;
+  border: 3px solid RGB(var(--color-border));
+  font-size: var(--fs-title-md);
+  letter-spacing: .1em;
+  font-family: var(--font-alt);
+  line-height: 1;
+  color: RGB(var(--color-paragraph-light));
+  transition: width .1s ease-in;
+  &:hover{
+    width: 198px;
+    background: linear-gradient(110.78deg,#76E650 -1.13%,#F9D649 15.22%,#F08E35 32.09%,#EC5157 48.96%,#FF18BD 67.94%,#1A4BFF 85.34%,#62D8F9 99.57%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: var(--bold);
+    animation: shine 1s linear infinite;
+  }
+}
+@keyframes shine {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
   }
 }

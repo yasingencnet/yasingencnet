@@ -22,8 +22,7 @@
   justify-content: center;
   flex-grow: 1;
   padding: calc(var(--flow-space) * 6) calc(var(--flow-space) * 3) 0;
-  background: linear-gradient(45deg, rgb(var(--figure-color-r), var(--figure-color-g), var(--figure-color-b)), rgb(calc(var(--figure-color-r) + 30), calc(var(--figure-color-g) + 30), calc(var(--figure-color-b) + 30)));
-
+  background: linear-gradient(45deg, rgb(var(--figure-color-r), var(--figure-color-g), var(--figure-color-b)), rgb(calc(var(--figure-color-r) + 40), calc(var(--figure-color-g) + 40), calc(var(--figure-color-b) + 40)));
   @include respond-below(sm) {
     padding: calc(var(--flow-space) * 4.5) calc(var(--flow-space) * 1.5) 0;
   }
@@ -41,6 +40,11 @@
     margin-top: auto;
     margin-left: auto;
     margin-right: auto;
+    transform: scale(1, 1) translateY(20px);
+    &:hover{
+      animation: bounceWorkFigure 1s cubic-bezier(0.280, 0.840, 0.420, 1) forwards;
+      will-change: transform;
+    }
   }
 }
 .works__meta{
@@ -100,4 +104,15 @@
     background: RGBA(var(--color-border), .3);
     pointer-events: none;
   }
+}
+
+
+@keyframes bounceWorkFigure {
+  0%   { transform: scale(1,1)      translateY(20px); }
+  10%  { transform: scale(1.01,.99)   translateY(20px); }
+  30%  { transform: scale(.99,1.01)   translateY(-30px); }
+  50%  { transform: scale(1.01,.99) translateY(0); }
+  57%  { transform: scale(1,1)      translateY(-10px); }
+  64%  { transform: scale(1,1)      translateY(0); }
+  100% { transform: scale(1,1)      translateY(0); }
 }

@@ -13,8 +13,13 @@
   > * + * {
     margin-top: var(--flow-space);
   }
-  svg, img{
 
+  &:hover{
+    svg, img{
+      animation: bounceSkillCardFigure 1s cubic-bezier(0.280, 0.840, 0.420, 1) forwards;
+      will-change: transform;
+      backface-visibility: hidden;
+    }
   }
 }
 .skill-card__title{
@@ -41,4 +46,15 @@
       color: RGB(var(--color-primary));
     }
   }
+}
+
+
+@keyframes bounceSkillCardFigure {
+  0%   { transform: scale(1,1)      translateY(5px); }
+  10%  { transform: scale(1.1,.9)   translateY(5px); }
+  30%  { transform: scale(.9,1.1)   translateY(-5px); }
+  50%  { transform: scale(1.1,.9) translateY(0); }
+  57%  { transform: scale(1,1)      translateY(-5px); }
+  64%  { transform: scale(1,1)      translateY(0); }
+  100% { transform: scale(1,1)      translateY(0); }
 }

@@ -12,8 +12,16 @@
   font-weight: var(--bold);
   color: RGB(var(--color-primary));
   a{
+    display: block;
     color: inherit;
-    text-decoration: none;
+    text-decoration-line: none;
+    &:hover, &:focus{
+      text-decoration-line: underline;
+      text-decoration-thickness: 1em;
+      text-decoration-color: RGB(var(--color-highlight), 0.2);
+      text-underline-offset: -1rem;
+      text-decoration-skip-ink: none;
+    }
   }
 }
 .post-card__description{

@@ -29,6 +29,12 @@ a[href*="//"]:not([href*="yasingenc.net"]){
     background: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTMiIGhlaWdodD0iMTMiIHZpZXdCb3g9IjAgMCAxMyAxMyIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEgMTJMMTIgMU0xMiAxSDRNMTIgMVY4LjUiIHN0cm9rZT0iIzE0MTcxQSIvPgo8L3N2Zz4=");
     margin-left: 5px;
     margin-right: 5px;
+    transition: transform .1s linear;
+  }
+  &:hover, &:focus{
+    &:after{
+      transform: rotateZ(45deg);
+    }
   }
 }
 a[href*="javascript:"]{

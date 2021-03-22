@@ -67,8 +67,8 @@
   }
   .awesome-css{
     position: absolute;
-    left: 50%;
-    bottom: 5%;
+    left: 0;
+    bottom: 0;
   }
 }
 .hero__pic{
@@ -87,7 +87,8 @@
   font-family: var(--font-alt);
   font-size: var(--fs-text-sm);
   margin-bottom: 3rem;
-  @include respond-below(xl) {
+  text-align: right;
+  @include respond-below(lg) {
     display: none;
   }
 }
@@ -115,18 +116,18 @@
 
 
 .awesome-css{
-  width: 122px;
-  height: 122px;
-  padding: .8rem;
-  border: 3px solid RGB(var(--color-border));
-  font-size: var(--fs-title-md);
-  letter-spacing: .1em;
+  width: 90px;
+  height: 90px;
+  padding: .5rem;
+  border: 2px solid RGB(var(--color-paragraph-light));
+  font-size: var(--fs-title-xs);
+  letter-spacing: .2em;
   font-family: var(--font-alt);
-  line-height: 1;
+  line-height: 1.1;
   color: RGB(var(--color-paragraph-light));
   transition: width .1s ease-in;
   &:hover{
-    width: 198px;
+    width: 150px;
     background: linear-gradient(110.78deg,#76E650 -1.13%,#F9D649 15.22%,#F08E35 32.09%,#EC5157 48.96%,#FF18BD 67.94%,#1A4BFF 85.34%,#62D8F9 99.57%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

@@ -52,6 +52,13 @@
     font-weight: var(--bold);
     font-family: var(--font-alt);
     &:after{display: none !important;}
+    &:hover, &:focus{
+      text-decoration-line: underline;
+      text-decoration-thickness: 1em;
+      text-decoration-color: RGB(var(--color-black), 1);
+      text-underline-offset: -1rem;
+      text-decoration-skip-ink: none;
+    }
   }
   span{
     color: RGBA(var(--color-white), .8);

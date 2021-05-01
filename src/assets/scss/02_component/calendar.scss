@@ -1,0 +1,218 @@
+.calendar{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(252px, 1fr));
+  grid-gap: 1rem;
+}
+.calendar__month{
+  grid-column-start: 1;
+  grid-column-end: -1;
+
+  font-size: var(--fs-text-lg);
+  font-weight: var(--semibold);
+  margin-top: 6rem;
+}
+.calendar__day{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 3rem;
+  min-height: 260px;
+
+  background-color: RGB(var(--color-white));
+  border: 1px solid RGBA(var(--color-border), .4);
+  padding: 2rem;
+  border-radius: var(--radius);
+  box-shadow: var(--box-shadow-2);
+  &.selected{
+    border-color:  RGBA(var(--color-success), .5);
+    box-shadow: 0 0 0 3px RGB(var(--color-success), .2);
+  }
+  &.first-day{
+    grid-column-start: 1;
+  }
+
+  &:hover{
+    box-shadow: var(--box-shadow-1);
+    &.selected{
+      box-shadow: 0 0 0 3px RGB(var(--color-success), .2), var(--box-shadow-1);
+    }
+  }
+}
+
+.day__header{
+  display: flex;
+  align-items: center;
+}
+.day__label{
+  align-self: flex-start;
+}
+.day__date{
+  display: block;
+  font-size: var(--fs-text-xs);
+  font-weight: var(--semibold);
+  color: RGB(var(--color-paragraph));
+  text-transform: uppercase;
+  line-height: 1.2;
+  span{
+    color: RGB(var(--color-paragraph-light));
+  }
+  small{
+    font-weight: var(--regular);
+    color: RGB(var(--color-paragraph-light));
+  }
+}
+.day__description{
+  margin-top: auto;
+  font-size: var(--fs-text-sm);
+}
+.day__figure{
+  display: grid;
+  grid-gap: 1rem;
+  height: 250px;
+  background-color: RGB(var(--color-bg));
+  &.multiple{
+    grid-template-columns: 1fr 1fr;
+    img{
+      max-height: 120px;
+      height: 100%;
+    }
+  }
+  &.double{
+    grid-template-columns: 1fr;
+    img{
+      max-height: 120px;
+    }
+  }
+  &.single{
+    grid-template-columns: 1fr;
+    img{
+      max-height: 250px;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  img{
+    width: 100%;
+    object-fit: cover;
+    transition: .2s ease filter;
+    &:hover{
+      filter: brightness(1.05);
+    }
+  }
+}
+.day__check{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+
+.stats{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  @include respond-above(xs) {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+}
+
+.data-card{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: 180px;
+  background-color: RGB(var(--color-white));
+  padding: 1rem;
+  border-radius: var(--radius);
+  border: 1px solid RGBA(var(--color-border), .4);
+
+  > * {
+    &:not(svg), &:not(img){
+      z-index: 1;
+    }
+    & + * {
+      margin-top: 5px;
+    }
+  }
+  > svg, > img{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  &.v2{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.data-card__title{
+  font-size: var(--fs-text-xs);
+  font-weight: var(--semibold);
+}
+.data-card__description{
+  font-size: var(--fs-text-xs);
+  color: RGB(var(--color-paragraph-light));
+}
+.data-card__value{
+  margin-top: auto;
+  .data-card.v2 & {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: auto;
+  }
+  span{
+    font-size: var(--fs-title-sm);
+    line-height: 1.2;
+    .data-card.v2 & {
+      font-size: var(--fs-title-xl);
+    }
+  }
+  small{
+    font-size: var(--fs-text-sm);
+  }
+}
+.data-card__progress{
+  height: 22px;
+  width: 100%;
+  margin-top: auto;
+}
+
+
+.progress{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  background-color: RGB(var(--color-white));
+  padding: 1rem;
+  border-radius: var(--radius);
+  border: 1px solid RGBA(var(--color-border), .4);
+}
+.progress__label{
+  font-size: var(--fs-text-sm);
+  color: RGB(var(--color-paragraph-light));
+  margin-bottom: 1rem;
+  .count{
+    padding: .2rem 1rem;
+    text-align: center;
+    color: RGB(var(--color-white));
+    border-radius: var(--radius);
+    background-color: RGB(var(--color-secondary));
+  }
+}
+.progress__input{
+
+}
+
+.weight-chart{
+  height: 250px;
+  width: 100%;
+  --color: RGBA(var(--color-primary), .1);
+}

@@ -3,11 +3,11 @@
   padding: var(--flow-space) calc(var(--flow-space) * 3);
   cursor: pointer;
   text-decoration: none;
-  font-family: var(--font-alt);
   font-size: var(--fs-text-xs);
-  font-weight: var(--bold);
+  font-weight: var(--semibold);
   border: 0;
   text-align: center;
+  border-radius: var(--radius);
   &.button-sm{
     padding: var(--flow-space) calc(var(--flow-space) * 1.5);
   }
@@ -21,12 +21,10 @@
   }
 }
 .button-group{
-  margin-left: calc((var(--flow-space) * 0.75) * -1);
-  margin-right: calc((var(--flow-space) * 0.75) * -1);
-  > * {
-    margin-left: calc(var(--flow-space) * 0.75);
-    margin-right: calc(var(--flow-space) * 0.75);
-  }
+  display: flex;
+  flex-wrap: wrap;
+  gap: calc(var(--flow-space) * 1.5);
+  font-size: 0;
 }
 .button-block{
   width: 100%;
@@ -37,32 +35,24 @@
 
 .button-1{
   @extend .button;
-  background-color: RGB(var(--color-paragraph));
   color: RGB(var(--color-white));
-  box-shadow: inset 0 0 0 2px RGB(var(--color-paragraph));
+  box-shadow: inset 0 0 0 2px RGB(var(--color-primary));
+  background: linear-gradient(135deg, RGB(var(--color-primary)) 25%, RGB(var(--color-primary-alt)) 100%);
   &:hover, &:focus{
-    background-color: RGB(var(--color-white));
-    color: RGB(var(--color-paragraph));
+    background: linear-gradient(73.39deg,RGB(var(--color-paragraph)) 7.52%,RGB(var(--color-black)) 98.26%);
+    color: RGB(var(--color-white));
+    box-shadow: inset 0 0 0 2px RGB(var(--color-black));
   }
 }
 .button-2{
   @extend .button;
-  background-color: RGB(var(--color-white));
-  color: RGB(var(--color-paragraph));
-  box-shadow: inset 0 0 0 2px RGB(var(--color-paragraph));
-  &:hover, &:focus{
-    background-color: RGB(var(--color-paragraph));
-    color: RGB(var(--color-white));
-  }
-}
-.button-3{
-  @extend .button;
-  background-color: RGB(var(--color-paragraph));
+  background: linear-gradient(73.39deg,RGB(var(--color-paragraph)) 7.52%,RGB(var(--color-black)) 98.26%);
   color: RGB(var(--color-white));
   box-shadow: inset 0 0 0 2px RGB(var(--color-paragraph));
   &:hover, &:focus{
-    background-color: RGB(var(--color-paragraph));
-    color: RGB(var(--color-paragraph));
+    background: linear-gradient(73.39deg,RGB(var(--color-primary)) 7.52%,RGB(var(--color-primary-alt)) 98.26%);
+    color: RGB(var(--color-white));
+    box-shadow: inset 0 0 0 2px RGB(var(--color-primary));
   }
 }
 
@@ -70,7 +60,7 @@
   @extend .button, .button-2;
   display: none;
   padding: var(--flow-space);
-  font-weight: var(--regular);
+  font-weight: var(--semibold);
   @include respond-below(md) {
     display: inline-block;
   }

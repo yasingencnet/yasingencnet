@@ -1,6 +1,5 @@
 ---
 layout: layouts/base.njk
-templateClass: tmpl-post
 ---
 <div class="container container-subpage">
   <article class="article">
@@ -41,9 +40,9 @@ templateClass: tmpl-post
 {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
 {%- if previousPost or  nextPost %}
   <div class="section section-post">
-    <div class="container">
+    <div class="container-md">
       <div class="section-inner">
-        <div class="similar-post">
+        <div class="post-cards">
           {%- if previousPost %}
             <div class="post-card">
               <div class="post-card__meta">Previous Post</div>

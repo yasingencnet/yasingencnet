@@ -1,0 +1,77 @@
+<div class="calendar">
+  {% for item in transformation  %}
+
+  {% set regExp = r/^0?1\./g %}
+  {% if regExp.test(item.date) %}
+  <div class="calendar__month">{{item.date}}</div>
+  {% endif %}
+
+  <div class="calendar__day {% set regExp = r/^0?1\./g %} {% if regExp.test(item.date) %} first-day {% endif %}" data-date="{{item.date}}">
+
+    <header class="day__header">
+      <time class="day__date" datetime="{{ item.date }}">Day {{ loop.index }} <br> <small class="calendar__day-date">{{ item.date }}</small></time>
+    </header>
+
+    <!--
+    {% if item.figure %}
+    <figure class="day__figure {% if item.figure.length <= 1 %} single {% elif item.figure.length == 2 %} double {% else %} multiple {% endif %}">
+      {% for i in item.figure %}
+      <a data-fslightbox href="/assets/transformation/{{ i }}">
+        <img src="/assets/transformation/{{ i }}" alt="Photo of day" loading="lazy">
+      </a>
+      {% endfor %}
+    </figure>
+    {% endif %}
+    -->
+
+    {% if item.label %}
+    <div class="label-group">
+      {% if item.label.weight %}
+      <div>
+      <span class="day__label label
+      {% if item.label.weight >=80 %} label-alert {% endif %}
+      {% if item.label.weight > 75 and item.label.weight < 80 %} label-threat {% endif %}
+      {% if item.label.weight > 70 and item.label.weight <= 75 %} label-warning {% endif %}
+      {% if item.label.weight <= 70 %} label-success {% endif %}">
+        {{ item.label.weight }} KG
+      </span>
+      </div>
+      {% endif %}
+      {% if item.label.waist %}
+      <div>
+      <span class="day__label label
+      {% if item.label.waist >=95 %} label-alert {% endif %}
+      {% if item.label.waist > 90 and item.label.waist < 95 %} label-threat {% endif %}
+      {% if item.label.waist > 85 and item.label.waist <= 88 %} label-warning {% endif %}
+      {% if item.label.waist <= 85 %} label-success {% endif %}">
+        Waist: {{ item.label.waist }} CM
+      </span>
+      </div>
+      {% endif %}
+    </div>
+    {% endif %}
+
+    {% if item.description %}
+    <p class="day__description">{{ item.description }}</p>
+    {% endif %}
+
+    {% if item.check.diet !== null or item.check.workout !== null %}
+    <div class="day__check">
+      <div class="check-2">
+        <label>
+          <input type="checkbox" name="Diet" value="DietDay{{ loop.index }}" disabled {% if item.check.diet %} checked {% endif %}>
+          <span class="form-label">Diet</span>
+        </label>
+      </div>
+      <div class="check-2">
+        <label>
+          <input type="checkbox" name="Workout" value="WorkoutDay{{ loop.index }}" disabled {% if item.check.workout %} checked {% endif %}>
+          <span class="form-label">Workout</span>
+        </label>
+      </div>
+    </div>
+    {% endif %}
+
+  </div>
+  {% endfor %}
+</div>

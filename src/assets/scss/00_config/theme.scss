@@ -1,9 +1,11 @@
 :root{
   // TYPOGRAPHY
-  --font-base: 'Source Serif Pro', serif;
-  --font-alt: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  --font-base: 'Silka', sans-serif;
+  //--font-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 
+  --black: 900;
   --bold: 700;
+  --semibold: 500;
   --regular: 400;
 
   --fs-text-xs: 14px;
@@ -15,32 +17,42 @@
   --fs-title-md: 32px;
   --fs-title-lg: 38px;
   --fs-title-xl: 48px;
+  --fs-title-xml: 60px;
   --fs-title-xxl: 80px;
 
   --radius: 4px;
 
   // COLORS
-  --color-bg: 250, 250, 250;
+  --color-bg: 255, 255, 255;
   --color-bg-alt: 30, 30, 30;
-  --color-bg-pale: 230, 230, 235;
-  --color-bg-hover: 247, 250, 252;
+  --color-bg-pale: 249, 250, 251;
 
   --color-primary: 215, 25, 90;
+  --color-primary-alt: 163, 28, 84;
   --color-secondary: 50, 132, 255;
-  --color-tertiary: 45, 160, 10;
-  --color-highlight: 255, 190, 10;
+  --color-tertiary: 36, 211, 178;
   --color-border: 215, 215, 215;
 
-  --color-paragraph: 20, 25, 25;
+  --color-paragraph: 36, 54, 64;
   --color-paragraph-light: 75, 88, 95;
+  --color-paragraph-ultralight: 107, 114, 128;
 
-  --color-success: 54, 179, 126;
   --color-alert: 255, 86, 48;
+  --color-alert-dark: 200, 10, 10;
+  --color-threat: 255, 130, 0;
+  --color-threat-dark: 255, 120, 50;
+  --color-highlight: 255, 190, 10;
+  --color-highlight-dark: 130, 96, 10;
+  --color-success: 54, 179, 126;
+  --color-success-dark: 40, 150, 120;
+  --color-info: 59,130,246;
+  --color-info-dark: 34, 87, 174;
 
   --color-white: 255, 255, 255;
   --color-black: 0, 0, 0;
 
   --box-shadow-1: 0 6.7px 5.3px RGBA(0, 0, 0, 0.02), 0 22.3px 17.9px RGBA(0, 0, 0, 0.03), 0 100px 80px RGBA(0, 0, 0, 0.05);
+  --box-shadow-2: 0 1.6px 3.2px -60px rgba(0, 0, 0, 0.017), 0 3.9px 7.6px -60px rgba(0, 0, 0, 0.024), 0 7.3px 14.4px -60px rgba(0, 0, 0, 0.03), 0 13px 25.7px -60px rgba(0, 0, 0, 0.036), 0 24.2px 48px -60px rgba(0, 0, 0, 0.043), 0 58px 115px -60px rgba(0, 0, 0, 0.06);
 
   // SIZING
   --flow-space: 1rem;
@@ -55,7 +67,7 @@
   }
 
   @include respond-below(xl) {
-    --layout-gap: 6rem;
+    --layout-gap: 9rem;
   }
 
   @include respond-below(sm) {
@@ -68,6 +80,7 @@
     --fs-title-md: 26px;
     --fs-title-lg: 30px;
     --fs-title-xl: 34px;
+    --fs-title-xml: 46px;
     --fs-text-lg: 18px;
   }
 }

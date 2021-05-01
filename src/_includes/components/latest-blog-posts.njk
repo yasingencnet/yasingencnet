@@ -1,0 +1,14 @@
+<section class="section-post">
+  <div class="container">
+    <div class="section-inner">
+      <div class="post-cards">
+        {% set postslist = collections.posts | head(-5) %}
+        {% set postslistCounter = collections.posts | length %}
+        {% include "postcard.njk" %}
+      </div>
+      <div class="section-footer">
+        <a href="{{ '/blog/' | url }}" class="button-2">Go to Blog</a>
+      </div>
+    </div>
+  </div>
+</section>

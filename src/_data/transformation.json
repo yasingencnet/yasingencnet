@@ -1,0 +1,460 @@
+[
+  {
+    "date": "22.03.2021",
+    "check": {
+      "diet": false,
+      "workout": false
+    },
+    "description": "First day of my transformation challenge. Here you can see my worst physique.",
+    "label": {
+      "weight": "82.5",
+      "waist": "100"
+    },
+    "figure": [
+      "IMG_20210322_143811.jpg",
+      "IMG_20210322_144151.jpg",
+      "IMG_20210322_144224.jpg"
+    ]
+  },
+  {
+    "date": "23.03.2021",
+    "check": {
+      "diet": false,
+      "workout":  false
+    },
+    "description":  "Nothing changed but I stopped ordering fast-food.",
+    "label": {
+      "weight": false,
+      "waist": false
+    },
+    "figure": [
+      "no-junk-food.jpg"
+    ]
+  },
+  {
+    "date": "24.03.2021",
+    "check": {
+      "diet": true,
+      "workout":  false
+    },
+    "description":  "Trying to stay away from chocolates, waffers, cookies etc... I'm doing well.",
+    "label": {
+      "weight": false,
+      "waist": false
+    },
+    "figure": [
+      "no-chocolate.jpg"
+    ]
+  },
+  {
+    "date": "25.03.2021",
+    "check": {
+      "diet": true,
+      "workout":  false
+    },
+    "description":  "I stopped eating unhealthy foods but keep eating big portions.",
+    "label": {
+      "weight": false,
+      "waist": false
+    },
+    "figure": [
+      "IMG_20210325_213121.jpg",
+      "IMG_20210325_213158.jpg"
+    ]
+  },
+  {
+    "date": "26.03.2021",
+    "check": {
+      "diet": true,
+      "workout":  false
+    },
+    "description":  "Everything is same. I'm on a diet and have not started workout yet.",
+    "label": {
+      "weight": false,
+      "waist": false
+    },
+    "figure": [
+      "IMG_20210327_020235.jpg"
+    ]
+  },
+  {
+    "date": "27.03.2021",
+    "check": {
+      "diet": false,
+      "workout":  false
+    },
+    "description": "I ate 2 chocolates today because I'm travelling. There is no place to eat healthy foods.",
+    "label": {
+      "weight": false,
+      "waist": false
+    },
+    "figure": [
+      "27032021.jpg"
+    ]
+  },
+  {
+    "date": "28.03.2021",
+    "check": {
+      "diet": true,
+      "workout":  false
+    },
+    "description":  "Clean diet. A few km walking. Not great, not terrible.",
+    "label": {
+      "weight": false,
+      "waist": false
+    },
+    "figure": [
+      "trump-thumbs-up.jpg"
+    ]
+  },
+  {
+    "date": "29.03.2021",
+    "check": {
+      "diet": true,
+      "workout":  null
+    },
+    "description":  "Measure says I'm making progress. From 100cm waist to 98cm. \uD83D\uDCAA",
+    "label": {
+      "weight": "81.5",
+      "waist": "98"
+    },
+    "figure": [
+      "measure.jpg"
+    ]
+  },
+  {
+    "date": "30.03.2021",
+    "check": {
+      "diet": true,
+      "workout":  null
+    },
+    "description":  "I don't feel good today. Tired, hungry. ",
+    "label": {
+      "weight": false,
+      "waist": false
+    },
+    "figure": [
+      "low-battery.jpg"
+    ]
+  },
+  {
+    "date": "31.03.2021",
+    "check": {
+      "diet": true,
+      "workout":  null
+    },
+    "description":  "I started to drink strong filtered coffee daily because tea makes me feel bad. I'm doing great.",
+    "label": {
+      "weight": "81.1",
+      "waist": false
+    },
+    "figure": [
+      "taft-coffee.jpg"
+    ]
+  },
+  {
+    "date": "01.04.2021",
+    "check": {
+      "diet": true,
+      "workout":  null
+    },
+    "description":  "First day of the month! Keep going!",
+    "label": {
+      "weight": false,
+      "waist": false
+    },
+    "figure": [
+      "IMG_20210401_172843.jpg",
+      "IMG_20210401_172825.jpg"
+    ]
+  },
+  {
+    "date": "02.04.2021",
+    "check": {
+      "diet": true,
+      "workout":  null
+    },
+    "description":  "I feel bad. I need something sweet.",
+    "label": {
+      "weight": false,
+      "waist": false
+    },
+    "figure": [
+      "tired.jpg"
+    ]
+  },
+  {
+    "date": "03.04.2021",
+    "check": {
+      "diet": true,
+      "workout":  null
+    },
+    "description":  "I have literally zero energy. My mood is down.",
+    "label": {
+      "weight": false,
+      "waist": false
+    },
+    "figure": [
+      "IMG_20210401_011548.jpg",
+      "IMG_20210401_011540.jpg"
+    ]
+  },
+  {
+    "date": "04.04.2021",
+    "check": {
+      "diet": true,
+      "workout":  null
+    },
+    "description":  "Doing great today. I'm super okay.",
+    "label": {
+      "weight": "80.7",
+      "waist": "98"
+    },
+    "figure": [
+      "IMG_20210406_135531.jpg",
+      "IMG_20210406_135521.jpg",
+      "IMG_20210406_135441.jpg"
+    ]
+  },
+  {
+    "date": "05.04.2021",
+    "check": {
+      "diet": true,
+      "workout":  null
+    },
+    "description": "I'm not craving for sweets like before.",
+    "label": {
+      "weight": false,
+      "waist": false
+    },
+    "figure": [
+      "happy-troll-face.gif"
+    ]
+  },
+  {
+    "date": "06.04.2021",
+    "check": {
+      "diet": true,
+      "workout":  null
+    },
+    "description": "My weight went down under 80KG for the first time after 2 years.",
+    "label": {
+      "weight": "79.9",
+      "waist": "97"
+    },
+    "figure": [
+      "IMG_20210406_211713.jpg",
+      "IMG_20210406_211741.jpg"
+    ]
+  },
+  {
+    "date": "07.04.2021",
+    "check": {
+      "diet": true,
+      "workout":  null
+    },
+    "description":  "Better, stronger. Less hungry. Less craving for sweets.",
+    "label": {
+      "weight": false,
+      "waist": false
+    },
+    "figure": [
+      "harder-better-faster-stronger.jpg"
+    ]
+  },
+  {
+    "date": "08.04.2021",
+    "check": {
+      "diet": true,
+      "workout":  null
+    },
+    "description":  "I started to see better results. Diet works!",
+    "label": {
+      "weight": "78.2",
+      "waist": "96"
+    },
+    "figure": [
+      "IMG_20210408_190524.jpg"
+    ]
+  },
+  {
+    "date": "09.04.2021",
+    "check": {
+      "diet": true,
+      "workout":  null
+    },
+    "description":  "I'm surprised because my waist won't stop. I keep losing my belly fat. \uD83D\uDCAA ",
+    "label": {
+      "weight": false,
+      "waist": "95"
+    },
+    "figure": [
+      "IMG_20210408_191910.jpg"
+    ]
+  },
+  {
+    "date": "10.04.2021",
+    "check": {
+      "diet": true,
+      "workout":  null
+    },
+    "description":  "Today I ate a lot. This picture right after food.",
+    "label": {
+      "weight": false,
+      "waist": false
+    },
+    "figure": [
+      "IMG_20210410_195821.jpg"
+    ]
+  },
+  {
+    "date": "11.04.2021",
+    "check": {
+      "diet": true,
+      "workout":  null
+    },
+    "description":  "Bad day. Literally zero motivation. Thanks Covid curfew.",
+    "label": {
+      "weight": false,
+      "waist": false
+    },
+    "figure": [
+      "low-battery.jpg"
+    ]
+  },
+  {
+    "date": "12.04.2021",
+    "check": {
+      "diet": true,
+      "workout":  null
+    },
+    "description":  "Better than yesterday. Nothing special. Keep going",
+    "label": {
+      "weight": false,
+      "waist": false
+    },
+    "figure": [
+      "trump-thumbs-up.jpg"
+    ]
+  },
+  {
+    "date": "13.04.2021",
+    "check": {
+      "diet": true,
+      "workout":  null
+    },
+    "description":  "I might be a little surprised. I ate lot last weekend but I still keep losing my belly fat.",
+    "label": {
+      "weight": "77.9",
+      "waist": "93"
+    },
+    "figure": [
+      "measure.jpg"
+    ]
+  },
+  {
+    "date": "14.04.2021",
+    "check": {
+      "diet": true,
+      "workout":  null
+    },
+    "description":  "Nothing special. Keep going. Started to walk more than 5Km every day.",
+    "label": {
+      "weight": false,
+      "waist": false
+    },
+    "figure": [
+      "trump-thumbs-up.jpg"
+    ]
+  },
+  {
+    "date": "15.04.2021",
+    "check": {
+      "diet": true,
+      "workout":  null
+    },
+    "description":  "New records! I'm losing my belly fat faster than my weight. This is what I want.",
+    "label": {
+      "weight": "77.2",
+      "waist": "92"
+    },
+    "figure": [
+      "IMG_20210415_192702.jpg"
+    ]
+  },
+  {
+    "date": "16.04.2021",
+    "check": {
+      "diet": true,
+      "workout":  null
+    },
+    "description":  "I walked around 10KM. Keep going with healthy diet!",
+    "label": {
+      "weight": false,
+      "waist": false
+    },
+    "figure": [
+      "IMG_20210415_194026.jpg"
+    ]
+  },
+  {
+    "date": "17.04.2021",
+    "check": {
+      "diet": true,
+      "workout":  null
+    },
+    "description":  "Today I went to village. No long walk but diet.",
+    "label": {
+      "weight": "76.4",
+      "waist": "93"
+    },
+    "figure": [
+      "IMG_20210417_144130.jpg"
+    ]
+  },
+  {
+    "date": "18.04.2021",
+    "check": {
+      "diet": false,
+      "workout":  null
+    },
+    "description":  "I cooked cookies with oatmeal, butter, nuts and raisins. Off day.",
+    "label": {
+      "weight": false,
+      "waist": false
+    },
+    "figure": [
+      "IMG_20210418_182614.jpg"
+    ]
+  },
+  {
+    "date": "19.04.2021",
+    "check": {
+      "diet": true,
+      "workout":  null
+    },
+    "description":  "10K steps. Not great, not terrible.",
+    "label": {
+      "weight": false,
+      "waist": false
+    },
+    "figure": [
+      "IMG_20210421_173619.jpg"
+    ]
+  },
+  {
+    "date": "20.04.2021",
+    "check": {
+      "diet": true,
+      "workout":  null
+    },
+    "description":  "My waist didn't change almost over 1 week. Things started to be hard.",
+    "label": {
+      "weight": "75.6",
+      "waist": "93"
+    },
+    "figure": [
+      "IMG_20210421_173551.jpg"
+    ]
+  }
+]

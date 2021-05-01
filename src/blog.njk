@@ -8,12 +8,12 @@ eleventyNavigation:
   excerpt: Articles focused on CSS, HTML, JavaScript and other frontend stuff.
 ---
 <div class="section section-post">
-  <div class="container">
+  <div class="container-md">
     <div class="section-inner">
       <header class="section-header">
         <h1 class="section-title">{{ title }}</h1>
       </header>
-      <div class="similar-post">
+      <div class="post-cards">
         {% set postslist = collections.posts %}
         {% include "postcard.njk" %}
       </div>

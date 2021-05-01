@@ -1,0 +1,23 @@
+.post-cards{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  grid-gap: calc(var(--flow-space) * 3);
+  @include respond-below(sm) {
+    grid-template-columns: 1fr;
+  }
+  > * {
+    &:nth-of-type(1){
+      @include respond-above(sm) {
+        --color-primary: var(--color-paragraph);
+        --fs-text-lg: 42px;
+        --fs-text-md: 22px;
+
+        grid-column-start: 1;
+        grid-column-end: -1;
+        padding-right: 50%;
+        background: RGBA(var(--color-primary-alt), .05);
+
+      }
+    }
+  }
+}

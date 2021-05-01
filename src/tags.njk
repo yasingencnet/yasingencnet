@@ -21,7 +21,7 @@ permalink: /tags/{{ tag }}/
       <header class="section-header">
         <h1 class="section-title">{{ tag }}</h1>
       </header>
-      <div class="similar-post">
+      <div class="post-cards">
         {% set postslist = collections[ tag ] %}
         {% include "postcard.njk" %}
       </div>

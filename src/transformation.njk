@@ -1,0 +1,193 @@
+---
+layout: layouts/base.njk
+permalink: /transformation/
+title: Body Transformation
+description: My body transformation journey begins here. I'll show with every steps in timeline
+eleventyNavigation:
+  key: Body Transformation
+  order: 10
+  excerpt: My body transformation journey begins here. I'll show with every steps in timeline
+---
+
+<div class="section">
+  <div class="container">
+    <div class="section-inner section-grid">
+      <header class="section-header">
+        <h1 class="section-title">{{ title }}</h1>
+        <p class="section-description">{{ description }}</p>
+      </header>
+      {% include 'components/data-cards.njk' %}
+      {% include 'components/transformation-calendar.njk' %}
+    </div>
+  </div>
+</div>
+
+<div class="section section-quote">
+  <div class="container-md">
+    <div class="section-inner">
+      <div class="quote">
+        <figure class="quote__figure">
+          <svg width="45" height="36"><path d="M13.415.001C6.07 5.185.887 13.681.887 23.041c0 7.632 4.608 12.096 9.936 12.096 5.04 0 8.784-4.032 8.784-8.784 0-4.752-3.312-8.208-7.632-8.208-.864 0-2.016.144-2.304.288.72-4.896 5.328-10.656 9.936-13.536L13.415.001zm24.768 0c-7.2 5.184-12.384 13.68-12.384 23.04 0 7.632 4.608 12.096 9.936 12.096 4.896 0 8.784-4.032 8.784-8.784 0-4.752-3.456-8.208-7.776-8.208-.864 0-1.872.144-2.16.288.72-4.896 5.184-10.656 9.792-13.536L38.183.001z"></path></svg>
+        </figure>
+        <blockquote class="quote__blockquote">
+          <p id="blockquote-text">Eat your food slowly, it takes approximately 4 minutes for the brain to send a signal to the brain that there is food in your stomach.</p>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css">
+<script src="{{metadata.assets.js}}fslightbox.js" defer></script>
+<script defer>
+  let transformationPage = {
+    statCards: function (){
+      // Mark Today's Date
+      const dates = document.querySelectorAll(".calendar__day");
+      dates.forEach((element, index) => {
+        if(element.attributes['data-date'].value == main.todaysDate()){
+          element.classList.add("selected");
+          element.id = "today";
+        }
+      });
+
+      // Ajax Variables
+      let daysCounter = 0;
+      let progressBar = document.getElementById("transformProgress");
+      let daysPassed = document.getElementById("daysPassed");
+
+      let totalDietCount = document.getElementById("totalDietCount");
+      let totalDietCounter = 0;
+      let totalWorkoutCount = document.getElementById("totalWorkoutCount");
+      let totalWorkoutCounter = 0;
+
+      let weightArray = [];
+      let waistArray = [];
+      let weightDate = document.getElementById("weightDate");
+      let waistDate = document.getElementById("waistDate");
+
+      let bmrValue;
+      let bmiValue;
+      let bmiDescription;
+      let bmiDescriptionClass;
+
+      let bfpValue;
+      let bfpDescription;
+      let bfpDescriptionClass;
+
+      let currentWeight;
+      let currentHeight = 170;
+      let currentAge = 28;
+
+      // AJAX
+      let request = new XMLHttpRequest();
+      request.open('GET', '/assets/ajax/transformation.json', true);
+
+      request.onload = function() {
+        if (this.status >= 200 && this.status < 400) {
+          // Success!
+          let data = JSON.parse(this.response);
+
+          // Day Progress Bar
+          for(let i = 0; i < data.length; i++){
+            if(data[i].date == main.todaysDate()){
+              break;
+            } else{
+              daysCounter++;
+              daysPassed.innerHTML = daysCounter;
+              daysTotal.innerHTML = data.length;
+              progressBar.value = daysCounter*100/data.length;
+            }
+          }
+
+          // Total Workout and Diet Counts
+          for(let i = 0; i < data.length; i++){
+            if(data[i].check.diet){
+              totalDietCounter++;
+              totalDietCount.innerHTML = totalDietCounter;
+            }
+            if(data[i].check.workout){
+              totalWorkoutCounter++;
+              totalWorkoutCount.innerHTML = totalWorkoutCounter;
+            }
+          }
+
+          // Waist, Weight and BMI Stats
+          for(let i = 0; i < data.length; i++){
+            if(data[i].label.weight){
+              weightDate.innerHTML = data[i].date;
+              weightArray.push(data[i].label.weight);
+            }
+            if(data[i].label.waist){
+              waistDate.innerHTML = data[i].date;
+              waistArray.push(data[i].label.waist);
+            }
+          }
+
+          // Waist and Weight
+          document.getElementById("waistLast").innerHTML = waistArray.slice(-1)[0];
+          document.getElementById("weightLast").innerHTML = weightArray.slice(-1)[0];
+
+          // BMI
+          currentWeight = weightArray.slice(-1)[0];
+
+          bmiValue = (currentWeight/(currentHeight/100*currentHeight/100)).toFixed(2);
+          if(bmiValue < 18.5){
+            bmiDescription = "Underweight";
+            bmiDescriptionClass = "label-warning";
+          } else if(bmiValue >= 18.5 && bmiValue < 25){
+            bmiDescription = "Healthy Weight";
+            bmiDescriptionClass = "label-success";
+          } else if(bmiValue >= 25 && bmiValue < 30){
+            bmiDescription = "Overweight";
+            bmiDescriptionClass = "label-warning";
+          } else{
+            bmiDescription = "Obese";
+            bmiDescriptionClass = "label-alert";
+          }
+          document.getElementById("bmi").innerHTML = bmiValue;
+          document.getElementById("bmiDescription").innerHTML = bmiDescription;
+          document.getElementById("bmiDescription").classList.add(bmiDescriptionClass);
+
+        } else {
+          alert("We reached our target server, but it returned an error");
+        }
+
+        // BFP
+        bfpValue = ((1.20 * bmiValue) + (0.23 * currentAge) - 16.2).toFixed(2);
+        if(bfpValue <= 12){
+          bfpDescription = "Athlete";
+          bfpDescriptionClass = "label-info";
+        } else if(bfpValue >= 13 && bfpValue <= 20 ){
+          bfpDescription = "Fitness";
+          bfpDescriptionClass = "label-success";
+        } else if(bfpValue >= 21 && bfpValue <= 24 ){
+          bfpDescription = "Average";
+          bfpDescriptionClass = "label-warning";
+        } else {
+          bfpDescription = "Obese";
+          bfpDescriptionClass = "label-alert";
+        }
+        document.getElementById("bfp").innerHTML = bfpValue;
+        document.getElementById("bfpDescription").innerHTML = bfpDescription;
+        document.getElementById("bfpDescription").classList.add(bfpDescriptionClass);
+
+        // BMR
+        bmrValue = Math.round(((10 * currentWeight) + (6.25 * currentHeight) - (5 * currentAge) + 5));
+        document.getElementById("bmr").innerHTML = bmrValue;
+
+      };
+
+      request.onerror = function() {
+        alert("There was a connection error. I'll fix it!");
+      };
+
+      request.send();
+    },
+    quotes: function (){}
+  }
+  document.addEventListener("DOMContentLoaded", function() {
+    transformationPage.statCards();
+    transformationPage.quotes();
+  });
+</script>

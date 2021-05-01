@@ -42,6 +42,7 @@
   h1, h2, h3, h4{font-size: var(--fs-title-sm);}
   h5, h6{font-size: var(--fs-title-xs);}
   h1, h2, h3, h4, h5, h6{
+    font-weight: var(--semibold);
     margin-top:  calc(var(--flow-space) * 6);
     margin-bottom: 0;
     line-height: 120%;
@@ -68,7 +69,6 @@
   figcaption{
     text-align: right;
     margin-top: calc(var(--flow-space) / 2);
-    font-family: var(--font-alt);
     color: RGB(var(--color-paragraph-light));
     font-size: var(--fs-text-sm);
   }
@@ -131,9 +131,4 @@
 
 .article__footer{
   margin-top: var(--layout-gap);
-}
-
-.section-post{}
-.similar-post{
-
 }

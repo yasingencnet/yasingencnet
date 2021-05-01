@@ -1,16 +1,19 @@
 .post-card{
+  background: RGB(var(--color-white));
+  box-shadow: var(--box-shadow-2);
+  padding: calc(var(--flow-space) * 6) calc(var(--flow-space) * 3);
   > * + * {
     margin-top: var(--flow-space);
   }
 }
 .post-card__date{
-  font-family: var(--font-alt);
   font-size: var(--fs-text-sm);
 }
 .post-card__title{
-  font-size: var(--fs-title-xs);
-  font-weight: var(--bold);
+  font-size: var(--fs-text-lg);
+  font-weight: var(--semibold);
   color: RGB(var(--color-primary));
+
   a{
     display: block;
     color: inherit;
@@ -25,7 +28,7 @@
   }
 }
 .post-card__description{
-  font-size: var(--fs-text-md);
+  font-size: var(--fs-text-sm);
   color: RGB(var(--color-paragraph-light));
 
   display: -webkit-box;
@@ -34,7 +37,6 @@
   overflow: hidden;
 }
 .post-card__meta{
-  font-family: var(--font-alt);
   color: RGB(var(--color-paragraph));
   font-size: var(--fs-text-sm);
   a{
@@ -43,7 +45,6 @@
 }
 .post-card__cta{
   display: inline-block;
-  font-family: var(--font-alt);
   margin-top: calc(var(--flow-space) * 2);
   font-size: var(--fs-text-sm);
   color: RGB(var(--color-primary));

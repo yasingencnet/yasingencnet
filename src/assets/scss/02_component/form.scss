@@ -16,7 +16,6 @@ legend{
   color: RGB(var(--color-primary));
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  font-family: var(--font-alt);
 }
 label{
   > * {
@@ -31,7 +30,6 @@ label{
   width: 100%;
   padding: var(--flow-space);
   font-size: var(--fs-text-sm);
-  font-family: var(--font-alt);
   border: 1px solid RGB(var(--color-border));
   border-radius: var(--radius);
 }
@@ -46,7 +44,6 @@ label{
 %label{
   display: block;
   font-size: var(--fs-text-md);
-  font-family: var(--font-alt);
 }
 
 // Inputs
@@ -70,7 +67,7 @@ label{
       @extend %input-focus;
     }
   }
-  .label{
+  .form-label{
     @extend %label;
   }
 }
@@ -81,7 +78,7 @@ label{
       @extend %input-focus;
     }
   }
-  .label{
+  .form-label{
     @extend %label;
   }
 }
@@ -90,7 +87,7 @@ label{
   label{
     input{
       @extend .visually-hidden;
-      & ~ .label{
+      & ~ .form-label{
         @extend %label;
         position: relative;
         padding-left: 38px;
@@ -127,7 +124,7 @@ label{
           border-radius: var(--radius);
         }
       }
-      &:checked ~ .label{
+      &:checked ~ .form-label{
         &:after{
           border-color: RGB(var(--color-secondary));
           box-shadow: 0 0 0 3px RGB(var(--color-secondary), .2);
@@ -135,20 +132,93 @@ label{
         }
         &:before{transform: scale(1);}
       }
-      &:disabled ~ .label{}
-      &:checked:disabled ~ .label{}
+      &:disabled ~ .form-label{}
+      &:checked:disabled ~ .form-label{}
 
-      &[type="radio"] ~ .label{
+      &[type="radio"] ~ .form-label{
         &:after{
           border-radius: 50%;
         }
       }
-      &[type="checkbox"] ~ .label{
+      &[type="checkbox"] ~ .form-label{
 
       }
 
       &:focus{
-        & ~ .label{
+        & ~ .form-label{
+          &:after{
+            outline: 0;
+            border-color: RGB(var(--color-secondary));
+            box-shadow: 0 0 0 3px RGB(var(--color-secondary), .2);
+          }
+        }
+      }
+    }
+  }
+}
+.check-2{
+  padding: 3px 0;
+  label{
+    input{
+      @extend .visually-hidden;
+      & ~ .form-label{
+        @extend %label;
+        position: relative;
+        padding-left: 32px;
+        padding-top: 1px;
+        margin-top: 0;
+        font-size: var(--fs-text-xs);
+        &:before{
+          content: "✖";
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 25px;
+          height: 25px;
+          line-height: 25px;
+          z-index: 1;
+          text-align: center;
+          color: RGB(var(--color-alert));
+          transition: all 200ms linear;
+        }
+        &:after{
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          display: inline-block;
+          width: 25px;
+          height: 25px;
+          background-color:RGBA(var(--color-alert), .2);
+          border: 1px solid RGB(var(--color-alert));
+          box-shadow: 0 0 0 3px RGB(var(--color-alert), .2);
+          border-radius: var(--radius);
+        }
+      }
+      &:checked ~ .form-label{
+        &:after{
+          border-color: RGB(var(--color-success));
+          box-shadow: 0 0 0 3px RGB(var(--color-success), .2);
+          background-color: RGBA(var(--color-success), .2);
+        }
+        &:before{
+          content: "✔";
+          color: RGB(var(--color-success));
+        }
+      }
+      &:disabled ~ .form-label{}
+      &:checked:disabled ~ .form-label{}
+
+      &[type="radio"] ~ .form-label{
+        &:after{
+          border-radius: 50%;
+        }
+      }
+      &[type="checkbox"] ~ .form-label{
+
+      }
+      &:focus{
+        & ~ .form-label{
           &:after{
             outline: 0;
             border-color: RGB(var(--color-secondary));
@@ -164,13 +234,12 @@ label{
     position: relative;
     input{
       @extend .visually-hidden;
-      & ~ .label{
+      & ~ .form-label{
         font-size: var(--fs-text-sm);
         display: inline-block;
         padding: var(--flow-space) calc(var(--flow-space) * 3);
         margin-top: 0;
 
-        font-family: var(--font-alt);
         color: RGB(var(--color-paragraph));
         text-align: center;
         border: 1px solid RGB(var(--color-border));
@@ -178,16 +247,16 @@ label{
         background-color: RGB(var(--color-white));
         &:hover{cursor: pointer;}
       }
-      &:checked ~ .label{
+      &:checked ~ .form-label{
         background-color: RGB(var(--color-secondary));
         border-color: RGB(var(--color-secondary));
         color: RGB(var(--color-white));
       }
-      &:disabled ~ .label{}
-      &:checked:disabled ~ .label{}
+      &:disabled ~ .form-label{}
+      &:checked:disabled ~ .form-label{}
 
       &:focus{
-        & ~ .label{
+        & ~ .form-label{
           outline: 0;
           border-color: RGB(var(--color-secondary));
           box-shadow: 0 0 0 3px RGB(var(--color-secondary), .2);

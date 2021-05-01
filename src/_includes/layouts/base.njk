@@ -23,8 +23,10 @@ View the source here: {{ metadata.repo }}
   <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
   <link rel="alternate" href="{{ metadata.jsonfeed.path | url }}" type="application/json" title="{{ metadata.title }}">
 
-  <link rel="preload" as="font" type="font/woff2" href="/assets/font/source-serif-pro-v10-latin-regular.woff2" crossorigin>
-  <link rel="preload" as="font" type="font/woff2" href="/assets/font/source-serif-pro-v10-latin-700.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/assets/font/silka-regular-webfont.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/assets/font/silka-semibold-webfont.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/assets/font/silka-bold-webfont.woff2" crossorigin>
+  <link rel="preload" as="font" type="font/woff2" href="/assets/font/silka-black-webfont.woff2" crossorigin>
 
   <link rel="stylesheet" href="{% if cssFile %} {{metadata.assets.css}}{{ cssFile }} {% else %} {{metadata.assets.css}}subpage.css {% endif %}">
   <link rel="stylesheet" href="{{ metadata.assets.css }}print.css" media="print">

@@ -1,0 +1,27 @@
+.container-about{
+  @extend .bg-pure;
+  grid-template-columns: 1fr;
+  grid-gap: calc(var(--layout-gap) / 2);
+  @include respond-above(md) {
+    grid-template-columns: 1fr 1fr;
+  }
+  .article{
+    padding-top: var(--layout-gap);
+    padding-bottom: var(--layout-gap);
+    @include respond-above(sm) {
+      padding-top: calc(var(--layout-gap) * 2);
+      padding-bottom: calc(var(--layout-gap) * 2);
+    }
+  }
+}
+
+.about{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 3rem;
+
+
+  > * {
+    background: #efe8e8;
+  }
+}

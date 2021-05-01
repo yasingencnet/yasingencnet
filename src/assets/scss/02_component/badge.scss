@@ -1,0 +1,24 @@
+.badge{
+  --badge-bg-color: linear-gradient(90deg, #FDFBFB 0%, #EBEDEE 100%);
+  --badge-text-color: RGB(var(--color-paragraph-light));
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 68px;
+  height: 68px;
+  background: var(--badge-bg-color);
+  clip-path: path('M34 0L41.0399 7.72682L51 4.55514L53.2333 14.7667L63.4449 17L60.2732 26.9601L68 34L60.2732 41.0399L63.4449 51L53.2333 53.2333L51 63.4449L41.0399 60.2732L34 68L26.9601 60.2732L17 63.4449L14.7667 53.2333L4.55514 51L7.72682 41.0399L0 34L7.72682 26.9601L4.55514 17L14.7667 14.7667L17 4.55514L26.9601 7.72682L34 0Z');
+  color: var(--badge-text-color);
+  text-shadow: 2px 2px 8px RGB(var(--color-white));
+  font-size: var(--fs-title-md);
+  line-height: 1;
+  > * {
+    transform: translateY(-2px);
+  }
+}
+.badge-premium{
+  --badge-bg-color: linear-gradient(0deg, #FD5900 0%, #FFDE00 100%);
+  --badge-text-color: #5b2305;
+}

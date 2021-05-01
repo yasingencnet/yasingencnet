@@ -5,11 +5,15 @@
 .table{
   width: 100%;
   border-collapse: collapse;
-  font-family: var(--font-alt);
-  font-size: var(--fs-text-md);
+  font-size: var(--fs-text-sm);
   text-align: left;
-  th{
+  thead{
     background-color: RGB(var(--color-bg-pale));
+    th{
+      color: RGB(var(--color-paragraph-ultralight));
+      font-size: var(--fs-text-xs);
+      font-weight: var(--regular);
+    }
   }
   th, td{
     padding: var(--flow-space);
@@ -19,28 +23,35 @@
     }
   }
   caption{
-    caption-side: bottom;
+    caption-side: top;
     padding-top: var(--flow-space);
     padding-bottom: var(--flow-space);
     text-align: left;
     color: RGB(var(--color-paragraph-light));
-    font-size: .8em;
+  }
+  em{
+    display: inline-block;
+    font-style: normal;
+    background: RGBA(var(--color-highlight), .3);
+  }
+  small{
+    color: RGB(var(--color-paragraph-light));
   }
 }
 .table-striped{
   tr{
     &:nth-child(even){
-      background-color: RGB(var(--color-bg-hover));
+      background-color: RGB(var(--color-bg));
     }
     &:nth-child(odd){
-      background-color: RGB(var(--color-white));
+      background-color: RGB(var(--color-bg-pale));
     }
   }
 }
 .table-hover{
   tr{
     &:hover{
-      background-color: RGB(var(--color-bg-hover));
+      background-color: RGB(var(--color-bg-pale));
     }
   }
 }

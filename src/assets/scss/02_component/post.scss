@@ -7,11 +7,3 @@
     }
   }
 }
-.similar-post{
-  display: grid;
-  grid-gap: var(--layout-gap);
-  grid-template-columns: repeat(auto-fit, minmax(368px, 1fr));
-  @include respond-below(sm) {
-    grid-template-columns: 1fr;
-  }
-}

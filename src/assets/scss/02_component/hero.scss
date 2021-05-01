@@ -1,48 +1,48 @@
 .hero{
-  .container{
-    grid-template-columns: 1fr;
-    grid-gap: calc(var(--flow-space) * 3);
-    @include respond-above(lg) {
-      grid-template-columns: 1fr 1fr;
-      grid-gap: var(--layout-gap);
-    }
+  --hero-height: calc(100vh - (101px + 30px));
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: calc(var(--flow-space) * 3);
+  align-items: center;
+  max-width: var(--container-lg);
+  margin-left: auto;
+  margin-right: auto;
+
+
+  @include respond-above(lg) {
+    margin-top: calc(-1 * var(--layout-gap));
+    grid-template-columns: 1fr 1fr;
   }
 }
 
-.hero-me{
-  display: flex;
-  flex-direction: column;
-  @include respond-below(lg) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: calc(var(--layout-gap) / 2);
-  }
-  @include respond-below(md) {
-    grid-template-columns: 1fr;
-    grid-gap: 0;
-  }
-}
 .hero-text{
   display: flex;
   flex-direction: column;
   position: relative;
   z-index: 1;
-  max-width: 630px;
+  max-width: 700px;
   @include respond-below(xl) {
     justify-content: center;
   }
 }
 .hero__title{
   margin-bottom: calc(var(--flow-space) * 1.5);
-  font-size: var(--fs-title-lg);
-  line-height: 120%;
+  font-size: var(--fs-title-xml);
+  font-weight: var(--black);
+  line-height: 1.1;
+  letter-spacing: -.01em;
+
+  color: RGB(var(--color-paragraph));
+  background: linear-gradient(73.39deg, RGB(var(--color-paragraph)) 7.52%, RGB(var(--color-black)) 98.26%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  @include respond-below(sm) {
+    --fs-title-xml: 32px;
+  }
   span{
     display: block;
     width: 100%;
-  }
-  mark{
-    background: none;
-    color: RGB(var(--color-primary));
   }
 }
 .hero__description{
@@ -54,92 +54,56 @@
     text-decoration: none;
     border-radius: 4px;
     padding: .5rem;
-    color: inherit;
+    color: RGB(var(--color-black));
     &:hover, &:focus{
-      color: RGB(var(--color-paragraph));
+      color: RGB(var(--color-primary));
+      background-color: RGB(var(--color-primary), .1);
     }
   }
 }
+
 .hero__figure{
   position: relative;
-  @include respond-below(sm) {
-    display: none;
-  }
-  .awesome-css{
-    position: absolute;
-    left: 0;
-    bottom: 0;
-  }
 }
 .hero__pic{
-  transform: translateY(-120px);
   pointer-events: none;
   margin-left: auto;
   max-width: 100%;
   height: auto;
-  width: auto;
-  @include respond-below(xxl) {
-    transform: none;
-  }
-}
-.hero__footer{
-  margin-top: auto;
-  font-family: var(--font-alt);
-  font-size: var(--fs-text-sm);
-  margin-bottom: 3rem;
-  text-align: right;
-  @include respond-below(lg) {
-    display: none;
+  width: 100%;
+  object-fit: cover;
+  border-radius: var(--radius);
+  @include respond-above(sm) {
+    height: var(--hero-height);
   }
 }
 
-.hero-post{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: var(--layout-gap);
-  @include respond-below(xl) {
-    grid-gap: calc(var(--flow-space) * 6);
-  }
-  @include respond-below(sm) {
-    grid-template-columns: 1fr;
-  }
-  > * {
-    &:nth-of-type(1){
-      @include respond-above(sm) {
-        grid-column-start: 1;
-        grid-column-end: -1;
-        padding-right: calc(50% + (var(--layout-gap)/2));
-      }
-    }
+.hero__icon{
+  --hero-icon-size: 120px;
+  width: var(--hero-icon-size);
+  height: var(--hero-icon-size);
+
+  position: absolute;
+  left: calc(100% - (175px - (var(--hero-icon-size) / 6)));
+  top: calc(-1 * (var(--hero-icon-size) / 6));
+  z-index: 1;
+
+  animation: animateHeroIcon 10s linear infinite;
+  will-change: transform;
+  backface-visibility: hidden;
+
+  @include respond-above(lg) {
+    --hero-icon-size: 175px;
+    left: calc(-1 * (var(--hero-icon-size)/2));
+    top: calc(var(--hero-icon-size)/2);
   }
 }
 
-
-.awesome-css{
-  width: 90px;
-  height: 90px;
-  padding: .5rem;
-  border: 2px solid RGB(var(--color-paragraph-light));
-  font-size: var(--fs-title-xs);
-  letter-spacing: .2em;
-  font-family: var(--font-alt);
-  line-height: 1.1;
-  color: RGB(var(--color-paragraph-light));
-  transition: width .1s ease-in;
-  &:hover{
-    width: 150px;
-    background: linear-gradient(110.78deg,#76E650 -1.13%,#F9D649 15.22%,#F08E35 32.09%,#EC5157 48.96%,#FF18BD 67.94%,#1A4BFF 85.34%,#62D8F9 99.57%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: var(--bold);
-    animation: shine 1s linear infinite;
+@keyframes animateHeroIcon {
+  from{
+    transform: rotateZ(0deg);
   }
-}
-@keyframes shine {
-  from {
-    -webkit-filter: hue-rotate(0deg);
-  }
-  to {
-    -webkit-filter: hue-rotate(-360deg);
+  to{
+    transform: rotateZ(360deg);
   }
 }

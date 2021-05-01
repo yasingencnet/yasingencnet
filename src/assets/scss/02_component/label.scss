@@ -1,0 +1,34 @@
+.label-group{
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.label{
+  display: inline-block;
+  padding: .2rem 1rem;
+  font-size: var(--fs-text-xs);
+
+  background: RGBA(var(--color-bg), 1);
+  color: RGBA(var(--color-paragraph-light), 1);
+
+  &.label-alert{
+    background: RGBA(var(--color-alert), .2);
+    color: RGBA(var(--color-alert-dark), 1);
+  }
+  &.label-threat{
+    background: RGBA(var(--color-threat), .2);
+    color: RGBA(var(--color-threat-dark), 1);
+  }
+  &.label-warning{
+    background: RGBA(var(--color-highlight), .2);
+    color: RGBA(var(--color-highlight-dark), 1);
+  }
+  &.label-success{
+    background: RGBA(var(--color-success), .2);
+    color: RGBA(var(--color-success-dark), 1);
+  }
+  &.label-info{
+    background: RGBA(var(--color-info), .2);
+    color: RGBA(var(--color-info-dark), 1);
+  }
+}

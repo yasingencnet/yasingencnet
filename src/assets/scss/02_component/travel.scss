@@ -3,7 +3,7 @@
   .section-header{
     background-size: cover;
     background-color: RGB(var(--color-primary));
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1920' height='380' preserveAspectRatio='none' viewBox='0 0 1920 380'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1592%26quot%3b)' fill='none'%3e%3cpath d='M1920 0L1752.1100000000001 0L1920 183.54z' fill='RGBA(255%2c 255%2c 255%2c .1)'%3e%3c/path%3e%3cpath d='M1752.1100000000001 0L1920 183.54L1920 279.19L1717.8500000000001 0z' fill='RGBA(255%2c 255%2c 255%2c .075)'%3e%3c/path%3e%3cpath d='M1717.85 0L1920 279.19L1920 296.15L937.6099999999999 0z' fill='RGBA(255%2c 255%2c 255%2c .05)'%3e%3c/path%3e%3cpath d='M937.61 0L1920 296.15L1920 330.95L508.78000000000003 0z' fill='RGBA(255%2c 255%2c 255%2c .025)'%3e%3c/path%3e%3cpath d='M0 380L197.55 380L0 336.18z' fill='RGBA(0%2c 0%2c 0%2c .1)'%3e%3c/path%3e%3cpath d='M0 336.18L197.55 380L541.96 380L0 154.11z' fill='RGBA(0%2c 0%2c 0%2c .075)'%3e%3c/path%3e%3cpath d='M0 154.11L541.96 380L658.01 380L0 141.92000000000002z' fill='RGBA(0%2c 0%2c 0%2c .05)'%3e%3c/path%3e%3cpath d='M0 141.92000000000002L658.01 380L956.06 380L0 131.31z' fill='RGBA(0%2c 0%2c 0%2c .025)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1592'%3e%3crect width='1920' height='380' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    background-image: url("/assets/img/layout/travel.jpg");
     padding: var(--layout-gap) calc(var(--flow-space) * 3) calc(var(--layout-gap) * 2);
   }
   .section-title{

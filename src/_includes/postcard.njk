@@ -7,15 +7,6 @@
       </a>
     </h2>
     {% if post.data.description %} <p class="post-card__description">{{ post.data.description }}</p> {% endif %}
-    <div class="post-card__meta">
-      Posted in
-      {% for tag in post.data.tags %}
-        {%- if collections.tagList.indexOf(tag) != -1 -%}
-          {% set tagUrl %}/tags/{{ tag }}/{% endset %}
-          <a href="{{ tagUrl | url }}">{{ tag }}</a>
-        {%- endif -%}
-      {% endfor %}
-    </div>
     <a class="post-card__cta" href="{{ post.url | url }}">Read article</a>
   </div>
 {% endfor %}

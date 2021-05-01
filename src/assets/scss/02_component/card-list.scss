@@ -1,12 +1,9 @@
 .card-list{
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  grid-gap: var(--layout-gap);
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  grid-gap: calc(var(--layout-gap) / 3);
   margin-left: auto;
   margin-right: auto;
-  &.card-list--v2{
-    grid-gap: calc(var(--layout-gap) / 2);
-  }
   a{
     display: inline-block;
     color: inherit;
@@ -16,6 +13,9 @@
   }
 }
 .card-list__item{
+  box-shadow: var(--box-shadow-2);
+  padding: 6rem 3rem;
+  border: 1px solid RGBA(var(--color-border), .2);
   .card-list--v2 & {
     @extend .bg-pure;
     padding: calc(var(--flow-space) * 1.5);
@@ -35,7 +35,7 @@
 .card-list__title{
   display: block;
   font-size: var(--fs-title-xs);
-  font-weight: var(--bold);
+  font-weight: var(--semibold);
   color: RGB(var(--color-paragraph));
 }
 .card-list__value{

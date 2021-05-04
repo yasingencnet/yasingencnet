@@ -25,7 +25,7 @@
   // COLORS
   --color-bg: 255, 255, 255;
   --color-bg-alt: 30, 30, 30;
-  --color-bg-pale: 249, 250, 251;
+  --color-bg-pale: 248, 250, 251;
 
   --color-primary: 215, 25, 90;
   --color-primary-alt: 163, 28, 84;
@@ -36,6 +36,7 @@
   --color-paragraph: 36, 54, 64;
   --color-paragraph-light: 75, 88, 95;
   --color-paragraph-ultralight: 107, 114, 128;
+  --color-paragraph-pale: 204, 211, 224;
 
   --color-alert: 255, 86, 48;
   --color-alert-dark: 200, 10, 10;
@@ -57,24 +58,23 @@
   // SIZING
   --flow-space: 1rem;
   --layout-gap: 9rem;
-  --container-lg: 95vw;
-  --container-md: 60vw;
-  --container-sm: 760px;
 
-  @media (min-width: 1921px){
-    --container-lg: 1720px;
-    --container-md: 1366px;
+  --container-lg: calc(100% - 30px);
+  --container-md: calc(100% - 30px);
+  --container-sm: calc(100% - 30px);
+
+  @include respond-above(sm) {
+    --container-lg: 95vw;
+    --container-md: 60vw;
+    --container-sm: 760px;
   }
 
-  @include respond-below(xl) {
-    --layout-gap: 9rem;
+  @include respond-above(lg) {
+    --container-lg: 85vw;
   }
 
-  @include respond-below(sm) {
-    --container-lg: calc(100% - 30px);
-    --container-md: calc(100% - 30px);
-    --container-sm: calc(100% - 30px);
 
+  @include respond-below(sm){
     // TYPOGRAPHY
     --fs-title-sm: 22px;
     --fs-title-md: 26px;

@@ -1,0 +1,28 @@
+.icon-list{
+  --text-color: var(--color-paragraph);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  &[data-direction="column"]{
+    flex-direction: column;
+  }
+  &[data-theme="dark"]{
+    --text-color: var(--color-white);
+  }
+}
+.icon-list__item{
+  a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: .5em;
+    border-radius: 50%;
+    &:after{display: none !important;}
+  }
+  svg{
+    path{
+      fill: RGB(var(--text-color));
+    }
+  }
+}

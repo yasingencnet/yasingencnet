@@ -35,13 +35,17 @@
 
 .project-meta{
   background-color: RGB(var(--color-white));
-  .meta-list{}
+  border-bottom: 1px solid RGBA(var(--color-border), .5);
+  .meta-list{
+    gap: 0;
+  }
   .meta-list__item{
     flex-grow: 1;
     margin: 0;
-    padding: calc(var(--flow-space) * 3);
+    padding: 3rem;
     border-top: 1px solid RGBA(var(--color-border), .5);
-    & + .meta-list__item{
+    border-left: 1px solid RGBA(var(--color-border), .5);
+    &:last-of-type{
       border-left: 1px solid RGBA(var(--color-border), .5);
     }
   }

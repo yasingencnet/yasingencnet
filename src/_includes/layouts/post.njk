@@ -16,7 +16,7 @@ layout: layouts/base.njk
         </li>
         <li class="meta-list__item">
           <span class="meta-list__title">Published on</span>
-          <span class="meta-list__value">{{ page.date | readableDate('dd LLL yyyy') }}</span>
+          <span class="meta-list__value"><time datetime="{{ page.date | readableDate('dd LLL yyyy') }}">{{ page.date | readableDate('dd LLL yyyy') }}</time></span>
         </li>
         <li class="meta-list__item">
           <span class="meta-list__title">Posted in</span>

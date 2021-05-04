@@ -1,13 +1,11 @@
 .meta-list{
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -3rem;
-  margin-right: -3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 3rem;
 }
 .meta-list__item{
   font-size: var(--fs-text-sm);
   color: RGB(var(--color-paragraph));
-  margin: var(--flow-space) calc(var(--flow-space) * 3);
 }
 .meta-list__title{
   display: block;
@@ -17,6 +15,7 @@
   color: RGB(var(--color-primary));
   text-decoration: none;
   max-width: 480px;
+  word-break: break-word;
   &.disabled{
     color: RGBA(var(--color-border), .5);
     pointer-events: none;

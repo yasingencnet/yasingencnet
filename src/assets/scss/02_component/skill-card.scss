@@ -7,6 +7,25 @@
     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   }
 }
+.skill-cta{
+  grid-column-start: 1;
+  grid-column-end: -1;
+  color: RGB(var(--color-paragraph-light));
+  text-align: right;
+  font-size: var(--fs-text-sm);
+  margin-top: calc(var(--flow-space) * 1.5);
+  @include respond-above(sm) {
+    grid-column-end: -2;
+  }
+  a{
+    color: RGB(var(--color-paragraph));
+    text-decoration: none;
+    &:hover, &:focus{
+      color: RGB(var(--color-primary));
+    }
+  }
+}
+
 .skill-card{
   padding: calc(var(--flow-space) * 1.5);
   border-radius: var(--radius);
@@ -42,25 +61,6 @@
     font-size: var(--fs-text-sm);
   }
 }
-.skill-cta{
-  grid-column-start: 1;
-  grid-column-end: -1;
-  color: RGB(var(--color-paragraph-light));
-  text-align: right;
-  font-size: var(--fs-text-sm);
-  margin-top: calc(var(--flow-space) * 1.5);
-  @include respond-above(sm) {
-    grid-column-end: -2;
-  }
-  a{
-    color: RGB(var(--color-paragraph));
-    text-decoration: none;
-    &:hover, &:focus{
-      color: RGB(var(--color-primary));
-    }
-  }
-}
-
 
 @keyframes bounceSkillCardFigure {
   0%   { transform: scale(1,1)      translateY(5px); }

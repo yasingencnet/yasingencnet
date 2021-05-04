@@ -1,17 +1,23 @@
 .header{
+  position: relative;
   display: flex;
   align-items: center;
   width: 100%;
   max-width: var(--container-lg);
   margin-left: auto;
   margin-right: auto;
+  padding-top: calc(var(--flow-space) * 1.5);
+  padding-bottom: calc(var(--flow-space) * 1.5);
+  @include respond-above(sm) {
+    padding-top: calc(var(--flow-space) * 3);
+    padding-bottom: calc(var(--flow-space) * 3);
+  }
 
-  position: relative;
-  padding-top: calc(var(--flow-space) * 3);
-  padding-bottom: calc(var(--flow-space) * 3);
-  @include respond-below(sm) {
-    padding-top: calc(var(--flow-space) * 1.5);
-    padding-bottom: calc(var(--flow-space) * 1.5);
+  .button-group{
+    margin-left: calc(var(--flow-space) * 1.5);
+    > * {
+      padding: var(--flow-space);
+    }
   }
 }
 
@@ -19,10 +25,4 @@
   display: block;
   line-height: 1;
   margin-right: auto;
-}
-.header-cta{
-  margin-left: calc(var(--flow-space) * 1.5);
-  @include respond-below(md) {
-    padding: var(--flow-space) calc(var(--flow-space) * 1.5);
-  }
 }

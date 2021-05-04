@@ -9,7 +9,6 @@
   margin-left: auto;
   margin-right: auto;
 
-
   @include respond-above(lg) {
     margin-top: calc(-1 * var(--layout-gap));
     grid-template-columns: 1fr 1fr;
@@ -22,13 +21,12 @@
   position: relative;
   z-index: 1;
   max-width: 700px;
-  @include respond-below(xl) {
-    justify-content: center;
-  }
 }
 .hero__title{
+  --text-size: 32px;
+
   margin-bottom: calc(var(--flow-space) * 1.5);
-  font-size: var(--fs-title-xml);
+  font-size: var(--text-size);
   font-weight: var(--black);
   line-height: 1.1;
   letter-spacing: -.01em;
@@ -37,8 +35,8 @@
   background: linear-gradient(73.39deg, RGB(var(--color-paragraph)) 7.52%, RGB(var(--color-black)) 98.26%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  @include respond-below(sm) {
-    --fs-title-xml: 32px;
+  @include respond-above(sm) {
+    --text-size: var(--fs-title-xml);
   }
   span{
     display: block;
@@ -64,6 +62,19 @@
 
 .hero__figure{
   position: relative;
+  &:before{
+    --offset: 15px;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 50%;
+    height: calc(100% - var(--offset));
+    background: RGB(var(--color-bg-pale));
+    transform: translateY(var(--offset)) skewX(5deg);
+    border-radius: var(--radius);
+  }
 }
 .hero__pic{
   margin-left: auto;
@@ -87,7 +98,7 @@
   top: calc(-1 * (var(--hero-icon-size) / 6));
   z-index: 1;
 
-  animation: animateHeroIcon 10s linear infinite;
+  animation: animateStampIcon 10s linear infinite;
   will-change: transform;
   backface-visibility: hidden;
 
@@ -95,14 +106,5 @@
     --hero-icon-size: 175px;
     left: calc(-1 * (var(--hero-icon-size)/2));
     top: calc(var(--hero-icon-size)/2);
-  }
-}
-
-@keyframes animateHeroIcon {
-  from{
-    transform: rotateZ(0deg);
-  }
-  to{
-    transform: rotateZ(360deg);
   }
 }

@@ -68,3 +68,13 @@ a[href*="javascript:"]{
 .mt-auto{
   margin-top: auto;
 }
+
+
+@keyframes animateStampIcon {
+  from{
+    transform: rotateZ(0deg);
+  }
+  to{
+    transform: rotateZ(360deg);
+  }
+}

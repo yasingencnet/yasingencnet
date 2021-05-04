@@ -1,7 +1,37 @@
+.post-cards{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: calc(var(--flow-space) * 3);
+  @include respond-above(sm) {
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  }
+  > * {
+    &:nth-of-type(1){
+      --card-bg: RGBA(var(--color-primary-alt), .05);
+      --fs-text-lg: 38px;
+      --fs-text-md: 22px;
+      --color-primary: var(--color-paragraph);
+      @include respond-above(sm) {
+        grid-column-start: 1;
+        grid-column-end: -1;
+        padding-right: 50%;
+      }
+      .post-card__title{
+        line-height: 1.2;
+      }
+    }
+  }
+}
+
+
 .post-card{
-  background: RGB(var(--color-white));
+  --card-bg: RGB(var(--color-white));
+  background: var(--card-bg);
   box-shadow: var(--box-shadow-2);
-  padding: calc(var(--flow-space) * 6) calc(var(--flow-space) * 3);
+  padding: calc(var(--flow-space) * 6) calc(var(--flow-space) * 1.5);
+  @include respond-above(sm) {
+    padding: calc(var(--flow-space) * 6) calc(var(--flow-space) * 3);
+  }
   > * + * {
     margin-top: var(--flow-space);
   }

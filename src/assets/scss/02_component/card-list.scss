@@ -1,4 +1,6 @@
 .card-list{
+  counter-reset: olCardListCounter;
+
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
   grid-gap: calc(var(--layout-gap) / 3);
@@ -11,8 +13,12 @@
     font-size: inherit;
     &:after{display: none !important;}
   }
+  &.card-list--v3 {
+    grid-gap: 1rem;
+  }
 }
 .card-list__item{
+  position: relative;
   box-shadow: var(--box-shadow-2);
   padding: 6rem 3rem;
   border: 1px solid RGBA(var(--color-border), .2);
@@ -20,6 +26,24 @@
     @extend .bg-pure;
     padding: calc(var(--flow-space) * 1.5);
     box-shadow: var(--box-shadow-1);
+  }
+  .card-list--v3 & {
+    @extend .bg-pure;
+    padding: calc(var(--flow-space) * 3);
+    border: none;
+  }
+  ol.card-list &{
+    counter-increment: olCardListCounter;
+    &:after{
+      content: counter(olCardListCounter);
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+
+      pointer-events: none;
+      font-size: var(--fs-title-lg);
+      color: RGB(var(--color-paragraph-pale));
+    }
   }
 }
 
@@ -37,12 +61,24 @@
   font-size: var(--fs-title-xs);
   font-weight: var(--semibold);
   color: RGB(var(--color-paragraph));
+  .card-list--v3 & {
+    --fs-title-xs: var(--fs-text-md);
+  }
+}
+.card-list__title-alt{
+  display: block;
+  font-size: var(--fs-text-sm);
+  font-weight: var(--regular);
+  color: RGB(var(--color-paragraph-light));
 }
 .card-list__value{
   display: block;
-  margin-top: calc(var(--flow-space) / 2);
+  margin-top: var(--flow-space);
   font-size: var(--fs-text-md);
   color: RGB(var(--color-paragraph-light));
+  .card-list--v3 & {
+    --fs-text-md: var(--fs-text-sm);
+  }
   a{
     color: RGB(var(--color-primary));
   }

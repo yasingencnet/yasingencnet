@@ -2,13 +2,13 @@
 layout: layouts/base.njk
 ---
 <section class="section section-project">
-  <div class="project-hero" style="--figure-color-r:{{ color[0] }}; --figure-color-g:{{ color[1] }}; --figure-color-b:{{ color[2] }};">
+  <div class="project-hero" style="--figure-color-r:{{ bgcolor[0] }}; --figure-color-g:{{ bgcolor[1] }}; --figure-color-b:{{ bgcolor[2] }};">
     <div class="container">
       <div class="section-inner">
-        <div>
+        <header class="project-header" style="--text-color-r:{{ textcolor[0] }}; --text-color-g:{{ textcolor[1] }}; --text-color-b:{{ textcolor[2] }};">
           <h1 class="project-title">{{ title }}</h1>
           <p class="project-description">{{ description }}</p>
-        </div>
+        </header>
         <figure class="project-figure">
           <picture>
             <source srcset="{{ metadata.assets.img }}works/{{ picture }}.webp" type="image/webp">
@@ -71,7 +71,7 @@ layout: layouts/base.njk
       <div class="works">
         {%- set nextPost = collections.works | getNextCollectionItem(page) %}
         <div class="works__item">
-          <figure class="works__figure test" {%- if nextPost %}style="--figure-color-r:{{ nextPost.data.color[0] }}; --figure-color-g:{{ nextPost.data.color[1] }}; --figure-color-b:{{ nextPost.data.color[2] }};"{%  else %} {% endif %}>{%- if nextPost %}<a href="{{ nextPost.url | url }}">
+          <figure class="works__figure test" {%- if nextPost %}style="--figure-color-r:{{ nextPost.data.bgcolor[0] }}; --figure-color-g:{{ nextPost.data.bgcolor[1] }}; --figure-color-b:{{ nextPost.data.bgcolor[2] }};"{%  else %} {% endif %}>{%- if nextPost %}<a href="{{ nextPost.url | url }}">
               <picture>
                 <source srcset="{{ metadata.assets.img }}works/{{ nextPost.data.picture }}.webp" type="image/webp">
                 <img src="{{ metadata.assets.img }}works/{{ nextPost.data.picture }}.jpg" width="795" height="566" alt="{{ nextPost.data.title }}" loading="lazy">
@@ -87,7 +87,7 @@ layout: layouts/base.njk
         </div>
         {%- set previousPost = collections.works | getPreviousCollectionItem(page) %}
         <div class="works__item">
-          <figure class="works__figure" {%- if previousPost %}style="--figure-color-r:{{ previousPost.data.color[0] }}; --figure-color-g:{{ previousPost.data.color[1] }}; --figure-color-b:{{ previousPost.data.color[2] }};"{%  else %} {% endif %}>{%- if previousPost %}<a href="{{ previousPost.url | url }}">
+          <figure class="works__figure" {%- if previousPost %}style="--figure-color-r:{{ previousPost.data.bgcolor[0] }}; --figure-color-g:{{ previousPost.data.bgcolor[1] }}; --figure-color-b:{{ previousPost.data.bgcolor[2] }};"{%  else %} {% endif %}>{%- if previousPost %}<a href="{{ previousPost.url | url }}">
               <picture>
                 <source srcset="{{ metadata.assets.img }}works/{{ previousPost.data.picture }}.webp" type="image/webp">
                 <img src="{{ metadata.assets.img }}works/{{ previousPost.data.picture }}.jpg" width="795" height="566" alt="{{ previousPost.data.title }}" loading="lazy">

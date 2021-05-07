@@ -59,7 +59,7 @@
 .card-list__title{
   display: block;
   font-size: var(--fs-title-xs);
-  font-weight: var(--semibold);
+  font-weight: var(--bold);
   color: RGB(var(--color-paragraph));
   .card-list--v3 & {
     --fs-title-xs: var(--fs-text-md);

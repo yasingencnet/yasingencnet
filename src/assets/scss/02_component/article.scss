@@ -9,7 +9,7 @@
 }
 
 .article-header{
-  margin-bottom: var(--layout-gap);
+  margin-bottom: calc(var(--layout-gap) * 2);
 }
 .article-title{
   font-size: var(--fs-title-xl);

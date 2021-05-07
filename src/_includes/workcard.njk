@@ -1,6 +1,6 @@
 {% for work in workslist | reverse %}
   <div class="works__item">
-    <figure class="works__figure" style="--figure-color-r:{{ work.data.color[0] }}; --figure-color-g:{{ work.data.color[1] }}; --figure-color-b:{{ work.data.color[2] }};">
+    <figure class="works__figure" style="--figure-color-r:{{ work.data.bgcolor[0] }}; --figure-color-g:{{ work.data.bgcolor[1] }}; --figure-color-b:{{ work.data.bgcolor[2] }};">
       <a href="{{ work.url | url }}">
         <picture>
           <source srcset="{{metadata.assets.img}}works/{{ work.data.picture }}.webp" type="image/webp">

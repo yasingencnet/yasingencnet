@@ -28,17 +28,11 @@ body {
   margin-right: auto;
 }
 .container-subpage{
-  @extend .bg-pure;
   grid-template-columns: 1fr;
-  padding-top: var(--layout-gap);
-  padding-bottom: var(--layout-gap);
+  padding-top: calc(var(--flow-space) * 3);
   @include respond-below(xs) {
     --layout-gap:  3rem;
     max-width: 100%;
-  }
-  @include respond-above(sm) {
-    padding-top: calc(var(--layout-gap) * 2);
-    padding-bottom: calc(var(--layout-gap) * 2);
   }
 }
 

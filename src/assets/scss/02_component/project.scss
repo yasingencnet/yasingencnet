@@ -23,13 +23,16 @@
     margin-right: auto;
   }
 }
+.project-header{
+  color: RGB(var(--color-white));
+}
 .project-title{
   font-size: var(--fs-title-xl);
-  color: RGB(var(--color-white));
+  color: RGB(var(--text-color-r), var(--text-color-g), var(--text-color-b));
 }
 .project-description{
   font-size: var(--fs-text-lg);
-  color: RGB(var(--color-white));
+  color: RGB(var(--text-color-r), var(--text-color-g), var(--text-color-b));
   margin-top: calc(var(--flow-space) * 1.5);
 }
 

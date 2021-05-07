@@ -55,6 +55,7 @@
     const greetingText = document.getElementById("greeting-text");
     let visitorClock = new Date().getHours();
     let visitorMessage = "";
+
     if(visitorClock <= 12){
       visitorMessage = "Good morning,";
     } else if (visitorClock <= 18){
@@ -62,6 +63,7 @@
     } else {
       visitorMessage = "Good evening,";
     }
+
     greetingText.innerHTML = visitorMessage;
   });
 </script>

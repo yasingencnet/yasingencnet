@@ -4,7 +4,7 @@
   cursor: pointer;
   text-decoration: none;
   font-size: var(--fs-text-xs);
-  font-weight: var(--semibold);
+  font-weight: var(--bold);
   border: 0;
   text-align: center;
   border-radius: var(--radius);
@@ -60,7 +60,7 @@
   @extend .button, .button-2;
   display: none;
   padding: var(--flow-space);
-  font-weight: var(--semibold);
+  font-weight: var(--bold);
   @include respond-below(md) {
     display: inline-block;
   }

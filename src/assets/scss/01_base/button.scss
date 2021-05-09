@@ -70,3 +70,18 @@
     }
   }
 }
+.button-aside{
+  @extend .button, .button-2;
+  display: inline-block;
+  padding: var(--flow-space);
+  font-weight: var(--bold);
+  svg{
+    path{
+      fill: currentColor;
+    }
+  }
+}
+
+button:focus, a:focus {
+  outline: 2px solid RGB(var(--color-highlight));
+}

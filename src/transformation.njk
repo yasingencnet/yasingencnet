@@ -11,14 +11,17 @@ eleventyNavigation:
 
 <div class="section">
   <div class="container">
-    <div class="section-inner section-grid">
-      <header class="section-header">
-        <h1 class="section-title">{{ title }}</h1>
-        <p class="section-description">{{ description }}</p>
-      </header>
-      {% include 'components/data-cards.njk' %}
-      {% include 'components/transformation-calendar.njk' %}
-    </div>
+    <header class="section-header">
+      <h1 class="section-title">{{ title }}</h1>
+      <p class="section-description">{{ description }}</p>
+    </header>
+    {% include 'components/data-cards.njk' %}
+  </div>
+</div>
+
+<div class="section" style="margin-top: 3rem;">
+  <div class="container">
+    {% include 'components/transformation-calendar.njk' %}
   </div>
 </div>
 

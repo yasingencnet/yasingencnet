@@ -13,22 +13,17 @@ code[class*="language-"], pre[class*="language-"] {
   -moz-hyphens: none;
   -ms-hyphens: none;
   hyphens: none;
-  background: #272822;
+  background: #282c34;
   color: #f8f8f2;
-  br{
-    content: '';
-    display: block;
-    height: 5px;
-    & + br{
-      height: 15px;
-    }
-  }
 }
 pre[class*="language-"] {
   padding: 1.5em;
-  margin: .5em 0;
+  margin: calc(var(--flow-space) * 3) 0;
   overflow: auto;
   max-width: calc(100vw - 30px);
+}
+p + pre[class*="language-"] {
+  margin-top: calc(var(--flow-space) * 6);
 }
 :not(pre) > code[class*="language-"] {
   padding: .1em;

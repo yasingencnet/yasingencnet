@@ -65,12 +65,13 @@
 
   @include respond-above(sm) {
     --container-lg: 95vw;
-    --container-md: 60vw;
     --container-sm: 760px;
+    --container-md: 760px;
   }
 
   @include respond-above(lg) {
     --container-lg: 85vw;
+    --container-md: 60vw;
   }
 
 

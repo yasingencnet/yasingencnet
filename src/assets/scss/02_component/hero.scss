@@ -1,25 +1,25 @@
 .hero{
-  display: flex;
-  flex-direction: column;
-  gap: calc(var(--flow-space) * 3);
-  align-items: center;
-  justify-content: center;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 3rem;
 
   max-width: var(--container-lg);
   margin-left: auto;
   margin-right: auto;
-
+  margin-top: calc(-1 * (var(--layout-gap)));
+  padding: 6rem 1.5rem;
   &:before{
     @include respond-above(md) {
       content: '';
       display: block;
       position: absolute;
       z-index: -1;
-      top: 15px;
-      left: 15px;
-      width: calc(100% - 30px);
-      height: calc(100% - 15px);
-      background: RGB(var(--color-bg-pale));
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: RGBA(var(--color-bg-pale), .5);
       border-radius: var(--radius) var(--radius) 0 0;
     }
   }
@@ -32,6 +32,7 @@
   z-index: 1;
   max-width: 760px;
   text-align: center;
+  margin: auto;
 }
 .hero__title{
   --text-size: 32px;
@@ -73,19 +74,7 @@
 
 .hero__figure{
   position: relative;
-  &:before{
-    --offset: 15px;
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 50%;
-    height: calc(100% - var(--offset));
-    background: RGB(var(--color-bg-alt));
-    transform: translateY(var(--offset)) skewX(5deg);
-    border-radius: var(--radius);
-  }
+  margin: auto;
 }
 .hero__pic{
   border-radius: var(--radius);

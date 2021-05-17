@@ -53,8 +53,9 @@ main{
   margin-bottom: var(--layout-gap);
 }
 .section-title{
-  font-size: var(--fs-title-md);
+  font-size: var(--fs-title-xs);
   font-weight: var(--bold);
+  text-transform: uppercase;
 }
 .section-description{
   max-width: 630px;

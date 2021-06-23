@@ -2,6 +2,9 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(520px, 1fr));
   grid-gap: calc(var(--flow-space) * 3);
+  &.works-featured{
+    grid-template-columns: 1fr 1fr;
+  }
   @include respond-below(md) {
     grid-template-columns: 1fr;
   }

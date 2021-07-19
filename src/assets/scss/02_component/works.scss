@@ -4,6 +4,9 @@
   grid-gap: calc(var(--flow-space) * 3);
   &.works-featured{
     grid-template-columns: 1fr 1fr;
+    @include respond-below(md) {
+      grid-template-columns: 1fr;
+    }
   }
   @include respond-below(md) {
     grid-template-columns: 1fr;

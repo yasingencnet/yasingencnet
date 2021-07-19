@@ -1,6 +1,6 @@
 ---
 title: Atlasart
-url: ''
+url: 'https://www.atlasart.com.tr/'
 description: High quality knitting textile
 picture: atlasart
 bgcolor: ['195', '7', '39']

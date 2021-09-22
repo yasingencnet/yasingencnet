@@ -2,9 +2,8 @@
   --badge-bg-color: linear-gradient(90deg, #FDFBFB 0%, #EBEDEE 100%);
   --badge-text-color: RGB(var(--color-paragraph-light));
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  place-content:center;
   text-align: center;
   width: 68px;
   height: 68px;

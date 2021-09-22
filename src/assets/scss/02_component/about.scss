@@ -104,9 +104,8 @@
   }
   .stamp{
     grid-area: badge;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-content: center;
     svg, img{
       max-width: 100%;
       @include respond-above(xl){
@@ -147,9 +146,8 @@
     }
   }
   .social{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-content: center;
     grid-area: social;
     border: 1px solid RGBA(var(--color-bg-pale), 1);
     box-shadow: var(--box-shadow-2);

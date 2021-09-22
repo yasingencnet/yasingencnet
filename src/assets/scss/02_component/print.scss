@@ -1,40 +1,42 @@
 // Hiding
-.footer,
-.header .button-group,
-.header .nav,
-.button-print,
-.section-header
-{
-  display: none;
-}
-
-// Visual
-.header{
-  .container{
-    justify-content: center;
+@media print{
+  .footer,
+  .header .button-group,
+  .header .nav,
+  .button-print,
+  .section-header
+  {
+    display: none;
   }
-}
-.table th, .table td{
-  padding: 2px;
-}
-fieldset {
-  margin: 0 0 calc(var(--flow-space) * 3);
-}
 
-// Travel checklist
-.travel-checklist *{
-  font-size: 9pt !important;
-}
-.travel-checklist{
-  display: flex;
-  flex-wrap: wrap;
-  > * {
-    max-width: 50%;
-    width: 100%;
+  // Visual
+  .header{
+    .container{
+      justify-content: center;
+    }
   }
-}
+  .table th, .table td{
+    padding: 2px;
+  }
+  fieldset {
+    margin: 0 0 calc(var(--flow-space) * 3);
+  }
 
-// A11Y
-a[href^="http"]:not([href*="yasingenc.net"])::after {
-  content: " (" attr(href) ")";
+  // Travel checklist
+  .travel-checklist *{
+    font-size: 9pt !important;
+  }
+  .travel-checklist{
+    display: flex;
+    flex-wrap: wrap;
+    > * {
+      max-width: 50%;
+      width: 100%;
+    }
+  }
+
+  // A11Y
+  a[href^="http"]:not([href*="yasingenc.net"])::after {
+    content: " (" attr(href) ")";
+  }
 }

@@ -20,8 +20,7 @@ const jsPaths = 'src/assets/js/',
 const paths = {
   scripts: [jsPaths + 'core.js'],
   scssHome: [scssPath + 'homepage.scss'],
-  scssSubpage: [scssPath + 'subpage.scss'],
-  scssPrint: [scssPath + 'print.scss']
+  scssSubpage: [scssPath + 'subpage.scss']
 };
 
 // Set env value
@@ -104,23 +103,6 @@ function scss(done) {
     .pipe(gulpif(env === 'dev', sourcemaps.write('/')))
     .pipe(gulp.dest(cssPath))
     .pipe(browserSync.stream());
-
-  // Print
-  gulp
-    .src(paths.scssPrint)
-    .pipe(gulpif(env === 'dev', sourcemaps.init({ largeFile: true })))
-    .pipe(
-      gulpif(
-        env === 'prod',
-        sass({ outputStyle: 'compressed' }).on('error', sass.logError)
-      )
-    )
-    .pipe(gulpif(env === 'dev', sass().on('error', sass.logError)))
-    .pipe(autoprefixer())
-    .pipe(gulpif(env === 'dev', sourcemaps.write('/')))
-    .pipe(gulp.dest(cssPath))
-    .pipe(browserSync.stream());
-
 
   done();
 }

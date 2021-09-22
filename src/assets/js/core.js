@@ -30,7 +30,6 @@ let main = {
   }
 };
 
-
 // Document.Ready
 document.addEventListener("DOMContentLoaded", function() {
   main.primaryNav();

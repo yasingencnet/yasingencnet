@@ -1,12 +1,6 @@
 .wysiwyg{
-  &[data-theme="dark"]{
-    color: RGB(var(--color-paragraph-pale));
-    h1, h2, h3, h4, h5, h6{
-      color: RGB(var(--color-white));
-    }
-  }
 
-  font-size: var(--fs-text-lg);
+  font-size: var(--fs-text-md);
   word-break: break-word;
   > * {
     & + * {
@@ -21,11 +15,12 @@
     }
   }
   h1{
-    font-size: var(--fs-title-lg);
+    font-size: var(--fs-title-sm);
   }
-  h2, h3, h4{font-size: var(--fs-title-sm);}
-  h5, h6{font-size: var(--fs-title-xs);}
+  h2, h3, h4{font-size: var(--fs-title-xs);}
+  h5, h6{font-size: var(--fs-text-md);}
   h1, h2, h3, h4, h5, h6{
+    color: RGB(var(--color-paragraph-inverse));
     font-weight: var(--bold);
     margin-top:  calc(var(--flow-space) * 6);
     margin-bottom: 0;
@@ -53,7 +48,7 @@
   figcaption{
     text-align: right;
     margin-top: calc(var(--flow-space) / 2);
-    color: RGB(var(--color-paragraph-light));
+    color: RGB(var(--color-paragraph));
     font-size: var(--fs-text-sm);
   }
   blockquote{
@@ -92,7 +87,10 @@
     position: relative;
     border: 0;
     border-top: 1px solid RGB(var(--color-border));
-    margin: calc(var(--layout-gap) * 1.5) 0;
+    margin: var(--layout-gap) 0;
+    @include respond-above(sm) {
+      margin: calc(var(--layout-gap) * 1.5) 0;
+    }
     &:before{
       content: '✣ ✣ ✣';
       position: absolute;
@@ -103,12 +101,16 @@
 
       color: RGB(var(--color-primary));
       background: RGB(var(--color-bg));
-      font-size: 2em;
+      font-size: 1em;
+      @include respond-above(sm) {
+        font-size: 2em;
+      }
     }
   }
   code{
     &:not([class]){
-      background-color: RGB(var(--color-highlight), 0.2);
+      color: RGB(var(--color-black));
+      background-color: RGB(var(--color-primary), .8);
       padding: 2px 8px;
       border-radius: var(--radius);
     }

@@ -12,13 +12,14 @@
   margin-bottom: var(--layout-gap);
 }
 .article-title{
-  font-size: var(--fs-title-xl);
+  font-size: var(--fs-title-md);
+  color: RGB(var(--color-paragraph-inverse));
   line-height: 120%;
 }
 .article-description{
   margin-top: calc(var(--flow-space) * 1.5);
   font-size: var(--fs-text-md);
-  color: RGB(var(--color-paragraph-light));
+  color: RGB(var(--color-paragraph));
   line-height: 180%;
 }
 .article-meta{

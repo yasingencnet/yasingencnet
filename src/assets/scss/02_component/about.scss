@@ -117,7 +117,7 @@
   }
   .freelance{
     grid-area: freelance;
-    background: gold;
+    background: black;
   }
   .experience{
     grid-area: experience;
@@ -157,7 +157,7 @@
   margin-bottom: calc(var(--flow-space) * 3);
 }
 .grid-area-title{
-  font-size: var(--fs-title-xs);
+  font-size: var(--fs-text-lg);
   font-weight: var(--bold);
-  color: RGB(var(--color-paragraph));
+  color: RGB(var(--color-paragraph-inverse));
 }

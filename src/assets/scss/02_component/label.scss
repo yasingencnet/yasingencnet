@@ -9,19 +9,19 @@
   font-size: var(--fs-text-xs);
 
   background: RGBA(var(--color-bg), 1);
-  color: RGBA(var(--color-paragraph-light), 1);
+  color: RGBA(var(--color-paragraph), 1);
 
   &.label-alert{
-    background: RGBA(var(--color-alert), .2);
+    background: RGBA(var(--color-black), .6);
     color: RGBA(var(--color-alert-dark), 1);
   }
   &.label-threat{
-    background: RGBA(var(--color-threat), .2);
+    background: RGBA(var(--color-threat-dark), 0.1);
     color: RGBA(var(--color-threat-dark), 1);
   }
   &.label-warning{
-    background: RGBA(var(--color-highlight), .2);
-    color: RGBA(var(--color-highlight-dark), 1);
+    background: RGBA(var(--color-highlight), 0.8);
+    color: RGBA(var(--color-black), 1);
   }
   &.label-success{
     background: RGBA(var(--color-success), .2);

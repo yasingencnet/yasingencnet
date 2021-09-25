@@ -18,14 +18,14 @@
     padding: .5rem;
     height: 100%;
     font-size: var(--fs-text-md);
-    color: RGB(var(--color-paragraph-light), .8);
+    color: RGB(var(--color-paragraph), .8);
     text-decoration: none;
     &:hover{color: RGB(var(--color-primary));}
   }
   .count{
     display: inline-block;
     margin-left: .5rem;
-    color: RGB(var(--color-paragraph-light), .5);
+    color: RGB(var(--color-paragraph), .5);
   }
   &.active {
     a{

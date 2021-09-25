@@ -1,6 +1,6 @@
 .section-quote{
-  background: RGB(var(--color-tertiary));
-  padding: calc(var(--layout-gap) * 2) 0;
+  background: RGB(var(--color-bg-pale));
+  padding: var(--layout-gap) 0;
 }
 
 .quote{
@@ -11,13 +11,13 @@
   margin-bottom: calc(var(--flow-space) * 3);
   svg{
     path{
-      fill: RGB(var(--color-black));
+      fill: RGB(var(--color-paragraph-inverse));
     }
   }
 }
 .quote__blockquote{
   text-align: center;
   font-weight: var(--regular);
-  font-size: var(--fs-title-lg);
-  color: RGB(var(--color-black));
+  font-size: var(--fs-title-sm);
+  color: RGB(var(--color-paragraph-inverse));
 }

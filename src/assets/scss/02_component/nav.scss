@@ -44,9 +44,12 @@
     text-align: center;
     padding: .5rem;
     height: 100%;
-    font-size: var(--fs-text-sm);
+    font-size: var(--fs-text-xs);
     color: RGB(var(--color-paragraph));
     text-decoration: none;
-    &:hover{color: RGB(var(--color-primary));}
+    &:hover{
+      color: RGB(var(--color-primary));
+      text-shadow: 0 0 5px RGB(var(--color-primary));
+    }
   }
 }

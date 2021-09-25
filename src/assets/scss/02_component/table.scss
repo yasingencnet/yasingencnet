@@ -10,7 +10,7 @@
   thead{
     background-color: RGB(var(--color-bg-pale));
     th{
-      color: RGB(var(--color-paragraph-ultralight));
+      color: RGB(var(--color-paragraph));
       font-size: var(--fs-text-xs);
       font-weight: var(--regular);
     }
@@ -27,7 +27,7 @@
     padding-top: var(--flow-space);
     padding-bottom: var(--flow-space);
     text-align: left;
-    color: RGB(var(--color-paragraph-light));
+    color: RGB(var(--color-paragraph));
   }
   em{
     display: inline-block;
@@ -35,7 +35,7 @@
     background: RGBA(var(--color-highlight), .3);
   }
   small{
-    color: RGB(var(--color-paragraph-light));
+    color: RGB(var(--color-paragraph));
   }
 }
 .table-striped{

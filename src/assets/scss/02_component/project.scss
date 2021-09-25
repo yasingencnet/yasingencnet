@@ -1,19 +1,22 @@
 .section-project{
-  margin-top: calc(var(--layout-gap) * -1);
+  margin-top: calc((var(--layout-gap) * -1) * 2);
 }
 
 .project-hero{
-  padding-top: var(--layout-gap);
+  padding-top: calc(var(--layout-gap) * 2);
   text-align: center;
-  background: linear-gradient(135deg, rgb(var(--figure-color-r), var(--figure-color-g), var(--figure-color-b)), rgb(calc(var(--figure-color-r) + 50), calc(var(--figure-color-g) + 50), calc(var(--figure-color-b) + 50)));
   .section-inner{
-
+    display: grid;
+    justify-content: center;
+    gap: 3rem;
   }
 }
 .project-figure{
-  padding-top: calc(var(--flow-space) * 3);
+  border-radius: var(--radius) var(--radius) 0 0;
+  padding: var(--flow-space) var(--flow-space) 0;
+  background: linear-gradient(135deg, rgb(var(--figure-color-r), var(--figure-color-g), var(--figure-color-b)), rgb(calc(var(--figure-color-r) + 50), calc(var(--figure-color-g) + 50), calc(var(--figure-color-b) + 50)));
   @include respond-above(sm) {
-    padding: calc(var(--flow-space) * 6) calc(var(--flow-space) * 3) 0;
+    padding: calc(var(--flow-space) * 3) calc(var(--flow-space) * 3) 0;
   }
   img{
     width: 100%;
@@ -24,20 +27,19 @@
   }
 }
 .project-header{
-  color: RGB(var(--color-white));
 }
 .project-title{
-  font-size: var(--fs-title-xl);
-  color: RGB(var(--text-color-r), var(--text-color-g), var(--text-color-b));
+  font-size: var(--fs-title-lg);
+  color: RGB(var(--color-paragraph-inverse));
 }
 .project-description{
-  font-size: var(--fs-text-lg);
-  color: RGB(var(--text-color-r), var(--text-color-g), var(--text-color-b));
-  margin-top: calc(var(--flow-space) * 1.5);
+  font-size: var(--fs-text-md);
+  color: RGB(var(--color-paragraph));
+  margin-top: var(--flow-space);
 }
 
 .project-meta{
-  background-color: RGB(var(--color-white));
+  background-color: RGB(var(--color-bg-pale));
   border-bottom: 1px solid RGBA(var(--color-border), .5);
   .meta-list{
     gap: 0;
@@ -45,9 +47,12 @@
   .meta-list__item{
     flex-grow: 1;
     margin: 0;
-    padding: 3rem;
+    padding: 1.5rem;
     border-top: 1px solid RGBA(var(--color-border), .5);
     border-left: 1px solid RGBA(var(--color-border), .5);
+    @include respond-above(sm) {
+      padding: 3rem;
+    }
     &:last-of-type{
       border-left: 1px solid RGBA(var(--color-border), .5);
     }

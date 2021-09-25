@@ -1,7 +1,8 @@
-<div class="section">
+<div class="section" style="position: relative; margin-top: calc(-1 * (var(--layout-gap))); z-index: 1;">
   <div class="container">
+    <h2 class="section-title section-title--alternate">Featured Works</h2>
     <div class="works works-featured">
-      {% set workslist = collections.works | head(-4) %}
+      {% set workslist = collections.works | head(-6) %}
       {% set workslistCounter = collections.works | length %}
       {% include "workcard.njk" %}
     </div>

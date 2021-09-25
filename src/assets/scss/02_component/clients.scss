@@ -1,7 +1,10 @@
 .clients{
   display: grid;
-  grid-gap: calc(var(--flow-space) * 1.5);
+  grid-gap: var(--flow-space);
   grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  @include respond-above(sm) {
+    grid-gap: calc(var(--flow-space) * 1.5);
+  }
 }
 .clients__item{
   img, svg{

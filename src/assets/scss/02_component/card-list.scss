@@ -3,7 +3,7 @@
 
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
-  grid-gap: calc(var(--layout-gap) / 3);
+  grid-gap: 1.5rem;
   margin-left: auto;
   margin-right: auto;
   a{
@@ -20,7 +20,8 @@
 .card-list__item{
   position: relative;
   box-shadow: var(--box-shadow-2);
-  padding: 6rem 3rem;
+  padding: 3rem;
+  background: RGB(var(--color-bg-alt));
   border: 1px solid RGBA(var(--color-border), .2);
   .card-list--v2 & {
     @extend .bg-pure;
@@ -42,7 +43,7 @@
 
       pointer-events: none;
       font-size: var(--fs-title-lg);
-      color: RGB(var(--color-paragraph-pale));
+      color: RGB(var(--color-paragraph));
     }
   }
 }
@@ -58,27 +59,21 @@
 }
 .card-list__title{
   display: block;
-  font-size: var(--fs-title-xs);
+  font-size: var(--fs-text-sm);
   font-weight: var(--bold);
-  color: RGB(var(--color-paragraph));
-  .card-list--v3 & {
-    --fs-title-xs: var(--fs-text-md);
-  }
+  color: RGB(var(--color-paragraph-inverse));
 }
 .card-list__title-alt{
   display: block;
-  font-size: var(--fs-text-sm);
+  font-size: var(--fs-text-xs);
   font-weight: var(--regular);
-  color: RGB(var(--color-paragraph-light));
+  color: RGB(var(--color-paragraph));
 }
 .card-list__value{
   display: block;
   margin-top: var(--flow-space);
-  font-size: var(--fs-text-md);
-  color: RGB(var(--color-paragraph-light));
-  .card-list--v3 & {
-    --fs-text-md: var(--fs-text-sm);
-  }
+  font-size: var(--fs-text-sm);
+  color: RGB(var(--color-paragraph));
   a{
     color: RGB(var(--color-primary));
   }

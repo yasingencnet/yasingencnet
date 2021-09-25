@@ -14,7 +14,7 @@
         {%- if work.data.url %}
         <a class="works__link" href="{{ work.data.url }}">Visit</a>
         {%  else %}
-        <span class="works__link disabled">No Demo</span>
+        <span class="works__link disabled" aria-disabled="true">No Demo</span>
         {% endif %}
       </header>
       <p class="works__description">{{ work.data.description }}</p>

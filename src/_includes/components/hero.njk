@@ -1,14 +1,26 @@
 <div class="hero">
-  <div class="hero-text">
-    <p class="hero__description" id="greeting-text">Hello</p>
-    <h1 class="hero__title">
-      I’m Yasin.<br>
-     Creating Web Apps.
-    </h1>
-    <p class="hero__description">
-      I design & develop modern and accessible web interfaces. You can <a href="/about">read more about me</a> here, but stick around if you like JavaScript, CSS, learning new things or travelling.
-    </p>
+  <div class="container">
+    <div class="hero-text">
+      <p class="hero__description" id="greeting-text">Hello</p>
+      <h1 class="hero__title">
+        I’m Yasin.<br>
+        Creating Web Apps.
+      </h1>
+      <p class="hero__description">
+        I design & develop modern and accessible web interfaces. You can <a href="/about">read more about me</a> here, but stick around if you like JavaScript, CSS, learning new things or travelling.
+      </p>
+    </div>
+    <figure class="hero__figure">
+      <img id="heroImage" src="{{metadata.assets.img}}layout/yasin.png" alt="" class="hero__pic">
+    </figure>
   </div>
+  <div class="hero-bg__sky"></div>
+  <div class="hero-bg__scene"></div>
+  <div class="hero-bg__shadow"></div>
+  <video class="hero-bg__video" loop="loop" webkit-playsinline="true" muted="" autoplay="">
+    <!--<source src="//db1qjvpyf4hse.cloudfront.net/d897b54fabacf37025eddcbfd42d822a" type="video/webm">-->
+    <source src="{{metadata.assets.video}}hero-fog.mp4" type="video/mp4">
+  </video>
 </div>
 <script>
   document.addEventListener("DOMContentLoaded", function() {
@@ -24,7 +36,19 @@
     } else {
       visitorMessage = "Good evening,";
     }
-
     greetingText.innerHTML = visitorMessage;
+
+
+    // Parallax Yasin
+    document.addEventListener('scroll', function(e) {
+      let windowTop = window.scrollY;
+
+      let heroImage = document.getElementById("heroImage");
+      let elementTop = heroImage.offsetTop;
+
+      let animateValue = (windowTop - elementTop) / 2;
+      heroImage.style.transform = "translateY("+animateValue+"px)";
+    });
+
   });
 </script>

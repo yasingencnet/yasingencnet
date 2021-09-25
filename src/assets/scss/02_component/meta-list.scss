@@ -12,11 +12,11 @@
 }
 .meta-list__title{
   display: block;
+  color: RGB(var(--color-paragraph-inverse));
 }
 .meta-list__value{
   display: inline-block;
   color: RGB(var(--color-primary));
-  text-decoration: none;
   max-width: 480px;
   word-break: break-word;
   &.disabled{

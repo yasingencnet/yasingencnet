@@ -5,7 +5,7 @@
   }
 }
 fieldset{
-  margin: 0 0 calc(var(--flow-space) * 6);
+  margin: 0 0 calc(var(--flow-space) * 4.5);
   padding: 0;
   border: 0;
 }
@@ -32,6 +32,7 @@ label{
   font-size: var(--fs-text-sm);
   border: 1px solid RGB(var(--color-border));
   border-radius: var(--radius);
+  background: RGB(var(--color-bg));
 }
 %input-focus{
   outline: 0;
@@ -39,11 +40,11 @@ label{
   box-shadow: 0 0 0 3px RGB(var(--color-secondary), .2);
 }
 %input-placeholder{
-  color: RGB(var(--color-paragraph-light));
+  color: RGB(var(--color-paragraph));
 }
 %label{
   display: block;
-  font-size: var(--fs-text-md);
+  font-size: var(--fs-text-sm);
 }
 
 // Inputs
@@ -96,7 +97,7 @@ label{
         small{
           display: block;
           font-size: var(--fs-text-xs);
-          color: RGB(var(--color-paragraph-light));
+          color: RGB(var(--color-paragraph-alternate));
         }
         &:before{
           content: "✔";
@@ -120,7 +121,7 @@ label{
           width: 25px;
           height: 25px;
           border: 1px solid RGB(var(--color-border));
-          background-color: RGB(var(--color-white));
+          background-color: RGB(var(--color-bg));
           border-radius: var(--radius);
         }
       }
@@ -244,7 +245,7 @@ label{
         text-align: center;
         border: 1px solid RGB(var(--color-border));
         border-radius: calc(var(--radius) * 12);
-        background-color: RGB(var(--color-white));
+        background-color: RGB(var(--color-bg));
         &:hover{cursor: pointer;}
       }
       &:checked ~ .form-label{
@@ -269,5 +270,5 @@ label{
 // Others
 .note{
   @extend %label;
-  color: RGB(var(--color-paragraph-light));
+  color: RGB(var(--color-paragraph));
 }

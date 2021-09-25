@@ -1,13 +1,10 @@
 .icon-list{
-  --text-color: var(--color-paragraph);
+  --text-color: var(--color-white);
   display: flex;
   flex-wrap: wrap;
   gap: 3rem;
   &[data-direction="column"]{
     flex-direction: column;
-  }
-  &[data-theme="dark"]{
-    --text-color: var(--color-white);
   }
 }
 .icon-list__item{

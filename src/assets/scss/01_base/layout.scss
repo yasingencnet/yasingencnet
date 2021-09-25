@@ -23,9 +23,12 @@ body {
 }
 
 .main{
-  padding-top: var(--layout-gap);
   @include respond-below(xs) {
     --layout-gap:  4.5rem;
+  }
+  padding-top: calc(var(--layout-gap) * 2);
+  body.homepage &{
+    padding-top: var(--layout-gap);
   }
 }
 main{
@@ -56,6 +59,15 @@ main{
   font-size: var(--fs-title-xs);
   font-weight: var(--bold);
   text-transform: uppercase;
+  color: RGB(var(--color-paragraph-inverse));
+  &.section-title--alternate{
+    margin-bottom: .5rem;
+    font-size: var(--fs-text-xs);
+    font-weight: var(--regular);
+    text-transform: none;
+    text-align: right;
+    color: RGB(var(--color-paragraph));
+  }
 }
 .section-description{
   max-width: 630px;
@@ -63,7 +75,7 @@ main{
   margin-right: auto;
   margin-top: var(--flow-space);
   font-size: var(--fs-text-md);
-  color: RGB(var(--color-paragraph-light));
+  color: RGB(var(--color-paragraph));
 }
 .section-footer{
   text-align: center;

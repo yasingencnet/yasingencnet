@@ -1,11 +1,10 @@
 .header{
-  position: relative;
-  display: flex;
-  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  max-width: var(--container-lg);
-  margin-left: auto;
-  margin-right: auto;
+  z-index: 100;
+
   padding-top: calc(var(--flow-space) * 1.5);
   padding-bottom: calc(var(--flow-space) * 1.5);
   @include respond-above(sm) {
@@ -13,10 +12,22 @@
     padding-bottom: calc(var(--flow-space) * 3);
   }
 
+  .container{
+    display: flex;
+    align-items: center;
+  }
+
+  body.work &{
+    background-color: RGB(var(--color-bg));
+  }
+
   .button-group{
     margin-left: calc(var(--flow-space) * 1.5);
     > * {
-      padding: var(--flow-space);
+      padding: .5rem;
+      @include respond-above(xs) {
+        padding: var(--flow-space) calc(var(--flow-space) * 2);
+      }
     }
   }
 }

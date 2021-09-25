@@ -16,16 +16,11 @@
 .gallery-cta{
   grid-column-start: 1;
   grid-column-end: -1;
-  color: RGB(var(--color-paragraph-light));
+  color: RGB(var(--color-paragraph));
   text-align: right;
   font-size: var(--fs-text-sm);
   margin-top: calc(var(--flow-space) * 1.5);
   a{
     display: inline-block;
-    color: RGB(var(--color-paragraph));
-    text-decoration: none;
-    &:hover, &:focus{
-      color: RGB(var(--color-primary));
-    }
-  }
+    color: RGB(var(--color-primary));}
 }

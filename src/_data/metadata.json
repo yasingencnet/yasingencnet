@@ -36,6 +36,7 @@
   },
   "assets": {
     "img": "/assets/img/",
+    "video": "/assets/video/",
     "css": "/assets/css/",
     "js": "/assets/js/"
   },

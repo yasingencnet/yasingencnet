@@ -1,17 +1,3 @@
-.button{
-  display: inline-block;
-  padding: var(--flow-space) calc(var(--flow-space) * 3);
-  cursor: pointer;
-  text-decoration: none;
-  font-size: var(--fs-text-xs);
-  font-weight: var(--bold);
-  border: 0;
-  text-align: center;
-  border-radius: var(--radius);
-  &.button-sm{
-    padding: var(--flow-space) calc(var(--flow-space) * 1.5);
-  }
-}
 .button-inner{
   display: flex;
   align-items: center;
@@ -29,31 +15,83 @@
 .button-block{
   width: 100%;
 }
+
+.button{
+  position: relative;
+  display: inline-block;
+  padding: var(--flow-space) calc(var(--flow-space) * 3);
+  cursor: pointer;
+  text-decoration: none;
+  font-size: var(--fs-text-xs);
+  font-weight: var(--bold);
+  border: 0;
+  text-align: center;
+  border-radius: var(--radius);
+  transition: all .2s linear;
+}
 .button-lg{
   padding: calc(var(--flow-space) * 2) calc(var(--flow-space) * 3);
+}
+.button-sm{
+  padding: var(--flow-space) calc(var(--flow-space) * 1.5);
+}
+
+%button-creator{
+  color: var(--color-text);
+  background: var(--color-bg);
+  border: 2px solid var(--color-border);
+  &:after{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: var(--radius);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+    background-color: var(--color-bg);
+  }
+  &:hover, &:focus {
+    background: var(--color-bg-hover);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-shadow: 0 0 5px var(--color-text-shadow);
+    &:after{
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+  &:active{
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  svg{
+    path{
+      fill: currentColor;
+    }
+  }
 }
 
 .button-1{
   @extend .button;
-  color: RGB(var(--color-white));
-  box-shadow: inset 0 0 0 2px RGB(var(--color-primary));
-  background: linear-gradient(135deg, RGB(var(--color-primary)) 25%, RGB(var(--color-primary-alt)) 100%);
-  &:hover, &:focus{
-    background: linear-gradient(73.39deg,RGB(var(--color-paragraph)) 7.52%,RGB(var(--color-black)) 98.26%);
-    color: RGB(var(--color-white));
-    box-shadow: inset 0 0 0 2px RGB(var(--color-black));
-  }
+  @extend %button-creator;
+  --color-bg: RGB(var(--color-primary));
+  --color-bg-hover: RGB(var(--color-primary-alt));
+  --color-border: RGB(var(--color-primary));
+  --color-text: RGB(var(--color-black));
+  --color-text-shadow: RGB(var(--color-primary-alt));
 }
 .button-2{
   @extend .button;
-  background: linear-gradient(73.39deg,RGB(var(--color-paragraph)) 7.52%,RGB(var(--color-black)) 98.26%);
-  color: RGB(var(--color-white));
-  box-shadow: inset 0 0 0 2px RGB(var(--color-paragraph));
-  &:hover, &:focus{
-    background: linear-gradient(73.39deg,RGB(var(--color-primary)) 7.52%,RGB(var(--color-primary-alt)) 98.26%);
-    color: RGB(var(--color-white));
-    box-shadow: inset 0 0 0 2px RGB(var(--color-primary));
-  }
+  @extend %button-creator;
+  --color-bg: RGB(var(--color-bg));
+  --color-bg-hover: RGB(var(--color-bg-alt));
+  --color-border: RGB(var(--color-primary));
+  --color-text: RGB(var(--color-white));
+  --color-text-shadow: RGB(var(--color-black));
 }
 
 .button-nav{
@@ -64,24 +102,27 @@
   @include respond-below(md) {
     display: inline-block;
   }
-  svg{
-    path{
-      fill: currentColor;
-    }
-  }
 }
 .button-aside{
   @extend .button, .button-2;
   display: inline-block;
   padding: var(--flow-space);
   font-weight: var(--bold);
-  svg{
-    path{
-      fill: currentColor;
-    }
-  }
 }
 
-button:focus, a:focus {
+button:focus-visible, a:focus-visible {
   outline: 2px solid RGB(var(--color-highlight));
+}
+
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }

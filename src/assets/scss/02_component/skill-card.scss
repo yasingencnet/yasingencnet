@@ -8,25 +8,23 @@
   }
 }
 .skill-cta{
-  grid-column-start: 1;
-  grid-column-end: -1;
-  color: RGB(var(--color-paragraph-light));
-  text-align: right;
+  display: flex;
+  flex-direction: column;
+  color: RGB(var(--color-paragraph));
+  text-align: left;
   font-size: var(--fs-text-sm);
-  margin-top: calc(var(--flow-space) * 1.5);
-  @include respond-above(sm) {
-    grid-column-end: -2;
-  }
+  margin-top: auto;
+  margin-left: auto;
+
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
   a{
-    color: RGB(var(--color-paragraph));
-    text-decoration: none;
-    &:hover, &:focus{
-      color: RGB(var(--color-primary));
-    }
+    color: RGB(var(--color-primary));
   }
 }
 
 .skill-card{
+  background-color: RGB(var(--color-bg-alt));
   padding: calc(var(--flow-space) * 1.5);
   border-radius: var(--radius);
   box-shadow: var(--box-shadow-2);
@@ -47,7 +45,7 @@
   }
 }
 .skill-card__title{
-  font-size: var(--fs-text-sm);
+  font-size: var(--fs-text-xs);
   font-weight: var(--bold);
   background: -webkit-linear-gradient(73.39deg,RGB(var(--color-primary)) 7.52%,RGB(var(--color-primary-alt)) 98.26%);
   -webkit-background-clip: text;
@@ -56,10 +54,7 @@
 }
 .skill-card__description{
   font-size: var(--fs-text-xs);
-  color: RGB(var(--color-paragraph-light));
-  @include respond-above(sm) {
-    font-size: var(--fs-text-sm);
-  }
+  color: RGB(var(--color-paragraph));
 }
 
 @keyframes bounceSkillCardFigure {

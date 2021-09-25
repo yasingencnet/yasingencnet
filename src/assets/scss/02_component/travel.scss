@@ -6,17 +6,14 @@
     background-image: url("/assets/img/layout/travel.jpg");
     padding: var(--layout-gap) calc(var(--flow-space) * 3) calc(var(--layout-gap) * 2);
   }
-  .section-title{
-    color: RGB(var(--color-white));
-  }
   .section-description{
-    color: RGB(var(--color-white));
+    color: RGB(var(--color-paragraph-inverse));
   }
 }
 
 .travel-cards{
   display: grid;
-  grid-gap: calc(var(--layout-gap) / 2 );
+  grid-gap: 3rem;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   margin-left: auto;
   margin-right: auto;
@@ -29,7 +26,7 @@
       grid-column-end: -1;
 
       .post-card__title{
-        font-size: var(--fs-title-lg);
+        font-size: var(--fs-title-sm);
         line-height: 120%;
       }
     }

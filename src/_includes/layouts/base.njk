@@ -30,12 +30,12 @@ View the source here: {{ metadata.repo }}
 
   <link rel="preconnect" href="https://www.instagram.com/">
 </head>
-<body>
+<body class="{% if templateClass %} {{ templateClass }} {% endif %}">
 
 <a href="#main" class="skip-link visually-hidden">skip to content</a>
 {% include "components/header.njk" %}
 
-<main id="main" role="main" class="main {% if templateClass %} {{ templateClass }} {% endif %}">
+<main id="main" role="main" class="main">
   {{ content | safe }}
 </main>
 

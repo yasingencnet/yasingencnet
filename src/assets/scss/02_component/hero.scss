@@ -1,27 +1,25 @@
 .hero{
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 3rem;
-
-  max-width: var(--container-lg);
-  margin-left: auto;
-  margin-right: auto;
+  --hero-height: 480px;
+  position: relative;
   margin-top: calc(-1 * (var(--layout-gap)));
-  padding: 6rem 1.5rem;
-
-  &:before{
-    @include respond-above(md) {
-      content: '';
-      display: block;
-      position: absolute;
-      z-index: -1;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: url("/assets/img/layout/hero-bg.svg") bottom left;
-      background-size: cover;
-      border-radius: var(--radius) var(--radius) 0 0;
+  padding: 12rem 1.5rem 0;
+  height: var(--hero-height);
+  overflow: hidden;
+  @include respond-above(xs) {
+    --hero-height: 620px;
+  }
+  @include respond-above(sm) {
+    --hero-height: 800px;
+    padding: 12rem 1.5rem 0;
+  }
+  .container{
+    display: grid;
+    align-items: start;
+    height: 100%;
+    gap: calc(var(--layout-gap) / 3);
+    @include respond-above(sm) {
+      align-items: flex-start;
+      grid-template-columns: 1fr 1fr;
     }
   }
 }
@@ -31,75 +29,97 @@
   flex-direction: column;
   position: relative;
   z-index: 1;
-  max-width: 760px;
-  text-align: center;
-  margin: auto;
+  gap: 1.5rem;
+  @include respond-below(sm) {
+    text-align: center;
+    grid-row-start: 1;
+    grid-column-start: 1;
+  }
+  @include respond-above(sm) {
+    margin: auto;
+  }
 }
 .hero__title{
-  --text-size: 32px;
-
-  margin-bottom: calc(var(--flow-space) * 1.5);
-  font-size: var(--text-size);
+  font-size: var(--fs-title-xl);
   font-weight: var(--bold);
   line-height: 1.1;
   letter-spacing: -.01em;
 
-  color: RGB(var(--color-paragraph));
-  background: linear-gradient(73.39deg, RGB(var(--color-paragraph)) 7.52%, RGB(var(--color-black)) 98.26%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  @include respond-above(md) {
-    --text-size: var(--fs-title-xml);
-  }
+  color: RGB(var(--color-paragraph-inverse));
   span{
     display: block;
     width: 100%;
   }
 }
 .hero__description{
-  font-size: var(--fs-text-md);
-  color: RGB(var(--color-paragraph-light));
-  line-height: 180%;
+  font-size: var(--fs-text-sm);
+  color: RGB(var(--color-paragraph));
+  line-height: 1.8;
   a{
-    background-color: RGB(var(--color-highlight), .2);
-    text-decoration: none;
     border-radius: 4px;
     padding: .5rem;
-    color: RGB(var(--color-black));
+    color: RGB(var(--color-primary));
     &:hover, &:focus{
-      color: RGB(var(--color-primary));
-      background-color: RGB(var(--color-primary), .1);
+      background-color: RGB(var(--color-black));
     }
   }
 }
 
 .hero__figure{
   position: relative;
-  margin: auto;
-}
-.hero__pic{
-  border-radius: var(--radius);
-  height: auto;
-  width: auto;
+  @include respond-below(sm) {
+    text-align: left;
+    grid-row-start: 1;
+    grid-column-start: 1;
+  }
+  img{
+    margin: auto;
+  }
 }
 
-.hero__icon{
-  --hero-icon-size: 120px;
-  width: var(--hero-icon-size);
-  height: var(--hero-icon-size);
+.hero__pic, .hero-bg__sky, .hero-bg__scene, .hero-bg__cloud, .hero-bg__video, .hero-bg__shadow{
+  pointer-events: none;
+}
+.hero-bg__sky{
+  position: absolute;
+  z-index: -3;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  background: url("/assets/img/layout/herobg-sky.jpg") top left;
+  background-attachment: fixed;
+}
+.hero-bg__scene{
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("/assets/img/layout/herobg.png") top left;
+  background-size: cover;
+}
+.hero-bg__video{
+  mix-blend-mode: screen;
+  opacity: .9;
 
   position: absolute;
-  left: calc(100% - (175px - (var(--hero-icon-size) / 6)));
-  top: calc(-1 * (var(--hero-icon-size) / 6));
+  top: 50%;
+  left: 50%;
+  z-index: 0;
+  transform: translateX(-50%) translateY(-50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+}
+.hero-bg__shadow{
+  position: absolute;
+  bottom: 0;
+  left: 0;
   z-index: 1;
-
-  animation: animateStampIcon 10s linear infinite;
-  will-change: transform;
-  backface-visibility: hidden;
-
-  @include respond-above(lg) {
-    --hero-icon-size: 175px;
-    left: calc(-1 * (var(--hero-icon-size)/2));
-    top: calc(var(--hero-icon-size)/2);
-  }
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(to top, RGB(var(--color-bg)), transparent);
 }

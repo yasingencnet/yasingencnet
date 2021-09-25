@@ -18,7 +18,7 @@
   gap: 3rem;
   min-height: 260px;
 
-  background-color: RGB(var(--color-white));
+  background-color: RGB(var(--color-bg-pale));
   border: 1px solid RGBA(var(--color-border), .4);
   padding: 2rem;
   border-radius: var(--radius);
@@ -50,15 +50,15 @@
   display: block;
   font-size: var(--fs-text-xs);
   font-weight: var(--bold);
-  color: RGB(var(--color-paragraph));
+  color: RGB(var(--color-primary));
   text-transform: uppercase;
   line-height: 1.2;
   span{
-    color: RGB(var(--color-paragraph-light));
+    color: RGB(var(--color-paragraph-inverse));
   }
   small{
     font-weight: var(--regular);
-    color: RGB(var(--color-paragraph-light));
+    color: RGB(var(--color-paragraph-inverse));
   }
 }
 .day__description{
@@ -123,7 +123,7 @@
   align-items: flex-start;
   width: 100%;
   height: 180px;
-  background-color: RGB(var(--color-white));
+  background-color: RGB(var(--color-bg-pale));
   padding: 1rem;
   border-radius: var(--radius);
   border: 1px solid RGBA(var(--color-border), .4);
@@ -151,12 +151,13 @@
   }
 }
 .data-card__title{
+  color: RGB(var(--color-paragraph-inverse));
   font-size: var(--fs-text-xs);
   font-weight: var(--bold);
 }
 .data-card__description{
   font-size: var(--fs-text-xs);
-  color: RGB(var(--color-paragraph-light));
+  color: RGB(var(--color-paragraph));
 }
 .data-card__value{
   margin-top: auto;
@@ -197,12 +198,12 @@
 }
 .progress__label{
   font-size: var(--fs-text-sm);
-  color: RGB(var(--color-paragraph-light));
+  color: RGB(var(--color-paragraph));
   margin-bottom: 1rem;
   .count{
     padding: .2rem 1rem;
     text-align: center;
-    color: RGB(var(--color-white));
+    color: RGB(var(--color-paragraph-inverse));
     border-radius: var(--radius);
     background-color: RGB(var(--color-secondary));
   }

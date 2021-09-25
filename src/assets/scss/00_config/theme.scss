@@ -21,20 +21,19 @@
   --radius: 4px;
 
   // COLORS
-  --color-bg: 255, 255, 255;
-  --color-bg-alt: 30, 30, 30;
-  --color-bg-pale: 248, 250, 251;
+  --color-bg: 24, 26, 28;
+  --color-bg-alt: 18, 18, 22;
+  --color-bg-pale: 20, 22, 26;
 
-  --color-primary: 215, 25, 90;
-  --color-primary-alt: 163, 28, 84;
+  --color-primary:  240, 200, 60;
+  --color-primary-alt: 255, 182, 0;
   --color-secondary: 50, 132, 255;
-  --color-tertiary: 36, 211, 178;
-  --color-border: 215, 215, 215;
+  --color-border: 5, 10, 15;
 
-  --color-paragraph: 36, 54, 64;
-  --color-paragraph-light: 75, 88, 95;
-  --color-paragraph-ultralight: 107, 114, 128;
-  --color-paragraph-pale: 204, 211, 224;
+  --color-paragraph: 175, 175, 175;
+  --color-paragraph-alternate: 230, 252, 255;
+  --color-paragraph-inverse: 255, 255, 255;
+  --color-disabled: 50, 50, 50;
 
   --color-alert: 255, 86, 48;
   --color-alert-dark: 200, 10, 10;
@@ -43,18 +42,15 @@
   --color-highlight: 255, 190, 10;
   --color-highlight-dark: 130, 96, 10;
   --color-success: 54, 179, 126;
-  --color-success-dark: 40, 150, 120;
-  --color-info: 59,130,246;
-  --color-info-dark: 34, 87, 174;
+  --color-success-dark: 30, 170, 0;
 
   --color-white: 255, 255, 255;
   --color-black: 0, 0, 0;
 
-  --box-shadow-1: 0 6.7px 5.3px RGBA(0, 0, 0, 0.02), 0 22.3px 17.9px RGBA(0, 0, 0, 0.03), 0 100px 80px RGBA(0, 0, 0, 0.05);
-  --box-shadow-2: 0 1.6px 3.2px -60px rgba(0, 0, 0, 0.017), 0 3.9px 7.6px -60px rgba(0, 0, 0, 0.024), 0 7.3px 14.4px -60px rgba(0, 0, 0, 0.03), 0 13px 25.7px -60px rgba(0, 0, 0, 0.036), 0 24.2px 48px -60px rgba(0, 0, 0, 0.043), 0 58px 115px -60px rgba(0, 0, 0, 0.06);
+  --box-shadow-1: 0 6.7px 5.3px RGBA(0, 0, 0, 0.04), 0 22.3px 17.9px RGBA(0, 0, 0, 0.06), 0 100px 80px RGBA(0, 0, 0, 0.1);
+  --box-shadow-2: 0 1.6px 3.2px -60px rgba(0, 0, 0, 0.035), 0 3.9px 7.6px -60px rgba(0, 0, 0, 0.042), 0 7.3px 14.4px -60px rgba(0, 0, 0, 0.09), 0 13px 25.7px -60px rgba(0, 0, 0, 0.036), 0 24.2px 48px -60px rgba(0, 0, 0, 0.050), 0 58px 115px -60px rgba(0, 0, 0, 0.10);
 
   // SIZING
-  --header-height: 101px;
 
   --flow-space: 1rem;
   --layout-gap: 9rem;
@@ -74,14 +70,23 @@
     --container-md: 60vw;
   }
 
+  @include respond-above(xl) {
+    --container-lg: 1400px;
+  }
+
 
   @include respond-below(sm){
     // TYPOGRAPHY
-    --fs-title-sm: 22px;
-    --fs-title-md: 26px;
-    --fs-title-lg: 30px;
-    --fs-title-xl: 34px;
-    --fs-title-xml: 46px;
+    --fs-text-xs: 13px;
+    --fs-text-sm: 14px;
+    --fs-text-md: 16px;
     --fs-text-lg: 18px;
+    --fs-title-xs: 18px;
+    --fs-title-sm: 20px;
+    --fs-title-md: 22px;
+    --fs-title-lg: 26px;
+    --fs-title-xl: 30px;
+    --fs-title-xml: 40px;
+    --fs-title-xxl: 50px;
   }
 }

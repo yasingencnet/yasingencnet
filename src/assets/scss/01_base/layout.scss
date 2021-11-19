@@ -6,20 +6,22 @@ body {
   color: RGB(var(--color-paragraph));
   font-family: var(--font-base);
 }
-.container{
-  max-width: var(--container-lg);
+%container{
   margin-left: auto;
   margin-right: auto;
+}
+.container{
+  @extend %container;
+  max-width: var(--container-lg);
+
 }
 .container-md{
+  @extend %container;
   max-width: var(--container-md);
-  margin-left: auto;
-  margin-right: auto;
 }
 .container-sm{
+  @extend %container;
   max-width: var(--container-sm);
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .main{

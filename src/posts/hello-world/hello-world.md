@@ -1,6 +1,6 @@
 ---
 title: Hello World!
-description: After years, I decided to write blog, publish some of my references and renew my website with some cool features.
+description: After years, I decided to write a blog, publish some of my references and renew my website with some cool features.
 date: 2020-09-24
 categories:
     - General

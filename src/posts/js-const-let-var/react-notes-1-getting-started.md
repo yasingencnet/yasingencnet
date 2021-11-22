@@ -1,6 +1,6 @@
 ---
 title: Differences Between Const, Var and Let
-description: My notes about const, var and let. Not a guide. Just notes.
+description: My notes about const, var, and let. Not a guide. Just notes.
 date: 2021-05-13
 tags:
   - JavaScript

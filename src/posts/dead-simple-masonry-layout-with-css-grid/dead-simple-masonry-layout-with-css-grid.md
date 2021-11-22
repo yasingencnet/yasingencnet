@@ -1,6 +1,6 @@
 ---
 title: Dead Simple Masonry Layout With CSS Grid
-description: When I renew my website I've made a photo grid in about page. I decided to explain how you can implement same layout on your project.
+description: When I renew my website I've made a photo grid on the about page. I decided to explain how you can implement the same layout on your project.
 date: 2020-09-25
 categories:
   - CSS

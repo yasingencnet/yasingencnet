@@ -10,7 +10,7 @@ tags:
 layout: layouts/post.njk
 ---
 
-If you are looking for cheap travel, Ukraine must be your first next destination. Me and my 2 friends decided to prepare our backpack and explore this beautiful country. My plan is stay 3 days in each city. First Odesa, than Lviv and Kyiv.
+If you are looking for cheap travel, Ukraine must be your first next destination. I and my 2 friends decided to prepare our backpacks and explore this beautiful country. I plan to stay 3 days in each city. First Odesa, then Lviv and Kyiv.
 
 ## Ready to Go!
 

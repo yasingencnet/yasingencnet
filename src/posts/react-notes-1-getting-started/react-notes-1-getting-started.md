@@ -1,6 +1,6 @@
 ---
 title: Getting Started (React Notes - 1)
-description: My ReactJS learning journey. I take this notes for myself.
+description: My ReactJS learning journey. I take these notes for myself.
 date: 2021-05-10
 tags:
   - ReactJS

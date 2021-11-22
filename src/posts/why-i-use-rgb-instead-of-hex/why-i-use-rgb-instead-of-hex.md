@@ -1,6 +1,6 @@
 ---
 title: Why I Use RGB Instead of HEX?
-description: We used HEX colors for years in css, but It's time to replace it with RGB
+description: We used HEX colors for years in CSS, but It's time to replace them with RGB
 date: 2020-09-25
 categories:
     - CSS

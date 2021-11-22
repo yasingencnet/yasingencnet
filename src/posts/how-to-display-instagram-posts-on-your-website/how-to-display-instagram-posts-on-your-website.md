@@ -1,6 +1,6 @@
 ---
 title: How to Display Instagram Posts on Your Website?
-description: We're basically fetching (scraping) data from Instagram and insert it into HTML.
+description: We're fetching (scraping) data from Instagram and inserting it into HTML.
 date: 2020-09-27
 categories:
     - JavaScript

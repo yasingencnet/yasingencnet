@@ -1,6 +1,6 @@
 ---
 title: Eleventy Powered Free Blog & Portfolio Template
-description: Hey I'm Yasin. I created this awesome blog template with Eleventy. Feel free to use it. No rights reserved.
+description: Hey, I'm Yasin. I created this awesome blog template with Eleventy. Feel free to use it. No rights reserved.
 date: 2020-10-11
 categories:
   - CSS

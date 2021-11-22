@@ -1,6 +1,6 @@
 ---
 title: Understanding JavaScript Callbacks
-description: Callbacks are fundamental to asynchronous coding in JavaScript. In this post we try to understand callbacks with several examples.
+description: Callbacks are fundamental to asynchronous coding in JavaScript. In this post, we try to understand callbacks with several examples.
 date: 2020-12-12
 categories:
   - JavaScript

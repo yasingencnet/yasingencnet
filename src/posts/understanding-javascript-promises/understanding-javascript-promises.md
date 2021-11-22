@@ -1,6 +1,6 @@
 ---
 title: Understanding JavaScript Promises
-description: Many people struggle with understand how Promises work (including me). Promises are fundamental to asynchronous coding in JavaScript. In this post we try to understand promises with basic examples.
+description: Many people struggle with understanding how Promises work (including me). Promises are fundamental to asynchronous coding in JavaScript. In this post, we try to understand promises with basic examples.
 date: 2020-12-13
 categories:
   - JavaScript

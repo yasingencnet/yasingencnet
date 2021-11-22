@@ -1,6 +1,6 @@
 ---
 title: JSX Arrays and Forms (React Notes - 2)
-description: My ReactJS learning journey. I take this notes for myself.
+description: My ReactJS learning journey. I take these notes for myself.
 date: 2021-05-12
 tags:
   - ReactJS

@@ -1,3 +1,17 @@
+---
+title: Modern CSS Reset
+description: This most modern CSS reset yet is the first file you have to copy to your project
+date: 2021-11-26
+tags:
+  - CSS
+layout: layouts/post.njk
+---
+
+{{ description }}
+
+For a long time, I used Eric Meyer’s [CSS Reset](https://meyerweb.com/eric/tools/css/reset/) and Andy Bell's [Modern CSS Reset](https://github.com/hankchizljaw/modern-css-reset). Today I saw Joshua Comeau's [Custom CSS Reset](https://www.joshwcomeau.com/css/custom-css-reset/) blog post on Twitter. I decided to keep the best parts of these resets and create my own style file. I replaced my reset.css with this new one.
+
+``` css
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -61,3 +75,4 @@ table {
     scroll-behavior: auto !important;
   }
 }
+```

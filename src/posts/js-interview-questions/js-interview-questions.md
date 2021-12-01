@@ -223,12 +223,12 @@ and more.
 
 ## 7. What is `hoisting` in JavaScript?
 
-Variables, classses and functions can be used before they're declared. This behavior called hoisting.
+Variables, classes, and functions can be used before they're declared. This behavior is called hoisting.
 
 ---
 
 ## 8. What is the strict mode in JavaScript?
 
-It's a way to better error checking into your code. You can enable strict mode by adding `use strict` at the beginning of a file.
+It's a way to better error checking in your code. You can enable strict mode by adding `use strict` at the beginning of a file.
 
 

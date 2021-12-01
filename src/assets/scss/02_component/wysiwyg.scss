@@ -109,9 +109,9 @@
   }
   code{
     &:not([class]){
-      color: RGB(var(--color-black));
-      background-color: RGB(var(--color-primary), .8);
-      padding: 2px 8px;
+      color: RGB(var(--color-white));
+      background-color: RGB(var(--color-bg-alt), .9);
+      padding: 1px 4px;
       border-radius: var(--radius);
     }
   }

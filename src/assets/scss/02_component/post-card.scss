@@ -28,10 +28,7 @@
   background: var(--card-bg);
   box-shadow: var(--box-shadow-2);
   border-radius: var(--radius);
-  padding: calc(var(--flow-space) * 6) calc(var(--flow-space) * 1.5);
-  @include respond-above(sm) {
-    padding: calc(var(--flow-space) * 6) calc(var(--flow-space) * 3);
-  }
+  padding: calc(var(--flow-space) * 3) calc(var(--flow-space) * 1.5);
   > * + * {
     margin-top: var(--flow-space);
   }

@@ -8,11 +8,11 @@
   text-align: left;
   thead{
     background-color: RGB(var(--color-bg-pale));
-    th{
-      color: RGB(var(--color-paragraph));
-      font-size: var(--fs-text-xs);
-      font-weight: var(--regular);
-    }
+  }
+  th{
+    color: RGB(var(--color-paragraph-inverse));
+    font-size: var(--fs-text-xs);
+    font-weight: var(--regular);
   }
   th, td{
     padding: var(--flow-space);
@@ -50,7 +50,7 @@
 .table-hover{
   tr{
     &:hover{
-      background-color: RGB(var(--color-bg-pale));
+      background-color: RGB(var(--color-black));
     }
   }
 }

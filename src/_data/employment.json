@@ -1,0 +1,50 @@
+[
+  {
+    "company": {
+      "name": "Denge",
+      "website": "https://www.denge.com.tr/",
+      "logo": "logo-denge.svg"
+    },
+    "date": {
+      "beginning": "05.2018",
+      "end": false
+    },
+    "title": "Lead Front-End Developer"
+  },
+  {
+    "company": {
+      "name": "Agency Look",
+      "website": "https://look.agency/",
+      "logo": "logo-look.svg"
+    },
+    "date": {
+      "beginning": "04.2017",
+      "end": "05.2018"
+    },
+    "title": "Front-End Developer"
+  },
+  {
+    "company": {
+      "name": "Playanka",
+      "website": "https://www.playanka.com/",
+      "logo": "logo-playanka.png"
+    },
+    "date": {
+      "beginning": "01.2016",
+      "end": "03.2017"
+    },
+    "title": "UI & Front-End Developer"
+  },
+  {
+    "company": {
+      "name": "Turkiyemix",
+      "website": null,
+      "logo": "logo-turkiyemix.png"
+    },
+    "date": {
+      "beginning": "06.2014",
+      "end": "01.2016"
+    },
+    "title": "Intern & Web Developer"
+  }
+]

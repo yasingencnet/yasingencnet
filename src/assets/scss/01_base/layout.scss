@@ -33,10 +33,11 @@ body {
     padding-top: var(--layout-gap);
   }
 }
+
 main{
   > * {
     & + * {
-      margin-top: calc(var(--layout-gap) * 2);
+      margin-top: calc(var(--layout-gap) * 2.25);
     }
   }
 }

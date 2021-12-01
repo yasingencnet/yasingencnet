@@ -1,4 +1,9 @@
-<div class="section">
+<div class="section" style="position: relative;">
+  <div id="animSkeleton" class="anim-skeleton">
+    <div class="left-eye"></div>
+    <div class="right-eye"></div>
+    <img src="{{metadata.assets.img}}layout/skeleton.png" alt="" aria-hidden="true">
+  </div>
   <div class="container">
     <header class="section-header">
       <h2 class="section-title">My Skillset</h2>
@@ -111,3 +116,16 @@
     </div>
   </div>
 </div>
+
+<script>
+  // Parallax Yasin
+  document.addEventListener('scroll', function() {
+    let windowTop = window.scrollY;
+
+    let skeletonImg = document.getElementById("animSkeleton");
+    let elementTop = skeletonImg.offsetTop;
+
+    let animateValue = (windowTop - elementTop) / 2;
+    skeletonImg.style.transform = "translateX("+animateValue+"px)";
+  });
+</script>

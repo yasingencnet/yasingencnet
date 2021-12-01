@@ -5,6 +5,7 @@ body {
   background-color: RGB(var(--color-bg));
   color: RGB(var(--color-paragraph));
   font-family: var(--font-base);
+  overflow-x: hidden;
 }
 %container{
   margin-left: auto;

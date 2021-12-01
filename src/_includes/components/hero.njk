@@ -41,13 +41,13 @@
 
 
     // Parallax Yasin
-    document.addEventListener('scroll', function(e) {
+    document.addEventListener('scroll', function() {
       let windowTop = window.scrollY;
 
       let heroImage = document.getElementById("heroImage");
       let elementTop = heroImage.offsetTop;
 
-      let animateValue = (windowTop - elementTop) / 2;
+      let animateValue = (windowTop - elementTop) / 6;
       heroImage.style.transform = "translateY("+animateValue+"px)";
     });
 

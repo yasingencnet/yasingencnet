@@ -17,35 +17,4 @@
 @import "02_component/skill-card";
 @import "02_component/works";
 @import "02_component/gallery";
-
-.anim-skeleton{
-  position: absolute;
-  z-index: -1;
-  left: 0;
-  top: calc(-1 * (var(--layout-gap) * 2.25));
-  .left-eye, .right-eye{
-    position: absolute;
-    width: 5px;
-    height: 5px;
-    background: #ffbebe;
-    border-radius: 50%;
-    animation: skullEye 1.8s infinite;
-  }
-  .left-eye{
-    top: 145px;
-    right: 59px;
-  }
-  .right-eye{
-    top: 160px;
-    right: 22px;
-  }
-}
-
-@keyframes skullEye {
-  0%,100% {
-    box-shadow: 0 0 5px 10px #da0d0d;
-  }
-  50% {
-    box-shadow: 0 0 5px 5px #980d0d;
-  }
-}
+@import "02_component/home";

@@ -1,0 +1,48 @@
+$particles: 50;
+$width: 250;
+$height: 250;
+
+// Create the explosion...
+$box-shadow: ();
+$box-shadow2: ();
+@for $i from 0 through $particles {
+  $box-shadow: $box-shadow,
+  random($width)-$width / 2 + px
+  random($height)-$height / 1.2 + px
+  hsl(random(360), 100, 50);
+  $box-shadow2: $box-shadow2, 0 0 #fff;
+}
+
+.fireworks {
+  display: inline-block;
+  position: relative;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    box-shadow: $box-shadow2;
+    animation: 1s bang ease-out infinite backwards, 1s gravity ease-in infinite backwards;
+  }
+
+  &::after {
+    animation-delay: 1.25s, 1.25s, 1.25s;
+    animation-duration: 1.25s, 1.25s, 6.25s;
+  }
+}
+
+@keyframes bang {
+  to {
+    box-shadow: $box-shadow;
+  }
+}
+
+@keyframes gravity {
+  to {
+    transform: translateY(75px);
+    opacity: 0;
+  }
+}

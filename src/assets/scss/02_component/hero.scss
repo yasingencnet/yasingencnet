@@ -67,6 +67,7 @@
 
 .hero__figure{
   position: relative;
+  animation: bringItOn 400ms linear forwards;
   @include respond-below(sm) {
     text-align: left;
     grid-row-start: 1;
@@ -123,4 +124,16 @@
   width: 100%;
   height: 300px;
   background: linear-gradient(to top, RGB(var(--color-bg)), transparent);
+}
+
+@keyframes bringItOn {
+  0% {
+    opacity: 0;
+    transform: translateY(90px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }

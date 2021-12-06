@@ -38,29 +38,22 @@
     font-size: var(--fs-text-sm);
     text-decoration: none;
     z-index: 0;
-    &:hover{
-      color: RGB(var(--color-primary));
-      &:after{
-        display: block;
-      }
-    }
     &:after{
       content: '';
-      display: none;
+      display: block;
       position: absolute;
       width: 100%;
       height: 100%;
       top: 0;
       left: 0;
-      background: RGB(var(--color-bg-pale));
-      border-radius: var(--radius);
-      z-index: -1;
+    }
+    &:hover{
+      color: RGB(var(--color-primary));
     }
   }
   span{
     color: RGB(var(--color-paragraph));
     margin-top: calc(var(--flow-space) / 2);
-    z-index: 1;
   }
 }
 
@@ -111,4 +104,60 @@
   color: RGB(var(--color-highlight-dark));
   font-size: var(--fs-text-xs);
   text-align: center;
+}
+
+
+// Capillary
+.capillary-container {
+  --stroke: #2f2f2f;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+  user-select: none;
+  margin-top: 0;
+}
+.capillary {
+  position: absolute;
+  pointer-events: none;
+  opacity: 0.2;
+  transition: opacity 0.2s linear;
+  path{
+    stroke: var(--stroke);
+  }
+}
+.capillary--1 {
+  bottom: 50%;
+  right: 50%;
+  margin-bottom: -300px;
+  margin-right: -400px;
+  animation: capillaryShape1 20s infinite alternate linear;
+}
+.capillary--2 {
+  top: 50%;
+  left: 50%;
+  margin-top: -600px;
+  margin-left: -475px;
+  transform: rotate(15deg);
+  animation: capillaryShape2 20s infinite alternate linear;
+}
+@keyframes capillaryShape1 {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(20%) rotate(20deg);
+  }
+}
+@keyframes capillaryShape2 {
+  0% {
+    transform: translateY(0) rotate(15deg);
+  }
+  100% {
+    transform: translateY(-20%) rotate(25deg);
+  }
 }
